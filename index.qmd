@@ -1,17 +1,17 @@
 ---
-title: "Course Title"
+title: "EDS 214: Analytical Workflows and Scientific Reproducibility"
 subtitle: "Master of Environmental Data Science (MEDS)"
-description: "Winter 2025"
+description: "Summer 2025"
 title-block-banner: false
 toc: false
 ---
 
 ::: {.center-text}
-![](images/bren-meds-hex.png){width="25%" fig-alt="Alt text here."}
+![](images/flow.png){width="75%" fig-alt="The silhouettes of three fish under water swimming down a stream."}
 :::
 
 ::: {.center-text .gray-text}
-*Add your own relevant image to the `images/` folder, then update the file name in `index.qmd` so that it points to the correct image.* 
+*Artwork by [Allison Payne](https://allisonpayne.github.io/).* 
 :::
 
 <br>
@@ -46,12 +46,12 @@ Add your course description here (can be copied over from your syllabus or the a
 #| echo: false
 #| fig-align: "center"
 #| out-width: "45%" 
-knitr::include_graphics("images/tbd.png")
+knitr::include_graphics("images/max circle.png")
 ```
 ::: {.center-text}
-[**Instructor's Name**]{.teal-text}  
-**Email:** [email@ucsb.edu](mailto::email@bren.ucsb.edu)  
-**Learn more:** link to preferred online profile here  
+[**Max Czapanskiy**]{.teal-text}  
+**Email:** [maxczap@ucsb.edu](mailto::maxczap@ucsb.edu)  
+**Learn more:** [Open Ecology Lab](https://openecologylab.com)  
 :::
 :::
 
@@ -65,12 +65,12 @@ knitr::include_graphics("images/tbd.png")
 #| echo: false
 #| fig-align: "center"
 #| out-width: "45%" 
-knitr::include_graphics("images/tbd.png")
+knitr::include_graphics("images/alessandra.png")
 ```
 ::: {.center-text}
-[**TA's Name**]{.teal-text}  
-**Email:** [email@bren.ucsb.edu](mailto::email@bren.ucsb.edu)   
-**Learn more:** link to preferred online profile here
+[**Alessandra Vidal Meza**]{.teal-text}  
+**Email:** [avidalmeza@bren.ucsb.edu](mailto::avidalmeza@bren.ucsb.edu)   
+**Learn more:** [avidalmeza.github.io](avidalmeza.github.io)
 :::
 :::
 
