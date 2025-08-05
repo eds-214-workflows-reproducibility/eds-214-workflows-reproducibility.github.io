@@ -14,10 +14,16 @@ website:
         target: _blank
       - text: course materials
         menu:
-          - text: week 1 (DD/MM)
-            href: course-materials/week1.qmd
-          - text: week 2 (DD/MM)
-            href: course-materials/week2.qmd
+          - text: day 1 (8/25)
+            href: course-materials/day1.qmd
+          - text: day 2 (8/26)
+            href: course-materials/day2.qmd
+          - text: day 3 (8/27)
+            href: course-materials/day3.qmd
+          - text: day 4 (8/28)
+            href: course-materials/day4.qmd
+          - text: day 5 (8/29)
+            href: course-materials/day5.qmd
       - text: assignments
         href: assignments.qmd
       - text: resources
@@ -38,12 +44,13 @@ website:
     right: This website is built with [{{< fa brands github title="the github octocat logo" >}}](https://github.com/UCSB-MEDS/EDS-website-template) and [Quarto](https://quarto.org/)
     left: This work is licensed under CC BY-NC 4.0. 
 
+extensions:
+  - bren-meds-courses
+
 format:
   html:
     theme: meds-website-styles.scss
     page-layout: full
     toc: true
     title-block-banner: true
-
-
 

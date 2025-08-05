@@ -1,0 +1,13 @@
+---
+title: "TODO: fixme"
+subtitle: "Day 4"
+description: "Thursday August 28^th^, 2025"
+---
+
+## Class materials
+
+| {{< session >}} | {{< lecture >}}        | {{< interactive >}} | {{< reflection >}} |
+|-----------------|------------------------|---------------------|-------------------|
+| Morning         | TODO: fixme | TODO: fixme  | TODO: fixme |
+| Afternoon       | TODO: fixme  | TODO: fixme  | TODO: fixme |
+: {.hover .bordered .w-auto .mx-auto} 
