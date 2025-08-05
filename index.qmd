@@ -11,7 +11,7 @@ toc: false
 :::
 
 ::: {.center-text .gray-text}
-*Artwork by [Allison Payne](https://allisonpayne.github.io/).* 
+*Artwork by [Allison Payne](https://allisonpayne.github.io/)* 
 :::
 
 <br>
