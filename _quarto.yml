@@ -10,7 +10,7 @@ website:
       - href: index.qmd
         text: home
       - text: syllabus
-        href: https://docs.google.com/document/d/1hoo2DEroXlqBhhc6LmnsYFe8_7IbHny5yk7yXLfQp-4/edit?usp=sharing
+        href: https://docs.google.com/document/d/1lw79wgi5v-BZkKc7BmGwXzLmDkmj87-lPcopE3eDdBQ/edit?usp=sharing
         target: _blank
       - text: course materials
         menu:
