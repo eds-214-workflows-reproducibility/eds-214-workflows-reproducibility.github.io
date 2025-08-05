@@ -53,4 +53,7 @@ format:
     page-layout: full
     toc: true
     title-block-banner: true
+    
+exclude:
+  LICENSE.md
 
