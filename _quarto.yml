@@ -3,13 +3,7 @@ project:
   output-dir: docs
 
 website:
-  announcement:
-    icon: info-circle
-    dismissable: false
-    type: primary
-    position: above-navbar
-    content: "This website is currently under development! (edit or remove this banner in `_quarto.yml`)"
-  title: "EDS 123"
+  title: "EDS 214: Analytical Workflows and Scientific Reproducibility"
   favicon: images/bren-hex.png
   navbar:
     right:
@@ -42,7 +36,7 @@ website:
   page-footer:
     background: dark
     right: This website is built with [{{< fa brands github title="the github octocat logo" >}}](https://github.com/UCSB-MEDS/EDS-website-template) and [Quarto](https://quarto.org/)
-    left: This work is licensed under \<your preferred license\> 
+    left: This work is licensed under CC BY-NC 4.0. 
 
 format:
   html:

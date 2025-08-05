@@ -16,17 +16,20 @@ toc: false
 
 <br>
 
-::: {.callout-tip}
-### Some tips for getting started:
-
-- make updates to this landing page by editing the `index.qmd` file in your repo's root directory
-- the landing page of your website *must* be named `index` -- do not change this name; it also should live in the root directory of your project
-- crop headshots in the shape of a circle before adding them to your repo (if you want them to appear as circles)
-:::
-
 ## Course Description
 
-Add your course description here (can be copied over from your syllabus or the affiliated Bren course page)
+The generation and analysis of environmental data is often a complex, multi-step process that may involve the collaboration of many people. Increasingly, data scientists use tools that document and help to organize workflows to ensure reproducibility, shareability, and transparency of the results. This course will introduce students to the conceptual organization of workflows (including code, documents, and data) as a way to conduct reproducible analyses. 
+
+These concepts will be combined with the practice of various software tools and collaborative coding techniques to develop and manage multi-step analytical workflows as a team.
+
+::: {.center-text}
+![](images/r4ds-workflow.png){width="60%" fig-alt="A flowchart describing the components of a data analysis workflow: import, tidy, transform, visualize, model, and communicate."}
+:::
+
+::: {.center-text .gray-text}
+Conceptual model of an analytical workflow. *Source: [R for Data Science](https://r4ds.hadley.nz)* 
+:::
+
 
 ## Teaching Team
 
@@ -78,4 +81,4 @@ knitr::include_graphics("images/alessandra.png")
 
 ## Acknowledgements
 
-Add any acknowledgements here (e.g. any resources or people you drew lots of inspiration or help from when building your materials?)
+EDS 214 was previously taught by [Julien Brun](https://brunj7.github.io/) and the current iteration draws heavily on his planning, course materials, and teaching. 
