@@ -8,8 +8,8 @@ bibliography: references.bib
 ## Class materials
 
 | {{< session >}} | {{< lecture >}} | {{< interactive >}} | {{< reflection >}} |
-|-----------------|--------------------|------------------|-----------------|
-| Morning | Reproducible workflows | Reproduce a figure | Why reproducible? |
+|------------------|------------------|------------------|------------------|
+| Morning | [Reproducible workflows](lecture-slides/lecture-day1am-slides.qmd) | Reproduce a figure | Why reproducible? |
 | Afternoon | Workflow organization | Organize a project | What's on your checklist? |
 
 : {.hover .bordered}

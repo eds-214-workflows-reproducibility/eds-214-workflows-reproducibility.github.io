@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - "*.qmd"
+    - "*.md"
+    - "!LICENSE.md"
 
 website:
   title: "EDS 214: Analytical Workflows and Scientific Reproducibility"
@@ -53,7 +57,4 @@ format:
     page-layout: full
     toc: true
     title-block-banner: true
-    
-exclude:
-  LICENSE.md
 

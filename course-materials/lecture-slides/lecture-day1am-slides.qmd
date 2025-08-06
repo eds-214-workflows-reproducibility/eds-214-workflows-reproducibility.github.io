@@ -1,0 +1,268 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    highlight-style: a11y
+    chalkboard: true
+    theme: 
+      - ../../meds-slides-styles.scss
+bibliography: references.bib
+---
+
+## {#title-slide data-menu-title="Title Slide" background="#053660"} 
+
+[Reproducible Workflows]{.custom-title}
+
+[*EDS 214: Analytical Workflows and Scientific Reproducibility*]{.custom-subtitle}
+
+<hr class="hr-teal">
+
+[Day 1 Morning | August 25^th^, 2025]{.custom-subtitle3}
+
+---
+
+## {#welcome data-menu-title="Welcome to EDS 214!"} 
+
+[Welcome to EDS 214!]{.slide-title}
+
+<hr>
+
+This is a class about workflows and reproducibility
+
+<br> 
+
+. . . 
+
+[The workflow is the fundamental unit of data science]{.body-text-m}
+
+<br> 
+
+. . . 
+
+[Reproducibility ensures workflows don't become dead ends]{.body-text-m}
+
+<br>
+
+. . . 
+
+[The concepts and skills in this class will keep coming up in future classes and for the rest of your career]{.body-text-m}
+
+---
+
+## {#instructor data-menu-title="Hi, I'm Max"} 
+
+[Hi, I'm Max]{.slide-title}
+
+<hr>
+
+* I started as a computer scientist
+* Software engineer at Microsoft
+* Four years as a field biologist (seabirds, mostly)
+* Six years grad school, specializing in data science
+  * GIS at SFSU
+  * Marine biology at Stanford
+
+. . . 
+
+* My specialty was biologging - animal-borne sensors for detecting location, behavior, and physiology
+* Now my research is about open science, sharing data and code, and the ethics of proprietary data
+
+---
+
+## {#teaching data-menu-title="But really what I love is teaching!"} 
+
+[But really what I love is teaching!]{.slide-title}
+
+<hr>
+
+* In addition to the MEDS program, I also teach in the new marine science undergraduate major
+* My favorite part of my job is working with students
+
+<br>
+
+. . . 
+
+::: {.center-text .body-text-m .dark-blue-text}
+**I would love it if you set up a meeting with me to tell me about your background, your interests, and your motivations for being here**
+:::
+
+---
+
+## {#what-is-workflow1 data-menu-title="What is a workflow?"} 
+
+[What is a workflow?]{.slide-title}
+
+<hr>
+
+**THINK** Take 1 minute to write down your own definition. Consider:
+
+  * What are the components? How do they fit together?
+  * Who is the audience?
+  * What would the alternative be?
+
+**PAIR** Turn to your neighbor and discuss your definitions
+
+**SHARE** I will randomly call on a pair to share one shared element and one differing element
+
+---
+
+## {#what-is-workflow2 data-menu-title="What is a workflow?"} 
+
+[What is a workflow?]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Workflows combine: data, code, modeling, and communication.
+
+![](images/day1/r4ds-workflow.png){width="80%" fig-alt="Components of a workflow"}
+
+[@r4ds]{.body-text-xs}
+
+:::
+
+<!-- Right-hand column -->
+::: {.column width="50%"}
+
+The final workflow masks a trajectory of exploration and dead ends
+
+![](images/day1/stoudtetal2021fig1a.PNG){width="80%" fig-alt="The evolution of a workflow"}
+
+[@stoudt2021]{.body-text-xs}
+
+:::
+
+::::
+
+---
+
+## {#what-is-reproducibility data-menu-title="What is reproducibility?"} 
+
+[What is reproducibility?]{.slide-title}
+
+<hr>
+
+> We define reproducibility to mean computational reproducibility — obtaining consistent computational results using the same input data, computational steps, methods, code, and conditions of analysis
+
+[@nasem2019]{.body-text-xs}
+
+**DEBATE** With your neighbor, discuss: does reproducibility matter if you're not doing academic research? 
+
+* What if you work for a public utility, a non-governmental organization, or a private firm? 
+* Articulate one argument for and against the importance of reproducibility.
+* I will randomly call on a pair to share
+
+---
+
+## {#global-local-goals data-menu-title="Global and local goals"} 
+
+[Global and local goals]{.slide-title}
+
+<hr>
+
+[Reproducibility is]{.body-text-l}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**GLOBAL GOAL**
+
+> ... a means to verify results and ensure scientific integrity
+
+:::
+
+::: {.column width="50%"}
+
+**LOCAL GOAL**
+
+> ... a mechanism for knowledge transfer and collaboration
+
+:::
+
+::::
+
+[@feinberg2020]{.body-text-xs}
+
+---
+
+## {#how-does-class-work data-menu-title="How does class work?"} 
+
+[How does class work?]{.slide-title}
+
+<hr>
+
+[Reproduce a workflow (starting today!)]{.body-text-l}
+
+[Lectures and interactive activities for learning goals]{.body-text-l}
+
+  * Automation
+  * Organization
+  * Documentation
+  * Scale(ation)
+  * Collaboration
+
+---
+
+## {#grading data-menu-title="Specification-based grading"} 
+
+[Specification-based grading]{.slide-title}
+
+<hr>
+
+* No points out of 100
+* A rubric of specifications (specs) for your final project
+* Meet (or exceed) specs and participate in class - get an A
+
+<br>
+
+. . . 
+
+[Feedback loops are critical (no one-and-done)]{.body-text-m}
+
+<br>
+
+. . . 
+
+[You'll see more spec-based grading in other MEDS classes]{.body-text-m}
+
+---
+
+## {#testimonial data-menu-title="Reproducible workflows saved my life <3"} 
+
+[Reproducible workflows saved my life <3]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+![](images/day1/bekahlane.jpg){width="100%" fig-alt="Bekah Lane headshot"}
+
+[Bekah Lane]{.body-text-m}
+
+[Research Associate, Center for Coastal Studies]{.body-text-s}
+
+:::
+
+::: {.column width="70%"}
+
+[**Question:** Where are humpbacks in SF Bay most susceptible to ship strikes?]{.fragment}
+
+[**Problem:** Complex data and model -> Iterating and incorporating feedback becomes time intensive -> Data, processing, and modeling become tangled - verifying results is hard!]{.fragment}
+
+[**Solution:** Instead of a point-and-click solution in ArcGIS, a well-organized, reproducible workflow in R]{.fragment}
+
+:::
+
+::::
+
+---
+
+## {#works-cited data-menu-title="Works cited"} 
+
+[Works cited]{.slide-title}
