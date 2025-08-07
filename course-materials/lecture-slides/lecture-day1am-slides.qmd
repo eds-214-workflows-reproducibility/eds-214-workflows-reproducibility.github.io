@@ -49,41 +49,34 @@ This is a class about workflows and reproducibility
 
 ---
 
-## {#instructor data-menu-title="Hi, I'm Max"} 
+## {#meet-max data-menu-title="Hi, I'm Max"}
 
-[Hi, I'm Max]{.slide-title}
+[Hi, I'm Max 👋]{.slide-title}
 
-<hr>
+```{r}
+source("journey.R")
+journey_map
+```
 
-* I started as a computer scientist
-* Software engineer at Microsoft
-* Four years as a field biologist (seabirds, mostly)
-* Six years grad school, specializing in data science
-  * GIS at SFSU
-  * Marine biology at Stanford
-
-. . . 
-
-* My specialty was biologging - animal-borne sensors for detecting location, behavior, and physiology
-* Now my research is about open science, sharing data and code, and the ethics of proprietary data
-
----
-
-## {#teaching data-menu-title="But really what I love is teaching!"} 
-
-[But really what I love is teaching!]{.slide-title}
-
-<hr>
-
-* In addition to the MEDS program, I also teach in the new marine science undergraduate major
-* My favorite part of my job is working with students
-
-<br>
-
-. . . 
-
-::: {.center-text .body-text-m .dark-blue-text}
-**I would love it if you set up a meeting with me to tell me about your background, your interests, and your motivations for being here**
+::: {.fragment .journey-step}
+:::
+::: {.fragment .journey-step}
+:::
+::: {.fragment .journey-step}
+:::
+::: {.fragment .journey-step}
+:::
+::: {.fragment .journey-step}
+:::
+::: {.fragment .journey-step}
+:::
+::: {.fragment .journey-step}
+:::
+::: {.fragment .journey-step}
+:::
+::: {.fragment .journey-step}
+:::
+::: {.fragment .journey-step}
 :::
 
 ---
@@ -233,7 +226,7 @@ The final workflow masks a trajectory of exploration and dead ends
 
 ## {#testimonial data-menu-title="Reproducible workflows saved my life <3"} 
 
-[Reproducible workflows saved my life <3]{.slide-title}
+["Reproducible workflows saved my life <3"]{.slide-title}
 
 <hr>
 

@@ -49,11 +49,81 @@
     "text": "Tidy Data Review\nExample untidy / wide data:\n\n# create some untidy temperature data ----\n\n# print it out ----\n\nUsing pivot_longer() to “lengthen” / tidy our data:\n\n# convert data from wide &gt; long ----\n\n# print it out ----"
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Recommended reading & materials",
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#title-slide",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#title-slide",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Consider adding helpful resources (e.g. online text books, blogs, people in the field to follow, videos, etc.) here. See EDS 240’s resources page as an example."
+    "text": "Reproducible Workflows\nEDS 214: Analytical Workflows and Scientific Reproducibility\n\nDay 1 Morning | August 25th, 2025"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#welcome",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#welcome",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Welcome to EDS 214!\n\nThis is a class about workflows and reproducibility\n\n\nThe workflow is the fundamental unit of data science\n\n\n\nReproducibility ensures workflows don’t become dead ends\n\n\n\nThe concepts and skills in this class will keep coming up in future classes and for the rest of your career"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#meet-max",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#meet-max",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Hi, I’m Max 👋"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-workflow1",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-workflow1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "What is a workflow?\n\nTHINK Take 1 minute to write down your own definition. Consider:\n\nWhat are the components? How do they fit together?\nWho is the audience?\nWhat would the alternative be?\n\nPAIR Turn to your neighbor and discuss your definitions\nSHARE I will randomly call on a pair to share one shared element and one differing element"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-workflow2",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-workflow2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "What is a workflow?\n\n\n\nWorkflows combine: data, code, modeling, and communication.\n\nWickham, Çetinkaya-Rundel, and Grolemund (2023)\n\nThe final workflow masks a trajectory of exploration and dead ends\n\nStoudt, Vásquez, and Martinez (2021)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-reproducibility",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-reproducibility",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "What is reproducibility?\n\n\nWe define reproducibility to mean computational reproducibility — obtaining consistent computational results using the same input data, computational steps, methods, code, and conditions of analysis\n\nReproducibility and Replicability in Science (2019)\nDEBATE With your neighbor, discuss: does reproducibility matter if you’re not doing academic research?\n\nWhat if you work for a public utility, a non-governmental organization, or a private firm?\nArticulate one argument for and against the importance of reproducibility.\nI will randomly call on a pair to share"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#global-local-goals",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#global-local-goals",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Global and local goals\n\nReproducibility is\n\n\nGLOBAL GOAL\n\n… a means to verify results and ensure scientific integrity\n\n\nLOCAL GOAL\n\n… a mechanism for knowledge transfer and collaboration\n\n\n\nFeinberg et al. (2020)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#how-does-class-work",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#how-does-class-work",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "How does class work?\n\nReproduce a workflow (starting today!)\nLectures and interactive activities for learning goals\n\nAutomation\nOrganization\nDocumentation\nScale(ation)\nCollaboration"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#grading",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#grading",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Specification-based grading\n\n\nNo points out of 100\nA rubric of specifications (specs) for your final project\nMeet (or exceed) specs and participate in class - get an A\n\n\n\nFeedback loops are critical (no one-and-done)\n\n\n\nYou’ll see more spec-based grading in other MEDS classes"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\nQuestion: Where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: Complex data and model -&gt; Iterating and incorporating feedback becomes time intensive -&gt; Data, processing, and modeling become tangled - verifying results is hard!\nSolution: Instead of a point-and-click solution in ArcGIS, a well-organized, reproducible workflow in R"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#works-cited",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#works-cited",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Works cited\n\n\n\n\n\n\n\n\nFeinberg, Melanie, Will Sutherland, Sarah Beth Nelson, Mohammad Hossein Jarrahi, and Arcot Rajasekar. 2020. “The New Reality of Reproducibility: The Role of Data Work in Scientific Research.” Proceedings of the ACM on Human-Computer Interaction 4 (CSCW1): 1–22. https://doi.org/10.1145/3392840.\n\n\nReproducibility and Replicability in Science. 2019. National Academies Press. https://doi.org/10.17226/25303.\n\n\nStoudt, Sara, Váleri N. Vásquez, and Ciera C. Martinez. 2021. “Principles for Data Analysis Workflows.” Edited by Patricia M. Palagi. PLOS Computational Biology 17 (3): e1008770. https://doi.org/10.1371/journal.pcbi.1008770.\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. 2nd ed. Sebastopol, CA: O’Reilly Media. https://r4ds.hadley.nz/."
   },
   {
     "objectID": "course-materials/discussion-materials/week1-discussion-slides.html#title-slide",
@@ -196,88 +266,11 @@
     "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
   },
   {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#title-slide",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#title-slide",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Recommended reading & materials",
     "section": "",
-    "text": "Reproducible Workflows\nEDS 214: Analytical Workflows and Scientific Reproducibility\n\nDay 1 Morning | August 25th, 2025"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#welcome",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#welcome",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Welcome to EDS 214!\n\nThis is a class about workflows and reproducibility\n\n\nThe workflow is the fundamental unit of data science\n\n\n\nReproducibility ensures workflows don’t become dead ends\n\n\n\nThe concepts and skills in this class will keep coming up in future classes and for the rest of your career"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#instructor",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#instructor",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Hi, I’m Max\n\n\nI started as a computer scientist\nSoftware engineer at Microsoft\nFour years as a field biologist (seabirds, mostly)\nSix years grad school, specializing in data science\n\nGIS at SFSU\nMarine biology at Stanford\n\n\n\n\nMy specialty was biologging - animal-borne sensors for detecting location, behavior, and physiology\nNow my research is about open science, sharing data and code, and the ethics of proprietary data"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#teaching",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#teaching",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "But really what I love is teaching!\n\n\nIn addition to the MEDS program, I also teach in the new marine science undergraduate major\nMy favorite part of my job is working with students\n\n\n\n\nI would love it if you set up a meeting with me to tell me about your background, your interests, and your motivations for being here"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-workflow1",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-workflow1",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "What is a workflow?\n\nTHINK Take 1 minute to write down your own definition. Consider:\n\nWhat are the components? How do they fit together?\nWho is the audience?\nWhat would the alternative be?\n\nPAIR Turn to your neighbor and discuss your definitions\nSHARE I will randomly call on a pair to share one shared element and one differing element"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-workflow2",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-workflow2",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "What is a workflow?\n\n\n\nWorkflows combine: data, code, modeling, and communication.\n\nWickham, Çetinkaya-Rundel, and Grolemund (2023)\n\nThe final workflow masks a trajectory of exploration and dead ends\n\nStoudt, Vásquez, and Martinez (2021)"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-reproducibility",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#what-is-reproducibility",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "What is reproducibility?\n\n\nWe define reproducibility to mean computational reproducibility — obtaining consistent computational results using the same input data, computational steps, methods, code, and conditions of analysis\n\nReproducibility and Replicability in Science (2019)\nDEBATE With your neighbor, discuss: does reproducibility matter if you’re not doing academic research?\n\nWhat if you work for a public utility, a non-governmental organization, or a private firm?\nArticulate one argument for and against the importance of reproducibility.\nI will randomly call on a pair to share"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#global-local-goals",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#global-local-goals",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Global and local goals\n\nReproducibility is\n\n\nGLOBAL GOAL\n\n… a means to verify results and ensure scientific integrity\n\n\nLOCAL GOAL\n\n… a mechanism for knowledge transfer and collaboration\n\n\n\nFeinberg et al. (2020)"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#how-does-class-work",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#how-does-class-work",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "How does class work?\n\nReproduce a workflow (starting today!)\nLectures and interactive activities for learning goals\n\nAutomation\nOrganization\nDocumentation\nScale(ation)\nCollaboration"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#grading",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#grading",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Specification-based grading\n\n\nNo points out of 100\nA rubric of specifications (specs) for your final project\nMeet (or exceed) specs and participate in class - get an A\n\n\n\nFeedback loops are critical (no one-and-done)\n\n\n\nYou’ll see more spec-based grading in other MEDS classes"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Reproducible workflows saved my life &lt;3\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\nQuestion: Where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: Complex data and model -&gt; Iterating and incorporating feedback becomes time intensive -&gt; Data, processing, and modeling become tangled - verifying results is hard!\nSolution: Instead of a point-and-click solution in ArcGIS, a well-organized, reproducible workflow in R"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#works-cited",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#works-cited",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Works cited\n\n\n\n\n\n\n\n\nFeinberg, Melanie, Will Sutherland, Sarah Beth Nelson, Mohammad Hossein Jarrahi, and Arcot Rajasekar. 2020. “The New Reality of Reproducibility: The Role of Data Work in Scientific Research.” Proceedings of the ACM on Human-Computer Interaction 4 (CSCW1): 1–22. https://doi.org/10.1145/3392840.\n\n\nReproducibility and Replicability in Science. 2019. National Academies Press. https://doi.org/10.17226/25303.\n\n\nStoudt, Sara, Váleri N. Vásquez, and Ciera C. Martinez. 2021. “Principles for Data Analysis Workflows.” Edited by Patricia M. Palagi. PLOS Computational Biology 17 (3): e1008770. https://doi.org/10.1371/journal.pcbi.1008770.\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. 2nd ed. Sebastopol, CA: O’Reilly Media. https://r4ds.hadley.nz/."
+    "text": "Consider adding helpful resources (e.g. online text books, blogs, people in the field to follow, videos, etc.) here. See EDS 240’s resources page as an example."
   },
   {
     "objectID": "course-materials/keys/key1.1.html",
