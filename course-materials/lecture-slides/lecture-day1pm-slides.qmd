@@ -1,0 +1,220 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    highlight-style: a11y
+    chalkboard: true
+    theme: 
+      - ../../meds-slides-styles.scss
+bibliography: references.bib
+---
+
+##  {#title-slide data-menu-title="Title Slide" background="#053660"}
+
+[Reproducible Workflows]{.custom-title}
+
+[*EDS 214: Analytical Workflows and Scientific Reproducibility*]{.custom-subtitle}
+
+<hr class="hr-teal">
+
+[Day 1 Afternoon \| August 25^th^, 2025]{.custom-subtitle3}
+
+------------------------------------------------------------------------
+
+##  {#workflow-organization data-menu-title="Workflow organization"}
+
+[Workflow organization]{.slide-title}
+
+<hr>
+
+Let's look at some examples of workflows on GitHub
+
+All focus on nearby marine ecosystems, but the principles apply to any subject
+
+Keep your eyes peeled for these four components:
+
+-   Raw data
+-   Code
+-   Outputs
+-   Documentation
+
+------------------------------------------------------------------------
+
+##  {#kelp-me-kelp-you data-menu-title="Kelp me kelp you"}
+
+[Kelp me kelp you]{.slide-title}
+
+<hr>
+
+*Global patterns of kelp forest change over the past half-century* [@krumhansl2016]
+
+![](images/day1/krumhanslfig4.jpeg){width="397"}
+
+------------------------------------------------------------------------
+
+##  {#mpas-protect data-menu-title="MPAs protect against marine heatwaves"}
+
+[MPAs protect against marine heatwaves]{.slide-title}
+
+<hr>
+
+*Marine protected areas promote stability of reef fish communities under climate warming* [@benedetti-cecchi2024]
+
+![](images/day1/benedetticecchi2024fig3.png){width="222"}
+
+------------------------------------------------------------------------
+
+##  {#mpas-dont-protect data-menu-title="MPAs don't protect against marine heatwaves"}
+
+[MPAs *don't* protect against marine heatwaves]{.slide-title}
+
+<hr>
+
+*A marine protected area network does not confer community structure resilience to a marine heatwave across coastal ecosystems* [@smith2023]
+
+![](images/day1/smith2023fig3.jpg){width="1188"}
+
+------------------------------------------------------------------------
+
+##  {#workflow-jigsaw-pt1 data-menu-title="Workflow organization jigsaw pt 1"}
+
+[Workflow organization jigsaw pt 1]{.slide-title}
+
+<hr>
+
+::::: columns
+::: {.column width="50%"}
+-   Count off 1-3
+-   Find 2-3 other students with your same number (i.e., a group with 3 1s, a group with 4 2s, etc.)
+-   Each group will look at one of the three workflows above
+    -   <https://github.com/kelpecosystems/global_kelp_time_series>
+    -   <https://github.com/bencecc/ReefFishStability/tree/v1>
+    -   <https://github.com/NCEAS/ca-mpa>
+:::
+
+::: {.column width="50%"}
+Try to find the following four components in the workflow:
+
+-   Raw data
+-   Code
+-   Outputs
+-   Documentation
+
+For each component, make a note of:
+
+-   The name of the folder(s) containing it
+-   Connections with other components
+-   How you found that component (intuition? documentation? parsing code?)
+:::
+:::::
+
+------------------------------------------------------------------------
+
+##  {#workflow-jigsaw-pt2 data-menu-title="Workflow organization jigsaw pt 2"}
+
+[Workflow organization jigsaw pt 2]{.slide-title}
+
+<hr>
+
+-   Now, form groups with one student from each workflow
+-   Each person shares what they found in their workflow
+-   As a group, write down 2 traits of a workflow that make it *easy* and *challenging* to find things (4 traits total)
+-   Provide examples for each
+-   I will randomly call on a group to share
+
+------------------------------------------------------------------------
+
+##  {#workflow-goals data-menu-title="What are the goals for workflow organization?"}
+
+[What are the goals for workflow organization?]{.slide-title}
+
+<hr>
+
+. . .
+
+**Reproducibility**
+
+Another scientist (including *Future You*) should be able to repeat your analysis.
+
+. . .
+
+**Maintainability**
+
+You should be able to jump back in to editing your analysis, even if you haven't looked at it in a while
+
+. . . 
+
+**Collaboration**
+
+You should be able to share your analysis methods and results with others
+
+------------------------------------------------------------------------
+
+##  {#tools-that-help data-menu-title="Tools that help with workflow organization"}
+
+[Tools that help with workflow organization]{.slide-title}
+
+<hr>
+
+**GitHub**
+
+. . .
+
+-   Version control - track your (and your collaborators') changes
+
+. . .
+
+-   Issues - a built-in to-do list directly connected to code *and* conversations
+
+. . .
+
+-   Branches and pull requests - work in parallel and merge your work *as seamlessly as possible*
+
+. . .
+
+-   GitHub Pages - a website for sharing your analysis with collaborators
+
+------------------------------------------------------------------------
+
+##  {#tools-that-help-2 data-menu-title="Tools that help with workflow organization"}
+
+[Tools that help with workflow organization]{.slide-title}
+
+<hr>
+
+**Folder organization**
+
+. . .
+
+-   It's less important *which* system you pick than it is to be *consistent*
+
+. . .
+
+-   Free up cognitive load!
+    -   Brainpower you spent figuring out where to put or find files - reallocated to your actual science
+    
+. . .
+
+-   Follow conventions
+    -   By playing nice with others you get to use their tools
+
+------------------------------------------------------------------------
+
+##  {#flukeandfeather-workflow data-menu-title="The FlukeAndFeather Workflow Organization System"}
+
+[Introducing: The FlukeAndFeather Workflow Organization System™]{.slide-title}
+
+<hr>
+
+-   You have before you a shuffled collection of folders and files
+-   You have *no context* other than their names
+-   With a partner, try to:
+    -   Organize the folders and files hierarchically
+    -   Briefly describe what you think the purpose of each folder/file is
+    -   Use the two blank cards to add two files to the project
+
+------------------------------------------------------------------------
+
+##  {#works-cited data-menu-title="Works cited"}
+
+[Works cited]{.slide-title}

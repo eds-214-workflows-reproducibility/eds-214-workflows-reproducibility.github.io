@@ -112,11 +112,18 @@
     "text": "Specification-based grading\n\n\nNo points out of 100\nA rubric of specifications (specs) for your final project\nMeet (or exceed) specs and participate in class - get an A\n\n\n\nFeedback loops are critical (no one-and-done)\n\n\n\nYou’ll see more spec-based grading in other MEDS classes"
   },
   {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial",
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial1",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial1",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\nQuestion: Where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: Complex data and model -&gt; Iterating and incorporating feedback becomes time intensive -&gt; Data, processing, and modeling become tangled - verifying results is hard!\nSolution: Instead of a point-and-click solution in ArcGIS, a well-organized, reproducible workflow in R"
+    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\nQuestion: Where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.\nSolution: Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial2",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\n“It takes more activation energy to ‘do it right’, but you save yourself loads of time relative to doing it by brute force.”\n“In my current job I’m often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects.”\n“Collaboration and communication become a lot easier when you have your workflow laid out and organized instead of all jumbled in your brain.”"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#works-cited",
@@ -126,67 +133,144 @@
     "text": "Works cited\n\n\n\n\n\n\n\n\nFeinberg, Melanie, Will Sutherland, Sarah Beth Nelson, Mohammad Hossein Jarrahi, and Arcot Rajasekar. 2020. “The New Reality of Reproducibility: The Role of Data Work in Scientific Research.” Proceedings of the ACM on Human-Computer Interaction 4 (CSCW1): 1–22. https://doi.org/10.1145/3392840.\n\n\nReproducibility and Replicability in Science. 2019. National Academies Press. https://doi.org/10.17226/25303.\n\n\nStoudt, Sara, Váleri N. Vásquez, and Ciera C. Martinez. 2021. “Principles for Data Analysis Workflows.” Edited by Patricia M. Palagi. PLOS Computational Biology 17 (3): e1008770. https://doi.org/10.1371/journal.pcbi.1008770.\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. 2nd ed. Sebastopol, CA: O’Reilly Media. https://r4ds.hadley.nz/."
   },
   {
-    "objectID": "course-materials/interactive/interactive-day1am.html",
-    "href": "course-materials/interactive/interactive-day1am.html",
-    "title": "Reproduce a Figure",
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#title-slide",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#title-slide",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "What happens to water quality after a hurricane hits? Schaefer et al. (2000) investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards."
+    "text": "Reproducible Workflows\nEDS 214: Analytical Workflows and Scientific Reproducibility\n\nDay 1 Afternoon | August 25th, 2025"
   },
   {
-    "objectID": "course-materials/interactive/interactive-day1am.html#background",
-    "href": "course-materials/interactive/interactive-day1am.html#background",
-    "title": "Reproduce a Figure",
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-organization",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-organization",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "What happens to water quality after a hurricane hits? Schaefer et al. (2000) investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards."
+    "text": "Workflow organization\n\nLet’s look at some examples of workflows on GitHub\nAll focus on nearby marine ecosystems, but the principles apply to any subject\nKeep your eyes peeled for these four components:\n\nRaw data\nCode\nOutputs\nDocumentation"
   },
   {
-    "objectID": "course-materials/interactive/interactive-day1am.html#goals",
-    "href": "course-materials/interactive/interactive-day1am.html#goals",
-    "title": "Reproduce a Figure",
-    "section": "Goals",
-    "text": "Goals\nOver the course of this week, you’re going to reproduce figure 3 from Schaefer et al. (2000). Your goal for today is to gather the data, make an analysis plan, and write the code to process and visualize the data. By the end of the week, you will organize your analysis and document your workflow. Even better, you’ll do it collaboratively and prepare it to run on a high-performance cluster.\n\n\n\n\n\n\nFigure 1: Concentrations in Bisley, Puerto Rico streams before and after Hurricane Hugo, 9-wk moving averags. (a) potassium, (b) nitrate-N, (c) magnesium, (d) calcium and (e) ammonium-N. The vertical lines mark the time of hurricane disturbance. Reproduced from Schaefer et al. (2000)."
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#kelp-me-kelp-you",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#kelp-me-kelp-you",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Kelp me kelp you\n\nGlobal patterns of kelp forest change over the past half-century (Krumhansl et al. 2016)"
   },
   {
-    "objectID": "course-materials/interactive/interactive-day1am.html#data",
-    "href": "course-materials/interactive/interactive-day1am.html#data",
-    "title": "Reproduce a Figure",
-    "section": "Data",
-    "text": "Data\nThe data are available through the Environmental Data Initiative. You can find them here: (McDowell and International Institute Of Tropical Forestry (IITF) 2024)."
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#mpas-protect",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#mpas-protect",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "MPAs protect against marine heatwaves\n\nMarine protected areas promote stability of reef fish communities under climate warming (Benedetti-Cecchi et al. 2024)"
   },
   {
-    "objectID": "course-materials/interactive/interactive-day1am.html#instructions",
-    "href": "course-materials/interactive/interactive-day1am.html#instructions",
-    "title": "Reproduce a Figure",
-    "section": "Instructions",
-    "text": "Instructions\n\nSetup\n\nCreate a new RStudio project.\nCreate a GitHub repo.\nDownload the data from McDowell and International Institute Of Tropical Forestry (IITF) (2024) and put it in your project folder.\nMake an initial commit and push to GitHub.\n\n\n\nExplore\n\nExamine figure 3 of Schaefer et al. (2000) and the data available at McDowell and International Institute Of Tropical Forestry (IITF) (2024).\nMake a list of the data files and the columns within them that you think you’ll need to reproduce figure 3.\n\n\n\n\n\n\n\nTip\n\n\n\nCheck the metadata in McDowell and International Institute Of Tropical Forestry (IITF) (2024) carefully. Are the names and units what you expect? It’s been 25 years since Schaefer et al. (2000) was published - a lot can change in that time!\n\n\n\n\n\n\n\n\nTip\n\n\n\nIt may be helpful to read a CSV file into R and explore it using numeric or visual summaries.\n\n\n\n\nPlan\n\nBased on the caption of figure 3, write down the steps you think will be necessary to reproduce figure 3.\nCreate a flow chart of how the steps fit together. Things to consider include:\n\nHow will you get the data into R?\nHow will you clean up the data?\nAre any processing or modeling steps required?\nWhat are your outputs?\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe Plan section sneakily asks you to do two things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a system for representing the components of your analysis and their connections. That’s the second thing: come up with your own flowchart system off the cuff. Later today I’ll introduce you to my own system. For now, give it your best shot!\n\n\n\n\nShare\n\nFind a partner.\nCompare your flowcharts.\nFind two similarities and two differences between your flowcharts and make note of them. To get you started, try considering:\n\nWhere did you include more or less detail?\nHow did you visually represent components and connections?\n\n\nI will call on two pairs to share."
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#mpas-dont-protect",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#mpas-dont-protect",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "MPAs don’t protect against marine heatwaves\n\nA marine protected area network does not confer community structure resilience to a marine heatwave across coastal ecosystems (Smith et al. 2023)"
   },
   {
-    "objectID": "course-materials/day4.html",
-    "href": "course-materials/day4.html",
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-jigsaw-pt1",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-jigsaw-pt1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Workflow organization jigsaw pt 1\n\n\n\n\nCount off 1-3\nFind 2-3 other students with your same number (i.e., a group with 3 1s, a group with 4 2s, etc.)\nEach group will look at one of the three workflows above\n\nhttps://github.com/kelpecosystems/global_kelp_time_series\nhttps://github.com/bencecc/ReefFishStability/tree/v1\nhttps://github.com/NCEAS/ca-mpa\n\n\n\nTry to find the following four components in the workflow:\n\nRaw data\nCode\nOutputs\nDocumentation\n\nFor each component, make a note of:\n\nThe name of the folder(s) containing it\nConnections with other components\nHow you found that component (intuition? documentation? parsing code?)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-jigsaw-pt2",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-jigsaw-pt2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Workflow organization jigsaw pt 2\n\n\nNow, form groups with one student from each workflow\nEach person shares what they found in their workflow\nAs a group, write down 2 traits of a workflow that make it easy and challenging to find things (4 traits total)\nProvide examples for each\nI will randomly call on a group to share"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-goals",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-goals",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "What are the goals for workflow organization?\n\n\nReproducibility\nAnother scientist (including Future You) should be able to repeat your analysis.\n\n\nMaintainability\nYou should be able to jump back in to editing your analysis, even if you haven’t looked at it in a while\n\n\nCollaboration\nYou should be able to share your analysis methods and results with others"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#tools-that-help",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#tools-that-help",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Tools that help with workflow organization\n\nGitHub\n\n\nVersion control - track your (and your collaborators’) changes\n\n\n\n\nIssues - a built-in to-do list directly connected to code and conversations\n\n\n\n\nBranches and pull requests - work in parallel and merge your work as seamlessly as possible\n\n\n\n\nGitHub Pages - a website for sharing your analysis with collaborators"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#tools-that-help-2",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#tools-that-help-2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Tools that help with workflow organization\n\nFolder organization\n\n\nIt’s less important which system you pick than it is to be consistent\n\n\n\n\nFree up cognitive load!\n\nBrainpower you spent figuring out where to put or find files - reallocated to your actual science\n\n\n\n\n\nFollow conventions\n\nBy playing nice with others you get to use their tools"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#flukeandfeather-workflow",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#flukeandfeather-workflow",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Introducing: The FlukeAndFeather Workflow Organization System™\n\n\nYou have before you a shuffled collection of folders and files\nYou have no context other than their names\nWith a partner, try to:\n\nOrganize the folders and files hierarchically\nBriefly describe what you think the purpose of each folder/file is\nUse the two blank cards to add two files to the project"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#works-cited",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#works-cited",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Works cited\n\n\n\n\n\n\n\n\nBenedetti-Cecchi, Lisandro, Amanda E. Bates, Giovanni Strona, Fabio Bulleri, Barbara Horta e Costa, Graham J. Edgar, Bernat Hereu, et al. 2024. “Marine Protected Areas Promote Stability of Reef Fish Communities Under Climate Warming.” Nature Communications 15 (1). https://doi.org/10.1038/s41467-024-44976-y.\n\n\nKrumhansl, Kira A., Daniel K. Okamoto, Andrew Rassweiler, Mark Novak, John J. Bolton, Kyle C. Cavanaugh, Sean D. Connell, et al. 2016. “Global Patterns of Kelp Forest Change over the Past Half-Century.” Proceedings of the National Academy of Sciences 113 (48): 13785–90. https://doi.org/10.1073/pnas.1606102113.\n\n\nSmith, Joshua G., Christopher M. Free, Cori Lopazanski, Julien Brun, Clarissa R. Anderson, Mark H. Carr, Joachim Claudet, et al. 2023. “A Marine Protected Area Network Does Not Confer Community Structure Resilience to a Marine Heatwave Across Coastal Ecosystems.” Global Change Biology 29 (19): 5634–51. https://doi.org/10.1111/gcb.16862."
+  },
+  {
+    "objectID": "course-materials/day5.html",
+    "href": "course-materials/day5.html",
     "title": "TODO: fixme",
     "section": "",
     "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
   },
   {
-    "objectID": "course-materials/day4.html#class-materials",
-    "href": "course-materials/day4.html#class-materials",
+    "objectID": "course-materials/day5.html#class-materials",
+    "href": "course-materials/day5.html#class-materials",
     "title": "TODO: fixme",
     "section": "",
     "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
   },
   {
-    "objectID": "course-materials/day2.html",
-    "href": "course-materials/day2.html",
+    "objectID": "course-materials/day3.html",
+    "href": "course-materials/day3.html",
     "title": "TODO: fixme",
     "section": "",
     "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
   },
   {
-    "objectID": "course-materials/day2.html#class-materials",
-    "href": "course-materials/day2.html#class-materials",
+    "objectID": "course-materials/day3.html#class-materials",
+    "href": "course-materials/day3.html#class-materials",
     "title": "TODO: fixme",
     "section": "",
     "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
+  },
+  {
+    "objectID": "course-materials/day1.html",
+    "href": "course-materials/day1.html",
+    "title": "Workflows and reproducibility",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nReproduce a figure\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nOrganize a project\nWhat’s on your checklist?"
+  },
+  {
+    "objectID": "course-materials/day1.html#class-materials",
+    "href": "course-materials/day1.html#class-materials",
+    "title": "Workflows and reproducibility",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nReproduce a figure\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nOrganize a project\nWhat’s on your checklist?"
+  },
+  {
+    "objectID": "course-materials/day1.html#further-reading",
+    "href": "course-materials/day1.html#further-reading",
+    "title": "Workflows and reproducibility",
+    "section": "Further reading",
+    "text": "Further reading\n\nStoudt, Vásquez, and Martinez (2021) describe how analytical workflows evolve, what they look like in the end, and how they’re necessary for data-intensive science.\nLowndes et al. (2017) present a case study on their own team-based research. They show how an emphasis on reproducibility improves efficiency as well as transparency."
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Important: 11:59 PM submission deadline\n\n\n\nAll assignments are due at 11:59 PM on the dates listed in the table, below.\n\n\n\n\n\nAssignment Title\nDate Assigned\nDate Due\n\n\n\n\nHomework Assignment #1\nDD/MM/YYY\nDD/MM/YYY\n\n\nHomework Assignment #2\nDD/MM/YYY\nDD/MM/YYY\n\n\nHomework Assignment #3\nDD/MM/YYY\nDD/MM/YYY\n\n\nHomework Assignment #4\nDD/MM/YYY\nDD/MM/YYY"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html",
@@ -231,60 +315,137 @@
     "text": "Testimonial from Bekah??\n\nQuestion: where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: model eats a lot of data with extensive pre-processing and subjective parameters.\n\nTime consuming to iterate and incorporate feedback.\nEasily becomes tangled - verifying results is hard!\n\nSolution: instead of a point-and-click solution in ArcGIS, a well-organized, reproducible workflow in R.\nToday: Bekah is Research Associate with the Center for Coastal Studies in Provincetown, MA. Still doing field work and data analysis to protect whales in coastal waters with high human impacts."
   },
   {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "Assignments",
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Important: 11:59 PM submission deadline\n\n\n\nAll assignments are due at 11:59 PM on the dates listed in the table, below.\n\n\n\n\n\nAssignment Title\nDate Assigned\nDate Due\n\n\n\n\nHomework Assignment #1\nDD/MM/YYY\nDD/MM/YYY\n\n\nHomework Assignment #2\nDD/MM/YYY\nDD/MM/YYY\n\n\nHomework Assignment #3\nDD/MM/YYY\nDD/MM/YYY\n\n\nHomework Assignment #4\nDD/MM/YYY\nDD/MM/YYY"
+    "text": "Let’s look at some examples of workflows on GitHub\nAll focus on nearby marine ecosystems, but the principles apply to any subject\nKeep your eyes peeled for these four components:\n\nRaw data\nCode\nOutputs\nDocumentation"
   },
   {
-    "objectID": "course-materials/day1.html",
-    "href": "course-materials/day1.html",
-    "title": "Workflows and reproducibility",
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nReproduce a figure\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nOrganize a project\nWhat’s on your checklist?"
+    "text": "Let’s look at some examples of workflows on GitHub\nAll focus on nearby marine ecosystems, but the principles apply to any subject\nKeep your eyes peeled for these four components:\n\nRaw data\nCode\nOutputs\nDocumentation"
   },
   {
-    "objectID": "course-materials/day1.html#class-materials",
-    "href": "course-materials/day1.html#class-materials",
-    "title": "Workflows and reproducibility",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nReproduce a figure\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nOrganize a project\nWhat’s on your checklist?"
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#kelp-me-kelp-you",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#kelp-me-kelp-you",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Kelp me kelp you",
+    "text": "Kelp me kelp you\n\nKrumhansl et al. 2016 PNAS\nhttps://github.com/kelpecosystems/global_kelp_time_series\nFig 4: kelp forests declining globally"
   },
   {
-    "objectID": "course-materials/day1.html#further-reading",
-    "href": "course-materials/day1.html#further-reading",
-    "title": "Workflows and reproducibility",
-    "section": "Further reading",
-    "text": "Further reading\n\nStoudt, Vásquez, and Martinez (2021) describe how analytical workflows evolve, what they look like in the end, and how they’re necessary for data-intensive science.\nLowndes et al. (2017) present a case study on their own team-based research. They show how an emphasis on reproducibility improves efficiency as well as transparency."
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-protect-against-marine-heatwaves",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-protect-against-marine-heatwaves",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "MPAs protect against marine heatwaves",
+    "text": "MPAs protect against marine heatwaves\n\nBenedetti-Cecchi et al. 2024 NatComms\nhttps://github.com/bencecc/ReefFishStability/tree/v1\nFig 3a,b: In MPAs, reef fish stability is affected more by remoteness than heatwaves. Pattern reversed in open areas."
   },
   {
-    "objectID": "course-materials/day3.html",
-    "href": "course-materials/day3.html",
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-dont-protect-against-marine-heatwaves",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-dont-protect-against-marine-heatwaves",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "MPAs don’t protect against marine heatwaves",
+    "text": "MPAs don’t protect against marine heatwaves\n\nSmith et al. 2023 GCB\nhttps://github.com/NCEAS/ca-mpa\nFig 3: Only rocky intertidal sites exhibited resistance and recovery in MPAs"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-1",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Workflow organization jigsaw pt 1",
+    "text": "Workflow organization jigsaw pt 1\n\nCount off 1-3\nFind 2-3 other students with your same number (i.e., a group with 3 1s, a group with 4 2s, etc.)\nEach group will look at one of the three workflows above\n\n1: Krumhansl et al. 2016 PNAS\n2: Benedetti-Cecchi et al. 2024 NatComms\n3: Smith et al. 2023 GCB\n\nTry to find the following four components in the workflow:\n\nRaw data\nCode\nOutputs\nDocumentation\n\nFor each component, make a note of:\n\nThe name of the folder(s) containing it\nConnections with other components\nHow you found that component (intuition? documentation? parsing code?)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-2",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Workflow organization jigsaw pt 2",
+    "text": "Workflow organization jigsaw pt 2\n\nNow, form groups with one student from each workflow\nEach person shares what they found in their workflow\nAs a group, write down 2 traits of a workflow that make it easy and challenging to find things (4 traits total)\nProvide examples for each\nI will randomly call on a group to share"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#what-are-the-goals-for-workflow-organization",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#what-are-the-goals-for-workflow-organization",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "What are the goals for workflow organization?",
+    "text": "What are the goals for workflow organization?\n\nReproducibility\n\nAnother scientist (including Future You) should be able to repeat your analysis.\n\nMaintainability\n\nYou should be able to jump back in to editing your analysis, even if you haven’t looked at it in a while\nDOC101 lecture TikTok\n\nCollaboration\n\nYou should be able to share your analysis methods and results with others"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#tools-that-help-with-workflow-organization",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#tools-that-help-with-workflow-organization",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Tools that help with workflow organization",
+    "text": "Tools that help with workflow organization\n\nGitHub\n\nVersion control - track your (and your collaborators’) changes\nIssues - a built-in to-do list directly connected to code and conversations\nBranches and pull requests - work in parallel and merge your work as seamlessly as possible\nGitHub Pages - a website for sharing your analysis with collaborators\n\nFolder organization\n\nIt’s less important which system you pick than it is to be consistent\nFree up cognitive load!\n\nBrainpower you spent figuring out where to put or find files - reallocated to your actual science\n\nFollow conventions\n\nBy playing nice with others you get to use their tools"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#introducing-the-flukeandfeather-workflow-organization-system-tm",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#introducing-the-flukeandfeather-workflow-organization-system-tm",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Introducing: The FlukeAndFeather Workflow Organization System TM",
+    "text": "Introducing: The FlukeAndFeather Workflow Organization System TM\n\nYou have before you a shuffled collection of folders and files\nYou have no context other than their names\nWith a partner, try to:\n\nOrganize the folders and files hierarchically\nBriefly describe what you think the purpose of each folder/file is"
+  },
+  {
+    "objectID": "course-materials/day2.html",
+    "href": "course-materials/day2.html",
     "title": "TODO: fixme",
     "section": "",
     "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
   },
   {
-    "objectID": "course-materials/day3.html#class-materials",
-    "href": "course-materials/day3.html#class-materials",
+    "objectID": "course-materials/day2.html#class-materials",
+    "href": "course-materials/day2.html#class-materials",
     "title": "TODO: fixme",
     "section": "",
     "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
   },
   {
-    "objectID": "course-materials/day5.html",
-    "href": "course-materials/day5.html",
+    "objectID": "course-materials/day4.html",
+    "href": "course-materials/day4.html",
     "title": "TODO: fixme",
     "section": "",
     "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
   },
   {
-    "objectID": "course-materials/day5.html#class-materials",
-    "href": "course-materials/day5.html#class-materials",
+    "objectID": "course-materials/day4.html#class-materials",
+    "href": "course-materials/day4.html#class-materials",
     "title": "TODO: fixme",
     "section": "",
     "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html",
+    "href": "course-materials/interactive/interactive-day1am.html",
+    "title": "Reproduce a Figure",
+    "section": "",
+    "text": "What happens to water quality after a hurricane hits? Schaefer et al. (2000) investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#background",
+    "href": "course-materials/interactive/interactive-day1am.html#background",
+    "title": "Reproduce a Figure",
+    "section": "",
+    "text": "What happens to water quality after a hurricane hits? Schaefer et al. (2000) investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#goals",
+    "href": "course-materials/interactive/interactive-day1am.html#goals",
+    "title": "Reproduce a Figure",
+    "section": "Goals",
+    "text": "Goals\nOver the course of this week, you’re going to reproduce figure 3 from Schaefer et al. (2000). Your goal for today is to gather the data, make an analysis plan, and write the code to process and visualize the data. By the end of the week, you will organize your analysis and document your workflow. Even better, you’ll do it collaboratively and prepare it to run on a high-performance cluster.\n\n\n\n\n\n\nFigure 1: Concentrations in Bisley, Puerto Rico streams before and after Hurricane Hugo, 9-wk moving averags. (a) potassium, (b) nitrate-N, (c) magnesium, (d) calcium and (e) ammonium-N. The vertical lines mark the time of hurricane disturbance. Reproduced from Schaefer et al. (2000)."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#data",
+    "href": "course-materials/interactive/interactive-day1am.html#data",
+    "title": "Reproduce a Figure",
+    "section": "Data",
+    "text": "Data\nThe data are available through the Environmental Data Initiative. You can find them here: (McDowell and International Institute Of Tropical Forestry (IITF) 2024)."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#instructions",
+    "href": "course-materials/interactive/interactive-day1am.html#instructions",
+    "title": "Reproduce a Figure",
+    "section": "Instructions",
+    "text": "Instructions\n\nSetup\n\nCreate a new RStudio project.\nCreate a GitHub repo.\nDownload the data from McDowell and International Institute Of Tropical Forestry (IITF) (2024) and put it in your project folder.\nMake an initial commit and push to GitHub.\n\n\n\nExplore\n\nExamine figure 3 of Schaefer et al. (2000) and the data available at McDowell and International Institute Of Tropical Forestry (IITF) (2024).\nMake a list of the data files and the columns within them that you think you’ll need to reproduce figure 3.\n\n\n\n\n\n\n\nTip\n\n\n\nCheck the metadata in McDowell and International Institute Of Tropical Forestry (IITF) (2024) carefully. Are the names and units what you expect? It’s been 25 years since Schaefer et al. (2000) was published - a lot can change in that time!\n\n\n\n\n\n\n\n\nTip\n\n\n\nIt may be helpful to read a CSV file into R and explore it using numeric or visual summaries.\n\n\n\n\nPlan\n\nBased on the caption of figure 3, write down the steps you think will be necessary to reproduce figure 3.\nCreate a flow chart of how the steps fit together. Things to consider include:\n\nHow will you get the data into R?\nHow will you clean up the data?\nAre any processing or modeling steps required?\nWhat are your outputs?\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe Plan section sneakily asks you to do two things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a system for representing the components of your analysis and their connections. That’s the second thing: come up with your own flowchart system off the cuff. Later today I’ll introduce you to my own system. For now, give it your best shot!\n\n\n\n\nShare\n\nFind a partner.\nCompare your flowcharts.\nFind two similarities and two differences between your flowcharts and make note of them. To get you started, try considering:\n\nWhere did you include more or less detail?\nHow did you visually represent components and connections?\n\n\nI will call on two pairs to share."
   },
   {
     "objectID": "resources.html",
