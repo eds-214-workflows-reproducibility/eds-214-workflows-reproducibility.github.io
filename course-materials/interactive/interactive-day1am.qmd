@@ -1,0 +1,66 @@
+---
+title: "Reproduce a Figure"
+subtitle: "Day 1 Morning | EDS 214"
+description: "Monday August 25^th^, 2025"
+bibliography: references.bib
+editor: visual
+---
+
+## Background
+
+What happens to water quality after a hurricane hits? @schaefer2000 investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards.
+
+## Goals
+
+Over the course of this week, you're going to reproduce figure 3 from @schaefer2000. Your goal for today is to gather the data, make an analysis plan, and write the code to process and visualize the data. By the end of the week, you will organize your analysis and document your workflow. Even better, you'll do it collaboratively and prepare it to run on a high-performance cluster.
+
+![Concentrations in Bisley, Puerto Rico streams before and after Hurricane Hugo, 9-wk moving averags. (a) potassium, (b) nitrate-N, (c) magnesium, (d) calcium and (e) ammonium-N. The vertical lines mark the time of hurricane disturbance. Reproduced from Schaefer et al. (2000).](images/Schaefer_etal_2020_fig3.png){#fig-schaefer3 width="432"}
+
+## Data 
+
+The data are available through the [Environmental Data Initiative](edirepository.org). You can find them here: [@mcdowell2024].
+
+## Instructions
+
+### Setup
+
+1.  Create a new RStudio project.
+2.  Create a GitHub repo.
+3.  Download the data from @mcdowell2024 and put it in your project folder.
+4.  Make an initial commit and push to GitHub.
+
+### Explore
+
+1.  Examine figure 3 of @schaefer2000 and the data available at @mcdowell2024.
+2.  Make a list of the data files and the columns within them that you think you'll need to reproduce figure 3.
+
+::: callout-tip
+Check the metadata in @mcdowell2024 carefully. Are the names and units what you expect? It's been 25 years since @schaefer2000 was published - a lot can change in that time!
+:::
+
+::: callout-tip
+It may be helpful to read a CSV file into R and explore it using numeric or visual summaries.
+:::
+
+### Plan
+
+1.  Based on the caption of figure 3, write down the steps you think will be necessary to reproduce figure 3.
+2.  Create a flow chart of how the steps fit together. Things to consider include:
+    1.  How will you get the data into R?
+    2.  How will you clean up the data?
+    3.  Are any processing or modeling steps required?
+    4.  What are your outputs?
+
+::: callout-note
+The **Plan** section sneakily asks you to do *two* things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a [system]{.underline} for representing the components of your analysis and their connections. That's the second thing: come up with your own flowchart system off the cuff. Later today I'll introduce you to my own system. For now, give it your best shot!
+:::
+
+### Share
+
+1.  Find a partner.
+2.  Compare your flowcharts.
+3.  Find **two** similarities and **two** differences between your flowcharts and make note of them. To get you started, try considering:
+    1.  Where did you include more or less detail?
+    2.  How did you visually represent components and connections?
+
+I will call on two pairs to share.

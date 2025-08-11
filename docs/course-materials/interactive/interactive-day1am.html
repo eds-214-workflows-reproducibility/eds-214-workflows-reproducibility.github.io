@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Summer 2025">
+<meta name="description" content="Monday August 25th, 2025">
 
-<title>EDS 214: Analytical Workflows and Scientific Reproducibility</title>
+<title>EDS 214: Analytical Workflows and Scientific Reproducibility – Reproduce a Figure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,28 +21,48 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/bren-hex.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/bren-hex.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,11 +97,11 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">EDS 214: Analytical Workflows and Scientific Reproducibility</span>
     </a>
   </div>
@@ -92,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
@@ -105,29 +125,29 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-course-materials">    
         <li>
-    <a class="dropdown-item" href="./course-materials/day1.html">
+    <a class="dropdown-item" href="../../course-materials/day1.html">
  <span class="dropdown-text">day 1 (8/25)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./course-materials/day2.html">
+    <a class="dropdown-item" href="../../course-materials/day2.html">
  <span class="dropdown-text">day 2 (8/26)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./course-materials/day3.html">
+    <a class="dropdown-item" href="../../course-materials/day3.html">
  <span class="dropdown-text">day 3 (8/27)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./course-materials/day4.html">
+    <a class="dropdown-item" href="../../course-materials/day4.html">
  <span class="dropdown-text">day 4 (8/28)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./course-materials/day5.html">
+    <a class="dropdown-item" href="../../course-materials/day5.html">
  <span class="dropdown-text">day 5 (8/29)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./assignments.html"> 
+    <a class="nav-link" href="../../assignments.html"> 
 <span class="menu-text">assignments</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -136,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
         <li>
-    <a class="dropdown-item" href="./resources.html">
+    <a class="dropdown-item" href="../../resources.html">
  <span class="dropdown-text">recommended readings &amp; resources</span></a>
   </li>  
         <li>
@@ -170,163 +190,174 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Reproduce a Figure</h1>
+            <p class="subtitle lead">Day 1 Morning | EDS 214</p>
+                  <div>
+        <div class="description">
+          Monday August 25<sup>th</sup>, 2025
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a>
+  <ul class="collapse">
+  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore">Explore</a></li>
+  <li><a href="#plan" id="toc-plan" class="nav-link" data-scroll-target="#plan">Plan</a></li>
+  <li><a href="#share" id="toc-share" class="nav-link" data-scroll-target="#share">Share</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">EDS 214: Analytical Workflows and Scientific Reproducibility</h1>
-<p class="subtitle lead">Master of Environmental Data Science (MEDS)</p>
-</div>
-
-<div>
-  <div class="description">
-    Summer 2025
-  </div>
-</div>
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
 
-
-<div class="center-text">
-<p><img src="images/flow.png" class="img-fluid" style="width:75.0%" alt="The silhouettes of three fish under water swimming down a stream."></p>
-</div>
-<div class="center-text gray-text">
-<p><em>Artwork by <a href="https://allisonpayne.github.io/">Allison Payne</a></em></p>
-</div>
-<p><br></p>
-<section id="course-description" class="level2">
-<h2 class="anchored" data-anchor-id="course-description">Course Description</h2>
-<p>The generation and analysis of environmental data is often a complex, multi-step process that may involve the collaboration of many people. Increasingly, data scientists use tools that document and help to organize workflows to ensure reproducibility, shareability, and transparency of the results. This course will introduce students to the conceptual organization of workflows (including code, documents, and data) as a way to conduct reproducible analyses.</p>
-<p>These concepts will be combined with the practice of various software tools and collaborative coding techniques to develop and manage multi-step analytical workflows as a team.</p>
-<div class="center-text">
-<p><img src="images/r4ds-workflow.png" class="img-fluid" style="width:60.0%" alt="A flowchart describing the components of a data analysis workflow: import, tidy, transform, visualize, model, and communicate."></p>
-</div>
-<div class="center-text gray-text">
-<p>Conceptual model of an analytical workflow. <em>Source: <a href="https://r4ds.hadley.nz">R for Data Science</a></em></p>
-</div>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>What happens to water quality after a hurricane hits? <span class="citation" data-cites="schaefer2000">Schaefer et al. (<a href="#ref-schaefer2000" role="doc-biblioref">2000</a>)</span> investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards.</p>
 </section>
-<section id="daily-schedule" class="level2">
-<h2 class="anchored" data-anchor-id="daily-schedule">Daily Schedule</h2>
-<p>Each day will (approximately) follow this format.</p>
-<div style="width: fit-content;">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th><strong>Time</strong></th>
-<th><strong>Activity</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>10:00-10:50</td>
-<td>Lecture 1</td>
-</tr>
-<tr class="even">
-<td>10:50-11:00</td>
-<td>Break</td>
-</tr>
-<tr class="odd">
-<td>11:00-12:00</td>
-<td>Interactive session 1</td>
-</tr>
-<tr class="even">
-<td>12:00-1:00</td>
-<td>Lunch</td>
-</tr>
-<tr class="odd">
-<td>1:00-1:50</td>
-<td>Lecture 2</td>
-</tr>
-<tr class="even">
-<td>1:50-2:00</td>
-<td>Break</td>
-</tr>
-<tr class="odd">
-<td>2:00-3:30</td>
-<td>Interactive session 2</td>
-</tr>
-<tr class="even">
-<td>3:30-4:00</td>
-<td>Flex time</td>
-</tr>
-<tr class="odd">
-<td>4:00-4:50</td>
-<td>Q&amp;A with instructors (as needed)</td>
-</tr>
-</tbody>
-</table>
+<section id="goals" class="level2">
+<h2 class="anchored" data-anchor-id="goals">Goals</h2>
+<p>Over the course of this week, you’re going to reproduce figure 3 from <span class="citation" data-cites="schaefer2000">Schaefer et al. (<a href="#ref-schaefer2000" role="doc-biblioref">2000</a>)</span>. Your goal for today is to gather the data, make an analysis plan, and write the code to process and visualize the data. By the end of the week, you will organize your analysis and document your workflow. Even better, you’ll do it collaboratively and prepare it to run on a high-performance cluster.</p>
+<div id="fig-schaefer3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-schaefer3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Schaefer_etal_2020_fig3.png" class="img-fluid figure-img" width="432">
 </div>
-</section>
-<section id="teaching-team" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-team">Teaching Team</h2>
-<p><br></p>
-<!-- Create responsive grid with two columns, which stack vertically when browser window is made smaller (or when viewed on a mobile device) -->
-<div class="grid">
-<!-- Left-hand column -->
-<div class="g-col-12 g-col-md-6">
-<div class="center-text body-text-l">
-<p><strong>Instructor</strong></p>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/max circle.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></p>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-schaefer3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Concentrations in Bisley, Puerto Rico streams before and after Hurricane Hugo, 9-wk moving averags. (a) potassium, (b) nitrate-N, (c) magnesium, (d) calcium and (e) ammonium-N. The vertical lines mark the time of hurricane disturbance. Reproduced from Schaefer et al.&nbsp;(2000).
+</figcaption>
 </figure>
 </div>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>The data are available through the <a href="edirepository.org">Environmental Data Initiative</a>. You can find them here: <span class="citation" data-cites="mcdowell2024">(<a href="#ref-mcdowell2024" role="doc-biblioref">McDowell and International Institute Of Tropical Forestry (IITF) 2024</a>)</span>.</p>
+</section>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
+<section id="setup" class="level3">
+<h3 class="anchored" data-anchor-id="setup">Setup</h3>
+<ol type="1">
+<li>Create a new RStudio project.</li>
+<li>Create a GitHub repo.</li>
+<li>Download the data from <span class="citation" data-cites="mcdowell2024">McDowell and International Institute Of Tropical Forestry (IITF) (<a href="#ref-mcdowell2024" role="doc-biblioref">2024</a>)</span> and put it in your project folder.</li>
+<li>Make an initial commit and push to GitHub.</li>
+</ol>
+</section>
+<section id="explore" class="level3">
+<h3 class="anchored" data-anchor-id="explore">Explore</h3>
+<ol type="1">
+<li>Examine figure 3 of <span class="citation" data-cites="schaefer2000">Schaefer et al. (<a href="#ref-schaefer2000" role="doc-biblioref">2000</a>)</span> and the data available at <span class="citation" data-cites="mcdowell2024">McDowell and International Institute Of Tropical Forestry (IITF) (<a href="#ref-mcdowell2024" role="doc-biblioref">2024</a>)</span>.</li>
+<li>Make a list of the data files and the columns within them that you think you’ll need to reproduce figure 3.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
 </div>
-<div class="center-text">
-<p><span class="teal-text"><strong>Max Czapanskiy</strong></span><br>
-<strong>Email:</strong> <a href="mailto::maxczap@ucsb.edu">maxczap@ucsb.edu</a><br>
-<strong>Learn more:</strong> <a href="https://openecologylab.com">Open Ecology Lab</a></p>
+<div class="callout-body-container callout-body">
+<p>Check the metadata in <span class="citation" data-cites="mcdowell2024">McDowell and International Institute Of Tropical Forestry (IITF) (<a href="#ref-mcdowell2024" role="doc-biblioref">2024</a>)</span> carefully. Are the names and units what you expect? It’s been 25 years since <span class="citation" data-cites="schaefer2000">Schaefer et al. (<a href="#ref-schaefer2000" role="doc-biblioref">2000</a>)</span> was published - a lot can change in that time!</p>
 </div>
 </div>
-<!-- Right-hand column -->
-<div class="g-col-12 g-col-md-6">
-<div class="center-text body-text-l">
-<p><strong>TA</strong></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/alessandra.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></p>
-</figure>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
 </div>
-</div>
-<div class="center-text">
-<p><span class="teal-text"><strong>Alessandra Vidal Meza</strong></span><br>
-<strong>Email:</strong> <a href="mailto::avidalmeza@bren.ucsb.edu">avidalmeza@bren.ucsb.edu</a><br>
-<strong>Learn more:</strong> <a href="avidalmeza.github.io">avidalmeza.github.io</a></p>
-</div>
+<div class="callout-body-container callout-body">
+<p>It may be helpful to read a CSV file into R and explore it using numeric or visual summaries.</p>
 </div>
 </div>
 </section>
-<section id="acknowledgements" class="level2">
-<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>EDS 214 was previously taught by <a href="https://brunj7.github.io/">Julien Brun</a> and the current iteration draws heavily on his planning, course materials, and teaching.</p>
+<section id="plan" class="level3">
+<h3 class="anchored" data-anchor-id="plan">Plan</h3>
+<ol type="1">
+<li>Based on the caption of figure 3, write down the steps you think will be necessary to reproduce figure 3.</li>
+<li>Create a flow chart of how the steps fit together. Things to consider include:
+<ol type="1">
+<li>How will you get the data into R?</li>
+<li>How will you clean up the data?</li>
+<li>Are any processing or modeling steps required?</li>
+<li>What are your outputs?</li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <strong>Plan</strong> section sneakily asks you to do <em>two</em> things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a <u>system</u> for representing the components of your analysis and their connections. That’s the second thing: come up with your own flowchart system off the cuff. Later today I’ll introduce you to my own system. For now, give it your best shot!</p>
+</div>
+</div>
+</section>
+<section id="share" class="level3">
+<h3 class="anchored" data-anchor-id="share">Share</h3>
+<ol type="1">
+<li>Find a partner.</li>
+<li>Compare your flowcharts.</li>
+<li>Find <strong>two</strong> similarities and <strong>two</strong> differences between your flowcharts and make note of them. To get you started, try considering:
+<ol type="1">
+<li>Where did you include more or less detail?</li>
+<li>How did you visually represent components and connections?</li>
+</ol></li>
+</ol>
+<p>I will call on two pairs to share.</p>
+
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-mcdowell2024" class="csl-entry" role="listitem">
+McDowell, William H., and USDA Forest Service. International Institute Of Tropical Forestry (IITF). 2024. <span>“Chemistry of Stream Water from the Luquillo Mountains.”</span> Environmental Data Initiative. <a href="https://doi.org/10.6073/PASTA/F31349BEBDC304F758718F4798D25458">https://doi.org/10.6073/PASTA/F31349BEBDC304F758718F4798D25458</a>.
+</div>
+<div id="ref-schaefer2000" class="csl-entry" role="listitem">
+Schaefer, Douglas. A., William H. McDowell, Fredrick N. Scatena, and Clyde E. Asbury. 2000. <span>“Effects of Hurricane Disturbance on Stream Water Concentrations and Fluxes in Eight Tropical Forest Watersheds of the Luquillo Experimental Forest, Puerto Rico.”</span> <em>Journal of Tropical Ecology</em> 16 (2): 189–207. <a href="https://doi.org/10.1017/s0266467400001358">https://doi.org/10.1017/s0266467400001358</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

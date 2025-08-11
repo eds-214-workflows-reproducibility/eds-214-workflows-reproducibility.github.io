@@ -11,7 +11,7 @@
     "href": "index.html#daily-schedule",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "Daily Schedule",
-    "text": "Daily Schedule\nEach day will (approximately) follow this format.\n\n\n\n\nTime\nActivity\n\n\n\n\n10:00-10:50\nLecture 1\n\n\n10:50-11:00\nBreak\n\n\n11:00-12:30\nInteractive session 1\n\n\n12:30-1:30\nLunch\n\n\n1:30-2:00\nLecture 2\n\n\n2:00-3:00\nInteractive session 2\n\n\n3:00-3:10\nBreak\n\n\n3:10-4:00\nFlex time\n\n\n4:00-4:50\nQ&A with instructors (as needed)"
+    "text": "Daily Schedule\nEach day will (approximately) follow this format.\n\n\n\n\nTime\nActivity\n\n\n\n\n10:00-10:50\nLecture 1\n\n\n10:50-11:00\nBreak\n\n\n11:00-12:00\nInteractive session 1\n\n\n12:00-1:00\nLunch\n\n\n1:00-1:50\nLecture 2\n\n\n1:50-2:00\nBreak\n\n\n2:00-3:30\nInteractive session 2\n\n\n3:30-4:00\nFlex time\n\n\n4:00-4:50\nQ&A with instructors (as needed)"
   },
   {
     "objectID": "index.html#teaching-team",
@@ -126,18 +126,39 @@
     "text": "Works cited\n\n\n\n\n\n\n\n\nFeinberg, Melanie, Will Sutherland, Sarah Beth Nelson, Mohammad Hossein Jarrahi, and Arcot Rajasekar. 2020. “The New Reality of Reproducibility: The Role of Data Work in Scientific Research.” Proceedings of the ACM on Human-Computer Interaction 4 (CSCW1): 1–22. https://doi.org/10.1145/3392840.\n\n\nReproducibility and Replicability in Science. 2019. National Academies Press. https://doi.org/10.17226/25303.\n\n\nStoudt, Sara, Váleri N. Vásquez, and Ciera C. Martinez. 2021. “Principles for Data Analysis Workflows.” Edited by Patricia M. Palagi. PLOS Computational Biology 17 (3): e1008770. https://doi.org/10.1371/journal.pcbi.1008770.\n\n\nWickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for Data Science: Import, Tidy, Transform, Visualize, and Model Data. 2nd ed. Sebastopol, CA: O’Reilly Media. https://r4ds.hadley.nz/."
   },
   {
-    "objectID": "course-materials/discussion-materials/week1-discussion-slides.html#title-slide",
-    "href": "course-materials/discussion-materials/week1-discussion-slides.html#title-slide",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "objectID": "course-materials/interactive/interactive-day1am.html",
+    "href": "course-materials/interactive/interactive-day1am.html",
+    "title": "Reproduce a Figure",
     "section": "",
-    "text": "EDS 240: Discussion 1\nToday’s topic here\n\nWeek 1 | January 7th, 2024"
+    "text": "What happens to water quality after a hurricane hits? Schaefer et al. (2000) investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards."
   },
   {
-    "objectID": "course-materials/discussion-materials/week1-discussion-slides.html#slide-slug-here",
-    "href": "course-materials/discussion-materials/week1-discussion-slides.html#slide-slug-here",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "objectID": "course-materials/interactive/interactive-day1am.html#background",
+    "href": "course-materials/interactive/interactive-day1am.html#background",
+    "title": "Reproduce a Figure",
     "section": "",
-    "text": "Slide title"
+    "text": "What happens to water quality after a hurricane hits? Schaefer et al. (2000) investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#goals",
+    "href": "course-materials/interactive/interactive-day1am.html#goals",
+    "title": "Reproduce a Figure",
+    "section": "Goals",
+    "text": "Goals\nOver the course of this week, you’re going to reproduce figure 3 from Schaefer et al. (2000). Your goal for today is to gather the data, make an analysis plan, and write the code to process and visualize the data. By the end of the week, you will organize your analysis and document your workflow. Even better, you’ll do it collaboratively and prepare it to run on a high-performance cluster.\n\n\n\n\n\n\nFigure 1: Concentrations in Bisley, Puerto Rico streams before and after Hurricane Hugo, 9-wk moving averags. (a) potassium, (b) nitrate-N, (c) magnesium, (d) calcium and (e) ammonium-N. The vertical lines mark the time of hurricane disturbance. Reproduced from Schaefer et al. (2000)."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#data",
+    "href": "course-materials/interactive/interactive-day1am.html#data",
+    "title": "Reproduce a Figure",
+    "section": "Data",
+    "text": "Data\nThe data are available through the Environmental Data Initiative. You can find them here: (McDowell and International Institute Of Tropical Forestry (IITF) 2024)."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#instructions",
+    "href": "course-materials/interactive/interactive-day1am.html#instructions",
+    "title": "Reproduce a Figure",
+    "section": "Instructions",
+    "text": "Instructions\n\nSetup\n\nCreate a new RStudio project.\nCreate a GitHub repo.\nDownload the data from McDowell and International Institute Of Tropical Forestry (IITF) (2024) and put it in your project folder.\nMake an initial commit and push to GitHub.\n\n\n\nExplore\n\nExamine figure 3 of Schaefer et al. (2000) and the data available at McDowell and International Institute Of Tropical Forestry (IITF) (2024).\nMake a list of the data files and the columns within them that you think you’ll need to reproduce figure 3.\n\n\n\n\n\n\n\nTip\n\n\n\nCheck the metadata in McDowell and International Institute Of Tropical Forestry (IITF) (2024) carefully. Are the names and units what you expect? It’s been 25 years since Schaefer et al. (2000) was published - a lot can change in that time!\n\n\n\n\n\n\n\n\nTip\n\n\n\nIt may be helpful to read a CSV file into R and explore it using numeric or visual summaries.\n\n\n\n\nPlan\n\nBased on the caption of figure 3, write down the steps you think will be necessary to reproduce figure 3.\nCreate a flow chart of how the steps fit together. Things to consider include:\n\nHow will you get the data into R?\nHow will you clean up the data?\nAre any processing or modeling steps required?\nWhat are your outputs?\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe Plan section sneakily asks you to do two things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a system for representing the components of your analysis and their connections. That’s the second thing: come up with your own flowchart system off the cuff. Later today I’ll introduce you to my own system. For now, give it your best shot!\n\n\n\n\nShare\n\nFind a partner.\nCompare your flowcharts.\nFind two similarities and two differences between your flowcharts and make note of them. To get you started, try considering:\n\nWhere did you include more or less detail?\nHow did you visually represent components and connections?\n\n\nI will call on two pairs to share."
   },
   {
     "objectID": "course-materials/day4.html",
@@ -221,14 +242,14 @@
     "href": "course-materials/day1.html",
     "title": "Workflows and reproducibility",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nReproduce a figure\nWhy reproducible?\n\n\nAfternoon\nWorkflow organization\nOrganize a project\nWhat’s on your checklist?"
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nReproduce a figure\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nOrganize a project\nWhat’s on your checklist?"
   },
   {
     "objectID": "course-materials/day1.html#class-materials",
     "href": "course-materials/day1.html#class-materials",
     "title": "Workflows and reproducibility",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nReproduce a figure\nWhy reproducible?\n\n\nAfternoon\nWorkflow organization\nOrganize a project\nWhat’s on your checklist?"
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nReproduce a figure\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nOrganize a project\nWhat’s on your checklist?"
   },
   {
     "objectID": "course-materials/day1.html#further-reading",

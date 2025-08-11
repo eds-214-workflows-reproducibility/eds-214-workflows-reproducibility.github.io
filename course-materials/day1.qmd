@@ -9,7 +9,7 @@ bibliography: references.bib
 
 | {{< session >}} | {{< lecture >}} | {{< interactive >}} | {{< reflection >}} |
 |------------------|------------------|------------------|------------------|
-| Morning | [Reproducible workflows](lecture-slides/lecture-day1am-slides.qmd) | Reproduce a figure | Why reproducible? |
+| Morning | [Reproducible workflows](lecture-slides/lecture-day1am-slides.qmd) | [Reproduce a figure](interactive/interactive-day1am.qmd) | [Go with the flow](https://forms.gle/GjKm3S9fef74jN8w5){target="_blank"} |
 | Afternoon | Workflow organization | Organize a project | What's on your checklist? |
 
 : {.hover .bordered}
