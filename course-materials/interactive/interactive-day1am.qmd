@@ -16,7 +16,7 @@ Over the course of this week, you're going to reproduce figure 3 from @schaefer2
 
 ![Concentrations in Bisley, Puerto Rico streams before and after Hurricane Hugo, 9-wk moving averags. (a) potassium, (b) nitrate-N, (c) magnesium, (d) calcium and (e) ammonium-N. The vertical lines mark the time of hurricane disturbance. Reproduced from Schaefer et al. (2000).](images/Schaefer_etal_2020_fig3.png){#fig-schaefer3 width="432"}
 
-## Data 
+## Data
 
 The data are available through the [Environmental Data Initiative](edirepository.org). You can find them here: [@mcdowell2024].
 
@@ -52,7 +52,7 @@ It may be helpful to read a CSV file into R and explore it using numeric or visu
     4.  What are your outputs?
 
 ::: callout-note
-The **Plan** section sneakily asks you to do *two* things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a [system]{.underline} for representing the components of your analysis and their connections. That's the second thing: come up with your own flowchart system off the cuff. Later today I'll introduce you to my own system. For now, give it your best shot!
+The **Plan** section sneakily asks you to do *two* things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a [system]{.underline} for representing the components of your analysis and their connections. That's the second thing: come up with your own flowchart system off the cuff. Tomorrow I'll introduce you to the system I use. For now, give it your best shot!
 :::
 
 ### Share

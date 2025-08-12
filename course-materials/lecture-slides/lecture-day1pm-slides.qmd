@@ -103,7 +103,6 @@ Try to find the following four components in the workflow:
 For each component, make a note of:
 
 -   The name of the folder(s) containing it
--   Connections with other components
 -   How you found that component (intuition? documentation? parsing code?)
 :::
 :::::
@@ -200,7 +199,7 @@ You should be able to share your analysis methods and results with others
 
 ------------------------------------------------------------------------
 
-##  {#flukeandfeather-workflow data-menu-title="The FlukeAndFeather Workflow Organization System"}
+##  {#flukeandfeather-workflow1 data-menu-title="The FlukeAndFeather Workflow Organization System"}
 
 [Introducing: The FlukeAndFeather Workflow Organization System™]{.slide-title}
 
@@ -212,6 +211,44 @@ You should be able to share your analysis methods and results with others
     -   Organize the folders and files hierarchically
     -   Briefly describe what you think the purpose of each folder/file is
     -   Use the two blank cards to add two files to the project
+-   We will discuss your results in groups
+
+------------------------------------------------------------------------
+
+##  {#flukeandfeather-workflow2 data-menu-title="The FlukeAndFeather Workflow Organization System"}
+
+[Introducing: The FlukeAndFeather Workflow Organization System™]{.slide-title}
+
+<hr>
+
+**SNOWBALL**
+
+::::: columns
+::: {.column width="50%"}
+
+*5 minutes*
+
+- Combine pairs
+- Choose a notetaker
+- Share and combine into a single solution
+- Notetaker writes down:
+    - One example of differeing solutions
+    - How you decided which solution to use
+    - One remaining question about a file/folder
+    
+:::
+::: {.column width="50%"}
+    
+*5 minutes*
+
+- Combine groups again to make groups of EIGHT(ish)
+- Choose a new notetaker
+- Repeat the exercise
+
+:::
+::::
+
+[I will randomly call on two notetakers to share]{.body-text-l .dark-blue-text}
 
 ------------------------------------------------------------------------
 
