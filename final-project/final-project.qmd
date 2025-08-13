@@ -32,7 +32,7 @@ The final project for EDS 214 is to create an analytical workflow to reproduce f
 
 -   Use the concepts and skills of EDS 214 to draft a reproducible workflow
 
--   Perform a [self-assessment](final-project-self-assessment.qmd) and peer review to critique workflows
+-   Perform a [self-assessment](final-project-self-assessment.qmd) and [peer review](final-project-peer-review.qmd) to critique workflows
 
 ### Friday August 26^th^
 
