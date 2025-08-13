@@ -1,0 +1,20 @@
+---
+title: "Final Project Self Assessment"
+bibliography: references.bib
+editor: visual
+---
+
+## Goal
+
+This self assessment is an opportunity to critically evaluate your workflow and begin refining your work. To be clear, "critical evaluation" doesn't mean you should be harsh or negative about your work! You've learned a lot this week. The self assessment is a chance for you to see how far you've come, reinforce the lessons you've learned, and begin preparations to wrap up this course.
+
+## Instructions
+
+The final project specs are listed on the [Final Project](final-project.qmd) page. You are going to assess your own work for each spec.
+
+1.  Create a markdown file in your project repo called `self-assessment.md`.
+2.  Create one header for each category of specs and a subheader for each individual spec.
+3.  For each spec, assess your work as *Not yet* or *Meets spec*. In one to two sentences, explain your assessment.
+    1.  For each specs you assess as *Not yet*, open an Issue on GitHub describing what you think you would need to do to meet the spec.
+    2.  (Optional) Choose two specs you assessed as *Meets spec*. Open an Issue for each spec describing what you would do to exceed the spec. \[Exceeding two specs is a requirement for an A. You can accomplish that without doing this step, but this will help.\]
+4.  Commit and push your changes to GitHub. Open an Issue and give it the title "Self Assessment". Tag my username (\@FlukeAndFeather) in the body of the Issue so I get a notification about it.
