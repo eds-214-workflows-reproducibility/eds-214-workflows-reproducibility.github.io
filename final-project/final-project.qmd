@@ -24,9 +24,9 @@ The final project for EDS 214 is to create an analytical workflow to reproduce f
 
 ### Wednesday August 27^th^
 
--   Use repo branches to develop new features safely
-
 -   Create GitHub issues to organize your development plan
+
+-   Cause and resolve a merge conflict
 
 ### Thursday August 28^th^
 
@@ -35,6 +35,8 @@ The final project for EDS 214 is to create an analytical workflow to reproduce f
 -   Perform a [self-assessment](final-project-self-assessment.qmd) and [peer review](final-project-peer-review.qmd) to critique workflows
 
 ### Friday August 26^th^
+
+-   [Submit your final project](final-project-submission.qmd) for instructor feedback
 
 -   Incorporate feedback to refine your workflow
 
