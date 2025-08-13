@@ -1,0 +1,93 @@
+---
+title: "Final Project"
+bibliography: references.bib
+editor: visual
+---
+
+## Goals
+
+The final project for EDS 214 is to create an analytical workflow to reproduce figure 3 of @schaefer2000. This project is your opportunity to gain and demonstrate competency in the learning goals of this course.
+
+## Milestones
+
+### Monday August 25^th^
+
+-   Draft a flowchart that visually describes the plan for your analysis
+
+-   Write spaghetti code that accomplishes some of the steps in your analysis
+
+### Tuesday August 26^th^
+
+-   Create a script to automate workflow initialization
+
+-   Draft documentation for your data and code
+
+### Wednesday August 27^th^
+
+-   Use repo branches to develop new features safely
+
+-   Create GitHub issues to organize your development plan
+
+### Thursday August 28^th^
+
+-   Use the concepts and skills of EDS 214 to draft a reproducible workflow
+
+-   Perform a self-assessment and peer review to critique workflows
+
+### Friday August 26^th^
+
+-   Incorporate feedback to refine your workflow
+
+-   Celebrate completing EDS 214!
+
+## Specifications
+
+Your final project will be assessed according to specifications spread across the five learning objectives. I will give you feedback on each specification and assess your work as *Not yet*, *Meets spec*, or *Exceeds spec*. You will have an opportunity to incorporate my feedback and move your assessments up a category.
+
+::: callout-note
+*What's the difference between Meets and Exceeds spec?* In brief, professionalism. To [meet]{.underline} a spec, you have to demonstrate your competency. To [exceed]{.underline} a spec, you have to demonstrate that competency *as you would in the workplace*. The difference is subjective and beauty is, admittedly, in the eye of the beholder. I suggest keeping the following in mind as you complete your final project:
+
+-   You will have multiple opportunities to receive and incorporate feedback.
+
+-   The bar for an A is exceeding two (2) specs.
+
+-   Learning the subjective difference between "good enough" and "professional quality" is an important outcome of this program!
+:::
+
+### Automate
+
+\[ \] Running the entire analysis requires sourcing one R script
+
+\[ \] The analysis runs without errors
+
+\[ \] The analysis produces the expected output
+
+### Organize
+
+\[ \] Data, code, and outputs are organized in separate folders
+
+\[ \] At least one piece of functionality has been refactored into a function in its own file
+
+### Document
+
+\[ \] The repo has a README that explains which folders contain (1) data, (2) analysis script, (3) supporting code, and (4) outputs
+
+\[ \] The README includes a flowchart and text explaining how the analysis works
+
+\[ \] The code is appropriately commented
+
+\[ \] Variable and function names are descriptive and follow a consistent naming convention
+
+### Scale
+
+\[ \] The student can clone the repo on Workbench
+
+\[ \] After cloning the repo, the student can run the analysis without errors
+
+### Collaborate
+
+\[ \] The student has provided attentive, constructive feedback in a peer review
+
+\[ \] The repo has at least three closed GitHub issues
+
+\[ \] The commit history includes at least one merged branch and a resolved merge conflict

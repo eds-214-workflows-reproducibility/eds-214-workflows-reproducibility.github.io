@@ -28,8 +28,8 @@ website:
             href: course-materials/day4.qmd
           - text: day 5 (8/29)
             href: course-materials/day5.qmd
-      - text: assignments
-        href: assignments.qmd
+      - text: final project
+        href: final-project/final-project.qmd
       - text: resources
         menu: 
           - text: recommended readings & resources
