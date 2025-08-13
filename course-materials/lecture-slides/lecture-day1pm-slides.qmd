@@ -232,7 +232,7 @@ You should be able to share your analysis methods and results with others
 - Choose a notetaker
 - Share and combine into a single solution
 - Notetaker writes down:
-    - One example of differeing solutions
+    - One example of differing solutions
     - How you decided which solution to use
     - One remaining question about a file/folder
     

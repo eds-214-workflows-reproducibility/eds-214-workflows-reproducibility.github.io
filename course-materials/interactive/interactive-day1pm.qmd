@@ -1,0 +1,53 @@
+---
+title: "Make Spaghetti"
+subtitle: "Day 1 Afternoon | EDS 214"
+description: "Monday August 25^th^, 2025"
+bibliography: references.bib
+editor: visual
+---
+
+## Previously, on EDS 214
+
+This morning you looked at the raw data and one output (Figure 3) of @schaefer2000.
+
+You explored the data and examined the information available in the paper about how the paper was made.
+
+Using those two elements, you created flowcharts planning your analysis.
+
+## Goals
+
+In this session you're going to take an important step towards your ultimate goal of reproducing figure 3 from @schaefer2000: make spaghetti code.
+
+![](images/spaghetti.png){width="300"}
+
+You can think of spaghetti as the alternative to a workflow. Instead of a well-organized analysis with clear connections between data, code, and outputs, spaghetti jumbles all these components together.
+
+Imagine you want to change one part of your analysis. Perhaps you received some new data, or a collaborator suggests trying a different type of statistical model. Simply figuring out which lines of code need your attention is challenging when it's all spaghetti. What's worse, when you change one thing there's a good chance you'll break a lot of other things downstream.
+
+::: callout-note
+Spaghetti sounds pretty bad, doesn't it? While it's true that you don't want your finished product to look like spaghetti, it's often a necessary intermediate step. Science is a creative and iterative process. We often don't know exactly what we need to do before we begin. As we explore, we create spaghetti. By creating spaghetti we develop our conceptual understanding of what our workflow should look like. Only then can we begin making a well-organized workflow.
+:::
+
+## Instructions
+
+### Make spaghetti
+
+1.  Picking up where we left off this morning, create a new script in your RStudio project.
+2.  Begin writing code to implement your flowchart.
+3.  Keep writing code until you can create a figure.
+
+::: callout-important
+The goal of this exercise is to create spaghetti. I want you to get *messy* with it. Add comments haphazardly. If you find out your code is going down a dead end, just leave it there and start on a new line. Choose variable names without thinking about them. Don't worry if the figure you create at the end looks nothing like how it's supposed to.
+:::
+
+### Revise your flowchart
+
+1.  Re-read your flowchart from this morning.
+2.  Revise your flowchart with what you learned from making spaghetti. In the process of writing code, did you learn more details about the workflow? Were there steps you didn't consider earlier? Did you discover any steps that should be split or lumped?
+3.  Make a note of 1-2 changes you made to your flowchart. I will randomly call on two students to share.
+
+## Coming up next
+
+You now have two important elements of your workflow: a revised plan and a plate of spaghetti.
+
+Over the next few days, you will learn how to transform spaghetti into a well-organized, thoroughly documented, and easily reproducible analysis.

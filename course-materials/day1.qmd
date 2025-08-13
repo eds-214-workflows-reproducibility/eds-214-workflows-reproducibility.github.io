@@ -9,8 +9,8 @@ bibliography: references.bib
 
 | {{< session >}} | {{< lecture >}} | {{< interactive >}} | {{< reflection >}} |
 |------------------|------------------|------------------|------------------|
-| Morning | [Reproducible workflows](lecture-slides/lecture-day1am-slides.qmd) | [Make flowcharts](interactive/interactive-day1am.qmd) | [Go with the flow](https://forms.gle/GjKm3S9fef74jN8w5){target="_blank"} |
-| Afternoon | [Workflow organization](lecture-slides/lecture-day1pm-slides.qmd) | [Make spaghetti](interactive/interactive-day1pm.qmd) | What's on your checklist? |
+| Morning | [Reproducible workflows](lecture-slides/lecture-day1am-slides.qmd){target="_blank"} | [Plan an analysis](interactive/interactive-day1am.qmd) | [Go with the flow](https://forms.gle/GjKm3S9fef74jN8w5){target="_blank"} |
+| Afternoon | [Workflow organization](lecture-slides/lecture-day1pm-slides.qmd){target="_blank"} | [Make spaghetti](interactive/interactive-day1pm.qmd) | [Exploration and iteration](https://forms.gle/2NfM8nrq6BCKjRdx5){target="_blank"} |
 
 : {.hover .bordered}
 

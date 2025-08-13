@@ -1,5 +1,5 @@
 ---
-title: "Reproduce a Figure"
+title: "Plan an Analysis"
 subtitle: "Day 1 Morning | EDS 214"
 description: "Monday August 25^th^, 2025"
 bibliography: references.bib
