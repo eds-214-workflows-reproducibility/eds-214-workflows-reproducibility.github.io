@@ -12,7 +12,7 @@ This is it! What you've worked towards this whole week. You've learned how to cr
 1.  Create a markdown file in your project repo called `instructor-feedback.md`.
 2.  (Optional) If you would like your instructor to assess two specs for *Exceeds spec*:
     1.  Create a header called "Exceeds spec"
-    2.  Create two subheaders, one for each spec
+    2.  Create two subheaders, one for each spec. (Remember, only some specs are eligible for *Exceeds spec*!)
     3.  In 1-2 sentences, describe how your work for that spec is of *professional quality*. Note: you will get feedback about this and have an opportunity to make revisions. This is the start of a conversation, not a one-and-done attempt.
 3.  Create a header called "Collaboration"
     1.  In 3-4 sentences, describe how your participation in peer feedback went. Give examples for how you were thorough and constructive.

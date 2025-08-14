@@ -44,52 +44,60 @@ The final project for EDS 214 is to create an analytical workflow to reproduce f
 
 ## Specifications
 
-Your final project will be assessed according to specifications spread across the five learning objectives. I will give you feedback on each specification and assess your work as *Not yet*, *Meets spec*, or *Exceeds spec*. You will have an opportunity to incorporate my feedback and move your assessments up a category.
+Your final project will be assessed according to specifications spread across the five learning objectives. I will give you feedback on each specification and assess your work as *Not yet* or *Meets spec*. A few specifications (indicated in bold below) offer opportunities for *Exceeds spec*. You will have an opportunity to incorporate my feedback and move your assessments up a category.
 
 ::: callout-note
 *What's the difference between Meets and Exceeds spec?* In brief, professionalism. To [meet]{.underline} a spec, you have to demonstrate your competency. To [exceed]{.underline} a spec, you have to demonstrate that competency *as you would in the workplace*. The difference is subjective and beauty is, admittedly, in the eye of the beholder. I suggest keeping the following in mind as you complete your final project:
 
 -   You will have multiple opportunities to receive and incorporate feedback.
 
--   The bar for an A is exceeding two (2) specs.
+-   The bar for an A is exceeding two (2) specs in different learning objectives.
 
 -   Learning the subjective difference between "good enough" and "professional quality" is an important outcome of this program!
 :::
 
 ### Automate
 
-\[ \] Running the entire analysis requires sourcing one R script
+\[ \] **Running the entire analysis requires rendering one Quarto document**
 
 \[ \] The analysis runs without errors
 
-\[ \] The analysis produces the expected output
+\[ \] **The analysis produces the expected output**
+
+\[ \] Data import/cleaning is handled in its own script(s)
 
 ### Organize
 
-\[ \] Data, code, and outputs are organized in separate folders
+\[ \] Raw data is contained in its own folder
 
-\[ \] At least one piece of functionality has been refactored into a function in its own file
+\[ \] Intermediate outputs are created and saved to a separate folder from raw data
+
+\[ \] **At least one piece of functionality has been refactored into a function in its own file**
 
 ### Document
 
 \[ \] The repo has a README that explains which folders contain (1) data, (2) analysis script, (3) supporting code, and (4) outputs
 
-\[ \] The README includes a flowchart and text explaining how the analysis works
+\[ \] **The README includes a flowchart and text explaining how the analysis works**
 
-\[ \] The code is appropriately commented
+\[ \] **The code is appropriately commented**
 
-\[ \] Variable and function names are descriptive and follow a consistent naming convention
+\[ \] **Variable and function names are descriptive and follow a consistent naming convention**
 
 ### Scale
 
-\[ \] The student can clone the repo on Workbench
+After cloning the repo on Workbench:
 
-\[ \] After cloning the repo, the student can run the analysis without errors
+\[ \] Running the environment initialization script installs all required packages
+
+\[ \] The analysis script runs without errors
 
 ### Collaborate
 
-\[ \] The student has provided attentive, constructive feedback in a peer review
+\[ \] **The student has provided attentive, constructive feedback in a peer review**
 
 \[ \] The repo has at least three closed GitHub issues
 
 \[ \] The commit history includes at least one merged branch and a resolved merge conflict
+
+\[ \] The rendered analysis is accessible via GitHub Pages
