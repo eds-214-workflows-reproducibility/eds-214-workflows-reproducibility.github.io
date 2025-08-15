@@ -182,6 +182,475 @@
     "text": "Instructions\nThe final project specs are listed on the Final Project page. You are going to assess your own work for each spec (except the Collaborate specs).\n\nCreate a markdown file in your project repo called self-assessment.md.\nCreate one header for each category of specs (except Collaborate) and a subheader for each individual spec.\nFor each spec, assess your work as Not yet or Meets spec. In one to two sentences, explain your assessment.\n\nFor each spec you assess as Not yet, open an Issue on GitHub describing what you think you would need to do to meet the spec.\n(Optional) Choose two specs that are eligible for Exceeds spec. Open an Issue for each one describing what you would do to exceed the spec. [Exceeding two specs is a requirement for an A. You can accomplish that without doing this step, but this will help.]\n\nCommit and push your changes to GitHub. Open an Issue and give it the title “Self Assessment”. Tag my username (@FlukeAndFeather) in the body of the Issue so I get a notification about it."
   },
   {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#title-slide",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#title-slide",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "The Command Line and Remote Servers\nEDS 214: Analytical Workflows and Scientific Reproducibility\n\nDay 2 Morning | August 26th, 2025"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#learning-objectives",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#learning-objectives",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "This morning, you’ll learn:\n\n\nWhy the command line is useful\nHow to issue commands on the command line\nWhy remote servers offer performance benefits\nHow to use the command line to interact with a remote server"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#why-not-gui",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#why-not-gui",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Why not a GUI?\n\n\n\nGraphical User Interface (GUI)\n\nPoint-and-click - gentler learning curve\nLimited customization options\nNearly impossible to automate\n\n\nCommand Line Interface (CLI)\n\nHighly customizable\nDesigned to be automated\nText-based - steeper learning curve\n\n\n\n\nAre the trade-offs worth it? For some scientists, maybe not. But for a data scientist, DEFINITELY."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#terminals-shells",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#terminals-shells",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Terminals and shells\n\n\n\nTerminal\n\nThe program you type commands into\nYour megaphone for shouting at the computer\n\n\nShell\n\nA program that passes commands to the operating system\nListens to your megaphone\n\n\n\n\nYou will often see Terminal and Shell used interchangeably. This can get confusing. It helps to see them in action. Let’s try it out!"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#terminal-demo",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#terminal-demo",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Terminal and shell demo\n\n\nOpen a terminal\n\nMacOS: Terminal\nWindows: GitBash (both a terminal AND a shell)\n\nAsk the shell where you are\n\npwd - print working directory\nls - list files in the current directory\n\nCustomize the command with options\n\nls -l - long listing format\nls -a - show hidden files\nls -la - both!"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#onions-layers",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#onions-layers",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Onions have layers"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#key-shell-commands",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#key-shell-commands",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Key shell commands\n\n\n\nNavigation & File System\n\npwd - know where you are\nls (with -l, -a flags) - see what’s there\ncd - move around (including cd ~, cd .., cd -)\nmkdir - create directories\nrmdir - remove directories (only if empty)\n\n\nFile Operations\n\ntouch - create files\ncp - copy files/directories\nmv - move/rename files\nrm - delete files (no recycle bin!)\ncat - view file contents"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#customizing-commands",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#customizing-commands",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Customizing commands\n\ncommand [options] [arguments]\n\ncommand - the command you want to run (e.g., ls)\noptions - flags that modify the command’s behavior (e.g., -l, -a)\narguments - the files or directories the command should operate on (e.g., mydir/)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#cli-challenge-1",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#cli-challenge-1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "CLI challenge part 1\n\nDo the following in your terminal. Make a note of your answers in a text file.\n\n\nCreate the following directory structure on your computer using the command line only.\nrenewable-energy\n├── capacity\n│   ├── san-luis-obispo.csv\n│   ├── santa-barbara.csv\n│   └── ventura.csv\n└── usage\n    ├── san-luis-obispo.csv\n    ├── santa-barbara.csv\n    └── ventura.csv\n\nNow, delete the capacity/ folder and rename usage/ to data/.\nUse ls -l data to check the contents of your directory. Answer the following questions.\n\nDoes your directory look as expected?\nWhat commands did you use?\nIn ls -l data, what parts correspond to the argument, option, and command?"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#cli-challenge-2",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#cli-challenge-2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "CLI challenge part 2\n\n\n\nFrom the renewable-energy directory, run the following commands:\ncd data\nmkdir ../scripts\ntouch ../scripts/1_import.R\ncd ..\nmv scripts/1_import.R R/import.R\n\nAnswer the following questions.\n\nWhat error message did you get?\nWhat do you think these commands were supposed to accomplish?\nHow could you fix it?"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#cli-review",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#cli-review",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "CLI review\n\nWhy is the command line useful?\n\nCustomizable\nAutomatable\n\nWhat’s the difference between the terminal and the shell?\nTerminal The program you type commands into\nShell The program that runs the commands\nWhat does a CLI command look like?\ncommand [options] [arguments]\npwd\nmv foo.R bar.R\nls -la data/"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#up-next",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#up-next",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Up next\n\nUse the CLI to interact with a remote server."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day2am.html",
+    "href": "course-materials/interactive/interactive-day2am.html",
+    "title": "Navigate the Server",
+    "section": "",
+    "text": "Let’s get started working on a remote server! Working on a remote server is one of the payoffs for the learning curve going from the GUI to the CLI.\nCompared to your personal computer, remote servers can be beefy. They let you scale your analysis up to bigger datasets and more computationally intensive algorithms. Some of the advantages of using remote servers for data science are:\n\nPower More CPUs/Cores, more RAM\nCapacity More disk space and generally faster storage\nSecurity Data are spread across multiple drives and have nightly backups\nCollaboration Shared folders for code, data, and other materials; same software versions"
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day2am.html#background",
+    "href": "course-materials/interactive/interactive-day2am.html#background",
+    "title": "Navigate the Server",
+    "section": "",
+    "text": "Let’s get started working on a remote server! Working on a remote server is one of the payoffs for the learning curve going from the GUI to the CLI.\nCompared to your personal computer, remote servers can be beefy. They let you scale your analysis up to bigger datasets and more computationally intensive algorithms. Some of the advantages of using remote servers for data science are:\n\nPower More CPUs/Cores, more RAM\nCapacity More disk space and generally faster storage\nSecurity Data are spread across multiple drives and have nightly backups\nCollaboration Shared folders for code, data, and other materials; same software versions"
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day2am.html#goals",
+    "href": "course-materials/interactive/interactive-day2am.html#goals",
+    "title": "Navigate the Server",
+    "section": "Goals",
+    "text": "Goals\nIn this session you’re going to use the CLI and RStudio Workbench on the remote server. Along the way, you’ll learn how to:\n\nConnect to Workbench with the CLI\nConfigure git and GitHub remotely\nInteract with the server version of RStudio\n\nYou’re also going to create your first merge conflict - an inevitable challenge in coding collaborations. Tomorrow, you’ll learn how to resolve the conflict."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day2am.html#instructions",
+    "href": "course-materials/interactive/interactive-day2am.html#instructions",
+    "title": "Navigate the Server",
+    "section": "Instructions",
+    "text": "Instructions\n\nConnect to Workbench with the CLI1\n\nConnect to campus VPN.\nOpen up Terminal (mac) or GitBash (windows)\nRun the following command: ssh {username}@workbench-1.bren.ucsb.edu\nType in your Bren password\nYou’ll know if you connected successfully if the last line says {username}@workbench-1 like the picture below.\n\n\n\n\nConfigure git2\nConfigure your git user name and email.\ngit config --global user.name \"Jane Doe\"\ngit config --global user.email janedoe@example.com\nTell git to hold on to your GitHub Personal Access Token between connections.\ngit config --global credential.helper 'cache --timeout=10000000'\nCheck that your configuration looks right.\ngit config --list --global\n\n\nCheckpoint 1\nNow that you’ve connected to Workbench with the CLI and configured git, answer the following questions.\nQ1: What directory are you in?\nQ2: Are there any files in your directory?\nQ3: There’s a folder in Workbench’s root called courses. How would you look at the contents of that folder?\n\n\nConnect to Workbench with the RStudio GUI\n\nOpen your browser and navigate to https://workbench-1.bren.ucsb.edu.\nLog in with Bren credentials.\nStart an RStudio session by selecting “New Session”. It may take a few seconds to start.\n\nYou should now see RStudio in your browser as below.\n\n\n\nConfigure GitHub\n\nReturn to the Workbench RStudio interface.\nIn the console, run install.packages(\"usethis\").\nThen, run usethis::create_github_token().\nThe GitHub PAT dialog will appear in your browser. This should be familiar, you’ve done this before on your computer.\nCreate your PAT and set your GitHub credentials on Workbench by running gitcreds::gitcreds_set().\nRun usethis::git_sitrep() and verify your git and GitHub configurations are complete.\n\n\n\nClone your repo\n\nNavigate to your EDS 214 project repo on GitHub. Copy the URL.\nReturn to the Workbench RStudio interface. Create a new RStudio project from your GitHub repo.\n\n\n\nCheckpoint 2\nSwitch to the terminal you used to connect to Workbench with the CLI. Verify your repo’s files are now in your home directory.\n\n\nCreate a merge conflict\nMerge conflicts occur when the same line of code in a repository has been edited in two different places. One way to generate a merge conflict is when you’re editing the same repo from two places (e.g., your personal computer and the remote server). Another way is when two people are working on the same code base simultaneously. Both of these are likely to happen during your capstone!\nMerge conflicts look scary, but they are a necessary phenomenon in data science. Today you’ll create a conflict, tomorrow you’ll fix it.\n\nEdit a line on the remote server\n\nChoose a line in your spaghetti code that you wrote yesterday and edit it. You can change the name of a variable, for example.\nCommit your change using the Git pane.\nPush the change to GitHub.\n\n\n\nEdit the same line locally\n\nOpen your EDS 214 project in RStudio locally (not on Workbench). Find the same line of code and edit it in a different way. If you changed a variable name on the remote server, for example, change it to something else.\nCommit your change.\nPush.\n\n\n\nUh oh!\nWhen you push the second time, you’ll see an error like the one below.\nTo https://github.com/[username]/[repo]\n ! [rejected]        HEAD -&gt; main (fetch first)\nerror: failed to push some refs to 'https://github.com/[username]/[repo]'\nhint: Updates were rejected because the remote contains work that you do not\nhint: have locally. This is usually caused by another repository pushing to\nhint: the same ref. If you want to integrate the remote changes, use\nhint: 'git pull' before pushing again.\nhint: See the 'Note about fast-forwards' in 'git push --help' for details.\nThis is a good error! It prevents you from accidentally overwriting your own or your collaborator’s work. Git calls this a merge conflict, and we’ll cover how to fix them tomorrow."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day2am.html#recap",
+    "href": "course-materials/interactive/interactive-day2am.html#recap",
+    "title": "Navigate the Server",
+    "section": "Recap",
+    "text": "Recap\nThe Workbench remote server grants you access to greater computational resources and is a platform for collaboration that you’ll use extensively in your capstone. Today, you learned how to:\n\nUse ssh to connect to Workbench (the CLI)\nConfigure git and GitHub so you can keep getting the benefits of version control\nUse RStudio on the server directly through your browser"
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day2am.html#footnotes",
+    "href": "course-materials/interactive/interactive-day2am.html#footnotes",
+    "title": "Navigate the Server",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThese instructions are also available on the MEDS Computational Server Guide↩︎\nThese instructions are also available in the MEDS Software Installation Guide↩︎"
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html",
+    "href": "course-materials/interactive/interactive-day1am.html",
+    "title": "Plan an Analysis",
+    "section": "",
+    "text": "What happens to water quality after a hurricane hits? Schaefer et al. (2000) investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#background",
+    "href": "course-materials/interactive/interactive-day1am.html#background",
+    "title": "Plan an Analysis",
+    "section": "",
+    "text": "What happens to water quality after a hurricane hits? Schaefer et al. (2000) investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#goals",
+    "href": "course-materials/interactive/interactive-day1am.html#goals",
+    "title": "Plan an Analysis",
+    "section": "Goals",
+    "text": "Goals\nOver the course of this week, you’re going to reproduce figure 3 from Schaefer et al. (2000). Your goal for today is to gather the data, make an analysis plan, and write the code to process and visualize the data. By the end of the week, you will organize your analysis and document your workflow. Even better, you’ll do it collaboratively and prepare it to run on a high-performance cluster.\n\n\n\n\n\n\nFigure 1: Concentrations in Bisley, Puerto Rico streams before and after Hurricane Hugo, 9-wk moving averags. (a) potassium, (b) nitrate-N, (c) magnesium, (d) calcium and (e) ammonium-N. The vertical lines mark the time of hurricane disturbance. Reproduced from Schaefer et al. (2000)."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#data",
+    "href": "course-materials/interactive/interactive-day1am.html#data",
+    "title": "Plan an Analysis",
+    "section": "Data",
+    "text": "Data\nThe data are available through the Environmental Data Initiative. You can find them here: (McDowell and International Institute Of Tropical Forestry (IITF) 2024)."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1am.html#instructions",
+    "href": "course-materials/interactive/interactive-day1am.html#instructions",
+    "title": "Plan an Analysis",
+    "section": "Instructions",
+    "text": "Instructions\n\nSetup\n\nCreate a new RStudio project.\nCreate a GitHub repo.\nDownload the data from McDowell and International Institute Of Tropical Forestry (IITF) (2024) and put it in your project folder.\nMake an initial commit and push to GitHub.\n\n\n\nExplore\n\nExamine figure 3 of Schaefer et al. (2000) and the data available at McDowell and International Institute Of Tropical Forestry (IITF) (2024).\nMake a list of the data files and the columns within them that you think you’ll need to reproduce figure 3.\n\n\n\n\n\n\n\nTip\n\n\n\nCheck the metadata in McDowell and International Institute Of Tropical Forestry (IITF) (2024) carefully. Are the names and units what you expect? It’s been 25 years since Schaefer et al. (2000) was published - a lot can change in that time!\n\n\n\n\n\n\n\n\nTip\n\n\n\nIt may be helpful to read a CSV file into R and explore it using numeric or visual summaries.\n\n\n\n\nPlan\n\nBased on the caption of figure 3, write down the steps you think will be necessary to reproduce figure 3.\nCreate a flow chart of how the steps fit together. Things to consider include:\n\nHow will you get the data into R?\nHow will you clean up the data?\nAre any processing or modeling steps required?\nWhat are your outputs?\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe Plan section sneakily asks you to do two things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a system for representing the components of your analysis and their connections. That’s the second thing: come up with your own flowchart system off the cuff. Tomorrow I’ll introduce you to the system I use. For now, give it your best shot!\n\n\n\n\nShare\n\nFind a partner.\nCompare your flowcharts.\nFind two similarities and two differences between your flowcharts and make note of them. To get you started, try considering:\n\nWhere did you include more or less detail?\nHow did you visually represent components and connections?\n\n\nI will call on two pairs to share."
+  },
+  {
+    "objectID": "course-materials/day4.html",
+    "href": "course-materials/day4.html",
+    "title": "TODO: fixme",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
+  },
+  {
+    "objectID": "course-materials/day4.html#class-materials",
+    "href": "course-materials/day4.html#class-materials",
+    "title": "TODO: fixme",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
+  },
+  {
+    "objectID": "course-materials/day2.html",
+    "href": "course-materials/day2.html",
+    "title": "Command Line and Documentation",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nCommand line and remote server\nNavigate the server\nGo with the flow\n\n\nAfternoon\nDocumentation\nMake spaghetti\nExploration and iteration"
+  },
+  {
+    "objectID": "course-materials/day2.html#class-materials",
+    "href": "course-materials/day2.html#class-materials",
+    "title": "Command Line and Documentation",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nCommand line and remote server\nNavigate the server\nGo with the flow\n\n\nAfternoon\nDocumentation\nMake spaghetti\nExploration and iteration"
+  },
+  {
+    "objectID": "course-materials/day2.html#further-reading",
+    "href": "course-materials/day2.html#further-reading",
+    "title": "Command Line and Documentation",
+    "section": "Further reading",
+    "text": "Further reading\n\nStoudt, Vásquez, and Martinez (2021) describe how analytical workflows evolve, what they look like in the end, and how they’re necessary for data-intensive science.\nLowndes et al. (2017) present a case study on their own team-based research. They show how an emphasis on reproducibility improves efficiency as well as transparency."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Let’s look at some examples of workflows on GitHub\nAll focus on nearby marine ecosystems, but the principles apply to any subject\nKeep your eyes peeled for these four components:\n\nRaw data\nCode\nOutputs\nDocumentation"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Let’s look at some examples of workflows on GitHub\nAll focus on nearby marine ecosystems, but the principles apply to any subject\nKeep your eyes peeled for these four components:\n\nRaw data\nCode\nOutputs\nDocumentation"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#kelp-me-kelp-you",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#kelp-me-kelp-you",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Kelp me kelp you",
+    "text": "Kelp me kelp you\n\nKrumhansl et al. 2016 PNAS\nhttps://github.com/kelpecosystems/global_kelp_time_series\nFig 4: kelp forests declining globally"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-protect-against-marine-heatwaves",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-protect-against-marine-heatwaves",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "MPAs protect against marine heatwaves",
+    "text": "MPAs protect against marine heatwaves\n\nBenedetti-Cecchi et al. 2024 NatComms\nhttps://github.com/bencecc/ReefFishStability/tree/v1\nFig 3a,b: In MPAs, reef fish stability is affected more by remoteness than heatwaves. Pattern reversed in open areas."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-dont-protect-against-marine-heatwaves",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-dont-protect-against-marine-heatwaves",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "MPAs don’t protect against marine heatwaves",
+    "text": "MPAs don’t protect against marine heatwaves\n\nSmith et al. 2023 GCB\nhttps://github.com/NCEAS/ca-mpa\nFig 3: Only rocky intertidal sites exhibited resistance and recovery in MPAs"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-1",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Workflow organization jigsaw pt 1",
+    "text": "Workflow organization jigsaw pt 1\n\nCount off 1-3\nFind 2-3 other students with your same number (i.e., a group with 3 1s, a group with 4 2s, etc.)\nEach group will look at one of the three workflows above\n\n1: Krumhansl et al. 2016 PNAS\n2: Benedetti-Cecchi et al. 2024 NatComms\n3: Smith et al. 2023 GCB\n\nTry to find the following four components in the workflow:\n\nRaw data\nCode\nOutputs\nDocumentation\n\nFor each component, make a note of:\n\nThe name of the folder(s) containing it\nConnections with other components\nHow you found that component (intuition? documentation? parsing code?)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-2",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Workflow organization jigsaw pt 2",
+    "text": "Workflow organization jigsaw pt 2\n\nNow, form groups with one student from each workflow\nEach person shares what they found in their workflow\nAs a group, write down 2 traits of a workflow that make it easy and challenging to find things (4 traits total)\nProvide examples for each\nI will randomly call on a group to share"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#what-are-the-goals-for-workflow-organization",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#what-are-the-goals-for-workflow-organization",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "What are the goals for workflow organization?",
+    "text": "What are the goals for workflow organization?\n\nReproducibility\n\nAnother scientist (including Future You) should be able to repeat your analysis.\n\nMaintainability\n\nYou should be able to jump back in to editing your analysis, even if you haven’t looked at it in a while\nDOC101 lecture TikTok\n\nCollaboration\n\nYou should be able to share your analysis methods and results with others"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#tools-that-help-with-workflow-organization",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#tools-that-help-with-workflow-organization",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Tools that help with workflow organization",
+    "text": "Tools that help with workflow organization\n\nGitHub\n\nVersion control - track your (and your collaborators’) changes\nIssues - a built-in to-do list directly connected to code and conversations\nBranches and pull requests - work in parallel and merge your work as seamlessly as possible\nGitHub Pages - a website for sharing your analysis with collaborators\n\nFolder organization\n\nIt’s less important which system you pick than it is to be consistent\nFree up cognitive load!\n\nBrainpower you spent figuring out where to put or find files - reallocated to your actual science\n\nFollow conventions\n\nBy playing nice with others you get to use their tools"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#introducing-the-flukeandfeather-workflow-organization-system-tm",
+    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#introducing-the-flukeandfeather-workflow-organization-system-tm",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Introducing: The FlukeAndFeather Workflow Organization System TM",
+    "text": "Introducing: The FlukeAndFeather Workflow Organization System TM\n\nYou have before you a shuffled collection of folders and files\nYou have no context other than their names\nWith a partner, try to:\n\nOrganize the folders and files hierarchically\nBriefly describe what you think the purpose of each folder/file is"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html",
+    "href": "course-materials/lecture-slides/lecture-day1am-notes.html",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "This is a class about workflows and reproducibility\nThe workflow is the fundamental unit of data science\nReproducibility ensures workflows don’t become dead ends\nThe concepts and skills in this class will keep coming up in future classes and for the rest of your career"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html#welcome-to-eds-214",
+    "href": "course-materials/lecture-slides/lecture-day1am-notes.html#welcome-to-eds-214",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "This is a class about workflows and reproducibility\nThe workflow is the fundamental unit of data science\nReproducibility ensures workflows don’t become dead ends\nThe concepts and skills in this class will keep coming up in future classes and for the rest of your career"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html#hi-im-max",
+    "href": "course-materials/lecture-slides/lecture-day1am-notes.html#hi-im-max",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Hi, I’m Max",
+    "text": "Hi, I’m Max\n\nI started as a computer scientist\nSoftware engineer at Microsoft\nFour years as a field biologist (seabirds, mostly)\nSix years grad school, specializing in data science\n\nGIS at SFSU\nMarine biology at Stanford\n\nMy specialty was biologging - animal-borne sensors for detecting location, behavior, and physiology\nNow my research is about open science, sharing data and code, and the ethics of proprietary data\nBut really what I love is teaching!\nIn addition to the MEDS program, I also teach in the new marine science undergraduate major\nMy favorite part of my job is working with students\n\nI would love it if you set up a meeting with me to tell me about your background, your interests, and your motivations for being here"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html#what-is-this-class-about",
+    "href": "course-materials/lecture-slides/lecture-day1am-notes.html#what-is-this-class-about",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "What is this class about?",
+    "text": "What is this class about?\n\nWhat is a workflow?\n\nThink-pair-share activity\nData, code, modeling, communication\nThe final workflow masks a trajectory of exploration and dead ends (Stoudt et al. 2021 doi:10.1371/journal.pcbi.1008770)\n\nWhat is reproducibility?\n\nDoes it matter if you’re not doing academic research?\nDebate activity\nReproducibility is the ability to repeat a workflow and get the same results\nGlobal and local goals\n\n“reproducibility as a mechanism for local knowledge transfer and collaboration, particularly as regards efficient software reuse” (Feinberg et al. 2020 doi:10.1145/3392840)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html#how-does-it-work",
+    "href": "course-materials/lecture-slides/lecture-day1am-notes.html#how-does-it-work",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "How does it work?",
+    "text": "How does it work?\n\nBeginning today, try to reproduce a workflow\nLectures and hands-on activities for:\n\nAutomation\nOrganization\nDocumentation\nScale(ation)\nCollaboration\n\nSpecification-based grading\n\nNo points out of 100\nA rubric of specifications (specs) for your final project\nMeet (or exceed) specs and participate in class - get an A\nFeedback loops are critical (no one-and-done)\nYou’ll see more spec-based grading in other MEDS classes"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html#testimonial-from-bekah",
+    "href": "course-materials/lecture-slides/lecture-day1am-notes.html#testimonial-from-bekah",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "Testimonial from Bekah??",
+    "text": "Testimonial from Bekah??\n\nQuestion: where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: model eats a lot of data with extensive pre-processing and subjective parameters.\n\nTime consuming to iterate and incorporate feedback.\nEasily becomes tangled - verifying results is hard!\n\nSolution: instead of a point-and-click solution in ArcGIS, a well-organized, reproducible workflow in R.\nToday: Bekah is Research Associate with the Center for Coastal Studies in Provincetown, MA. Still doing field work and data analysis to protect whales in coastal waters with high human impacts."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "This morning, you’ll learn:\n\nWhy the command line is useful\nHow to issue commands on the command line\nWhy remote servers offer performance benefits\nHow to use the command line to interact with a remote server\n\n\n\n[Column 1] Graphical User Interface (GUI) * Point-and-click - gentler learning curve * Limited customization options * Nearly impossible to automate\n[Column 2] Command Line Interface (CLI) * Highly customizable * Designed to be automated * Text-based - steeper learning curve\nAre the trade-offs worth it? For some scientists, maybe not. But for a data scientist, DEFINITELY.\n\n\n\n[Column 1] Terminal * The program you type commands into * Your megaphone for shouting at the computer\n[Column 2] Shell * A program that passes commands to the operating system * Listens to your megaphone\nYou will often see Terminal and Shell used interchangeably. This can get confusing. It helps to see them in action. Let’s try it out!\n\n\n\n\nOpen a terminal\n\nMacOS: Terminal\nWindows: GitBash (both a terminal AND a shell)\n\nAsk the shell where you are\n\npwd - print working directory\nls - list files in the current directory\n\nCustomize the command with options\n\nls -l - long listing format\nls -a - show hidden files\nls -la - both!\n\n\n\n\n\nAnimate in the images in lecture-slides/images/day2/command-line\n\n\n\n[Column 1] Navigation & File System\n\npwd - know where you are\nls (with -l, -a flags) - see what’s there\ncd - move around (including cd ~, cd .., cd -)\nmkdir - create directories\nrmdir - remove directories (only if empty)\n\n[Column 2] File Operations\n\ntouch - create files\ncp - copy files/directories\nmv - move/rename files\nrm - delete files (no recycle bin!)\ncat - view file contents\n\n\n\n\n[Column 1] Navigation & File System\n\npwd - know where you are\nls (with -l, -a flags) - see what’s there\ncd - move around (including cd ~, cd .., cd -)\nmkdir - create directories\nrmdir - remove directories (only if empty)\n\n[Column 2] File Operations\n\ntouch - create files\ncp - copy files/directories\nmv - move/rename files\nrm - delete files (no recycle bin!)\ncat - view file contents\n\n\n\n\ncommand [options] [arguments] * command - the command you want to run (e.g., ls) * options - flags that modify the command’s behavior (e.g., -l, -a) * arguments - the files or directories the command should operate on (e.g., mydir/)\n\n\n\nDo the following in your terminal. Make a note of your answers in a text file.\n[Column 1]\nCreate the following directory structure on your computer.\nrenewable-energy ├── capacity │ ├── san-luis-obispo.csv │ ├── santa-barbara.csv │ └── ventura.csv └── usage ├── san-luis-obispo.csv ├── santa-barbara.csv └── ventura.csv\n[Column 2]\nNow, delete the capacity/ folder and rename usage/ to data/.\nUse ls -l data to check the contents of your directory. Answer the following questions.\n\nDoes your directory look the way you expect it to?\nIn ls -l data, what parts correspond to the argument, option, and command?\n\n\n\n\nDo the following in your terminal. Make a note of your answers in a text file.\n[Column 1]\nCreate the following directory structure on your computer.\nrenewable-energy ├── capacity │ ├── san-luis-obispo.csv │ ├── santa-barbara.csv │ └── ventura.csv └── usage ├── san-luis-obispo.csv ├── santa-barbara.csv └── ventura.csv\n[Column 2]\nNow, delete the capacity/ folder and rename usage/ to data/.\nUse ls -l data to check the contents of your directory. Answer the following questions.\n\nDoes your directory look the way you expect it to?\nIn ls -l data, what parts correspond to the argument, option, and command?\n\n\n\n\n[Column 1]\nFrom the renewable-energy directory, run the following commands:\ncd data\nmkdir ../scripts\ntouch ../scripts/1_import.R\ncd ..\nmv scripts/1_import.R R/import.R\n[Column 2]\nAnswer the following questions.\n\nWhat error message did you get?\nWhat do you think these commands were supposed to accomplish?\nHow could you fix it?"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html#why-not-a-gui",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html#why-not-a-gui",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "[Column 1] Graphical User Interface (GUI) * Point-and-click - gentler learning curve * Limited customization options * Nearly impossible to automate\n[Column 2] Command Line Interface (CLI) * Highly customizable * Designed to be automated * Text-based - steeper learning curve\nAre the trade-offs worth it? For some scientists, maybe not. But for a data scientist, DEFINITELY."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html#terminals-and-shells",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html#terminals-and-shells",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "[Column 1] Terminal * The program you type commands into * Your megaphone for shouting at the computer\n[Column 2] Shell * A program that passes commands to the operating system * Listens to your megaphone\nYou will often see Terminal and Shell used interchangeably. This can get confusing. It helps to see them in action. Let’s try it out!"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html#terminal-and-shell-demo",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html#terminal-and-shell-demo",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "Open a terminal\n\nMacOS: Terminal\nWindows: GitBash (both a terminal AND a shell)\n\nAsk the shell where you are\n\npwd - print working directory\nls - list files in the current directory\n\nCustomize the command with options\n\nls -l - long listing format\nls -a - show hidden files\nls -la - both!"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html#onions-have-layers",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html#onions-have-layers",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "Animate in the images in lecture-slides/images/day2/command-line"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html#key-shell-commands",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html#key-shell-commands",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "[Column 1] Navigation & File System\n\npwd - know where you are\nls (with -l, -a flags) - see what’s there\ncd - move around (including cd ~, cd .., cd -)\nmkdir - create directories\nrmdir - remove directories (only if empty)\n\n[Column 2] File Operations\n\ntouch - create files\ncp - copy files/directories\nmv - move/rename files\nrm - delete files (no recycle bin!)\ncat - view file contents"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html#key-shell-commands-1",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html#key-shell-commands-1",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "[Column 1] Navigation & File System\n\npwd - know where you are\nls (with -l, -a flags) - see what’s there\ncd - move around (including cd ~, cd .., cd -)\nmkdir - create directories\nrmdir - remove directories (only if empty)\n\n[Column 2] File Operations\n\ntouch - create files\ncp - copy files/directories\nmv - move/rename files\nrm - delete files (no recycle bin!)\ncat - view file contents"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html#customizing-commands",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html#customizing-commands",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "command [options] [arguments] * command - the command you want to run (e.g., ls) * options - flags that modify the command’s behavior (e.g., -l, -a) * arguments - the files or directories the command should operate on (e.g., mydir/)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html#shell-command-challenge-part-1",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html#shell-command-challenge-part-1",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "Do the following in your terminal. Make a note of your answers in a text file.\n[Column 1]\nCreate the following directory structure on your computer.\nrenewable-energy ├── capacity │ ├── san-luis-obispo.csv │ ├── santa-barbara.csv │ └── ventura.csv └── usage ├── san-luis-obispo.csv ├── santa-barbara.csv └── ventura.csv\n[Column 2]\nNow, delete the capacity/ folder and rename usage/ to data/.\nUse ls -l data to check the contents of your directory. Answer the following questions.\n\nDoes your directory look the way you expect it to?\nIn ls -l data, what parts correspond to the argument, option, and command?"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html#shell-command-challenge-part-1-1",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html#shell-command-challenge-part-1-1",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "Do the following in your terminal. Make a note of your answers in a text file.\n[Column 1]\nCreate the following directory structure on your computer.\nrenewable-energy ├── capacity │ ├── san-luis-obispo.csv │ ├── santa-barbara.csv │ └── ventura.csv └── usage ├── san-luis-obispo.csv ├── santa-barbara.csv └── ventura.csv\n[Column 2]\nNow, delete the capacity/ folder and rename usage/ to data/.\nUse ls -l data to check the contents of your directory. Answer the following questions.\n\nDoes your directory look the way you expect it to?\nIn ls -l data, what parts correspond to the argument, option, and command?"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-notes.html#shell-command-challenge-part-2",
+    "href": "course-materials/lecture-slides/lecture-day2am-notes.html#shell-command-challenge-part-2",
+    "title": "The Command Line and Remote Servers",
+    "section": "",
+    "text": "[Column 1]\nFrom the renewable-energy directory, run the following commands:\ncd data\nmkdir ../scripts\ntouch ../scripts/1_import.R\ncd ..\nmv scripts/1_import.R R/import.R\n[Column 2]\nAnswer the following questions.\n\nWhat error message did you get?\nWhat do you think these commands were supposed to accomplish?\nHow could you fix it?"
+  },
+  {
+    "objectID": "course-materials/day1.html",
+    "href": "course-materials/day1.html",
+    "title": "Workflows and reproducibility",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nPlan an analysis\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nMake spaghetti\nExploration and iteration"
+  },
+  {
+    "objectID": "course-materials/day1.html#class-materials",
+    "href": "course-materials/day1.html#class-materials",
+    "title": "Workflows and reproducibility",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nPlan an analysis\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nMake spaghetti\nExploration and iteration"
+  },
+  {
+    "objectID": "course-materials/day1.html#further-reading",
+    "href": "course-materials/day1.html#further-reading",
+    "title": "Workflows and reproducibility",
+    "section": "Further reading",
+    "text": "Further reading\n\nStoudt, Vásquez, and Martinez (2021) describe how analytical workflows evolve, what they look like in the end, and how they’re necessary for data-intensive science.\nLowndes et al. (2017) present a case study on their own team-based research. They show how an emphasis on reproducibility improves efficiency as well as transparency."
+  },
+  {
+    "objectID": "course-materials/day3.html",
+    "href": "course-materials/day3.html",
+    "title": "TODO: fixme",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
+  },
+  {
+    "objectID": "course-materials/day3.html#class-materials",
+    "href": "course-materials/day3.html#class-materials",
+    "title": "TODO: fixme",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
+  },
+  {
+    "objectID": "course-materials/day5.html",
+    "href": "course-materials/day5.html",
+    "title": "TODO: fixme",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
+  },
+  {
+    "objectID": "course-materials/day5.html#class-materials",
+    "href": "course-materials/day5.html#class-materials",
+    "title": "TODO: fixme",
+    "section": "",
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1pm.html",
+    "href": "course-materials/interactive/interactive-day1pm.html",
+    "title": "Make Spaghetti",
+    "section": "",
+    "text": "This morning you looked at the raw data and one output (Figure 3) of Schaefer et al. (2000).\nYou explored the data and examined the information available in the paper about how the paper was made.\nUsing those two elements, you created flowcharts planning your analysis."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1pm.html#previously-on-eds-214",
+    "href": "course-materials/interactive/interactive-day1pm.html#previously-on-eds-214",
+    "title": "Make Spaghetti",
+    "section": "",
+    "text": "This morning you looked at the raw data and one output (Figure 3) of Schaefer et al. (2000).\nYou explored the data and examined the information available in the paper about how the paper was made.\nUsing those two elements, you created flowcharts planning your analysis."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1pm.html#goals",
+    "href": "course-materials/interactive/interactive-day1pm.html#goals",
+    "title": "Make Spaghetti",
+    "section": "Goals",
+    "text": "Goals\nIn this session you’re going to take an important step towards your ultimate goal of reproducing figure 3 from Schaefer et al. (2000): make spaghetti code.\n\nYou can think of spaghetti as the alternative to a workflow. Instead of a well-organized analysis with clear connections between data, code, and outputs, spaghetti jumbles all these components together.\nImagine you want to change one part of your analysis. Perhaps you received some new data, or a collaborator suggests trying a different type of statistical model. Simply figuring out which lines of code need your attention is challenging when it’s all spaghetti. What’s worse, when you change one thing there’s a good chance you’ll break a lot of other things downstream.\n\n\n\n\n\n\nNote\n\n\n\nSpaghetti sounds pretty bad, doesn’t it? While it’s true that you don’t want your finished product to look like spaghetti, it’s often a necessary intermediate step. Science is a creative and iterative process. We often don’t know exactly what we need to do before we begin. As we explore, we create spaghetti. By creating spaghetti we develop our conceptual understanding of what our workflow should look like. Only then can we begin making a well-organized workflow."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1pm.html#instructions",
+    "href": "course-materials/interactive/interactive-day1pm.html#instructions",
+    "title": "Make Spaghetti",
+    "section": "Instructions",
+    "text": "Instructions\n\nMake spaghetti\n\nPicking up where we left off this morning, create a new script in your RStudio project.\nBegin writing code to implement your flowchart.\nKeep writing code until you can create a figure.\n\n\n\n\n\n\n\nImportant\n\n\n\nThe goal of this exercise is to create spaghetti. I want you to get messy with it. Add comments haphazardly. If you find out your code is going down a dead end, just leave it there and start on a new line. Choose variable names without thinking about them. Don’t worry if the figure you create at the end looks nothing like how it’s supposed to.\n\n\n\n\nRevise your flowchart\n\nRe-read your flowchart from this morning.\nRevise your flowchart with what you learned from making spaghetti. In the process of writing code, did you learn more details about the workflow? Were there steps you didn’t consider earlier? Did you discover any steps that should be split or lumped?\nMake a note of 1-2 changes you made to your flowchart. I will randomly call on two students to share."
+  },
+  {
+    "objectID": "course-materials/interactive/interactive-day1pm.html#coming-up-next",
+    "href": "course-materials/interactive/interactive-day1pm.html#coming-up-next",
+    "title": "Make Spaghetti",
+    "section": "Coming up next",
+    "text": "Coming up next\nYou now have two important elements of your workflow: a revised plan and a plate of spaghetti.\nOver the next few days, you will learn how to transform spaghetti into a well-organized, thoroughly documented, and easily reproducible analysis."
+  },
+  {
     "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#title-slide",
     "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#title-slide",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
@@ -271,265 +740,6 @@
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
     "text": "Works cited\n\n\n\n\n\n\n\n\nBenedetti-Cecchi, Lisandro, Amanda E. Bates, Giovanni Strona, Fabio Bulleri, Barbara Horta e Costa, Graham J. Edgar, Bernat Hereu, et al. 2024. “Marine Protected Areas Promote Stability of Reef Fish Communities Under Climate Warming.” Nature Communications 15 (1). https://doi.org/10.1038/s41467-024-44976-y.\n\n\nKrumhansl, Kira A., Daniel K. Okamoto, Andrew Rassweiler, Mark Novak, John J. Bolton, Kyle C. Cavanaugh, Sean D. Connell, et al. 2016. “Global Patterns of Kelp Forest Change over the Past Half-Century.” Proceedings of the National Academy of Sciences 113 (48): 13785–90. https://doi.org/10.1073/pnas.1606102113.\n\n\nSmith, Joshua G., Christopher M. Free, Cori Lopazanski, Julien Brun, Clarissa R. Anderson, Mark H. Carr, Joachim Claudet, et al. 2023. “A Marine Protected Area Network Does Not Confer Community Structure Resilience to a Marine Heatwave Across Coastal Ecosystems.” Global Change Biology 29 (19): 5634–51. https://doi.org/10.1111/gcb.16862."
-  },
-  {
-    "objectID": "course-materials/interactive/interactive-day1am.html",
-    "href": "course-materials/interactive/interactive-day1am.html",
-    "title": "Plan an Analysis",
-    "section": "",
-    "text": "What happens to water quality after a hurricane hits? Schaefer et al. (2000) investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards."
-  },
-  {
-    "objectID": "course-materials/interactive/interactive-day1am.html#background",
-    "href": "course-materials/interactive/interactive-day1am.html#background",
-    "title": "Plan an Analysis",
-    "section": "",
-    "text": "What happens to water quality after a hurricane hits? Schaefer et al. (2000) investigated long-term stream water quality in Puerto Rico before and after the 1989 Hurricane Hugo. They found that some nutrients, like potassium, increased greatly post-disturbance and stayed elevated for years afterwards."
-  },
-  {
-    "objectID": "course-materials/interactive/interactive-day1am.html#goals",
-    "href": "course-materials/interactive/interactive-day1am.html#goals",
-    "title": "Plan an Analysis",
-    "section": "Goals",
-    "text": "Goals\nOver the course of this week, you’re going to reproduce figure 3 from Schaefer et al. (2000). Your goal for today is to gather the data, make an analysis plan, and write the code to process and visualize the data. By the end of the week, you will organize your analysis and document your workflow. Even better, you’ll do it collaboratively and prepare it to run on a high-performance cluster.\n\n\n\n\n\n\nFigure 1: Concentrations in Bisley, Puerto Rico streams before and after Hurricane Hugo, 9-wk moving averags. (a) potassium, (b) nitrate-N, (c) magnesium, (d) calcium and (e) ammonium-N. The vertical lines mark the time of hurricane disturbance. Reproduced from Schaefer et al. (2000)."
-  },
-  {
-    "objectID": "course-materials/interactive/interactive-day1am.html#data",
-    "href": "course-materials/interactive/interactive-day1am.html#data",
-    "title": "Plan an Analysis",
-    "section": "Data",
-    "text": "Data\nThe data are available through the Environmental Data Initiative. You can find them here: (McDowell and International Institute Of Tropical Forestry (IITF) 2024)."
-  },
-  {
-    "objectID": "course-materials/interactive/interactive-day1am.html#instructions",
-    "href": "course-materials/interactive/interactive-day1am.html#instructions",
-    "title": "Plan an Analysis",
-    "section": "Instructions",
-    "text": "Instructions\n\nSetup\n\nCreate a new RStudio project.\nCreate a GitHub repo.\nDownload the data from McDowell and International Institute Of Tropical Forestry (IITF) (2024) and put it in your project folder.\nMake an initial commit and push to GitHub.\n\n\n\nExplore\n\nExamine figure 3 of Schaefer et al. (2000) and the data available at McDowell and International Institute Of Tropical Forestry (IITF) (2024).\nMake a list of the data files and the columns within them that you think you’ll need to reproduce figure 3.\n\n\n\n\n\n\n\nTip\n\n\n\nCheck the metadata in McDowell and International Institute Of Tropical Forestry (IITF) (2024) carefully. Are the names and units what you expect? It’s been 25 years since Schaefer et al. (2000) was published - a lot can change in that time!\n\n\n\n\n\n\n\n\nTip\n\n\n\nIt may be helpful to read a CSV file into R and explore it using numeric or visual summaries.\n\n\n\n\nPlan\n\nBased on the caption of figure 3, write down the steps you think will be necessary to reproduce figure 3.\nCreate a flow chart of how the steps fit together. Things to consider include:\n\nHow will you get the data into R?\nHow will you clean up the data?\nAre any processing or modeling steps required?\nWhat are your outputs?\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe Plan section sneakily asks you to do two things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a system for representing the components of your analysis and their connections. That’s the second thing: come up with your own flowchart system off the cuff. Tomorrow I’ll introduce you to the system I use. For now, give it your best shot!\n\n\n\n\nShare\n\nFind a partner.\nCompare your flowcharts.\nFind two similarities and two differences between your flowcharts and make note of them. To get you started, try considering:\n\nWhere did you include more or less detail?\nHow did you visually represent components and connections?\n\n\nI will call on two pairs to share."
-  },
-  {
-    "objectID": "course-materials/day4.html",
-    "href": "course-materials/day4.html",
-    "title": "TODO: fixme",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
-  },
-  {
-    "objectID": "course-materials/day4.html#class-materials",
-    "href": "course-materials/day4.html#class-materials",
-    "title": "TODO: fixme",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
-  },
-  {
-    "objectID": "course-materials/day2.html",
-    "href": "course-materials/day2.html",
-    "title": "TODO: fixme",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
-  },
-  {
-    "objectID": "course-materials/day2.html#class-materials",
-    "href": "course-materials/day2.html#class-materials",
-    "title": "TODO: fixme",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html",
-    "href": "course-materials/lecture-slides/lecture-day1am-notes.html",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "This is a class about workflows and reproducibility\nThe workflow is the fundamental unit of data science\nReproducibility ensures workflows don’t become dead ends\nThe concepts and skills in this class will keep coming up in future classes and for the rest of your career"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html#welcome-to-eds-214",
-    "href": "course-materials/lecture-slides/lecture-day1am-notes.html#welcome-to-eds-214",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "This is a class about workflows and reproducibility\nThe workflow is the fundamental unit of data science\nReproducibility ensures workflows don’t become dead ends\nThe concepts and skills in this class will keep coming up in future classes and for the rest of your career"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html#hi-im-max",
-    "href": "course-materials/lecture-slides/lecture-day1am-notes.html#hi-im-max",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "Hi, I’m Max",
-    "text": "Hi, I’m Max\n\nI started as a computer scientist\nSoftware engineer at Microsoft\nFour years as a field biologist (seabirds, mostly)\nSix years grad school, specializing in data science\n\nGIS at SFSU\nMarine biology at Stanford\n\nMy specialty was biologging - animal-borne sensors for detecting location, behavior, and physiology\nNow my research is about open science, sharing data and code, and the ethics of proprietary data\nBut really what I love is teaching!\nIn addition to the MEDS program, I also teach in the new marine science undergraduate major\nMy favorite part of my job is working with students\n\nI would love it if you set up a meeting with me to tell me about your background, your interests, and your motivations for being here"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html#what-is-this-class-about",
-    "href": "course-materials/lecture-slides/lecture-day1am-notes.html#what-is-this-class-about",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "What is this class about?",
-    "text": "What is this class about?\n\nWhat is a workflow?\n\nThink-pair-share activity\nData, code, modeling, communication\nThe final workflow masks a trajectory of exploration and dead ends (Stoudt et al. 2021 doi:10.1371/journal.pcbi.1008770)\n\nWhat is reproducibility?\n\nDoes it matter if you’re not doing academic research?\nDebate activity\nReproducibility is the ability to repeat a workflow and get the same results\nGlobal and local goals\n\n“reproducibility as a mechanism for local knowledge transfer and collaboration, particularly as regards efficient software reuse” (Feinberg et al. 2020 doi:10.1145/3392840)"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html#how-does-it-work",
-    "href": "course-materials/lecture-slides/lecture-day1am-notes.html#how-does-it-work",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "How does it work?",
-    "text": "How does it work?\n\nBeginning today, try to reproduce a workflow\nLectures and hands-on activities for:\n\nAutomation\nOrganization\nDocumentation\nScale(ation)\nCollaboration\n\nSpecification-based grading\n\nNo points out of 100\nA rubric of specifications (specs) for your final project\nMeet (or exceed) specs and participate in class - get an A\nFeedback loops are critical (no one-and-done)\nYou’ll see more spec-based grading in other MEDS classes"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-notes.html#testimonial-from-bekah",
-    "href": "course-materials/lecture-slides/lecture-day1am-notes.html#testimonial-from-bekah",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "Testimonial from Bekah??",
-    "text": "Testimonial from Bekah??\n\nQuestion: where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: model eats a lot of data with extensive pre-processing and subjective parameters.\n\nTime consuming to iterate and incorporate feedback.\nEasily becomes tangled - verifying results is hard!\n\nSolution: instead of a point-and-click solution in ArcGIS, a well-organized, reproducible workflow in R.\nToday: Bekah is Research Associate with the Center for Coastal Studies in Provincetown, MA. Still doing field work and data analysis to protect whales in coastal waters with high human impacts."
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html",
-    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Let’s look at some examples of workflows on GitHub\nAll focus on nearby marine ecosystems, but the principles apply to any subject\nKeep your eyes peeled for these four components:\n\nRaw data\nCode\nOutputs\nDocumentation"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization",
-    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Let’s look at some examples of workflows on GitHub\nAll focus on nearby marine ecosystems, but the principles apply to any subject\nKeep your eyes peeled for these four components:\n\nRaw data\nCode\nOutputs\nDocumentation"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#kelp-me-kelp-you",
-    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#kelp-me-kelp-you",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "Kelp me kelp you",
-    "text": "Kelp me kelp you\n\nKrumhansl et al. 2016 PNAS\nhttps://github.com/kelpecosystems/global_kelp_time_series\nFig 4: kelp forests declining globally"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-protect-against-marine-heatwaves",
-    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-protect-against-marine-heatwaves",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "MPAs protect against marine heatwaves",
-    "text": "MPAs protect against marine heatwaves\n\nBenedetti-Cecchi et al. 2024 NatComms\nhttps://github.com/bencecc/ReefFishStability/tree/v1\nFig 3a,b: In MPAs, reef fish stability is affected more by remoteness than heatwaves. Pattern reversed in open areas."
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-dont-protect-against-marine-heatwaves",
-    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#mpas-dont-protect-against-marine-heatwaves",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "MPAs don’t protect against marine heatwaves",
-    "text": "MPAs don’t protect against marine heatwaves\n\nSmith et al. 2023 GCB\nhttps://github.com/NCEAS/ca-mpa\nFig 3: Only rocky intertidal sites exhibited resistance and recovery in MPAs"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-1",
-    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-1",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "Workflow organization jigsaw pt 1",
-    "text": "Workflow organization jigsaw pt 1\n\nCount off 1-3\nFind 2-3 other students with your same number (i.e., a group with 3 1s, a group with 4 2s, etc.)\nEach group will look at one of the three workflows above\n\n1: Krumhansl et al. 2016 PNAS\n2: Benedetti-Cecchi et al. 2024 NatComms\n3: Smith et al. 2023 GCB\n\nTry to find the following four components in the workflow:\n\nRaw data\nCode\nOutputs\nDocumentation\n\nFor each component, make a note of:\n\nThe name of the folder(s) containing it\nConnections with other components\nHow you found that component (intuition? documentation? parsing code?)"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-2",
-    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#workflow-organization-jigsaw-pt-2",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "Workflow organization jigsaw pt 2",
-    "text": "Workflow organization jigsaw pt 2\n\nNow, form groups with one student from each workflow\nEach person shares what they found in their workflow\nAs a group, write down 2 traits of a workflow that make it easy and challenging to find things (4 traits total)\nProvide examples for each\nI will randomly call on a group to share"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#what-are-the-goals-for-workflow-organization",
-    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#what-are-the-goals-for-workflow-organization",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "What are the goals for workflow organization?",
-    "text": "What are the goals for workflow organization?\n\nReproducibility\n\nAnother scientist (including Future You) should be able to repeat your analysis.\n\nMaintainability\n\nYou should be able to jump back in to editing your analysis, even if you haven’t looked at it in a while\nDOC101 lecture TikTok\n\nCollaboration\n\nYou should be able to share your analysis methods and results with others"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#tools-that-help-with-workflow-organization",
-    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#tools-that-help-with-workflow-organization",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "Tools that help with workflow organization",
-    "text": "Tools that help with workflow organization\n\nGitHub\n\nVersion control - track your (and your collaborators’) changes\nIssues - a built-in to-do list directly connected to code and conversations\nBranches and pull requests - work in parallel and merge your work as seamlessly as possible\nGitHub Pages - a website for sharing your analysis with collaborators\n\nFolder organization\n\nIt’s less important which system you pick than it is to be consistent\nFree up cognitive load!\n\nBrainpower you spent figuring out where to put or find files - reallocated to your actual science\n\nFollow conventions\n\nBy playing nice with others you get to use their tools"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1pm-notes.html#introducing-the-flukeandfeather-workflow-organization-system-tm",
-    "href": "course-materials/lecture-slides/lecture-day1pm-notes.html#introducing-the-flukeandfeather-workflow-organization-system-tm",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "Introducing: The FlukeAndFeather Workflow Organization System TM",
-    "text": "Introducing: The FlukeAndFeather Workflow Organization System TM\n\nYou have before you a shuffled collection of folders and files\nYou have no context other than their names\nWith a partner, try to:\n\nOrganize the folders and files hierarchically\nBriefly describe what you think the purpose of each folder/file is"
-  },
-  {
-    "objectID": "course-materials/day1.html",
-    "href": "course-materials/day1.html",
-    "title": "Workflows and reproducibility",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nPlan an analysis\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nMake spaghetti\nExploration and iteration"
-  },
-  {
-    "objectID": "course-materials/day1.html#class-materials",
-    "href": "course-materials/day1.html#class-materials",
-    "title": "Workflows and reproducibility",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nPlan an analysis\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nMake spaghetti\nExploration and iteration"
-  },
-  {
-    "objectID": "course-materials/day1.html#further-reading",
-    "href": "course-materials/day1.html#further-reading",
-    "title": "Workflows and reproducibility",
-    "section": "Further reading",
-    "text": "Further reading\n\nStoudt, Vásquez, and Martinez (2021) describe how analytical workflows evolve, what they look like in the end, and how they’re necessary for data-intensive science.\nLowndes et al. (2017) present a case study on their own team-based research. They show how an emphasis on reproducibility improves efficiency as well as transparency."
-  },
-  {
-    "objectID": "course-materials/day3.html",
-    "href": "course-materials/day3.html",
-    "title": "TODO: fixme",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
-  },
-  {
-    "objectID": "course-materials/day3.html#class-materials",
-    "href": "course-materials/day3.html#class-materials",
-    "title": "TODO: fixme",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
-  },
-  {
-    "objectID": "course-materials/day5.html",
-    "href": "course-materials/day5.html",
-    "title": "TODO: fixme",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
-  },
-  {
-    "objectID": "course-materials/day5.html#class-materials",
-    "href": "course-materials/day5.html#class-materials",
-    "title": "TODO: fixme",
-    "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
-  },
-  {
-    "objectID": "course-materials/interactive/interactive-day1pm.html",
-    "href": "course-materials/interactive/interactive-day1pm.html",
-    "title": "Make Spaghetti",
-    "section": "",
-    "text": "This morning you looked at the raw data and one output (Figure 3) of Schaefer et al. (2000).\nYou explored the data and examined the information available in the paper about how the paper was made.\nUsing those two elements, you created flowcharts planning your analysis."
-  },
-  {
-    "objectID": "course-materials/interactive/interactive-day1pm.html#previously-on-eds-214",
-    "href": "course-materials/interactive/interactive-day1pm.html#previously-on-eds-214",
-    "title": "Make Spaghetti",
-    "section": "",
-    "text": "This morning you looked at the raw data and one output (Figure 3) of Schaefer et al. (2000).\nYou explored the data and examined the information available in the paper about how the paper was made.\nUsing those two elements, you created flowcharts planning your analysis."
-  },
-  {
-    "objectID": "course-materials/interactive/interactive-day1pm.html#goals",
-    "href": "course-materials/interactive/interactive-day1pm.html#goals",
-    "title": "Make Spaghetti",
-    "section": "Goals",
-    "text": "Goals\nIn this session you’re going to take an important step towards your ultimate goal of reproducing figure 3 from Schaefer et al. (2000): make spaghetti code.\n\nYou can think of spaghetti as the alternative to a workflow. Instead of a well-organized analysis with clear connections between data, code, and outputs, spaghetti jumbles all these components together.\nImagine you want to change one part of your analysis. Perhaps you received some new data, or a collaborator suggests trying a different type of statistical model. Simply figuring out which lines of code need your attention is challenging when it’s all spaghetti. What’s worse, when you change one thing there’s a good chance you’ll break a lot of other things downstream.\n\n\n\n\n\n\nNote\n\n\n\nSpaghetti sounds pretty bad, doesn’t it? While it’s true that you don’t want your finished product to look like spaghetti, it’s often a necessary intermediate step. Science is a creative and iterative process. We often don’t know exactly what we need to do before we begin. As we explore, we create spaghetti. By creating spaghetti we develop our conceptual understanding of what our workflow should look like. Only then can we begin making a well-organized workflow."
-  },
-  {
-    "objectID": "course-materials/interactive/interactive-day1pm.html#instructions",
-    "href": "course-materials/interactive/interactive-day1pm.html#instructions",
-    "title": "Make Spaghetti",
-    "section": "Instructions",
-    "text": "Instructions\n\nMake spaghetti\n\nPicking up where we left off this morning, create a new script in your RStudio project.\nBegin writing code to implement your flowchart.\nKeep writing code until you can create a figure.\n\n\n\n\n\n\n\nImportant\n\n\n\nThe goal of this exercise is to create spaghetti. I want you to get messy with it. Add comments haphazardly. If you find out your code is going down a dead end, just leave it there and start on a new line. Choose variable names without thinking about them. Don’t worry if the figure you create at the end looks nothing like how it’s supposed to.\n\n\n\n\nRevise your flowchart\n\nRe-read your flowchart from this morning.\nRevise your flowchart with what you learned from making spaghetti. In the process of writing code, did you learn more details about the workflow? Were there steps you didn’t consider earlier? Did you discover any steps that should be split or lumped?\nMake a note of 1-2 changes you made to your flowchart. I will randomly call on two students to share."
-  },
-  {
-    "objectID": "course-materials/interactive/interactive-day1pm.html#coming-up-next",
-    "href": "course-materials/interactive/interactive-day1pm.html#coming-up-next",
-    "title": "Make Spaghetti",
-    "section": "Coming up next",
-    "text": "Coming up next\nYou now have two important elements of your workflow: a revised plan and a plate of spaghetti.\nOver the next few days, you will learn how to transform spaghetti into a well-organized, thoroughly documented, and easily reproducible analysis."
   },
   {
     "objectID": "final-project/final-project-peer-review.html",

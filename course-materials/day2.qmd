@@ -1,13 +1,21 @@
 ---
-title: "TODO: fixme"
+title: "Command Line and Documentation"
 subtitle: "Day 2"
 description: "Tuesday August 26^th^, 2025"
+bibliography: references.bib
 ---
 
 ## Class materials
 
-| {{< session >}} | {{< lecture >}}        | {{< interactive >}} | {{< reflection >}} |
-|-----------------|------------------------|---------------------|-------------------|
-| Morning         | TODO: fixme | TODO: fixme  | TODO: fixme |
-| Afternoon       | TODO: fixme  | TODO: fixme  | TODO: fixme |
-: {.hover .bordered .w-auto .mx-auto} 
+| {{< session >}} | {{< lecture >}} | {{< interactive >}} | {{< reflection >}} |
+|------------------|------------------|------------------|------------------|
+| Morning | [Command line and remote server](lecture-slides/lecture-day2am-slides.qmd){target="_blank"} | [Navigate the server](interactive/interactive-day2am.qmd) | [Go with the flow](https://forms.gle/GjKm3S9fef74jN8w5){target="_blank"} |
+| Afternoon | [Documentation](lecture-slides/lecture-day2pm-slides.qmd){target="_blank"} | [Make spaghetti](interactive/interactive-day1pm.qmd) | [Exploration and iteration](https://forms.gle/2NfM8nrq6BCKjRdx5){target="_blank"} |
+
+: {.hover .bordered}
+
+## Further reading
+
+-   @stoudt2021 describe how analytical workflows evolve, what they look like in the end, and how they're necessary for data-intensive science.
+
+-   @lowndes2017 present a case study on their own team-based research. They show how an emphasis on reproducibility improves *efficiency* as well as transparency.

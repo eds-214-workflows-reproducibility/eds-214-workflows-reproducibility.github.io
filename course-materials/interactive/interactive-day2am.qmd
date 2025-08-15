@@ -1,0 +1,149 @@
+---
+title: "Navigate the Server"
+subtitle: "Day 2 Morning | EDS 214"
+description: "Tuesday August 26^th^, 2025"
+editor: visual
+---
+
+## Background
+
+Let's get started working on a remote server! Working on a remote server is one of the payoffs for the learning curve going from the GUI to the CLI.
+
+Compared to your personal computer, remote servers can be *beefy*. They let you scale your analysis up to bigger datasets and more computationally intensive algorithms. Some of the advantages of using remote servers for data science are:
+
+-   **Power** More CPUs/Cores, more RAM
+-   **Capacity** More disk space and generally faster storage
+-   **Security** Data are spread across multiple drives and have nightly backups
+-   **Collaboration** Shared folders for code, data, and other materials; same software versions
+
+## Goals
+
+In this session you're going to use the CLI and RStudio Workbench on the remote server. Along the way, you'll learn how to:
+
+-   Connect to Workbench with the CLI
+
+-   Configure git and GitHub remotely
+
+-   Interact with the server version of RStudio
+
+You're also going to create your first *merge conflict* - an inevitable challenge in coding collaborations. Tomorrow, you'll learn how to resolve the conflict.
+
+## Instructions
+
+### Connect to Workbench with the CLI[^1]
+
+[^1]: These instructions are also available on the [MEDS Computational Server Guide](https://bren.zendesk.com/hc/en-us/articles/8727865050900-MEDS-Computational-Server-Guide)
+
+1.  Connect to campus VPN.
+2.  Open up Terminal (mac) or GitBash (windows)
+3.  Run the following command: `ssh {username}@workbench-1.bren.ucsb.edu`
+4.  Type in your Bren password
+5.  You'll know if you connected successfully if the last line says `{username}@workbench-1` like the picture below.
+
+![](images/ssh-workbench.png){width="278" height="30"}
+
+### Configure git[^2]
+
+[^2]: These instructions are also available in the [MEDS Software Installation Guide](https://ucsb-meds.github.io/MEDS-installation-guide/#configure-git)
+
+Configure your git user name and email.
+
+``` sh
+git config --global user.name "Jane Doe"
+git config --global user.email janedoe@example.com
+```
+
+Tell git to hold on to your GitHub Personal Access Token between connections.
+
+``` sh
+git config --global credential.helper 'cache --timeout=10000000'
+```
+
+Check that your configuration looks right.
+
+``` sh
+git config --list --global
+```
+
+### Checkpoint 1
+
+Now that you've connected to Workbench with the CLI and configured git, answer the following questions.
+
+**Q1:** What directory are you in?
+
+**Q2:** Are there any files in your directory?
+
+**Q3:** There's a folder in Workbench's root called `courses`. How would you look at the contents of that folder?
+
+### Connect to Workbench with the RStudio GUI
+
+1.  Open your browser and navigate to <https://workbench-1.bren.ucsb.edu>.
+2.  Log in with Bren credentials.
+3.  Start an RStudio session by selecting "New Session". It may take a few seconds to start.
+
+You should now see RStudio in your browser as below.
+
+![](images/clipboard-2379238567.png)
+
+### Configure GitHub
+
+1.  Return to the Workbench RStudio interface.
+2.  In the console, run `install.packages("usethis")`.
+3.  Then, run `usethis::create_github_token()`.
+4.  The GitHub PAT dialog will appear in your browser. This should be familiar, you've done this before on your computer.
+5.  Create your PAT and set your GitHub credentials on Workbench by running `gitcreds::gitcreds_set()`.
+6.  Run `usethis::git_sitrep()` and verify your git and GitHub configurations are complete.
+
+### Clone your repo
+
+1.  Navigate to your EDS 214 project repo on GitHub. Copy the URL.
+2.  Return to the Workbench RStudio interface. Create a new RStudio project from your GitHub repo.
+
+### Checkpoint 2
+
+Switch to the terminal you used to connect to Workbench with the CLI. Verify your repo's files are now in your home directory.
+
+### Create a merge conflict
+
+Merge conflicts occur when the same line of code in a repository has been edited in two different places. One way to generate a merge conflict is when you're editing the same repo from two places (e.g., your personal computer and the remote server). Another way is when two people are working on the same code base simultaneously. **Both of these are likely to happen during your capstone!**
+
+Merge conflicts look scary, but they are a necessary phenomenon in data science. Today you'll create a conflict, tomorrow you'll fix it.
+
+#### Edit a line on the remote server
+
+1.  Choose a line in your spaghetti code that you wrote yesterday and edit it. You can change the name of a variable, for example.
+2.  Commit your change using the Git pane.
+3.  Push the change to GitHub.
+
+#### Edit the same line locally
+
+1.  Open your EDS 214 project in RStudio locally (*not* on Workbench). Find the same line of code and edit it in a different way. If you changed a variable name on the remote server, for example, change it to something else.
+2.  Commit your change.
+3.  Push.
+
+#### Uh oh!
+
+When you push the second time, you'll see an error like the one below.
+
+```         
+To https://github.com/[username]/[repo]
+ ! [rejected]        HEAD -> main (fetch first)
+error: failed to push some refs to 'https://github.com/[username]/[repo]'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+This is a good error! It prevents you from accidentally overwriting your own or your collaborator's work. Git calls this a *merge conflict*, and we'll cover how to fix them tomorrow.
+
+## Recap
+
+The Workbench remote server grants you access to greater computational resources and is a platform for collaboration that you'll use extensively in your capstone. Today, you learned how to:
+
+-   Use `ssh` to connect to Workbench (the CLI)
+
+-   Configure git and GitHub so you can keep getting the benefits of version control
+
+-   Use RStudio *on the server* directly through your browser

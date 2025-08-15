@@ -1,0 +1,308 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    highlight-style: a11y
+    chalkboard: true
+    theme: 
+      - ../../meds-slides-styles.scss
+bibliography: references.bib
+---
+
+## {#title-slide data-menu-title="Title Slide" background="#053660"} 
+
+[The Command Line and Remote Servers]{.custom-title}
+
+[*EDS 214: Analytical Workflows and Scientific Reproducibility*]{.custom-subtitle}
+
+<hr class="hr-teal">
+
+[Day 2 Morning | August 26^th^, 2025]{.custom-subtitle3}
+
+---
+
+## {#learning-objectives data-menu-title="Learning Objectives"} 
+
+[This morning, you'll learn:]{.slide-title}
+
+<hr>
+
+* Why the command line is useful
+* How to issue commands on the command line
+* Why remote servers offer performance benefits
+* How to use the command line to interact with a remote server
+
+---
+
+## {#why-not-gui data-menu-title="Why not a GUI?"} 
+
+[Why not a GUI?]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Graphical User Interface (GUI)**
+
+* Point-and-click - gentler learning curve
+* Limited customization options
+* Nearly impossible to automate
+
+:::
+
+::: {.column width="50%"}
+
+**Command Line Interface (CLI)**
+
+* Highly customizable
+* Designed to be automated
+* Text-based - steeper learning curve
+
+:::
+
+::::
+
+<br>
+
+Are the trade-offs worth it? For some scientists, maybe not. But for a data scientist, **DEFINITELY**.
+
+---
+
+## {#terminals-shells data-menu-title="Terminals and shells"} 
+
+[Terminals and shells]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Terminal**
+
+* The program you type commands into
+* Your megaphone for shouting at the computer
+
+:::
+
+::: {.column width="50%"}
+
+**Shell**
+
+* A program that passes commands to the operating system
+* Listens to your megaphone
+
+:::
+
+::::
+
+<br>
+
+You will often see Terminal and Shell used interchangeably. This can get confusing. It helps to see them in action. Let's try it out!
+
+---
+
+## {#terminal-demo data-menu-title="Terminal and shell demo"} 
+
+[Terminal and shell demo]{.slide-title}
+
+<hr>
+
+* Open a terminal
+  * MacOS: Terminal
+  * Windows: GitBash (both a terminal AND a shell)
+
+* Ask the shell where you are
+  * `pwd` - print working directory
+  * `ls` - list files in the current directory
+  
+* Customize the command with options
+  * `ls -l` - long listing format
+  * `ls -a` - show hidden files
+  * `ls -la` - both!
+
+---
+
+## {#onions-layers data-menu-title="Onions have layers"} 
+
+[Onions have layers]{.slide-title}
+
+<hr>
+
+![](images/day2/command-line-1.png){.fragment .fade-in-then-out .absolute}
+![](images/day2/command-line-2.png){.fragment .fade-in-then-out .absolute}
+![](images/day2/command-line-3.png){.fragment .fade-in-then-out .absolute}
+![](images/day2/command-line-4.png){.fragment .fade-in-then-out .absolute}
+![](images/day2/command-line-5.png){.fragment .fade-in-then-out .absolute}
+![](images/day2/command-line-6.png){.fragment .fade-in .absolute}
+
+---
+
+## {#key-shell-commands data-menu-title="Key shell commands"} 
+
+[Key shell commands]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Navigation & File System**
+
+* `pwd` - know where you are
+* `ls` (with `-l`, `-a` flags) - see what's there
+* `cd` - move around (including `cd ~`, `cd ..`, `cd -`)
+* `mkdir` - create directories
+* `rmdir` - remove directories (only if empty)
+
+:::
+
+::: {.column width="50%"}
+
+**File Operations**
+
+* `touch` - create files
+* `cp` - copy files/directories
+* `mv` - move/rename files
+* `rm` - delete files (no recycle bin!)
+* `cat` - view file contents
+
+:::
+
+::::
+
+---
+
+## {#customizing-commands data-menu-title="Customizing commands"} 
+
+[Customizing commands]{.slide-title}
+
+<hr>
+
+`command [options] [arguments]`
+
+* `command` - the command you want to run (e.g., `ls`)
+* `options` - flags that modify the command's behavior (e.g., `-l`, `-a`)
+* `arguments` - the files or directories the command should operate on (e.g., `mydir/`)
+
+---
+
+## {#cli-challenge-1 data-menu-title="CLI challenge part 1"} 
+
+[CLI challenge part 1]{.slide-title}
+
+<hr>
+
+Do the following in your terminal. Make a note of your answers in a text file.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Create the following directory structure on your computer *using the command line only*.
+
+```
+renewable-energy
+├── capacity
+│   ├── san-luis-obispo.csv
+│   ├── santa-barbara.csv
+│   └── ventura.csv
+└── usage
+    ├── san-luis-obispo.csv
+    ├── santa-barbara.csv
+    └── ventura.csv
+```
+
+:::
+
+::: {.column width="50%"}
+
+Now, delete the `capacity/` folder and rename `usage/` to `data/`.
+
+Use `ls -l data` to check the contents of your directory. Answer the following questions.
+
+* Does your directory look as expected?
+* What commands did you use?
+* In `ls -l data`, what parts correspond to the argument, option, and command?
+
+:::
+
+::::
+
+---
+
+## {#cli-challenge-2 data-menu-title="CLI challenge part 2"} 
+
+[CLI challenge part 2]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+From the `renewable-energy` directory, run the following commands:
+
+```{.sh code-line-numbers="false"}
+cd data
+mkdir ../scripts
+touch ../scripts/1_import.R
+cd ..
+mv scripts/1_import.R R/import.R
+```
+
+:::
+
+::: {.column width="50%"}
+
+Answer the following questions.
+
+* What error message did you get?
+* What do you think these commands were _supposed_ to accomplish?
+* How could you fix it?
+
+:::
+
+::::
+
+---
+
+## {#cli-review data-menu-title="CLI review"} 
+
+[CLI review]{.slide-title}
+
+<hr>
+
+### Why is the command line useful?
+
+* Customizable
+* Automatable
+
+### What's the difference between the terminal and the shell?
+
+**Terminal** The program you type commands into
+
+**Shell** The program that runs the commands
+
+### What does a CLI command look like?
+
+`command [options] [arguments]`
+
+`pwd`
+
+`mv foo.R bar.R`
+
+`ls -la data/`
+
+---
+
+## {#up-next data-menu-title="Up next"} 
+
+[Up next]{.slide-title}
+
+<hr>
+
+[Use the CLI to interact with a remote server.]{.body-text-l .center-text}
