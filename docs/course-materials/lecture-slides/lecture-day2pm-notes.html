@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Tuesday August 26th, 2025">
 
-<title>EDS 214: Analytical Workflows and Scientific Reproducibility – Command Line and Documentation</title>
+<title>EDS 214: Analytical Workflows and Scientific Reproducibility – lecture-day2pm-notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,48 +20,28 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/bren-hex.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/bren-hex.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -101,7 +80,7 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">EDS 214: Analytical Workflows and Scientific Reproducibility</span>
     </a>
   </div>
@@ -112,7 +91,7 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
@@ -125,29 +104,29 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-course-materials">    
         <li>
-    <a class="dropdown-item" href="../course-materials/day1.html">
+    <a class="dropdown-item" href="../../course-materials/day1.html">
  <span class="dropdown-text">day 1 (8/25)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day2.html">
+    <a class="dropdown-item" href="../../course-materials/day2.html">
  <span class="dropdown-text">day 2 (8/26)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day3.html">
+    <a class="dropdown-item" href="../../course-materials/day3.html">
  <span class="dropdown-text">day 3 (8/27)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day4.html">
+    <a class="dropdown-item" href="../../course-materials/day4.html">
  <span class="dropdown-text">day 4 (8/28)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day5.html">
+    <a class="dropdown-item" href="../../course-materials/day5.html">
  <span class="dropdown-text">day 5 (8/29)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../final-project/final-project.html"> 
+    <a class="nav-link" href="../../final-project/final-project.html"> 
 <span class="menu-text">final project</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -156,7 +135,7 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
         <li>
-    <a class="dropdown-item" href="../resources.html">
+    <a class="dropdown-item" href="../../resources.html">
  <span class="dropdown-text">recommended readings &amp; resources</span></a>
   </li>  
         <li>
@@ -190,29 +169,7 @@ div.csl-indent {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Command Line and Documentation</h1>
-            <p class="subtitle lead">Day 2</p>
-                  <div>
-        <div class="description">
-          Tuesday August 26<sup>th</sup>, 2025
-        </div>
-      </div>
-                </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -220,8 +177,17 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#class-materials" id="toc-class-materials" class="nav-link active" data-scroll-target="#class-materials">Class materials</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  <li><a href="#documenting-scientific-code-and-data---50-minute-lecture-outline" id="toc-documenting-scientific-code-and-data---50-minute-lecture-outline" class="nav-link active" data-scroll-target="#documenting-scientific-code-and-data---50-minute-lecture-outline">Documenting Scientific Code and Data - 50-Minute Lecture Outline</a>
+  <ul class="collapse">
+  <li><a href="#lego-blueprints" id="toc-lego-blueprints" class="nav-link" data-scroll-target="#lego-blueprints">LEGO Blueprints</a></li>
+  <li><a href="#the-diátaxis-map" id="toc-the-diátaxis-map" class="nav-link" data-scroll-target="#the-diátaxis-map">The Diátaxis map</a></li>
+  <li><a href="#documentation-types" id="toc-documentation-types" class="nav-link" data-scroll-target="#documentation-types">Documentation types</a>
+  <ul class="collapse">
+  <li><a href="#readme" id="toc-readme" class="nav-link" data-scroll-target="#readme">README</a></li>
+  <li><a href="#code-comments" id="toc-code-comments" class="nav-link" data-scroll-target="#code-comments">Code comments</a></li>
+  <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">Code style</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -231,53 +197,81 @@ div.csl-indent {
 
 
 
-
-<section id="class-materials" class="level2">
-<h2 class="anchored" data-anchor-id="class-materials">Class materials</h2>
-<table class="table-hover table-bordered caption-top table">
-<thead>
-<tr class="header">
-<th><p><i class="fa-solid fa-calendar-day" title="A calendar with one day highlighted"></i> <strong>Session</strong></p></th>
-<th><p><i class="fa-solid fa-person-chalkboard" title="A person motioning at a chalkboard"></i> <strong>Lecture slides</strong></p></th>
-<th><p><i class="fa-solid fa-laptop-code" title="A laptop with on-screen code"></i> <strong>Interactive session</strong></p></th>
-<th><p><i class="fa-solid fa-brain" title="A brain representing thinking and reflection"></i> <strong>Reflection</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Morning</td>
-<td><a href="../course-materials/lecture-slides/lecture-day2am-slides.html" target="_blank">Command line and remote server</a></td>
-<td><a href="../course-materials/interactive/interactive-day2am.html">Navigate the server</a></td>
-<td><a href="https://forms.gle/GjKm3S9fef74jN8w5" target="_blank">Go with the flow</a></td>
-</tr>
-<tr class="even">
-<td>Afternoon</td>
-<td><a href="../course-materials/lecture-slides/lecture-day2pm-slides.html" target="_blank">Documentation</a></td>
-<td><a href="../course-materials/interactive/interactive-day2pm.html">READMEs, style, and comments</a></td>
-<td><a href="https://forms.gle/2NfM8nrq6BCKjRdx5" target="_blank">Exploration and iteration</a></td>
-</tr>
-</tbody>
-</table>
+<section id="documenting-scientific-code-and-data---50-minute-lecture-outline" class="level1">
+<h1>Documenting Scientific Code and Data - 50-Minute Lecture Outline</h1>
+<section id="lego-blueprints" class="level2">
+<h2 class="anchored" data-anchor-id="lego-blueprints">LEGO Blueprints</h2>
+<p>Active learning exercise with four steps.</p>
+<ol type="1">
+<li>Build (in pairs) Form pairs and receive LEGOs Each pair builds a LEGO structure. Get weird with it! Take a picture of the <em>finished product</em> Destroy the LEGO structure</li>
+<li>Copy (in pairs) Switch legos and pictures with another pair Try to replicate the structure using only the picture Take notes about challenges encountered</li>
+<li>Share (in quads) Pairs compare original and finished structures Take notes about what was different Describe 2-3 pieces of documentation that would have helped</li>
+<li>Debrief (as a class) Draw two axes. Left-to-right: Acquisition to Application. Top-to-bottom: Action to Cognition Place the documentation pieces on the axes</li>
+</ol>
 </section>
-<section id="further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="further-reading">Further reading</h2>
+<section id="the-diátaxis-map" class="level2">
+<h2 class="anchored" data-anchor-id="the-diátaxis-map">The Diátaxis map</h2>
+<p>A framework for structuring documentation into four distinct areas:</p>
 <ul>
-<li><p><span class="citation" data-cites="stoudt2021">Stoudt, Vásquez, and Martinez (<a href="#ref-stoudt2021" role="doc-biblioref">2021</a>)</span> describe how analytical workflows evolve, what they look like in the end, and how they’re necessary for data-intensive science.</p></li>
-<li><p><span class="citation" data-cites="lowndes2017">Lowndes et al. (<a href="#ref-lowndes2017" role="doc-biblioref">2017</a>)</span> present a case study on their own team-based research. They show how an emphasis on reproducibility improves <em>efficiency</em> as well as transparency.</p></li>
+<li>Tutorials</li>
+<li>How-to guides</li>
+<li>Reference</li>
+<li>Explanation</li>
+</ul>
+<p>(Place them on the map)</p>
+<p>Each area serves a different purpose and audience.</p>
+<p>A <em>tool</em> needs all four areas. An <em>analysis</em> probably needs a subset. Why? (Think-pair-share)</p>
+</section>
+<section id="documentation-types" class="level2">
+<h2 class="anchored" data-anchor-id="documentation-types">Documentation types</h2>
+<section id="readme" class="level3">
+<h3 class="anchored" data-anchor-id="readme">README</h3>
+<p>Things you should always include in your GitHub repository READMEs:</p>
+<p>NOTE: these core elements are required for all MEDS-related homework assignments and projects</p>
+<p>Provide an example</p>
+<ol type="1">
+<li>A short, but descriptive title</li>
+<li>A brief explanation of the repository’s purpose</li>
+<li>A concise description of what’s housed in the repository</li>
+<li>Details regarding data access</li>
+<li>A list of authors or current contributors (for collaborative work)</li>
+<li>References</li>
+</ol>
+</section>
+<section id="code-comments" class="level3">
+<h3 class="anchored" data-anchor-id="code-comments">Code comments</h3>
+<p>Provide an example</p>
+<p>Types of comments. [add examples]</p>
+<ul>
+<li>Headers</li>
+<li>Inline</li>
+<li>Functions
+<ul>
+<li>Parameters</li>
+<li>Return value</li>
+<li>Example usage</li>
+</ul></li>
+</ul>
+</section>
+<section id="code-style" class="level3">
+<h3 class="anchored" data-anchor-id="code-style">Code style</h3>
+<p>Provide an example</p>
+<p>Readability -&gt; Comprehension -&gt; Reproducibility</p>
+<p>Consistency is key! (Just like workflow folder organization)</p>
+<p>Considerations:</p>
+<ul>
+<li>Object naming</li>
+<li>Spacing and layout</li>
+<li>Writing and calling functions</li>
+<li>Comments!</li>
 </ul>
 
 
-
+</section>
+</section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-lowndes2017" class="csl-entry" role="listitem">
-Lowndes, Julia S. Stewart, Benjamin D. Best, Courtney Scarborough, Jamie C. Afflerbach, Melanie R. Frazier, Casey C. O’Hara, Ning Jiang, and Benjamin S. Halpern. 2017. <span>“Our Path to Better Science in Less Time Using Open Data Science Tools.”</span> <em>Nature Ecology &amp; Evolution</em> 1 (6). <a href="https://doi.org/10.1038/s41559-017-0160">https://doi.org/10.1038/s41559-017-0160</a>.
-</div>
-<div id="ref-stoudt2021" class="csl-entry" role="listitem">
-Stoudt, Sara, Váleri N. Vásquez, and Ciera C. Martinez. 2021. <span>“Principles for Data Analysis Workflows.”</span> Edited by Patricia M. Palagi. <em>PLOS Computational Biology</em> 17 (3): e1008770. <a href="https://doi.org/10.1371/journal.pcbi.1008770">https://doi.org/10.1371/journal.pcbi.1008770</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

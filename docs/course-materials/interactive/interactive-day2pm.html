@@ -8,7 +8,7 @@
 
 <meta name="description" content="Tuesday August 26th, 2025">
 
-<title>EDS 214: Analytical Workflows and Scientific Reproducibility – Command Line and Documentation</title>
+<title>EDS 214: Analytical Workflows and Scientific Reproducibility – READMEs, Style, and Comments</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,48 +21,28 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/bren-hex.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/bren-hex.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -101,7 +81,7 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">EDS 214: Analytical Workflows and Scientific Reproducibility</span>
     </a>
   </div>
@@ -112,7 +92,7 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
@@ -125,29 +105,29 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-course-materials">    
         <li>
-    <a class="dropdown-item" href="../course-materials/day1.html">
+    <a class="dropdown-item" href="../../course-materials/day1.html">
  <span class="dropdown-text">day 1 (8/25)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day2.html">
+    <a class="dropdown-item" href="../../course-materials/day2.html">
  <span class="dropdown-text">day 2 (8/26)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day3.html">
+    <a class="dropdown-item" href="../../course-materials/day3.html">
  <span class="dropdown-text">day 3 (8/27)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day4.html">
+    <a class="dropdown-item" href="../../course-materials/day4.html">
  <span class="dropdown-text">day 4 (8/28)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day5.html">
+    <a class="dropdown-item" href="../../course-materials/day5.html">
  <span class="dropdown-text">day 5 (8/29)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../final-project/final-project.html"> 
+    <a class="nav-link" href="../../final-project/final-project.html"> 
 <span class="menu-text">final project</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -156,7 +136,7 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
         <li>
-    <a class="dropdown-item" href="../resources.html">
+    <a class="dropdown-item" href="../../resources.html">
  <span class="dropdown-text">recommended readings &amp; resources</span></a>
   </li>  
         <li>
@@ -193,8 +173,8 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Command Line and Documentation</h1>
-            <p class="subtitle lead">Day 2</p>
+      <h1 class="title">READMEs, Style, and Comments</h1>
+            <p class="subtitle lead">Day 2 Afternoon | EDS 214</p>
                   <div>
         <div class="description">
           Tuesday August 26<sup>th</sup>, 2025
@@ -220,8 +200,15 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#class-materials" id="toc-class-materials" class="nav-link active" data-scroll-target="#class-materials">Class materials</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a>
+  <ul class="collapse">
+  <li><a href="#write-a-readme" id="toc-write-a-readme" class="nav-link" data-scroll-target="#write-a-readme">Write a README</a></li>
+  <li><a href="#adopt-the-tidyverse-style-guide" id="toc-adopt-the-tidyverse-style-guide" class="nav-link" data-scroll-target="#adopt-the-tidyverse-style-guide">Adopt the Tidyverse Style Guide</a></li>
+  <li><a href="#add-comments" id="toc-add-comments" class="nav-link" data-scroll-target="#add-comments">Add comments</a></li>
+  </ul></li>
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap">Recap</a></li>
   </ul>
 </nav>
     </div>
@@ -232,52 +219,85 @@ div.csl-indent {
 
 
 
-<section id="class-materials" class="level2">
-<h2 class="anchored" data-anchor-id="class-materials">Class materials</h2>
-<table class="table-hover table-bordered caption-top table">
-<thead>
-<tr class="header">
-<th><p><i class="fa-solid fa-calendar-day" title="A calendar with one day highlighted"></i> <strong>Session</strong></p></th>
-<th><p><i class="fa-solid fa-person-chalkboard" title="A person motioning at a chalkboard"></i> <strong>Lecture slides</strong></p></th>
-<th><p><i class="fa-solid fa-laptop-code" title="A laptop with on-screen code"></i> <strong>Interactive session</strong></p></th>
-<th><p><i class="fa-solid fa-brain" title="A brain representing thinking and reflection"></i> <strong>Reflection</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Morning</td>
-<td><a href="../course-materials/lecture-slides/lecture-day2am-slides.html" target="_blank">Command line and remote server</a></td>
-<td><a href="../course-materials/interactive/interactive-day2am.html">Navigate the server</a></td>
-<td><a href="https://forms.gle/GjKm3S9fef74jN8w5" target="_blank">Go with the flow</a></td>
-</tr>
-<tr class="even">
-<td>Afternoon</td>
-<td><a href="../course-materials/lecture-slides/lecture-day2pm-slides.html" target="_blank">Documentation</a></td>
-<td><a href="../course-materials/interactive/interactive-day2pm.html">READMEs, style, and comments</a></td>
-<td><a href="https://forms.gle/2NfM8nrq6BCKjRdx5" target="_blank">Exploration and iteration</a></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="further-reading">Further reading</h2>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>In the afternoon lecture, you learned about the importance of documentation for workflow reproducibility. Documentation is an essential part of communicating <em>how</em> your analysis works and <em>why</em> you made your design choices.</p>
+<p>Always keep the target audience for your documentation in mind as you write it! Typically, for a workflow, your target audience is someone interested in reproducing or building on your work. This could be:</p>
 <ul>
-<li><p><span class="citation" data-cites="stoudt2021">Stoudt, Vásquez, and Martinez (<a href="#ref-stoudt2021" role="doc-biblioref">2021</a>)</span> describe how analytical workflows evolve, what they look like in the end, and how they’re necessary for data-intensive science.</p></li>
-<li><p><span class="citation" data-cites="lowndes2017">Lowndes et al. (<a href="#ref-lowndes2017" role="doc-biblioref">2017</a>)</span> present a case study on their own team-based research. They show how an emphasis on reproducibility improves <em>efficiency</em> as well as transparency.</p></li>
+<li><p>A scientist you’ll never meet directly</p></li>
+<li><p>A collaborator who is also contributing to the code</p></li>
+<li><p><em>Future you</em> (you’d be surprised by what they can forget)</p></li>
 </ul>
-
+</section>
+<section id="goals" class="level2">
+<h2 class="anchored" data-anchor-id="goals">Goals</h2>
+<p>During this interactive session, you will implement each of the following in your replication project:</p>
+<ul>
+<li><p>A repository README</p></li>
+<li><p>The Tidyverse Style Guide</p></li>
+<li><p>Comments (header and inline)</p></li>
+</ul>
+</section>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
+<section id="write-a-readme" class="level3">
+<h3 class="anchored" data-anchor-id="write-a-readme">Write a README</h3>
+<p>First, you will critique a README that your instructor wrote for an analysis.</p>
+<ol type="1">
+<li>Review the six requirements for READMEs from the lecture slides.</li>
+<li>Read the README for the GitHub repo found <a href="https://github.com/FlukeAndFeather/antwincomm">here</a>.</li>
+<li>Critique the README according to the requirements<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Write these down - I will call on a few students randomly to share.</li>
+</ol>
+<p>Now, it’s your turn to implement a README in your replication project repo.</p>
+<ol type="1">
+<li>Create a file in your project root called README.md.</li>
+<li>Fill out the README to describe your project.</li>
+</ol>
+</section>
+<section id="adopt-the-tidyverse-style-guide" class="level3">
+<h3 class="anchored" data-anchor-id="adopt-the-tidyverse-style-guide">Adopt the Tidyverse Style Guide</h3>
+<p>As with file organization, <em>how</em> you style your code is less important than applying a <em>consistent</em> style. A principal benefit of adopting the <a href="https://style.tidyverse.org">Tidyverse Style Guide</a> is you get to bypass the work of coming up with your own rules and devote that energy to your analysis, instead.</p>
+<ol type="1">
+<li>Quickly skim sections 2-5 of the style guide to familiarize yourself with the content and format.</li>
+<li>Choose three lines/chunks in your analysis code to revise according to a style guide rule. <strong>Two rules must be from chapter 2 Syntax, one rule must be from a different chapter.</strong> For example, you could:
+<ol type="1">
+<li>Wrap a long function call (rule 2.4.3)</li>
+<li>Replace single with double quotes (rule 2.9.1)</li>
+<li>Add whitespace to a pipe (rule 4.2)</li>
+</ol></li>
+</ol>
+</section>
+<section id="add-comments" class="level3">
+<h3 class="anchored" data-anchor-id="add-comments">Add comments</h3>
+<p>There are several different types of comments that are important for documenting an analysis. Today, you’ll add <em>header</em> and <em>inline</em> comments. You’ll add a third type, <em>function</em> comments, tomorrow.</p>
+<p>Remember, comments should always describe <em>why</em> not <em>what.</em> As you gain experience coding, the functionality of code (the <em>what</em>) should become self-evident. But the reason (the <em>why</em>) you chose to do something in a particular way may not be.</p>
+<p>There is a subjective balance between over- and under-commenting. Make your best attempt in this session. You’ll have opportunities for self-assessment and peer feedback later in the week.</p>
+<ol type="1">
+<li><p>Add header comments to your analysis script. The comments should include:</p>
+<p>Purpose of the script</p>
+<p>The authors</p>
+<p>A contact email</p></li>
+<li><p>Add 1-2 inline comments to your analysis script. Write your inline comments to describe a <em>why</em>, not a <em>what</em>. Examples of <em>why</em> include:</p>
+<p>The justification for a threshold value</p>
+<p>Explaining an edge case that needs special handling</p></li>
+<li><p>Separate from your analysis file, make a note of who the target audience is for your comments and how your comments would help them. I will randomly call on two students to share.</p></li>
+</ol>
+</section>
+</section>
+<section id="recap" class="level2">
+<h2 class="anchored" data-anchor-id="recap">Recap</h2>
+<p>In this interactive session you gained practical experience documenting your workflow. You created a repo for your analysis, formatted your code according to a style guide, and added comments to clarify your script. These changes make it easier for your target audience to comprehend your workflow - a key baseline for reproducibility.</p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-lowndes2017" class="csl-entry" role="listitem">
-Lowndes, Julia S. Stewart, Benjamin D. Best, Courtney Scarborough, Jamie C. Afflerbach, Melanie R. Frazier, Casey C. O’Hara, Ning Jiang, and Benjamin S. Halpern. 2017. <span>“Our Path to Better Science in Less Time Using Open Data Science Tools.”</span> <em>Nature Ecology &amp; Evolution</em> 1 (6). <a href="https://doi.org/10.1038/s41559-017-0160">https://doi.org/10.1038/s41559-017-0160</a>.
-</div>
-<div id="ref-stoudt2021" class="csl-entry" role="listitem">
-Stoudt, Sara, Váleri N. Vásquez, and Ciera C. Martinez. 2021. <span>“Principles for Data Analysis Workflows.”</span> Edited by Patricia M. Palagi. <em>PLOS Computational Biology</em> 17 (3): e1008770. <a href="https://doi.org/10.1371/journal.pcbi.1008770">https://doi.org/10.1371/journal.pcbi.1008770</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Be nice<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

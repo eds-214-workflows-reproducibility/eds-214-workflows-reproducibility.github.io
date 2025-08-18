@@ -11,7 +11,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.43">
 
-  <title>EDS 214: Analytical Workflows and Scientific Reproducibility – lecture-day1am-slides</title>
+  <title>EDS 214: Analytical Workflows and Scientific Reproducibility – lecture-day2pm-slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,27 +29,7 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
-    }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+  </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -342,16 +322,6 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
-  <script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="../../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
-  <script src="../../site_libs/leaflet-1.3.1/leaflet.js"></script>
-  <link href="../../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-  <script src="../../site_libs/proj4-2.6.2/proj4.min.js"></script>
-  <script src="../../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-  <link href="../../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-  <script src="../../site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -360,218 +330,181 @@
 
 <section id="title-slide" class="slide level2 center" data-menu-title="Title Slide" data-background="#053660">
 <h2></h2>
-<p><span class="custom-title">Reproducible Workflows</span></p>
+<p><span class="custom-title">Documenting Scientific Code and Data</span></p>
 <p><span class="custom-subtitle"><em>EDS 214: Analytical Workflows and Scientific Reproducibility</em></span></p>
 <hr class="hr-teal">
-<p><span class="custom-subtitle3">Day 1 Morning | August 25<sup>th</sup>, 2025</span></p>
+<p><span class="custom-subtitle3">Day 2 Afternoon | August 26<sup>th</sup>, 2025</span></p>
 </section>
-<section id="welcome" class="slide level2" data-menu-title="Welcome to EDS 214!">
+<section id="learning-objectives" class="slide level2" data-menu-title="Learning Objectives">
 <h2></h2>
-<p><span class="slide-title">Welcome to EDS 214!</span></p>
+<p><span class="slide-title">This afternoon, you’ll learn:</span></p>
 <hr>
-<p>This is a class about workflows and reproducibility</p>
-<p><br></p>
-<div class="fragment">
-<p><span class="body-text-m">The workflow is the fundamental unit of data science</span></p>
-<p><br></p>
-</div>
-<div class="fragment">
-<p><span class="body-text-m">Reproducibility ensures workflows don’t become dead ends</span></p>
-<p><br></p>
-</div>
-<div class="fragment">
-<p><span class="body-text-m">The concepts and skills in this class will keep coming up in future classes and for the rest of your career</span></p>
-</div>
-</section>
-<section id="meet-max" class="slide level2" data-menu-title="Hi, I'm Max">
-<h2></h2>
-<p><span class="slide-title">Hi, I’m Max 👋</span></p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-e8840b3b4927cd173e18" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-e8840b3b4927cd173e18">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"fitBounds":[20.232,-161.402,73.2906,-72.006,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n  function(el, x) {\n    var map = this;\n    var points = [{\"lat\":40.7128,\"lng\":-74.006,\"name\":\"New York, NY\",\"description\":\"Undergrad in computer science\",\"order\":1},{\"lat\":47.6062,\"lng\":-122.3321,\"name\":\"Seattle, WA\",\"description\":\"Software developer at Microsoft\",\"order\":2},{\"lat\":71.2906,\"lng\":-156.7886,\"name\":\"Utgiagvik, AK\",\"description\":\"Seabirds in the Alaskan Arctic\",\"order\":3},{\"lat\":38.1041,\"lng\":-122.2566,\"name\":\"Vallejo, CA\",\"description\":\"Counting ducks for USGS\",\"order\":4},{\"lat\":22.232,\"lng\":-159.402,\"name\":\"Kilauea, HI\",\"description\":\"Tracking seabirds in Hawaii\",\"order\":5},{\"lat\":37.7749,\"lng\":-122.4194,\"name\":\"San Francisco, CA\",\"description\":\"MS in GIS\",\"order\":6},{\"lat\":36.6177,\"lng\":-121.8746,\"name\":\"Pacific Grove, CA\",\"description\":\"PhD in Marine Biology\",\"order\":7},{\"lat\":34.4208,\"lng\":-119.6982,\"name\":\"Santa Barbara, CA\",\"description\":\"Teaching MEDS and Marine Science\",\"order\":8}];\n    var currentIndex = 0;\n    var animatedLine = L.polyline([], {\n      color: \"#FF6B35\", \n      weight: 4, \n      opacity: 0.8,\n      dashArray: \"10, 10\"\n    }).addTo(map);\n    \n    var markers = [];\n    \n    // Add progress indicator\n    var progressControl = L.control({position: \"topright\"});\n    progressControl.onAdd = function(map) {\n      var div = L.DomUtil.create(\"div\", \"progress-control\");\n      div.innerHTML = `\n        <div id=\"journey-progress\" style=\"\n          background: rgba(255, 107, 53, 0.9); \n          color: white; \n          border: none; \n          padding: 8px 12px; \n          border-radius: 5px;\n          font-weight: bold;\n          box-shadow: 0 2px 4px rgba(0,0,0,0.2);\n          font-size: 14px;\n        \">Journey: 0 / ${points.length}<\/div>\n      `;\n      return div;\n    };\n    progressControl.addTo(map);\n    \n    // Create custom icon for markers\n    var customIcon = L.divIcon({\n      html: `<div style=\"\n        background: #FF6B35; \n        border: 3px solid white; \n        border-radius: 50%; \n        width: 20px; \n        height: 20px;\n        box-shadow: 0 2px 4px rgba(0,0,0,0.3);\n      \"><\/div>`,\n      className: \"custom-marker\",\n      iconSize: [20, 20],\n      iconAnchor: [10, 10]\n    });\n    \n    function addNextLocation() {\n      if (currentIndex >= points.length) return;\n      \n      var point = points[currentIndex];\n      var latLng = [point.lat, point.lng];\n      \n      // Add point to animated line\n      animatedLine.addLatLng(latLng);\n      \n      // Create popup content\n      var popupContent = `\n        <div style=\"text-align: center; font-family: Arial, sans-serif;\">\n          <h4 style=\"margin: 5px 0; color: #FF6B35;\">${point.name}<\/h4>\n          <p style=\"margin: 5px 0; font-size: 14px; color: #666;\">${point.description}<\/p>\n          <small style=\"color: #999;\">Stop ${point.order} of ${points.length}<\/small>\n        <\/div>\n      `;\n      \n      // Add marker\n      var marker = L.marker(latLng, {icon: customIcon}).addTo(map);\n      marker.bindPopup(popupContent, {\n        maxWidth: 300,\n        className: \"custom-popup\"\n      });\n      markers.push(marker);\n      \n      // Pan to point\n      map.flyTo(latLng, map.getZoom() > 6 ? map.getZoom() : 6, {\n        animate: true,\n        duration: 1.5\n      });\n      \n      // Show popup after pan\n      setTimeout(function() {\n        marker.openPopup();\n      }, 1000);\n      \n      currentIndex++;\n      \n      // Update progress\n      document.getElementById(\"journey-progress\").innerHTML = \n        `Journey: ${currentIndex} / ${points.length}`;\n    }\n    \n    // Global function to advance map animation\n    window.advanceJourney = function() {\n      addNextLocation();\n    };\n    \n    // Reveal.js integration - listen for fragment events\n    if (typeof Reveal !== \"undefined\") {\n      Reveal.on(\"fragmentshown\", function(event) {\n        if (event.fragment.classList.contains(\"journey-step\")) {\n          addNextLocation();\n        }\n      });\n      \n      Reveal.on(\"fragmenthidden\", function(event) {\n        if (event.fragment.classList.contains(\"journey-step\") && currentIndex > 0) {\n          // Remove last location when going backwards\n          currentIndex--;\n          var lastMarker = markers.pop();\n          if (lastMarker) map.removeLayer(lastMarker);\n          \n          var lineCoords = animatedLine.getLatLngs();\n          if (lineCoords.length > 0) {\n            lineCoords.pop();\n            animatedLine.setLatLngs(lineCoords);\n          }\n          \n          document.getElementById(\"journey-progress\").innerHTML = \n            `Journey: ${currentIndex} / ${points.length}`;\n            \n          // Pan to previous location\n          if (currentIndex > 0) {\n            var prevPoint = points[currentIndex - 1];\n            map.flyTo([prevPoint.lat, prevPoint.lng], map.getZoom());\n          }\n        }\n      });\n    }\n    \n    // Add custom CSS\n    var style = document.createElement(\"style\");\n    style.textContent = `\n      .custom-popup .leaflet-popup-content-wrapper {\n        border-radius: 8px;\n        box-shadow: 0 3px 6px rgba(0,0,0,0.16);\n      }\n      .custom-popup .leaflet-popup-tip {\n        background: white;\n      }\n      .animation-control {\n        background: transparent;\n        border: none;\n      }\n      #start-animation:hover {\n        transform: translateY(-1px);\n        box-shadow: 0 4px 8px rgba(0,0,0,0.2);\n      }\n      .journey-step {\n        opacity: 0;\n        transition: opacity 0.3s ease;\n      }\n      .journey-step.visible {\n        opacity: 1;\n      }\n    `;\n    document.head.appendChild(style);\n  }\n  ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
-</div>
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-</section>
-<section id="what-is-workflow1" class="slide level2" data-menu-title="What is a workflow?">
-<h2></h2>
-<p><span class="slide-title">What is a workflow?</span></p>
-<hr>
-<p><strong>THINK</strong> Take 1 minute to write down your own definition. Consider:</p>
 <ul>
-<li>What are the components? How do they fit together?</li>
-<li>Who is the audience?</li>
-<li>What would the alternative be?</li>
-</ul>
-<p><strong>PAIR</strong> Turn to your neighbor and discuss your definitions</p>
-<p><strong>SHARE</strong> I will randomly call on a pair to share one shared element and one differing element</p>
-</section>
-<section id="what-is-workflow2" class="slide level2" data-menu-title="What is a workflow?">
-<h2></h2>
-<p><span class="slide-title">What is a workflow?</span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Workflows combine: data, code, modeling, and communication.</p>
-<p><img data-src="images/day1/r4ds-workflow.png" style="width:80.0%" alt="Components of a workflow"></p>
-<p><span class="body-text-xs"><span class="citation" data-cites="r4ds">Wickham, Çetinkaya-Rundel, and Grolemund (<a href="#/works-cited" role="doc-biblioref" onclick="">2023</a>)</span></span></p>
-</div><!-- Right-hand column --><div class="column" style="width:50%;">
-<p>The final workflow masks a trajectory of exploration and dead ends</p>
-<p><img data-src="images/day1/stoudtetal2021fig1a.PNG" style="width:80.0%" alt="The evolution of a workflow"></p>
-<p><span class="body-text-xs"><span class="citation" data-cites="stoudt2021">Stoudt, Vásquez, and Martinez (<a href="#/works-cited" role="doc-biblioref" onclick="">2021</a>)</span></span></p>
-</div>
-</div>
-</section>
-<section id="what-is-reproducibility" class="slide level2" data-menu-title="What is reproducibility?">
-<h2></h2>
-<p><span class="slide-title">What is reproducibility?</span></p>
-<hr>
-<blockquote>
-<p>We define reproducibility to mean computational reproducibility — obtaining consistent computational results using the same input data, computational steps, methods, code, and conditions of analysis</p>
-</blockquote>
-<p><span class="body-text-xs"><span class="citation" data-cites="nasem2019"><em>Reproducibility and Replicability in Science</em> (<a href="#/works-cited" role="doc-biblioref" onclick="">2019</a>)</span></span></p>
-<p><strong>DEBATE</strong> With your neighbor, discuss: does reproducibility matter if you’re not doing academic research?</p>
-<ul>
-<li>What if you work for a public utility, a non-governmental organization, or a private firm?</li>
-<li>Articulate one argument for and against the importance of reproducibility.</li>
-<li>I will randomly call on a pair to share</li>
+<li>The importance of documentation for reproducibility</li>
+<li>The target <em>audiences</em> for different types of documentation</li>
+<li>How to use <strong>READMEs</strong>, <strong>code comments</strong>, and <strong>code style</strong> to document your workflow</li>
 </ul>
 </section>
-<section id="global-local-goals" class="slide level2" data-menu-title="Global and local goals">
+<section id="lego-activity" class="slide level2" data-menu-title="LEGO Blueprints Activity">
 <h2></h2>
-<p><span class="slide-title">Global and local goals</span></p>
+<p><span class="slide-title">LEGO Blueprints Activity</span></p>
 <hr>
-<p><span class="body-text-l">Reproducibility is</span></p>
+<p><strong>Step 1: Build (in pairs)</strong></p>
+<ul>
+<li>Form pairs and receive LEGOs</li>
+<li>Each pair builds a LEGO structure. Get weird with it!</li>
+<li>Take a picture of the <em>finished product</em></li>
+<li>Destroy the LEGO structure</li>
+</ul>
+</section>
+<section id="lego-copy" class="slide level2" data-menu-title="LEGO Copy">
+<h2></h2>
+<p><span class="slide-title">LEGO Blueprints Activity</span></p>
+<hr>
+<p><strong>Step 2: Copy (in pairs)</strong></p>
+<ul>
+<li>Switch LEGOs and pictures with another pair</li>
+<li>Try to replicate the structure using only the picture</li>
+<li>Take notes about challenges encountered</li>
+</ul>
+</section>
+<section id="lego-share" class="slide level2" data-menu-title="LEGO Share">
+<h2></h2>
+<p><span class="slide-title">LEGO Blueprints Activity</span></p>
+<hr>
+<p><strong>Step 3: Share (in quads)</strong></p>
+<ul>
+<li>Pairs compare original and finished structures</li>
+<li>Take notes about what was different</li>
+<li>Describe 2-3 pieces of documentation that would have helped</li>
+</ul>
+</section>
+<section id="lego-debrief" class="slide level2" data-menu-title="LEGO Debrief">
+<h2></h2>
+<p><span class="slide-title">LEGO Blueprints Activity</span></p>
+<hr>
+<p><strong>Step 4: Debrief (as a class)</strong></p>
+<ul>
+<li>Draw two axes:
+<ul>
+<li>Left-to-right: <strong>Acquisition</strong> to <strong>Application</strong></li>
+<li>Top-to-bottom: <strong>Action</strong> to <strong>Cognition</strong></li>
+</ul></li>
+<li>Place the documentation pieces on the axes</li>
+</ul>
+</section>
+<section id="diataxis-map" class="slide level2" data-menu-title="The Diátaxis Map">
+<h2></h2>
+<p><span class="slide-title">The Diátaxis Map</span></p>
+<hr>
+<p>A framework for structuring documentation into four distinct areas:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>GLOBAL GOAL</strong></p>
-<blockquote>
-<p>… a means to verify results and ensure scientific integrity</p>
-</blockquote>
+<p><strong>Tutorials</strong> * Learning-oriented * Practical steps * Getting started</p>
+<p><strong>How-to guides</strong> * Problem-oriented * Series of steps * Achieving goals</p>
 </div><div class="column" style="width:50%;">
-<p><strong>LOCAL GOAL</strong></p>
-<blockquote>
-<p>… a mechanism for knowledge transfer and collaboration</p>
-</blockquote>
+<p><strong>Reference</strong> * Information-oriented * Structured information * Describing machinery</p>
+<p><strong>Explanation</strong> * Understanding-oriented * Theoretical knowledge * Background and context</p>
 </div>
-</div>
-<p><span class="body-text-xs"><span class="citation" data-cites="feinberg2020">Feinberg et al. (<a href="#/works-cited" role="doc-biblioref" onclick="">2020</a>)</span></span></p>
-</section>
-<section id="how-does-class-work" class="slide level2" data-menu-title="How does class work?">
-<h2></h2>
-<p><span class="slide-title">How does class work?</span></p>
-<hr>
-<p><span class="body-text-l">Reproduce a workflow (starting today!)</span></p>
-<p><span class="body-text-l">Lectures and interactive activities for learning goals</span></p>
-<ul>
-<li>Automation</li>
-<li>Organization</li>
-<li>Documentation</li>
-<li>Scale(ation)</li>
-<li>Collaboration</li>
-</ul>
-</section>
-<section id="grading" class="slide level2" data-menu-title="Specification-based grading">
-<h2></h2>
-<p><span class="slide-title">Specification-based grading</span></p>
-<hr>
-<ul>
-<li>No points out of 100</li>
-<li>A rubric of specifications (specs) for your final project</li>
-<li>Meet (or exceed) specs and participate in class - get an A</li>
-</ul>
-<p><br></p>
-<div class="fragment">
-<p><span class="body-text-m">Feedback loops are critical (no one-and-done)</span></p>
-<p><br></p>
-</div>
-<div class="fragment">
-<p><span class="body-text-m">You’ll see more spec-based grading in other MEDS classes</span></p>
 </div>
 </section>
-<section id="testimonial1" class="slide level2" data-menu-title="Reproducible workflows saved my life <3">
+<section id="diataxis-application" class="slide level2" data-menu-title="Applying Diátaxis">
 <h2></h2>
-<p><span class="slide-title">“Reproducible workflows saved my life &lt;3”</span></p>
+<p><span class="slide-title">When do you need all four areas?</span></p>
 <hr>
 <div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="images/day1/bekahlane.jpg" style="width:100.0%" alt="Bekah Lane headshot"></p>
-<p><span class="body-text-m">Bekah Lane</span></p>
-<p><span class="body-text-s">Research Associate, Center for Coastal Studies</span></p>
-</div><div class="column" style="width:70%;">
-<p><span class="fragment"><strong>Question:</strong> Where are humpbacks in SF Bay most susceptible to ship strikes?</span></p>
-<p><span class="fragment"><strong>Problem:</strong> Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.</span></p>
-<p><span class="fragment"><strong>Solution:</strong> Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R</span></p>
+<div class="column" style="width:50%;">
+<p><strong>A <em>tool</em> needs all four areas</strong></p>
+<ul>
+<li>Comprehensive documentation</li>
+<li>Multiple user types</li>
+<li>Different levels of expertise</li>
+<li>Long-term maintenance</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>An <em>analysis</em> probably needs a subset</strong></p>
+<ul>
+<li>Specific audience</li>
+<li>Limited scope</li>
+<li>Focused purpose</li>
+<li>Time constraints</li>
+</ul>
+</div>
+</div>
+<p><br></p>
+<p><strong>Think-pair-share:</strong> Why might this be the case?</p>
+</section>
+<section id="readme-documentation" class="slide level2" data-menu-title="README Documentation">
+<h2></h2>
+<p><span class="slide-title">README Documentation</span></p>
+<hr>
+<p><strong>Core elements required for all MEDS-related homework assignments and projects:</strong></p>
+<ol type="1">
+<li>A short, but descriptive title</li>
+<li>A brief explanation of the repository’s purpose</li>
+<li>A concise description of what’s housed in the repository</li>
+<li>Details regarding data access</li>
+<li>A list of authors or current contributors (for collaborative work)</li>
+<li>References</li>
+</ol>
+</section>
+<section id="code-comments" class="slide level2" data-menu-title="Code Comments">
+<h2></h2>
+<p><span class="slide-title">Code Comments</span></p>
+<hr>
+<p><strong>Types of comments:</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Headers</strong> * File purpose * Author information * Date created/modified</p>
+<p><strong>Inline</strong> * Explaining complex logic * Clarifying assumptions * Warning about edge cases</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Functions</strong> * Parameters and their types * Return values * Example usage * Side effects</p>
 </div>
 </div>
 </section>
-<section id="testimonial2" class="slide level2" data-menu-title="Reproducible workflows saved my life <3">
+<section id="code-style" class="slide level2" data-menu-title="Code Style">
 <h2></h2>
-<p><span class="slide-title">“Reproducible workflows saved my life &lt;3”</span></p>
+<p><span class="slide-title">Code Style</span></p>
+<hr>
+<p><strong>Readability → Comprehension → Reproducibility</strong></p>
+<p><br></p>
+<p><strong>Consistency is key!</strong> (Just like workflow folder organization)</p>
+<p><br></p>
+<p><strong>Key considerations:</strong></p>
+<ul>
+<li>Object naming conventions</li>
+<li>Spacing and layout</li>
+<li>Writing and calling functions</li>
+<li>Comments!</li>
+</ul>
+</section>
+<section id="documentation-recap" class="slide level2" data-menu-title="Documentation Recap">
+<h2></h2>
+<p><span class="slide-title">Documentation Recap</span></p>
 <hr>
 <div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="images/day1/bekahlane.jpg" style="width:100.0%" alt="Bekah Lane headshot"></p>
-<p><span class="body-text-m">Bekah Lane</span></p>
-<p><span class="body-text-s">Research Associate, Center for Coastal Studies</span></p>
-</div><div class="column" style="width:70%;">
-<p><span class="fragment">“It takes more activation energy to ‘do it right’, but you save yourself loads of time relative to doing it by brute force.”</span></p>
-<p><span class="fragment">“In my current job I’m often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects.”</span></p>
-<p><span class="fragment">“Collaboration and communication become <em>a lot</em> easier when you have your workflow laid out and organized instead of all jumbled in your brain.”</span></p>
+<div class="column" style="width:50%;">
+<p><strong>Why document?</strong></p>
+<ul>
+<li>Enables reproduction</li>
+<li>Facilitates collaboration</li>
+<li>Reduces future confusion</li>
+<li>Supports knowledge transfer</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Key documentation types:</strong></p>
+<ul>
+<li>README files</li>
+<li>Code comments</li>
+<li>Consistent style</li>
+<li>Structured frameworks</li>
+</ul>
 </div>
 </div>
-</section>
-<section id="works-cited" class="slide level2 smaller scrollable" data-menu-title="Works cited">
-<h2></h2>
-<p><span class="slide-title">Works cited</span></p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
-</div>
-</div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-feinberg2020" class="csl-entry" role="listitem">
-Feinberg, Melanie, Will Sutherland, Sarah Beth Nelson, Mohammad Hossein Jarrahi, and Arcot Rajasekar. 2020. <span>“The New Reality of Reproducibility: The Role of Data Work in Scientific Research.”</span> <em>Proceedings of the ACM on Human-Computer Interaction</em> 4 (CSCW1): 1–22. <a href="https://doi.org/10.1145/3392840">https://doi.org/10.1145/3392840</a>.
-</div>
-<div id="ref-nasem2019" class="csl-entry" role="listitem">
-<em>Reproducibility and Replicability in Science</em>. 2019. National Academies Press. <a href="https://doi.org/10.17226/25303">https://doi.org/10.17226/25303</a>.
-</div>
-<div id="ref-stoudt2021" class="csl-entry" role="listitem">
-Stoudt, Sara, Váleri N. Vásquez, and Ciera C. Martinez. 2021. <span>“Principles for Data Analysis Workflows.”</span> Edited by Patricia M. Palagi. <em>PLOS Computational Biology</em> 17 (3): e1008770. <a href="https://doi.org/10.1371/journal.pcbi.1008770">https://doi.org/10.1371/journal.pcbi.1008770</a>.
-</div>
-<div id="ref-r4ds" class="csl-entry" role="listitem">
-Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. 2nd ed. Sebastopol, CA: O’Reilly Media. <a href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a>.
 </div>
 </div>
 </section>
@@ -787,44 +720,6 @@ Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for 
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

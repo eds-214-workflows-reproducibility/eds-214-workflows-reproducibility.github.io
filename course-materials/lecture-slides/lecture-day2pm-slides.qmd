@@ -1,0 +1,282 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    highlight-style: a11y
+    chalkboard: true
+    theme: 
+      - ../../meds-slides-styles.scss
+bibliography: references.bib
+---
+
+## {#title-slide data-menu-title="Title Slide" background="#053660"} 
+
+[Documenting Scientific Code and Data]{.custom-title}
+
+[*EDS 214: Analytical Workflows and Scientific Reproducibility*]{.custom-subtitle}
+
+<hr class="hr-teal">
+
+[Day 2 Afternoon | August 26^th^, 2025]{.custom-subtitle3}
+
+---
+
+## {#learning-objectives data-menu-title="Learning Objectives"} 
+
+[This afternoon, you'll learn:]{.slide-title}
+
+<hr>
+
+* The importance of documentation for reproducibility
+* The target _audiences_ for different types of documentation
+* How to use **READMEs**, **code comments**, and **code style** to document your workflow
+
+---
+
+## {#lego-activity data-menu-title="LEGO Blueprints Activity"} 
+
+[LEGO Blueprints Activity]{.slide-title}
+
+<hr>
+
+**Step 1: Build (in pairs)**
+
+* Form pairs and receive LEGOs
+* Each pair builds a LEGO structure. Get weird with it!
+* Take a picture of the _finished product_
+* Destroy the LEGO structure
+
+---
+
+## {#lego-copy data-menu-title="LEGO Copy"} 
+
+[LEGO Blueprints Activity]{.slide-title}
+
+<hr>
+
+**Step 2: Copy (in pairs)**
+
+* Switch LEGOs and pictures with another pair
+* Try to replicate the structure using only the picture
+* Take notes about challenges encountered
+
+---
+
+## {#lego-share data-menu-title="LEGO Share"} 
+
+[LEGO Blueprints Activity]{.slide-title}
+
+<hr>
+
+**Step 3: Share (in quads)**
+
+* Pairs compare original and finished structures
+* Take notes about what was different
+* Describe 2-3 pieces of documentation that would have helped
+
+---
+
+## {#lego-debrief data-menu-title="LEGO Debrief"} 
+
+[LEGO Blueprints Activity]{.slide-title}
+
+<hr>
+
+**Step 4: Debrief (as a class)**
+
+* Draw two axes:
+  * Left-to-right: **Acquisition** to **Application**
+  * Top-to-bottom: **Action** to **Cognition**
+* Place the documentation pieces on the axes
+
+---
+
+## {#diataxis-map data-menu-title="The Diátaxis Map"} 
+
+[The Diátaxis Map]{.slide-title}
+
+<hr>
+
+A framework for structuring documentation into four distinct areas:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Tutorials**
+* Learning-oriented
+* Practical steps
+* Getting started
+
+**How-to guides**
+* Problem-oriented
+* Series of steps
+* Achieving goals
+
+:::
+
+::: {.column width="50%"}
+
+**Reference**
+* Information-oriented
+* Structured information
+* Describing machinery
+
+**Explanation**
+* Understanding-oriented
+* Theoretical knowledge
+* Background and context
+
+:::
+
+::::
+
+---
+
+## {#diataxis-application data-menu-title="Applying Diátaxis"} 
+
+[When do you need all four areas?]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**A _tool_ needs all four areas**
+
+* Comprehensive documentation
+* Multiple user types
+* Different levels of expertise
+* Long-term maintenance
+
+:::
+
+::: {.column width="50%"}
+
+**An _analysis_ probably needs a subset**
+
+* Specific audience
+* Limited scope
+* Focused purpose
+* Time constraints
+
+:::
+
+::::
+
+<br>
+
+**Think-pair-share:** Why might this be the case?
+
+---
+
+## {#readme-documentation data-menu-title="README Documentation"} 
+
+[README Documentation]{.slide-title}
+
+<hr>
+
+**Core elements required for all MEDS-related homework assignments and projects:**
+
+1. A short, but descriptive title 
+2. A brief explanation of the repository's purpose
+3. A concise description of what's housed in the repository
+4. Details regarding data access
+5. A list of authors or current contributors (for collaborative work)
+6. References
+
+---
+
+## {#code-comments data-menu-title="Code Comments"} 
+
+[Code Comments]{.slide-title}
+
+<hr>
+
+**Types of comments:**
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Headers**
+* File purpose
+* Author information
+* Date created/modified
+
+**Inline**
+* Explaining complex logic
+* Clarifying assumptions
+* Warning about edge cases
+
+:::
+
+::: {.column width="50%"}
+
+**Functions**
+* Parameters and their types
+* Return values
+* Example usage
+* Side effects
+
+:::
+
+::::
+
+---
+
+## {#code-style data-menu-title="Code Style"} 
+
+[Code Style]{.slide-title}
+
+<hr>
+
+**Readability → Comprehension → Reproducibility**
+
+<br>
+
+**Consistency is key!** (Just like workflow folder organization)
+
+<br>
+
+**Key considerations:**
+
+* Object naming conventions
+* Spacing and layout
+* Writing and calling functions
+* Comments!
+
+---
+
+## {#documentation-recap data-menu-title="Documentation Recap"} 
+
+[Documentation Recap]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Why document?**
+
+* Enables reproduction
+* Facilitates collaboration
+* Reduces future confusion
+* Supports knowledge transfer
+
+:::
+
+::: {.column width="50%"}
+
+**Key documentation types:**
+
+* README files
+* Code comments
+* Consistent style
+* Structured frameworks
+
+:::
+
+::::

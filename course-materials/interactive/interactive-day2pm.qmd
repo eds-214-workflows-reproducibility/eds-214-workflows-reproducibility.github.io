@@ -1,0 +1,83 @@
+---
+title: "READMEs, Style, and Comments"
+subtitle: "Day 2 Afternoon | EDS 214"
+description: "Tuesday August 26^th^, 2025"
+editor: visual
+---
+
+## Background
+
+In the afternoon lecture, you learned about the importance of documentation for workflow reproducibility. Documentation is an essential part of communicating *how* your analysis works and *why* you made your design choices.
+
+Always keep the target audience for your documentation in mind as you write it! Typically, for a workflow, your target audience is someone interested in reproducing or building on your work. This could be:
+
+-   A scientist you'll never meet directly
+
+-   A collaborator who is also contributing to the code
+
+-   *Future you* (you'd be surprised by what they can forget)
+
+## Goals
+
+During this interactive session, you will implement each of the following in your replication project:
+
+-   A repository README
+
+-   The Tidyverse Style Guide
+
+-   Comments (header and inline)
+
+## Instructions
+
+### Write a README
+
+First, you will critique a README that your instructor wrote for an analysis.
+
+1.  Review the six requirements for READMEs from the lecture slides.
+2.  Read the README for the GitHub repo found [here](https://github.com/FlukeAndFeather/antwincomm).
+3.  Critique the README according to the requirements[^1]. Write these down - I will call on a few students randomly to share.
+
+[^1]: Be nice
+
+Now, it's your turn to implement a README in your replication project repo.
+
+1.  Create a file in your project root called README.md.
+2.  Fill out the README to describe your project.
+
+### Adopt the Tidyverse Style Guide
+
+As with file organization, *how* you style your code is less important than applying a *consistent* style. A principal benefit of adopting the [Tidyverse Style Guide](https://style.tidyverse.org) is you get to bypass the work of coming up with your own rules and devote that energy to your analysis, instead.
+
+1.  Quickly skim sections 2-5 of the style guide to familiarize yourself with the content and format.
+2.  Choose three lines/chunks in your analysis code to revise according to a style guide rule. **Two rules must be from chapter 2 Syntax, one rule must be from a different chapter.** For example, you could:
+    1.  Wrap a long function call (rule 2.4.3)
+    2.  Replace single with double quotes (rule 2.9.1)
+    3.  Add whitespace to a pipe (rule 4.2)
+
+### Add comments
+
+There are several different types of comments that are important for documenting an analysis. Today, you'll add *header* and *inline* comments. You'll add a third type, *function* comments, tomorrow.
+
+Remember, comments should always describe *why* not *what.* As you gain experience coding, the functionality of code (the *what*) should become self-evident. But the reason (the *why*) you chose to do something in a particular way may not be.
+
+There is a subjective balance between over- and under-commenting. Make your best attempt in this session. You'll have opportunities for self-assessment and peer feedback later in the week.
+
+1.  Add header comments to your analysis script. The comments should include:
+
+    Purpose of the script
+
+    The authors
+
+    A contact email
+
+2.  Add 1-2 inline comments to your analysis script. Write your inline comments to describe a *why*, not a *what*. Examples of *why* include:
+
+    The justification for a threshold value
+
+    Explaining an edge case that needs special handling
+
+3.  Separate from your analysis file, make a note of who the target audience is for your comments and how your comments would help them. I will randomly call on two students to share.
+
+## Recap
+
+In this interactive session you gained practical experience documenting your workflow. You created a repo for your analysis, formatted your code according to a style guide, and added comments to clarify your script. These changes make it easier for your target audience to comprehend your workflow - a key baseline for reproducibility.
