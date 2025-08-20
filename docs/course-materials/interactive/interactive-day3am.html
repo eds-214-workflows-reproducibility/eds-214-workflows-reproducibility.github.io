@@ -8,7 +8,7 @@
 
 <meta name="description" content="Wednesday August 27th, 2025">
 
-<title>EDS 214: Analytical Workflows and Scientific Reproducibility – Git and GitHub for Workflows</title>
+<title>EDS 214: Analytical Workflows and Scientific Reproducibility – Git Branching</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,48 +21,28 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/bren-hex.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/bren-hex.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -101,7 +81,7 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">EDS 214: Analytical Workflows and Scientific Reproducibility</span>
     </a>
   </div>
@@ -112,7 +92,7 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
@@ -125,29 +105,29 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-course-materials">    
         <li>
-    <a class="dropdown-item" href="../course-materials/day1.html">
+    <a class="dropdown-item" href="../../course-materials/day1.html">
  <span class="dropdown-text">day 1 (8/25)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day2.html">
+    <a class="dropdown-item" href="../../course-materials/day2.html">
  <span class="dropdown-text">day 2 (8/26)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day3.html">
+    <a class="dropdown-item" href="../../course-materials/day3.html">
  <span class="dropdown-text">day 3 (8/27)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day4.html">
+    <a class="dropdown-item" href="../../course-materials/day4.html">
  <span class="dropdown-text">day 4 (8/28)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day5.html">
+    <a class="dropdown-item" href="../../course-materials/day5.html">
  <span class="dropdown-text">day 5 (8/29)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../final-project/final-project.html"> 
+    <a class="nav-link" href="../../final-project/final-project.html"> 
 <span class="menu-text">final project</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -156,7 +136,7 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
         <li>
-    <a class="dropdown-item" href="../resources.html">
+    <a class="dropdown-item" href="../../resources.html">
  <span class="dropdown-text">recommended readings &amp; resources</span></a>
   </li>  
         <li>
@@ -193,8 +173,8 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Git and GitHub for Workflows</h1>
-            <p class="subtitle lead">Day 3</p>
+      <h1 class="title">Git Branching</h1>
+            <p class="subtitle lead">Day 3 Morning | EDS 214</p>
                   <div>
         <div class="description">
           Wednesday August 27<sup>th</sup>, 2025
@@ -220,8 +200,15 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#class-materials" id="toc-class-materials" class="nav-link active" data-scroll-target="#class-materials">Class materials</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a>
+  <ul class="collapse">
+  <li><a href="#learn-git-branching" id="toc-learn-git-branching" class="nav-link" data-scroll-target="#learn-git-branching">Learn Git Branching</a></li>
+  <li><a href="#create-and-resolve-a-merge-conflict" id="toc-create-and-resolve-a-merge-conflict" class="nav-link" data-scroll-target="#create-and-resolve-a-merge-conflict">Create and resolve a merge conflict</a></li>
+  <li><a href="#resolve-yesterdays-merge-conflict" id="toc-resolve-yesterdays-merge-conflict" class="nav-link" data-scroll-target="#resolve-yesterdays-merge-conflict">Resolve yesterday’s merge conflict</a></li>
+  </ul></li>
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap">Recap</a></li>
   </ul>
 </nav>
     </div>
@@ -232,57 +219,166 @@ div.csl-indent {
 
 
 
-<section id="class-materials" class="level2">
-<h2 class="anchored" data-anchor-id="class-materials">Class materials</h2>
-<table class="table-hover table-bordered caption-top table">
-<thead>
-<tr class="header">
-<th><p><i class="fa-solid fa-calendar-day" title="A calendar with one day highlighted"></i> <strong>Session</strong></p></th>
-<th><p><i class="fa-solid fa-person-chalkboard" title="A person motioning at a chalkboard"></i> <strong>Lecture slides</strong></p></th>
-<th><p><i class="fa-solid fa-laptop-code" title="A laptop with on-screen code"></i> <strong>Interactive session</strong></p></th>
-<th><p><i class="fa-solid fa-brain" title="A brain representing thinking and reflection"></i> <strong>Reflection</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Morning</td>
-<td><a href="../course-materials/lecture-slides/lecture-day3am-slides.html" target="_blank">Version control with git</a></td>
-<td><a href="../course-materials/interactive/interactive-day3am.html">Git branching</a></td>
-<td><a href="https://forms.gle/GjKm3S9fef74jN8w5" target="_blank">Go with the flow</a></td>
-</tr>
-<tr class="even">
-<td>Afternoon</td>
-<td><a href="../course-materials/lecture-slides/lecture-day2pm-slides.html" target="_blank">Documentation</a></td>
-<td><a href="../course-materials/interactive/interactive-day2pm.html">READMEs, style, and comments</a></td>
-<td><a href="https://forms.gle/2NfM8nrq6BCKjRdx5" target="_blank">Exploration and iteration</a></td>
-</tr>
-</tbody>
-</table>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Branching is a version control feature essential for collaboration and developing complex analyses. It allows multiple collaborators to work in parallel (or one data scientist working on multiple features) without interfering with each other. But as great as branches are, they do come with a learning curve, especially when it comes to the dreaded <em>merge conflict</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p><img src="images/day3/mergeconflict.png" class="img-fluid" width="533"></p>
 </section>
-<section id="further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="further-reading">Further reading</h2>
-<ul>
-<li><span class="citation" data-cites="bryan2018">Bryan (<a href="#ref-bryan2018" role="doc-biblioref">2018</a>)</span> explains why data scientists should embrace the project management benefits of git and GitHub</li>
-</ul>
-<blockquote class="blockquote">
-<p>In my opinion, <em>for new users</em>, the advantages of Git only outweigh the disadvantages when you consider the overhead of working with other people, including your future self. And who among us does not need to do that? In a Git-based workflow, you document and, optionally, expose your work as you go. Communication and collaboration are the killer apps of version control. Git’s model of file management can feel uncomfortably rigid, but it enables the distribution of files across different people, computers, and time.</p>
-</blockquote>
-<ul>
-<li><span class="citation" data-cites="braga2023">Braga et al. (<a href="#ref-braga2023" role="doc-biblioref">2023</a>)</span> present 12 reasons scientists should use GitHub for collaboration, communication, and project management.</li>
-</ul>
+<section id="goals" class="level2">
+<h2 class="anchored" data-anchor-id="goals">Goals</h2>
+<p>In this session, you’re going to practice branching, merging, and resolving merge conflicts. By the of the session, you will be able to resolve the merge conflict you created yesterday.</p>
+</section>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
+<section id="learn-git-branching" class="level3">
+<h3 class="anchored" data-anchor-id="learn-git-branching">Learn Git Branching</h3>
+<p><a href="https://learngitbranching.js.org/">Learn Git Branching</a> is an interactive tutorial for learning git commands. Complete lessons 1-3:</p>
+<ol type="1">
+<li>Introduction to Git Commits</li>
+<li>Branching in Git</li>
+<li>Merging in Git</li>
+</ol>
+</section>
+<section id="create-and-resolve-a-merge-conflict" class="level3">
+<h3 class="anchored" data-anchor-id="create-and-resolve-a-merge-conflict">Create and resolve a merge conflict</h3>
+<p>We’re going to do this almost entirely at the command line, to give you more practice with shell commands and the git CLI.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Essential git CLI commands</em></p>
+<p><code>git init [repo name]</code> Create a repository</p>
+<p><code>git add [file]</code> Stage a file for commit</p>
+<p><code>git commit -m "[message]"</code> Commit changes with a message</p>
+<p><code>git branch [branch name]</code> Create a new branch from the current commit</p>
+<p><code>git switch [branch name]</code> Switch to another branch</p>
+<p><code>git status</code> Summarize status of repo, including uncommitted changes and the current branch</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Essential shell commands</em></p>
+<p><code>pwd</code> Print working directory</p>
+<p><code>ls</code> List files</p>
+<p><code>cd</code> Change directory</p>
+<p><code>mkdir</code> Make a directory</p>
+<p><code>touch</code> Create a file</p>
+</div>
+</div>
+<p><strong>1) Create a new local git repository</strong></p>
+<p>Open a terminal. Navigate to a folder you can put your repo in. Create a new repository called foo. Create README.md, leave it empty. Commit your changes.</p>
+<p><strong>2) Create a branch</strong></p>
+<p>Create a new branch called <code>bugFix</code>. Switch to that branch. Check that you’re on the right branch.</p>
+<p><strong>3) Make some changes in one branch</strong></p>
+<p>Open README.md in a text editor. Add a line of text. Whatever you want. The world is your oyster. Close the text editor. Commit your changes.</p>
+<p><strong>4) Make conflicting changes</strong></p>
+<p>Switch back to the <code>main</code> branch.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Run <code>cat REAMDE.md</code>. Do you see your changes from step 3? If you’ve done everything correctly up to this point, the file should be empty. The changes you made in step 3 should be isolated in the <code>bugFix</code> branch.</p>
+</div>
+</div>
+<p>Open README.md in a text editor again. Add a <em>different</em> line of text. Close the text editor and commit your changes.</p>
+<p><strong>5) Merge your branches</strong></p>
+<p>Merging works by bringing changes <em>into</em> the current branch. Since you’re currently in the <code>main</code> branch, you can bring the <code>bugFix</code> changes into main by running <code>git merge bugFix</code>. You should see a message like this:</p>
+<pre><code>Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.</code></pre>
+<p><strong>6) Resolve your merge conflict</strong></p>
+<p>Inspect the contents of README.md at the command line. You should see the merge conflict notation:</p>
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+[The changes you made in main]
+=======
+[The changes you made in bugFix]
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; bugFix</code></pre>
+<p>Run <code>git status</code>. Git will tell you you’re currently in the middle of a merge.</p>
+<pre><code>On branch main
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
 
+Unmerged paths:
+  (use "git add &lt;file&gt;..." to mark resolution)
+    both modified:   README.md</code></pre>
+<p>Open README.md in a text editor. Resolve the merge conflict by choosing the changes from either <code>main</code> or <code>bugFix</code>. Close the text editor, then commit your changes. Verify the merge is complete by checking the status of your repo.</p>
+<p><strong>7) Draw!</strong></p>
+<p>Draw the commit history of your repo. Find a partner and compare your drawings. Make edits as necessary. Confirm your drawing’s accuracy with an instructor.</p>
+</section>
+<section id="resolve-yesterdays-merge-conflict" class="level3">
+<h3 class="anchored" data-anchor-id="resolve-yesterdays-merge-conflict">Resolve yesterday’s merge conflict</h3>
+<p>You now have 99% of what you need to resolve yesterday’s merge conflict. There’s only one difference. Today, you learned how to merge two branches in the same repo. Yesterday, you created a conflict by making conflicting commits in the same branch on different local repos.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Woah, that was confusing. What exactly was the difference there?</p>
+<p>Today’s merge conflict was between branches <code>main</code> and <code>bugFix</code>, which were both in your local repo.</p>
+<p>Yesterday, your conflicting changes were <em>both</em> in the <code>main</code> branch, because you made edits in two different copies of the repo (Workbench and laptop).</p>
+</div>
+</div>
+<p>In order to resolve the conflict, you first have to pull the remote version (which should have the changes you made on Workbench) down to your laptop.</p>
+<p>Open your EDS 214 project in RStudio locally (<em>not</em> on Workbench). At the Terminal, run <code>git pull</code>. You should get the following error message.</p>
+<pre><code>hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.</code></pre>
+<p>This is a really common error message that needs to be addressed once per repository. It’s telling you the same branch has conflicting edits (“divergent branches”) and git doesn’t know how you want it to handle the divergence. There are three options: merge, rebase, and fast-forward. We’re only teaching you the merge option in this class. Tell git to use that option by running <code>git config pull.rebase false</code>. This means “when I tell you to pull, if there’s a divergence, start a merge”.</p>
+<p>Now try pulling again. You should see the familiar merge conflict message. Call <code>git status</code> and verify the issue is in the spaghetti code you wrote on Monday.</p>
+<p>Open your spaghetti code. Find the conflict by searching for “&lt;&lt;&lt;&lt;&lt;”. Resolve the conflict using the skills you learned today. Commit and push. Call an instructor over to verify your repo is still in good shape.</p>
+<p>Congrats! You resolved the merge conflict!</p>
+</section>
+</section>
+<section id="recap" class="level2">
+<h2 class="anchored" data-anchor-id="recap">Recap</h2>
+<p>Branching and merging let you and your collaborators work in parallel on the same code base. Although they carry a learning curve, they help avoid common problems like accidentally overwriting each others’ changes. And yes, merge conflicts do look scary. Words like “error” and “fatal” tend to show up a lot. But they’re actually doing you a huge favor by drawing your attention directly to the line(s) of code where you and your collaborator collided. Now that you have the skills to resolve these conflicts, you are much better equipped to collaborate on your capstone project!</p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-braga2023" class="csl-entry" role="listitem">
-Braga, Pedro Henrique Pereira, Katherine Hébert, Emma J. Hudgins, Eric R. Scott, Brandon P. M. Edwards, Luna L. Sánchez Reyes, Matthew J. Grainger, et al. 2023. <span>“Not Just for Programmers: How GitHub Can Accelerate Collaborative and Reproducible Research in Ecology and Evolution.”</span> <em>Methods in Ecology and Evolution</em> 14 (6): 1364–80. <a href="https://doi.org/10.1111/2041-210x.14108">https://doi.org/10.1111/2041-210x.14108</a>.
-</div>
-<div id="ref-bryan2018" class="csl-entry" role="listitem">
-Bryan, Jennifer. 2018. <span>“Excuse Me, Do You Have a Moment to Talk About Version Control?”</span> <em>The American Statistician</em> 72 (1): 20–27. <a href="https://doi.org/10.1080/00031305.2017.1399928">https://doi.org/10.1080/00031305.2017.1399928</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Don’t worry, you’ll be ok.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
