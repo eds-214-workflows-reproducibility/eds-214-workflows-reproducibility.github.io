@@ -11,7 +11,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.43">
 
-  <title>EDS 214: Analytical Workflows and Scientific Reproducibility – lecture-day1am-slides</title>
+  <title>EDS 214: Analytical Workflows and Scientific Reproducibility – lecture-day3am-slides</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -29,27 +29,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
     }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #767676;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #767676;  padding-left: 4px; }
+    div.sourceCode
+      { color: #545454; background-color: #fefefe; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+    code span { color: #545454; } /* Normal */
+    code span.al { color: #7928a1; } /* Alert */
+    code span.an { color: #696969; } /* Annotation */
+    code span.at { color: #a55a00; } /* Attribute */
+    code span.bn { color: #7928a1; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #d91e18; } /* ControlFlow */
+    code span.ch { color: #008000; } /* Char */
+    code span.cn { color: #d91e18; } /* Constant */
+    code span.co { color: #696969; } /* Comment */
+    code span.cv { color: #696969; font-style: italic; } /* CommentVar */
+    code span.do { color: #696969; font-style: italic; } /* Documentation */
+    code span.dt { color: #7928a1; } /* DataType */
+    code span.dv { color: #7928a1; } /* DecVal */
+    code span.er { color: #7928a1; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #a55a00; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #696969; } /* Information */
+    code span.kw { color: #d91e18; } /* Keyword */
+    code span.op { color: #00769e; } /* Operator */
+    code span.ot { color: #d91e18; } /* Other */
+    code span.pp { color: #7928a1; } /* Preprocessor */
+    code span.sc { color: #00769e; } /* SpecialChar */
+    code span.ss { color: #008000; } /* SpecialString */
+    code span.st { color: #008000; } /* String */
+    code span.va { color: #a55a00; } /* Variable */
+    code span.vs { color: #008000; } /* VerbatimString */
+    code span.wa { color: #696969; font-style: italic; } /* Warning */
+  </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -342,16 +387,6 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
-  <script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="../../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
-  <script src="../../site_libs/leaflet-1.3.1/leaflet.js"></script>
-  <link href="../../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-  <script src="../../site_libs/proj4-2.6.2/proj4.min.js"></script>
-  <script src="../../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-  <link href="../../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-  <script src="../../site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -360,218 +395,191 @@
 
 <section id="title-slide" class="slide level2 center" data-menu-title="Title Slide" data-background="#053660">
 <h2></h2>
-<p><span class="custom-title">Reproducible Workflows</span></p>
+<p><span class="custom-title">Version Control with Git</span></p>
 <p><span class="custom-subtitle"><em>EDS 214: Analytical Workflows and Scientific Reproducibility</em></span></p>
 <hr class="hr-teal">
-<p><span class="custom-subtitle3">Day 1 Morning | August 25<sup>th</sup>, 2025</span></p>
+<p><span class="custom-subtitle3">Day 3 Morning | August 27<sup>th</sup>, 2025</span></p>
 </section>
-<section id="welcome" class="slide level2" data-menu-title="Welcome to EDS 214!">
+<section id="learning-objectives" class="slide level2" data-menu-title="Learning Objectives">
 <h2></h2>
-<p><span class="slide-title">Welcome to EDS 214!</span></p>
+<p><span class="slide-title">This morning, you’ll learn how to…</span></p>
 <hr>
-<p>This is a class about workflows and reproducibility</p>
-<p><br></p>
-<div class="fragment">
-<p><span class="body-text-m">The workflow is the fundamental unit of data science</span></p>
-<p><br></p>
-</div>
-<div class="fragment">
-<p><span class="body-text-m">Reproducibility ensures workflows don’t become dead ends</span></p>
-<p><br></p>
-</div>
-<div class="fragment">
-<p><span class="body-text-m">The concepts and skills in this class will keep coming up in future classes and for the rest of your career</span></p>
-</div>
-</section>
-<section id="meet-max" class="slide level2" data-menu-title="Hi, I'm Max">
-<h2></h2>
-<p><span class="slide-title">Hi, I’m Max 👋</span></p>
-<div class="cell">
-<div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-98683426a1276bcdd859" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-98683426a1276bcdd859">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"fitBounds":[20.232,-161.402,73.2906,-72.006,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n  function(el, x) {\n    var map = this;\n    var points = [{\"lat\":40.7128,\"lng\":-74.006,\"name\":\"New York, NY\",\"description\":\"Undergrad in computer science\",\"order\":1},{\"lat\":47.6062,\"lng\":-122.3321,\"name\":\"Seattle, WA\",\"description\":\"Software developer at Microsoft\",\"order\":2},{\"lat\":71.2906,\"lng\":-156.7886,\"name\":\"Utgiagvik, AK\",\"description\":\"Seabirds in the Alaskan Arctic\",\"order\":3},{\"lat\":38.1041,\"lng\":-122.2566,\"name\":\"Vallejo, CA\",\"description\":\"Counting ducks for USGS\",\"order\":4},{\"lat\":22.232,\"lng\":-159.402,\"name\":\"Kilauea, HI\",\"description\":\"Tracking seabirds in Hawaii\",\"order\":5},{\"lat\":37.7749,\"lng\":-122.4194,\"name\":\"San Francisco, CA\",\"description\":\"MS in GIS\",\"order\":6},{\"lat\":36.6177,\"lng\":-121.8746,\"name\":\"Pacific Grove, CA\",\"description\":\"PhD in Marine Biology\",\"order\":7},{\"lat\":34.4208,\"lng\":-119.6982,\"name\":\"Santa Barbara, CA\",\"description\":\"Teaching MEDS and Marine Science\",\"order\":8}];\n    var currentIndex = 0;\n    var animatedLine = L.polyline([], {\n      color: \"#FF6B35\", \n      weight: 4, \n      opacity: 0.8,\n      dashArray: \"10, 10\"\n    }).addTo(map);\n    \n    var markers = [];\n    \n    // Add progress indicator\n    var progressControl = L.control({position: \"topright\"});\n    progressControl.onAdd = function(map) {\n      var div = L.DomUtil.create(\"div\", \"progress-control\");\n      div.innerHTML = `\n        <div id=\"journey-progress\" style=\"\n          background: rgba(255, 107, 53, 0.9); \n          color: white; \n          border: none; \n          padding: 8px 12px; \n          border-radius: 5px;\n          font-weight: bold;\n          box-shadow: 0 2px 4px rgba(0,0,0,0.2);\n          font-size: 14px;\n        \">Journey: 0 / ${points.length}<\/div>\n      `;\n      return div;\n    };\n    progressControl.addTo(map);\n    \n    // Create custom icon for markers\n    var customIcon = L.divIcon({\n      html: `<div style=\"\n        background: #FF6B35; \n        border: 3px solid white; \n        border-radius: 50%; \n        width: 20px; \n        height: 20px;\n        box-shadow: 0 2px 4px rgba(0,0,0,0.3);\n      \"><\/div>`,\n      className: \"custom-marker\",\n      iconSize: [20, 20],\n      iconAnchor: [10, 10]\n    });\n    \n    function addNextLocation() {\n      if (currentIndex >= points.length) return;\n      \n      var point = points[currentIndex];\n      var latLng = [point.lat, point.lng];\n      \n      // Add point to animated line\n      animatedLine.addLatLng(latLng);\n      \n      // Create popup content\n      var popupContent = `\n        <div style=\"text-align: center; font-family: Arial, sans-serif;\">\n          <h4 style=\"margin: 5px 0; color: #FF6B35;\">${point.name}<\/h4>\n          <p style=\"margin: 5px 0; font-size: 14px; color: #666;\">${point.description}<\/p>\n          <small style=\"color: #999;\">Stop ${point.order} of ${points.length}<\/small>\n        <\/div>\n      `;\n      \n      // Add marker\n      var marker = L.marker(latLng, {icon: customIcon}).addTo(map);\n      marker.bindPopup(popupContent, {\n        maxWidth: 300,\n        className: \"custom-popup\"\n      });\n      markers.push(marker);\n      \n      // Pan to point\n      map.flyTo(latLng, map.getZoom() > 6 ? map.getZoom() : 6, {\n        animate: true,\n        duration: 1.5\n      });\n      \n      // Show popup after pan\n      setTimeout(function() {\n        marker.openPopup();\n      }, 1000);\n      \n      currentIndex++;\n      \n      // Update progress\n      document.getElementById(\"journey-progress\").innerHTML = \n        `Journey: ${currentIndex} / ${points.length}`;\n    }\n    \n    // Global function to advance map animation\n    window.advanceJourney = function() {\n      addNextLocation();\n    };\n    \n    // Reveal.js integration - listen for fragment events\n    if (typeof Reveal !== \"undefined\") {\n      Reveal.on(\"fragmentshown\", function(event) {\n        if (event.fragment.classList.contains(\"journey-step\")) {\n          addNextLocation();\n        }\n      });\n      \n      Reveal.on(\"fragmenthidden\", function(event) {\n        if (event.fragment.classList.contains(\"journey-step\") && currentIndex > 0) {\n          // Remove last location when going backwards\n          currentIndex--;\n          var lastMarker = markers.pop();\n          if (lastMarker) map.removeLayer(lastMarker);\n          \n          var lineCoords = animatedLine.getLatLngs();\n          if (lineCoords.length > 0) {\n            lineCoords.pop();\n            animatedLine.setLatLngs(lineCoords);\n          }\n          \n          document.getElementById(\"journey-progress\").innerHTML = \n            `Journey: ${currentIndex} / ${points.length}`;\n            \n          // Pan to previous location\n          if (currentIndex > 0) {\n            var prevPoint = points[currentIndex - 1];\n            map.flyTo([prevPoint.lat, prevPoint.lng], map.getZoom());\n          }\n        }\n      });\n    }\n    \n    // Add custom CSS\n    var style = document.createElement(\"style\");\n    style.textContent = `\n      .custom-popup .leaflet-popup-content-wrapper {\n        border-radius: 8px;\n        box-shadow: 0 3px 6px rgba(0,0,0,0.16);\n      }\n      .custom-popup .leaflet-popup-tip {\n        background: white;\n      }\n      .animation-control {\n        background: transparent;\n        border: none;\n      }\n      #start-animation:hover {\n        transform: translateY(-1px);\n        box-shadow: 0 4px 8px rgba(0,0,0,0.2);\n      }\n      .journey-step {\n        opacity: 0;\n        transition: opacity 0.3s ease;\n      }\n      .journey-step.visible {\n        opacity: 1;\n      }\n    `;\n    document.head.appendChild(style);\n  }\n  ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
-</div>
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-<div class="fragment journey-step">
-
-</div>
-</section>
-<section id="what-is-workflow1" class="slide level2" data-menu-title="What is a workflow?">
-<h2></h2>
-<p><span class="slide-title">What is a workflow?</span></p>
-<hr>
-<p><strong>THINK</strong> Take 1 minute to write down your own definition. Consider:</p>
+<div class="body-text-l">
 <ul>
-<li>What are the components? How do they fit together?</li>
-<li>Who is the audience?</li>
-<li>What would the alternative be?</li>
+<li>Use branches for collaborative work</li>
+<li>Merge branches and resolve conflicts</li>
+<li>Interpret git commit histories</li>
 </ul>
-<p><strong>PAIR</strong> Turn to your neighbor and discuss your definitions</p>
-<p><strong>SHARE</strong> I will randomly call on a pair to share one shared element and one differing element</p>
+</div>
 </section>
-<section id="what-is-workflow2" class="slide level2" data-menu-title="What is a workflow?">
+<section id="recap" class="slide level2" data-menu-title="Recap">
 <h2></h2>
-<p><span class="slide-title">What is a workflow?</span></p>
+<p><span class="slide-title">Recap</span></p>
 <hr>
+<p>You’ve been using git for version control for three weeks. During that time you learned how to:</p>
+<ul>
+<li><strong>Create</strong> a repository</li>
+<li><strong>Commit</strong> files to a local repository</li>
+<li><strong>Push</strong> files to a remote repository</li>
+</ul>
+<p>These are essential commands for using git <em>solo</em>. But what if you want to work with others?</p>
+</section>
+<section id="clone-commit-push1" class="slide level2" data-menu-title="Clone, commit, push">
+<h2></h2>
+<p><span class="slide-title">Clone, commit, push</span></p>
+<hr>
+<p>These are the three essential commands for using git and GitHub <em>solo</em>.</p>
+<p>Let’s review these commands by visualizing a commit history.</p>
+
+<img data-src="images/day3/branchmerge/ccp1.png" class="r-stretch"></section>
+<section id="clone-commit-push2" class="slide level2" data-menu-title="Clone, commit, push">
+<h2></h2>
+<p><span class="slide-title">Clone, commit, push</span></p>
+<hr>
+<p>These are the three essential commands for using git and GitHub <em>solo</em>.</p>
+<p>Let’s review these commands by visualizing a commit history.</p>
+
+<img data-src="images/day3/branchmerge/ccp2.png" class="r-stretch"></section>
+<section id="clone-commit-push3" class="slide level2" data-menu-title="Clone, commit, push">
+<h2></h2>
+<p><span class="slide-title">Clone, commit, push</span></p>
+<hr>
+<p><strong>Question</strong> Why do the arrows in the commit history diagram point <em>backwards</em> in time?</p>
+
+<img data-src="images/day3/branchmerge/ccp2.png" class="r-stretch"></section>
+<section id="branches-merges1" class="slide level2" data-menu-title="Branches, merges">
+<h2></h2>
+<p><span class="slide-title">Branches, merges</span></p>
+<hr>
+<p>As our work becomes more complex, creating <em>branches</em> becomes essential.</p>
+
+<img data-src="images/day3/branchmerge/branch1.png" class="r-stretch"></section>
+<section id="branches-merges2" class="slide level2" data-menu-title="Branches, merges">
+<h2></h2>
+<p><span class="slide-title">Branches, merges</span></p>
+<hr>
+<p>As our work becomes more complex, creating <em>branches</em> becomes essential.</p>
+
+<img data-src="images/day3/branchmerge/branch2.png" class="r-stretch"></section>
+<section id="branches-merges3" class="slide level2" data-menu-title="Branches, merges">
+<h2></h2>
+<p><span class="slide-title">Branches, merges</span></p>
+<hr>
+<p>As our work becomes more complex, creating <em>branches</em> becomes essential.</p>
+
+<img data-src="images/day3/branchmerge/branch3.png" class="r-stretch"></section>
+<section id="branches-merges4" class="slide level2" data-menu-title="Branches, merges">
+<h2></h2>
+<p><span class="slide-title">Branches, merges</span></p>
+<hr>
+<p>As our work becomes more complex, creating <em>branches</em> becomes essential.</p>
+
+<img data-src="images/day3/branchmerge/branch4.png" class="r-stretch"></section>
+<section id="branches-merges5" class="slide level2" data-menu-title="Branches, merges">
+<h2></h2>
+<p><span class="slide-title">Branches, merges</span></p>
+<hr>
+<p>As our work becomes more complex, creating <em>branches</em> becomes essential.</p>
+
+<img data-src="images/day3/branchmerge/branch5.png" class="r-stretch"></section>
+<section id="why-branch" class="slide level2" data-menu-title="Why branch?">
+<h2></h2>
+<p><span class="slide-title">Why branch?</span></p>
+<hr>
+<p>Branching and merging have a learning curve and require additional overhead.</p>
+<p>Begging the question…</p>
+<p><span class="body-text-l"><strong>Why do we create branches?</strong></span></p>
+</section>
+<section id="conflicts" class="slide level2" data-menu-title="Conflicts">
+<h2></h2>
+<p><span class="slide-title">Conflicts</span></p>
+<hr>
+<p>This commit history permits a <em>merge conflict</em>. Why?</p>
+
+<img data-src="images/day3/branchmerge/conflict1.png" class="r-stretch"></section>
+<section id="resolving-conflicts-1" class="slide level2" data-menu-title="Resolving conflicts pt 1">
+<h2></h2>
+<p><span class="slide-title">Resolving conflicts pt 1</span></p>
+<hr>
+<p>Merge conflicts are best resolved manually. Your judgement is essential!</p>
+<p>They look like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="sc">&lt;</span><span class="er">&lt;&lt;&lt;&lt;&lt;&lt;</span> HEAD</span>
+<span id="cb1-2"><a aria-hidden="true" tabindex="-1"></a>two <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span>  <span class="co"># This is the current branch's code</span></span>
+<span id="cb1-3"><a aria-hidden="true" tabindex="-1"></a><span class="sc">==</span><span class="er">=====</span></span>
+<span id="cb1-4"><a aria-hidden="true" tabindex="-1"></a>foo <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span>  <span class="co"># This is the incoming branch's code</span></span>
+<span id="cb1-5"><a aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span><span class="er">&gt;&gt;&gt;&gt;&gt;&gt;</span> d670460b5b4ae3ea915caf5c68d12f560a9fe3e4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Notice that two of those lines look like R code, the other three look <em>weird</em>.</p>
+</section>
+<section id="resolving-conflicts-2" class="slide level2" data-menu-title="Resolving conflicts pt 2">
+<h2></h2>
+<p><span class="slide-title">Resolving conflicts pt 2</span></p>
+<hr>
+<p>Resolve the conflict by removing the <em>weird</em> lines and choosing the appropriate R code.</p>
+<p>Git views both of these solutions as valid. Which one would you choose? <em>Why?</em></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Workflows combine: data, code, modeling, and communication.</p>
-<p><img data-src="images/day1/r4ds-workflow.png" style="width:80.0%" alt="Components of a workflow"></p>
-<p><span class="body-text-xs"><span class="citation" data-cites="r4ds">Wickham, Çetinkaya-Rundel, and Grolemund (<a href="#/works-cited" role="doc-biblioref" onclick="">2023</a>)</span></span></p>
-</div><!-- Right-hand column --><div class="column" style="width:50%;">
-<p>The final workflow masks a trajectory of exploration and dead ends</p>
-<p><img data-src="images/day1/stoudtetal2021fig1a.PNG" style="width:80.0%" alt="The evolution of a workflow"></p>
-<p><span class="body-text-xs"><span class="citation" data-cites="stoudt2021">Stoudt, Vásquez, and Martinez (<a href="#/works-cited" role="doc-biblioref" onclick="">2021</a>)</span></span></p>
-</div>
-</div>
-</section>
-<section id="what-is-reproducibility" class="slide level2" data-menu-title="What is reproducibility?">
-<h2></h2>
-<p><span class="slide-title">What is reproducibility?</span></p>
-<hr>
-<blockquote>
-<p>We define reproducibility to mean computational reproducibility — obtaining consistent computational results using the same input data, computational steps, methods, code, and conditions of analysis</p>
-</blockquote>
-<p><span class="body-text-xs"><span class="citation" data-cites="nasem2019"><em>Reproducibility and Replicability in Science</em> (<a href="#/works-cited" role="doc-biblioref" onclick="">2019</a>)</span></span></p>
-<p><strong>DEBATE</strong> With your neighbor, discuss: does reproducibility matter if you’re not doing academic research?</p>
-<ul>
-<li>What if you work for a public utility, a non-governmental organization, or a private firm?</li>
-<li>Articulate one argument for and against the importance of reproducibility.</li>
-<li>I will randomly call on a pair to share</li>
-</ul>
-</section>
-<section id="global-local-goals" class="slide level2" data-menu-title="Global and local goals">
-<h2></h2>
-<p><span class="slide-title">Global and local goals</span></p>
-<hr>
-<p><span class="body-text-l">Reproducibility is</span></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>GLOBAL GOAL</strong></p>
-<blockquote>
-<p>… a means to verify results and ensure scientific integrity</p>
-</blockquote>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a>two <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
-<p><strong>LOCAL GOAL</strong></p>
-<blockquote>
-<p>… a mechanism for knowledge transfer and collaboration</p>
-</blockquote>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a>foo <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<p><span class="body-text-xs"><span class="citation" data-cites="feinberg2020">Feinberg et al. (<a href="#/works-cited" role="doc-biblioref" onclick="">2020</a>)</span></span></p>
 </section>
-<section id="how-does-class-work" class="slide level2" data-menu-title="How does class work?">
+<section id="resolving-conflicts-3" class="slide level2" data-menu-title="Resolving conflicts pt 3">
 <h2></h2>
-<p><span class="slide-title">How does class work?</span></p>
+<p><span class="slide-title">Resolving conflicts pt 3</span></p>
 <hr>
-<p><span class="body-text-l">Reproduce a workflow (starting today!)</span></p>
-<p><span class="body-text-l">Lectures and interactive activities for learning goals</span></p>
+<p>You’re almost done resolving the conflict.</p>
+<p>After choosing which code to keep, you have to let git know you’re done.</p>
+<p><code>git commit -m "Resolved merge conflict"</code></p>
+<p><strong>In RStudio, would you run this command at the Console or the Terminal? How do you know?</strong></p>
+</section>
+<section id="branches-merges-recap" class="slide level2" data-menu-title="Branches and merges recap">
+<h2></h2>
+<p><span class="slide-title">Branches and merges recap</span></p>
+<hr>
+<p>Branches are essential for collaborative work.</p>
 <ul>
-<li>Automation</li>
-<li>Organization</li>
-<li>Documentation</li>
-<li>Scale(ation)</li>
-<li>Collaboration</li>
+<li>Work on changes in parallel</li>
+<li>Keep the main branch stable while experimenting</li>
+</ul>
+<p>Merges reunite disparate branches, but they can create conflicts</p>
+<ul>
+<li>Conflicts look scary, but you can resolve them!</li>
+<li>Manually choose the code you want to keep <em>using your judgement</em></li>
 </ul>
 </section>
-<section id="grading" class="slide level2" data-menu-title="Specification-based grading">
+<section id="review-pt-1" class="slide level2" data-menu-title="Review pt 1">
 <h2></h2>
-<p><span class="slide-title">Specification-based grading</span></p>
+<p><span class="slide-title">Review pt 1</span></p>
 <hr>
+<p>This commit history reflects many different git operations. Label the following operations in the diagram below.</p>
+<p>clone, commit, push, pull, branch, merge</p>
+
+<img data-src="images/day3/branchmerge/review1.png" class="r-stretch"></section>
+<section id="review-pt-2" class="slide level2" data-menu-title="Review pt 2">
+<h2></h2>
+<p><span class="slide-title">Review pt 2</span></p>
+<hr>
+<p>Which commit history below could yield a merge conflict? Why?</p>
+
+<img data-src="images/day3/branchmerge/review2.png" class="r-stretch"></section>
+<section id="live-demo" class="slide level2" data-menu-title="Live demo">
+<h2></h2>
+<p><span class="slide-title">Live demo</span></p>
+<hr>
+<p>Let’s switch over to RStudio and do a live demo with</p>
 <ul>
-<li>No points out of 100</li>
-<li>A rubric of specifications (specs) for your final project</li>
-<li>Meet (or exceed) specs and participate in class - get an A</li>
+<li>Branching</li>
+<li>Merging</li>
+<li>Merge conflict resolution</li>
 </ul>
-<p><br></p>
-<div class="fragment">
-<p><span class="body-text-m">Feedback loops are critical (no one-and-done)</span></p>
-<p><br></p>
-</div>
-<div class="fragment">
-<p><span class="body-text-m">You’ll see more spec-based grading in other MEDS classes</span></p>
-</div>
 </section>
-<section id="testimonial1" class="slide level2" data-menu-title="Reproducible workflows saved my life <3">
-<h2></h2>
-<p><span class="slide-title">“Reproducible workflows saved my life &lt;3”</span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="images/day1/bekahlane.jpg" style="width:100.0%" alt="Bekah Lane headshot"></p>
-<p><span class="body-text-m">Bekah Lane</span></p>
-<p><span class="body-text-s">Research Associate, Center for Coastal Studies</span></p>
-</div><div class="column" style="width:70%;">
-<p><span class="fragment"><strong>Question:</strong> Where are humpbacks in SF Bay most susceptible to ship strikes?</span></p>
-<p><span class="fragment"><strong>Problem:</strong> Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.</span></p>
-<p><span class="fragment"><strong>Solution:</strong> Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R</span></p>
-</div>
-</div>
-</section>
-<section id="testimonial2" class="slide level2" data-menu-title="Reproducible workflows saved my life <3">
-<h2></h2>
-<p><span class="slide-title">“Reproducible workflows saved my life &lt;3”</span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="images/day1/bekahlane.jpg" style="width:100.0%" alt="Bekah Lane headshot"></p>
-<p><span class="body-text-m">Bekah Lane</span></p>
-<p><span class="body-text-s">Research Associate, Center for Coastal Studies</span></p>
-</div><div class="column" style="width:70%;">
-<p><span class="fragment">“It takes more activation energy to ‘do it right’, but you save yourself loads of time relative to doing it by brute force.”</span></p>
-<p><span class="fragment">“In my current job I’m often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects.”</span></p>
-<p><span class="fragment">“Collaboration and communication become <em>a lot</em> easier when you have your workflow laid out and organized instead of all jumbled in your brain.”</span></p>
-</div>
-</div>
-</section>
-<section id="works-cited" class="slide level2 smaller scrollable" data-menu-title="Works cited">
-<h2></h2>
-<p><span class="slide-title">Works cited</span></p>
+<section class="slide level2">
+
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
-</div>
-</div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-feinberg2020" class="csl-entry" role="listitem">
-Feinberg, Melanie, Will Sutherland, Sarah Beth Nelson, Mohammad Hossein Jarrahi, and Arcot Rajasekar. 2020. <span>“The New Reality of Reproducibility: The Role of Data Work in Scientific Research.”</span> <em>Proceedings of the ACM on Human-Computer Interaction</em> 4 (CSCW1): 1–22. <a href="https://doi.org/10.1145/3392840">https://doi.org/10.1145/3392840</a>.
-</div>
-<div id="ref-nasem2019" class="csl-entry" role="listitem">
-<em>Reproducibility and Replicability in Science</em>. 2019. National Academies Press. <a href="https://doi.org/10.17226/25303">https://doi.org/10.17226/25303</a>.
-</div>
-<div id="ref-stoudt2021" class="csl-entry" role="listitem">
-Stoudt, Sara, Váleri N. Vásquez, and Ciera C. Martinez. 2021. <span>“Principles for Data Analysis Workflows.”</span> Edited by Patricia M. Palagi. <em>PLOS Computational Biology</em> 17 (3): e1008770. <a href="https://doi.org/10.1371/journal.pcbi.1008770">https://doi.org/10.1371/journal.pcbi.1008770</a>.
-</div>
-<div id="ref-r4ds" class="csl-entry" role="listitem">
-Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. 2nd ed. Sebastopol, CA: O’Reilly Media. <a href="https://r4ds.hadley.nz/">https://r4ds.hadley.nz/</a>.
 </div>
 </div>
 </section>
@@ -787,44 +795,6 @@ Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. <em>R for 
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

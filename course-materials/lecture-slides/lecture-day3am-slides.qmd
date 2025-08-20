@@ -1,0 +1,305 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    highlight-style: a11y
+    chalkboard: true
+    theme: 
+      - ../../meds-slides-styles.scss
+    code-line-numbers: false
+bibliography: references.bib
+---
+
+## {#title-slide data-menu-title="Title Slide" background="#053660"} 
+
+[Version Control with Git]{.custom-title}
+
+[*EDS 214: Analytical Workflows and Scientific Reproducibility*]{.custom-subtitle}
+
+<hr class="hr-teal">
+
+[Day 3 Morning | August 27^th^, 2025]{.custom-subtitle3}
+
+---
+
+## {#learning-objectives data-menu-title="Learning Objectives"} 
+
+[This morning, you'll learn how to...]{.slide-title}
+
+<hr>
+
+::: {.body-text-l}
+* Use branches for collaborative work
+* Merge branches and resolve conflicts
+* Interpret git commit histories
+:::
+
+---
+
+## {#recap data-menu-title="Recap"} 
+
+[Recap]{.slide-title}
+
+<hr>
+
+You've been using git for version control for three weeks. During that time you learned how to:
+
+* **Create** a repository
+* **Commit** files to a local repository
+* **Push** files to a remote repository
+
+These are essential commands for using git *solo*. But what if you want to work with others?
+
+---
+
+## {#clone-commit-push1 data-menu-title="Clone, commit, push"} 
+
+[Clone, commit, push]{.slide-title}
+
+<hr>
+
+These are the three essential commands for using git and GitHub *solo*.
+
+Let's review these commands by visualizing a commit history.
+
+![](images/day3/branchmerge/ccp1.png)
+
+---
+
+## {#clone-commit-push2 data-menu-title="Clone, commit, push"} 
+
+[Clone, commit, push]{.slide-title}
+
+<hr>
+
+These are the three essential commands for using git and GitHub *solo*.
+
+Let's review these commands by visualizing a commit history.
+
+![](images/day3/branchmerge/ccp2.png)
+
+---
+
+## {#clone-commit-push3 data-menu-title="Clone, commit, push"} 
+
+[Clone, commit, push]{.slide-title}
+
+<hr>
+
+**Question** Why do the arrows in the commit history diagram point _backwards_ in time?
+
+![](images/day3/branchmerge/ccp2.png)
+
+---
+
+## {#branches-merges1 data-menu-title="Branches, merges"} 
+
+[Branches, merges]{.slide-title}
+
+<hr>
+
+As our work becomes more complex, creating _branches_ becomes essential.
+
+![](images/day3/branchmerge/branch1.png)
+
+---
+
+## {#branches-merges2 data-menu-title="Branches, merges"} 
+
+[Branches, merges]{.slide-title}
+
+<hr>
+
+As our work becomes more complex, creating _branches_ becomes essential.
+
+![](images/day3/branchmerge/branch2.png)
+
+---
+
+## {#branches-merges3 data-menu-title="Branches, merges"} 
+
+[Branches, merges]{.slide-title}
+
+<hr>
+
+As our work becomes more complex, creating _branches_ becomes essential.
+
+![](images/day3/branchmerge/branch3.png)
+
+---
+
+## {#branches-merges4 data-menu-title="Branches, merges"} 
+
+[Branches, merges]{.slide-title}
+
+<hr>
+
+As our work becomes more complex, creating _branches_ becomes essential.
+
+![](images/day3/branchmerge/branch4.png)
+
+---
+
+## {#branches-merges5 data-menu-title="Branches, merges"} 
+
+[Branches, merges]{.slide-title}
+
+<hr>
+
+As our work becomes more complex, creating _branches_ becomes essential.
+
+![](images/day3/branchmerge/branch5.png)
+
+---
+
+## {#why-branch data-menu-title="Why branch?"} 
+
+[Why branch?]{.slide-title}
+
+<hr>
+
+Branching and merging have a learning curve and require additional overhead.
+
+Begging the question...
+
+[**Why do we create branches?**]{.body-text-l}
+
+## {#conflicts data-menu-title="Conflicts"} 
+
+[Conflicts]{.slide-title}
+
+<hr>
+
+This commit history permits a *merge conflict*. Why?
+
+![](images/day3/branchmerge/conflict1.png)
+
+---
+
+## {#resolving-conflicts-1 data-menu-title="Resolving conflicts pt 1"} 
+
+[Resolving conflicts pt 1]{.slide-title}
+
+<hr>
+
+Merge conflicts are best resolved manually. Your judgement is essential!
+
+They look like this:
+
+```r
+<<<<<<< HEAD
+two <- 1 + 1  # This is the current branch's code
+=======
+foo <- 1 + 1  # This is the incoming branch's code
+>>>>>>> d670460b5b4ae3ea915caf5c68d12f560a9fe3e4
+```
+
+Notice that two of those lines look like R code, the other three look *weird*.
+
+---
+
+## {#resolving-conflicts-2 data-menu-title="Resolving conflicts pt 2"} 
+
+[Resolving conflicts pt 2]{.slide-title}
+
+<hr>
+
+Resolve the conflict by removing the *weird* lines and choosing the appropriate R code.
+
+Git views both of these solutions as valid. Which one would you choose? _Why?_
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```r
+two <- 1 + 1
+```
+
+:::
+
+::: {.column width="50%"}
+
+```r
+foo <- 1 + 1
+```
+
+:::
+
+::::
+
+---
+
+## {#resolving-conflicts-3 data-menu-title="Resolving conflicts pt 3"} 
+
+[Resolving conflicts pt 3]{.slide-title}
+
+<hr>
+
+You're almost done resolving the conflict.
+
+After choosing which code to keep, you have to let git know you're done.
+
+`git commit -m "Resolved merge conflict"`
+
+**In RStudio, would you run this command at the Console or the Terminal? How do you know?**
+
+---
+
+## {#branches-merges-recap data-menu-title="Branches and merges recap"} 
+
+[Branches and merges recap]{.slide-title}
+
+<hr>
+
+Branches are essential for collaborative work.
+
+* Work on changes in parallel
+* Keep the main branch stable while experimenting
+
+Merges reunite disparate branches, but they can create conflicts
+
+* Conflicts look scary, but you can resolve them!
+* Manually choose the code you want to keep *using your judgement*
+
+---
+
+## {#review-pt-1 data-menu-title="Review pt 1"} 
+
+[Review pt 1]{.slide-title}
+
+<hr>
+
+This commit history reflects many different git operations. Label the following operations in the diagram below.
+
+clone, commit, push, pull, branch, merge
+
+![](images/day3/branchmerge/review1.png)
+
+---
+
+## {#review-pt-2 data-menu-title="Review pt 2"} 
+
+[Review pt 2]{.slide-title}
+
+<hr>
+
+Which commit history below could yield a merge conflict? Why?
+
+![](images/day3/branchmerge/review2.png)
+
+---
+
+## {#live-demo data-menu-title="Live demo"} 
+
+[Live demo]{.slide-title}
+
+<hr>
+
+Let's switch over to RStudio and do a live demo with 
+
+* Branching 
+* Merging
+* Merge conflict resolution
+
+---

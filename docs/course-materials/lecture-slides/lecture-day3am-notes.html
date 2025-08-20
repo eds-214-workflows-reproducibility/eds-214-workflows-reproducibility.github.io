@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Wednesday August 27th, 2025">
 
-<title>EDS 214: Analytical Workflows and Scientific Reproducibility – Git and GitHub for Workflows</title>
+<title>EDS 214: Analytical Workflows and Scientific Reproducibility – lecture-day3am-notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,48 +20,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
 }
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/bren-hex.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/bren-hex.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -101,7 +114,7 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">EDS 214: Analytical Workflows and Scientific Reproducibility</span>
     </a>
   </div>
@@ -112,7 +125,7 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
@@ -125,29 +138,29 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-course-materials">    
         <li>
-    <a class="dropdown-item" href="../course-materials/day1.html">
+    <a class="dropdown-item" href="../../course-materials/day1.html">
  <span class="dropdown-text">day 1 (8/25)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day2.html">
+    <a class="dropdown-item" href="../../course-materials/day2.html">
  <span class="dropdown-text">day 2 (8/26)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day3.html">
+    <a class="dropdown-item" href="../../course-materials/day3.html">
  <span class="dropdown-text">day 3 (8/27)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day4.html">
+    <a class="dropdown-item" href="../../course-materials/day4.html">
  <span class="dropdown-text">day 4 (8/28)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day5.html">
+    <a class="dropdown-item" href="../../course-materials/day5.html">
  <span class="dropdown-text">day 5 (8/29)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../final-project/final-project.html"> 
+    <a class="nav-link" href="../../final-project/final-project.html"> 
 <span class="menu-text">final project</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -156,7 +169,7 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
         <li>
-    <a class="dropdown-item" href="../resources.html">
+    <a class="dropdown-item" href="../../resources.html">
  <span class="dropdown-text">recommended readings &amp; resources</span></a>
   </li>  
         <li>
@@ -190,29 +203,7 @@ div.csl-indent {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Git and GitHub for Workflows</h1>
-            <p class="subtitle lead">Day 3</p>
-                  <div>
-        <div class="description">
-          Wednesday August 27<sup>th</sup>, 2025
-        </div>
-      </div>
-                </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -220,8 +211,19 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#class-materials" id="toc-class-materials" class="nav-link active" data-scroll-target="#class-materials">Class materials</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  <li><a href="#version-control-with-git" id="toc-version-control-with-git" class="nav-link active" data-scroll-target="#version-control-with-git">Version control with git</a>
+  <ul class="collapse">
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap">Recap</a></li>
+  <li><a href="#clone-commit-push" id="toc-clone-commit-push" class="nav-link" data-scroll-target="#clone-commit-push">Clone, commit, push</a></li>
+  <li><a href="#branches-merges" id="toc-branches-merges" class="nav-link" data-scroll-target="#branches-merges">Branches, merges</a></li>
+  <li><a href="#conflicts" id="toc-conflicts" class="nav-link" data-scroll-target="#conflicts">Conflicts</a></li>
+  <li><a href="#resolving-conflicts-pt-1" id="toc-resolving-conflicts-pt-1" class="nav-link" data-scroll-target="#resolving-conflicts-pt-1">Resolving conflicts pt 1</a></li>
+  <li><a href="#resolving-conflicts-pt-2" id="toc-resolving-conflicts-pt-2" class="nav-link" data-scroll-target="#resolving-conflicts-pt-2">Resolving conflicts pt 2</a></li>
+  <li><a href="#resolving-conflicts-pt-3" id="toc-resolving-conflicts-pt-3" class="nav-link" data-scroll-target="#resolving-conflicts-pt-3">Resolving conflicts pt 3</a></li>
+  <li><a href="#branches-and-merges-recap" id="toc-branches-and-merges-recap" class="nav-link" data-scroll-target="#branches-and-merges-recap">Branches and merges recap</a></li>
+  <li><a href="#review-pt-1" id="toc-review-pt-1" class="nav-link" data-scroll-target="#review-pt-1">Review pt 1</a></li>
+  <li><a href="#review-pt-2" id="toc-review-pt-2" class="nav-link" data-scroll-target="#review-pt-2">Review pt 2</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -231,58 +233,92 @@ div.csl-indent {
 
 
 
-
-<section id="class-materials" class="level2">
-<h2 class="anchored" data-anchor-id="class-materials">Class materials</h2>
-<table class="table-hover table-bordered caption-top table">
-<thead>
-<tr class="header">
-<th><p><i class="fa-solid fa-calendar-day" title="A calendar with one day highlighted"></i> <strong>Session</strong></p></th>
-<th><p><i class="fa-solid fa-person-chalkboard" title="A person motioning at a chalkboard"></i> <strong>Lecture slides</strong></p></th>
-<th><p><i class="fa-solid fa-laptop-code" title="A laptop with on-screen code"></i> <strong>Interactive session</strong></p></th>
-<th><p><i class="fa-solid fa-brain" title="A brain representing thinking and reflection"></i> <strong>Reflection</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Morning</td>
-<td><a href="../course-materials/lecture-slides/lecture-day3am-slides.html" target="_blank">Version control with git</a></td>
-<td><a href="../course-materials/interactive/interactive-day2am.html">Navigate the server</a></td>
-<td><a href="https://forms.gle/GjKm3S9fef74jN8w5" target="_blank">Go with the flow</a></td>
-</tr>
-<tr class="even">
-<td>Afternoon</td>
-<td><a href="../course-materials/lecture-slides/lecture-day2pm-slides.html" target="_blank">Documentation</a></td>
-<td><a href="../course-materials/interactive/interactive-day2pm.html">READMEs, style, and comments</a></td>
-<td><a href="https://forms.gle/2NfM8nrq6BCKjRdx5" target="_blank">Exploration and iteration</a></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="further-reading">Further reading</h2>
+<section id="version-control-with-git" class="level1">
+<h1>Version control with git</h1>
+<section id="recap" class="level2">
+<h2 class="anchored" data-anchor-id="recap">Recap</h2>
+<p>You’ve been using git for version control for three weeks. During that time you learned how to:</p>
 <ul>
-<li><span class="citation" data-cites="bryan2018">Bryan (<a href="#ref-bryan2018" role="doc-biblioref">2018</a>)</span> explains why data scientists should embrace the project management benefits of git and GitHub</li>
+<li>Create a repository</li>
+<li>Commit files to a local repository</li>
+<li>Push files to a remote repository</li>
 </ul>
-<blockquote class="blockquote">
-<p>In my opinion, <em>for new users</em>, the advantages of Git only outweigh the disadvantages when you consider the overhead of working with other people, including your future self. And who among us does not need to do that? In a Git-based workflow, you document and, optionally, expose your work as you go. Communication and collaboration are the killer apps of version control. Git’s model of file management can feel uncomfortably rigid, but it enables the distribution of files across different people, computers, and time.</p>
-</blockquote>
+<p>These are essential commands for using git <em>solo</em>. But what if you want to work with others?</p>
+</section>
+<section id="clone-commit-push" class="level2">
+<h2 class="anchored" data-anchor-id="clone-commit-push">Clone, commit, push</h2>
+<p>These are the three essential commands for using git and GitHub <em>solo</em>.</p>
+<p>Let’s review these commands by visualizing a commit history.</p>
+<p>[Unlabeled diagram]</p>
+<p>[Labeled diagram]</p>
+</section>
+<section id="branches-merges" class="level2">
+<h2 class="anchored" data-anchor-id="branches-merges">Branches, merges</h2>
+<p>As our work becomes more complex, creating <em>branches</em> becomes essential.</p>
+<p>[Branching diagrams]</p>
+<p><strong>Why do we create branches?</strong></p>
+</section>
+<section id="conflicts" class="level2">
+<h2 class="anchored" data-anchor-id="conflicts">Conflicts</h2>
+<p>This commit history permits a <em>merge conflict</em>. Why?</p>
+<p>[Conflict diagram]</p>
+</section>
+<section id="resolving-conflicts-pt-1" class="level2">
+<h2 class="anchored" data-anchor-id="resolving-conflicts-pt-1">Resolving conflicts pt 1</h2>
+<p>Merge conflicts are best resolved manually. Your judgement is essential!</p>
+<p>They look like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">&lt;</span><span class="er">&lt;&lt;&lt;&lt;&lt;&lt;</span> HEAD</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>two <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span>  <span class="co"># This is the current branch's code</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="sc">==</span><span class="er">=====</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>foo <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span>  <span class="co"># This is the incoming branch's code</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span><span class="er">&gt;&gt;&gt;&gt;&gt;&gt;</span> d670460b5b4ae3ea915caf5c68d12f560a9fe3e4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Notice that two of those lines look like R code, the other three look <em>weird</em>.</p>
+</section>
+<section id="resolving-conflicts-pt-2" class="level2">
+<h2 class="anchored" data-anchor-id="resolving-conflicts-pt-2">Resolving conflicts pt 2</h2>
+<p>Resolve the conflict by removing the <em>weird</em> lines and choosing the appropriate R code.</p>
+<p>Git views both of these solutions as valid. Which one would you choose?</p>
+<p>[column 1]</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>two <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>[column 2]</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>foo <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="resolving-conflicts-pt-3" class="level2">
+<h2 class="anchored" data-anchor-id="resolving-conflicts-pt-3">Resolving conflicts pt 3</h2>
+<p>You’re almost done resolving the conflict.</p>
+<p>After choosing which code to keep, you have to let git know you’re done.</p>
+<p><code>git commit -m "Resolved merge conflict"</code></p>
+<p><strong>In RStudio, would you run this command at the Console or the Terminal? How do you know?</strong></p>
+</section>
+<section id="branches-and-merges-recap" class="level2">
+<h2 class="anchored" data-anchor-id="branches-and-merges-recap">Branches and merges recap</h2>
+<p>Branches are essential for collaborative work.</p>
 <ul>
-<li><span class="citation" data-cites="braga2023">Braga et al. (<a href="#ref-braga2023" role="doc-biblioref">2023</a>)</span> present 12 reasons scientists should use GitHub for collaboration, communication, and project management.</li>
+<li>Work on changes in parallel</li>
+<li>Keep the main branch stable while experimenting</li>
 </ul>
-
+<p>Merges reunite disparate branches, but they can create conflicts</p>
+<ul>
+<li>Conflicts look scary, but you can resolve them!</li>
+<li>Manually choose the code you want to keep <em>using your judgement</em></li>
+</ul>
+</section>
+<section id="review-pt-1" class="level2">
+<h2 class="anchored" data-anchor-id="review-pt-1">Review pt 1</h2>
+<p>This commit history reflects many different git operations. Label the following operations in the diagram below.</p>
+<p>clone, commit, push, pull, branch, merge</p>
+<p>[git history diagram 1]</p>
+</section>
+<section id="review-pt-2" class="level2">
+<h2 class="anchored" data-anchor-id="review-pt-2">Review pt 2</h2>
+<p>Which commit history below could yield a merge conflict? Why?</p>
+<p>[git history diagram 2]</p>
 
 
 </section>
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-braga2023" class="csl-entry" role="listitem">
-Braga, Pedro Henrique Pereira, Katherine Hébert, Emma J. Hudgins, Eric R. Scott, Brandon P. M. Edwards, Luna L. Sánchez Reyes, Matthew J. Grainger, et al. 2023. <span>“Not Just for Programmers: How GitHub Can Accelerate Collaborative and Reproducible Research in Ecology and Evolution.”</span> <em>Methods in Ecology and Evolution</em> 14 (6): 1364–80. <a href="https://doi.org/10.1111/2041-210x.14108">https://doi.org/10.1111/2041-210x.14108</a>.
-</div>
-<div id="ref-bryan2018" class="csl-entry" role="listitem">
-Bryan, Jennifer. 2018. <span>“Excuse Me, Do You Have a Moment to Talk About Version Control?”</span> <em>The American Statistician</em> 72 (1): 20–27. <a href="https://doi.org/10.1080/00031305.2017.1399928">https://doi.org/10.1080/00031305.2017.1399928</a>.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

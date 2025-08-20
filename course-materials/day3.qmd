@@ -1,13 +1,23 @@
 ---
-title: "TODO: fixme"
+title: "Git and GitHub for Workflows"
 subtitle: "Day 3"
 description: "Wednesday August 27^th^, 2025"
+bibliography: references.bib
 ---
 
 ## Class materials
 
-| {{< session >}} | {{< lecture >}}        | {{< interactive >}} | {{< reflection >}} |
-|-----------------|------------------------|---------------------|-------------------|
-| Morning         | TODO: fixme | TODO: fixme  | TODO: fixme |
-| Afternoon       | TODO: fixme  | TODO: fixme  | TODO: fixme |
-: {.hover .bordered .w-auto .mx-auto} 
+| {{< session >}} | {{< lecture >}} | {{< interactive >}} | {{< reflection >}} |
+|------------------|------------------|------------------|------------------|
+| Morning | [Version control with git](lecture-slides/lecture-day3am-slides.qmd){target="_blank"} | [Navigate the server](interactive/interactive-day2am.qmd) | [Go with the flow](https://forms.gle/GjKm3S9fef74jN8w5){target="_blank"} |
+| Afternoon | [Documentation](lecture-slides/lecture-day2pm-slides.qmd){target="_blank"} | [READMEs, style, and comments](interactive/interactive-day2pm.qmd) | [Exploration and iteration](https://forms.gle/2NfM8nrq6BCKjRdx5){target="_blank"} |
+
+: {.hover .bordered}
+
+## Further reading
+
+-   @bryan2018 explains why data scientists should embrace the project management benefits of git and GitHub
+
+> In my opinion, *for new users*, the advantages of Git only outweigh the disadvantages when you consider the overhead of working with other people, including your future self. And who among us does not need to do that? In a Git-based workflow, you document and, optionally, expose your work as you go. Communication and collaboration are the killer apps of version control. Git's model of file management can feel uncomfortably rigid, but it enables the distribution of files across different people, computers, and time.
+
+-   @braga2023 present 12 reasons scientists should use GitHub for collaboration, communication, and project management.
