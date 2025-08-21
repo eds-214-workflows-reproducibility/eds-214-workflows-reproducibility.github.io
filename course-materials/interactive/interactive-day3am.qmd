@@ -98,11 +98,11 @@ Automatic merge failed; fix conflicts and then commit the result.
 Inspect the contents of README.md at the command line. You should see the merge conflict notation:
 
 ```         
-<<<<<<< HEAD
-[The changes you made in main]
-=======
-[The changes you made in bugFix]
->>>>>>> bugFix
+ <<<<<<< HEAD
+ [The changes you made in main]
+ =======
+ [The changes you made in bugFix]
+ >>>>>>> bugFix
 ```
 
 Run `git status`. Git will tell you you're currently in the middle of a merge.
@@ -115,7 +115,7 @@ You have unmerged paths.
 
 Unmerged paths:
   (use "git add <file>..." to mark resolution)
-	both modified:   README.md
+    both modified:   README.md
 ```
 
 Open README.md in a text editor. Resolve the merge conflict by choosing the changes from either `main` or `bugFix`. Close the text editor, then commit your changes. Verify the merge is complete by checking the status of your repo.
