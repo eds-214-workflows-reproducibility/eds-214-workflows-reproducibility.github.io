@@ -1,0 +1,94 @@
+---
+title: "Refactor a Function"
+subtitle: "Day 3 Afternoon | EDS 214"
+description: "Wednesday August 27^th^, 2025"
+editor: visual
+bibliography: references.bib
+---
+
+## Background
+
+On Monday you wrote a tangled web of spaghetti code. Today, you're going to *reorganize the code without changing the functionality*. That process, keeping outputs the same while cleaning the code, is called **refactoring** and it's an essential step in creating, maintaining, and sharing workflows.
+
+In most analyses, you won't know exactly what you need to do fully in advance. Which means your initial implementation is going to be exploratory. Recall the figure below from Day 1 [@stoudt2021]. As you draft your code, you'll hit dead ends or pivot to new solutions. These dead ends yield confusing code that's hard to read and build upon. This problem is inevitable! Refactoring is the solution.
+
+![Developing a workflow is an exploratory process with many dead ends along the way. Dead ends lead to sloppy code. That's ok! You can clean it up by refactoring. Reproduced from Stoudt et al. (2021).](../lecture-slides/images/day1/stoudtetal2021fig1a.PNG){width="439"}
+
+One good way to refactor your code is to write a function to perform a task. Writing a function provides several immediate benefits:
+
+1.  The function name (if chosen wisely) describes the task clearly and succinctly, which several lines of code may not do.
+2.  A function separates the internal logic of the task (the function body) from the purpose it serves in your analysis (a script). That helps you focus your attention on one at a time, instead of mentally juggling both.
+3.  If you end up doing that task multiple times, you can reuse and maintain one function more easily than copy-paste-editing the same chunk multiple times (it's also less error-prone).
+
+## Goals
+
+In this session, you're going to pick a task in your spaghetti code and refactor it into a function.
+
+## Instructions
+
+### Identify and describe the task
+
+It's probably hard to pick out a task directly from spaghetti code. That's why it's called spaghetti! It's probably easier to refer to your flowchart. Pick a task in your workflow and answer the following questions. Picking the right scope for a task is subjective, and you may need to revise your answers a couple times to find the right level of complexity to refactor.
+
+**Q1:** What is the task? Plain language, 2-4 sentences.
+
+**Q2:** What are the task's *inputs*? What data and parameters do you need to know to do the task?
+
+**Q3:** What is the task's *output*? Be specific! If it's a vector, what type (e.g., character or numeric) is it and how long is it? If it's a data frame, what are the column names and what are their types? Are there constraints on what the output can be (e.g., sorted, range limits, etc)?
+
+**Q4:** Which lines of code in your spaghetti currently perform the task?
+
+Answer these questions in a GitHub Issue in your repo. For **Q4**, make sure you [link to the code snippet](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet?apiVersion=2022-11-28).
+
+### Write your function
+
+In the FlukeAndFeather Workflow Organization System™️, functions go in scripts in the R/ directory. This is a common convention for organizing R projects.
+
+Create a script in the R/ directory. Give it a name that describes your task.
+
+Write a function to perform your task. Your answers from the previous section should guide you!
+
+-   Your answer to **Q1** should help you pick the function's name.
+
+-   Your answer to **Q2** defines the function's parameters.
+
+-   Your answer to **Q3** defines the function's return value.
+
+-   Your answer to **Q4** is the starting point for the function body.
+
+Here's a simple function to refresh your memory for R function syntax.
+
+``` r
+add_nums <- function(num1, num2) {
+  result <- num1 + num2
+  return(result)
+}
+```
+
+::: callout-tip
+Steps "Identify and describe the task" and "Write your function" probably will require some iteration. As you start writing your function, you may find it makes sense to redefine your task, add or remove a parameter, or reformat the output. That's all part of the process!
+:::
+
+### Refactor your spaghetti
+
+You've defined your function, now it's time to use it.
+
+1.  At the beginning of your analysis script (the spaghetti), use the `source()` function to load your function. If your function is in `foo.R`, you'd write `source("R/foo.R")`.
+2.  Replace the code you identified in **Q4** with a call to your function.
+3.  Run your analysis script and verify the results remain the same. This will probably require some debugging!
+
+### Commit and push your changes
+
+1.  Commit your changes. In your commit message, say this commit fixes the Issue you created earlier. If you created Issue #1, your commit message should include "Fixes #1".
+2.  Push your commit.
+3.  Navigate to your repo on GitHub and verify your Issue is now closed.
+
+## Recap
+
+In this session you used GitHub's project management tools (Issues) to make improvements to your repo. Issues are important for collaboration because:
+
+-   The Issue describes the problem (e.g., what needs to be refactored).
+
+-   Collaborators can discuss the solution in the Issue thread.
+
+-   Closing the Issue links the code changes to the discussion.

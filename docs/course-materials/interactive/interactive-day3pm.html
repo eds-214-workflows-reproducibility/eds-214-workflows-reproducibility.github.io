@@ -8,7 +8,7 @@
 
 <meta name="description" content="Wednesday August 27th, 2025">
 
-<title>EDS 214: Analytical Workflows and Scientific Reproducibility – Git and GitHub for Workflows</title>
+<title>EDS 214: Analytical Workflows and Scientific Reproducibility – Refactor a Function</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 /* CSS for citations */
 div.csl-bib-body { }
@@ -44,25 +78,25 @@ div.csl-indent {
 }</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/bren-hex.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/bren-hex.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -101,7 +135,7 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">EDS 214: Analytical Workflows and Scientific Reproducibility</span>
     </a>
   </div>
@@ -112,7 +146,7 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
   <li class="nav-item">
@@ -125,29 +159,29 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-course-materials">    
         <li>
-    <a class="dropdown-item" href="../course-materials/day1.html">
+    <a class="dropdown-item" href="../../course-materials/day1.html">
  <span class="dropdown-text">day 1 (8/25)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day2.html">
+    <a class="dropdown-item" href="../../course-materials/day2.html">
  <span class="dropdown-text">day 2 (8/26)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day3.html">
+    <a class="dropdown-item" href="../../course-materials/day3.html">
  <span class="dropdown-text">day 3 (8/27)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day4.html">
+    <a class="dropdown-item" href="../../course-materials/day4.html">
  <span class="dropdown-text">day 4 (8/28)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../course-materials/day5.html">
+    <a class="dropdown-item" href="../../course-materials/day5.html">
  <span class="dropdown-text">day 5 (8/29)</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../final-project/final-project.html"> 
+    <a class="nav-link" href="../../final-project/final-project.html"> 
 <span class="menu-text">final project</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -156,7 +190,7 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
         <li>
-    <a class="dropdown-item" href="../resources.html">
+    <a class="dropdown-item" href="../../resources.html">
  <span class="dropdown-text">recommended readings &amp; resources</span></a>
   </li>  
         <li>
@@ -193,8 +227,8 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Git and GitHub for Workflows</h1>
-            <p class="subtitle lead">Day 3</p>
+      <h1 class="title">Refactor a Function</h1>
+            <p class="subtitle lead">Day 3 Afternoon | EDS 214</p>
                   <div>
         <div class="description">
           Wednesday August 27<sup>th</sup>, 2025
@@ -220,8 +254,16 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#class-materials" id="toc-class-materials" class="nav-link active" data-scroll-target="#class-materials">Class materials</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a>
+  <ul class="collapse">
+  <li><a href="#identify-and-describe-the-task" id="toc-identify-and-describe-the-task" class="nav-link" data-scroll-target="#identify-and-describe-the-task">Identify and describe the task</a></li>
+  <li><a href="#write-your-function" id="toc-write-your-function" class="nav-link" data-scroll-target="#write-your-function">Write your function</a></li>
+  <li><a href="#refactor-your-spaghetti" id="toc-refactor-your-spaghetti" class="nav-link" data-scroll-target="#refactor-your-spaghetti">Refactor your spaghetti</a></li>
+  <li><a href="#commit-and-push-your-changes" id="toc-commit-and-push-your-changes" class="nav-link" data-scroll-target="#commit-and-push-your-changes">Commit and push your changes</a></li>
+  </ul></li>
+  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap">Recap</a></li>
   </ul>
 </nav>
     </div>
@@ -232,43 +274,93 @@ div.csl-indent {
 
 
 
-<section id="class-materials" class="level2">
-<h2 class="anchored" data-anchor-id="class-materials">Class materials</h2>
-<table class="table-hover table-bordered caption-top table">
-<thead>
-<tr class="header">
-<th><p><i class="fa-solid fa-calendar-day" title="A calendar with one day highlighted"></i> <strong>Session</strong></p></th>
-<th><p><i class="fa-solid fa-person-chalkboard" title="A person motioning at a chalkboard"></i> <strong>Lecture slides</strong></p></th>
-<th><p><i class="fa-solid fa-laptop-code" title="A laptop with on-screen code"></i> <strong>Interactive session</strong></p></th>
-<th><p><i class="fa-solid fa-brain" title="A brain representing thinking and reflection"></i> <strong>Reflection</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Morning</td>
-<td><a href="../course-materials/lecture-slides/lecture-day3am-slides.html" target="_blank">Version control with git</a></td>
-<td><a href="../course-materials/interactive/interactive-day3am.html">Git branching</a></td>
-<td><a href="https://forms.gle/GjKm3S9fef74jN8w5" target="_blank">Go with the flow</a></td>
-</tr>
-<tr class="even">
-<td>Afternoon</td>
-<td><a href="lecture-slides/lecture-day3pm-slides.qmd" target="_blank">Collaboration with GitHub</a></td>
-<td><a href="../course-materials/interactive/interactive-day3pm.html">Refactor a function</a></td>
-<td><a href="https://forms.gle/2NfM8nrq6BCKjRdx5" target="_blank">Exploration and iteration</a></td>
-</tr>
-</tbody>
-</table>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>On Monday you wrote a tangled web of spaghetti code. Today, you’re going to <em>reorganize the code without changing the functionality</em>. That process, keeping outputs the same while cleaning the code, is called <strong>refactoring</strong> and it’s an essential step in creating, maintaining, and sharing workflows.</p>
+<p>In most analyses, you won’t know exactly what you need to do fully in advance. Which means your initial implementation is going to be exploratory. Recall the figure below from Day 1 <span class="citation" data-cites="stoudt2021">(<a href="#ref-stoudt2021" role="doc-biblioref">Stoudt, Vásquez, and Martinez 2021</a>)</span>. As you draft your code, you’ll hit dead ends or pivot to new solutions. These dead ends yield confusing code that’s hard to read and build upon. This problem is inevitable! Refactoring is the solution.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../lecture-slides/images/day1/stoudtetal2021fig1a.PNG" class="img-fluid figure-img" width="439"></p>
+<figcaption>Developing a workflow is an exploratory process with many dead ends along the way. Dead ends lead to sloppy code. That’s ok! You can clean it up by refactoring. Reproduced from Stoudt et al.&nbsp;(2021).</figcaption>
+</figure>
+</div>
+<p>One good way to refactor your code is to write a function to perform a task. Writing a function provides several immediate benefits:</p>
+<ol type="1">
+<li>The function name (if chosen wisely) describes the task clearly and succinctly, which several lines of code may not do.</li>
+<li>A function separates the internal logic of the task (the function body) from the purpose it serves in your analysis (a script). That helps you focus your attention on one at a time, instead of mentally juggling both.</li>
+<li>If you end up doing that task multiple times, you can reuse and maintain one function more easily than copy-paste-editing the same chunk multiple times (it’s also less error-prone).</li>
+</ol>
 </section>
-<section id="further-reading" class="level2">
-<h2 class="anchored" data-anchor-id="further-reading">Further reading</h2>
+<section id="goals" class="level2">
+<h2 class="anchored" data-anchor-id="goals">Goals</h2>
+<p>In this session, you’re going to pick a task in your spaghetti code and refactor it into a function.</p>
+</section>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
+<section id="identify-and-describe-the-task" class="level3">
+<h3 class="anchored" data-anchor-id="identify-and-describe-the-task">Identify and describe the task</h3>
+<p>It’s probably hard to pick out a task directly from spaghetti code. That’s why it’s called spaghetti! It’s probably easier to refer to your flowchart. Pick a task in your workflow and answer the following questions. Picking the right scope for a task is subjective, and you may need to revise your answers a couple times to find the right level of complexity to refactor.</p>
+<p><strong>Q1:</strong> What is the task? Plain language, 2-4 sentences.</p>
+<p><strong>Q2:</strong> What are the task’s <em>inputs</em>? What data and parameters do you need to know to do the task?</p>
+<p><strong>Q3:</strong> What is the task’s <em>output</em>? Be specific! If it’s a vector, what type (e.g., character or numeric) is it and how long is it? If it’s a data frame, what are the column names and what are their types? Are there constraints on what the output can be (e.g., sorted, range limits, etc)?</p>
+<p><strong>Q4:</strong> Which lines of code in your spaghetti currently perform the task?</p>
+<p>Answer these questions in a GitHub Issue in your repo. For <strong>Q4</strong>, make sure you <a href="https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet?apiVersion=2022-11-28">link to the code snippet</a>.</p>
+</section>
+<section id="write-your-function" class="level3">
+<h3 class="anchored" data-anchor-id="write-your-function">Write your function</h3>
+<p>In the FlukeAndFeather Workflow Organization System™️, functions go in scripts in the R/ directory. This is a common convention for organizing R projects.</p>
+<p>Create a script in the R/ directory. Give it a name that describes your task.</p>
+<p>Write a function to perform your task. Your answers from the previous section should guide you!</p>
 <ul>
-<li><span class="citation" data-cites="bryan2018">Bryan (<a href="#ref-bryan2018" role="doc-biblioref">2018</a>)</span> explains why data scientists should embrace the project management benefits of git and GitHub</li>
+<li><p>Your answer to <strong>Q1</strong> should help you pick the function’s name.</p></li>
+<li><p>Your answer to <strong>Q2</strong> defines the function’s parameters.</p></li>
+<li><p>Your answer to <strong>Q3</strong> defines the function’s return value.</p></li>
+<li><p>Your answer to <strong>Q4</strong> is the starting point for the function body.</p></li>
 </ul>
-<blockquote class="blockquote">
-<p>In my opinion, <em>for new users</em>, the advantages of Git only outweigh the disadvantages when you consider the overhead of working with other people, including your future self. And who among us does not need to do that? In a Git-based workflow, you document and, optionally, expose your work as you go. Communication and collaboration are the killer apps of version control. Git’s model of file management can feel uncomfortably rigid, but it enables the distribution of files across different people, computers, and time.</p>
-</blockquote>
+<p>Here’s a simple function to refresh your memory for R function syntax.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>add_nums <span class="ot">&lt;-</span> <span class="cf">function</span>(num1, num2) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> num1 <span class="sc">+</span> num2</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Steps “Identify and describe the task” and “Write your function” probably will require some iteration. As you start writing your function, you may find it makes sense to redefine your task, add or remove a parameter, or reformat the output. That’s all part of the process!</p>
+</div>
+</div>
+</section>
+<section id="refactor-your-spaghetti" class="level3">
+<h3 class="anchored" data-anchor-id="refactor-your-spaghetti">Refactor your spaghetti</h3>
+<p>You’ve defined your function, now it’s time to use it.</p>
+<ol type="1">
+<li>At the beginning of your analysis script (the spaghetti), use the <code>source()</code> function to load your function. If your function is in <code>foo.R</code>, you’d write <code>source("R/foo.R")</code>.</li>
+<li>Replace the code you identified in <strong>Q4</strong> with a call to your function.</li>
+<li>Run your analysis script and verify the results remain the same. This will probably require some debugging!</li>
+</ol>
+</section>
+<section id="commit-and-push-your-changes" class="level3">
+<h3 class="anchored" data-anchor-id="commit-and-push-your-changes">Commit and push your changes</h3>
+<ol type="1">
+<li>Commit your changes. In your commit message, say this commit fixes the Issue you created earlier. If you created Issue #1, your commit message should include “Fixes #1”.</li>
+<li>Push your commit.</li>
+<li>Navigate to your repo on GitHub and verify your Issue is now closed.</li>
+</ol>
+</section>
+</section>
+<section id="recap" class="level2">
+<h2 class="anchored" data-anchor-id="recap">Recap</h2>
+<p>In this session you used GitHub’s project management tools (Issues) to make improvements to your repo. Issues are important for collaboration because:</p>
 <ul>
-<li><span class="citation" data-cites="braga2023">Braga et al. (<a href="#ref-braga2023" role="doc-biblioref">2023</a>)</span> present 12 reasons scientists should use GitHub for collaboration, communication, and project management.</li>
+<li><p>The Issue describes the problem (e.g., what needs to be refactored).</p></li>
+<li><p>Collaborators can discuss the solution in the Issue thread.</p></li>
+<li><p>Closing the Issue links the code changes to the discussion.</p></li>
 </ul>
 
 
@@ -276,11 +368,8 @@ div.csl-indent {
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-braga2023" class="csl-entry" role="listitem">
-Braga, Pedro Henrique Pereira, Katherine Hébert, Emma J. Hudgins, Eric R. Scott, Brandon P. M. Edwards, Luna L. Sánchez Reyes, Matthew J. Grainger, et al. 2023. <span>“Not Just for Programmers: How GitHub Can Accelerate Collaborative and Reproducible Research in Ecology and Evolution.”</span> <em>Methods in Ecology and Evolution</em> 14 (6): 1364–80. <a href="https://doi.org/10.1111/2041-210x.14108">https://doi.org/10.1111/2041-210x.14108</a>.
-</div>
-<div id="ref-bryan2018" class="csl-entry" role="listitem">
-Bryan, Jennifer. 2018. <span>“Excuse Me, Do You Have a Moment to Talk About Version Control?”</span> <em>The American Statistician</em> 72 (1): 20–27. <a href="https://doi.org/10.1080/00031305.2017.1399928">https://doi.org/10.1080/00031305.2017.1399928</a>.
+<div id="ref-stoudt2021" class="csl-entry" role="listitem">
+Stoudt, Sara, Váleri N. Vásquez, and Ciera C. Martinez. 2021. <span>“Principles for Data Analysis Workflows.”</span> Edited by Patricia M. Palagi. <em>PLOS Computational Biology</em> 17 (3): e1008770. <a href="https://doi.org/10.1371/journal.pcbi.1008770">https://doi.org/10.1371/journal.pcbi.1008770</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

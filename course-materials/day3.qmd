@@ -8,9 +8,9 @@ bibliography: references.bib
 ## Class materials
 
 | {{< session >}} | {{< lecture >}} | {{< interactive >}} | {{< reflection >}} |
-|----|----|----|----|
+|------------------|------------------|------------------|------------------|
 | Morning | [Version control with git](lecture-slides/lecture-day3am-slides.qmd){target="_blank"} | [Git branching](interactive/interactive-day3am.qmd) | [Go with the flow](https://forms.gle/GjKm3S9fef74jN8w5){target="_blank"} |
-| Afternoon | [Documentation](lecture-slides/lecture-day2pm-slides.qmd){target="_blank"} | [READMEs, style, and comments](interactive/interactive-day2pm.qmd) | [Exploration and iteration](https://forms.gle/2NfM8nrq6BCKjRdx5){target="_blank"} |
+| Afternoon | [Collaboration with GitHub](lecture-slides/lecture-day3pm-slides.qmd){target="_blank"} | [Refactor a function](interactive/interactive-day3pm.qmd) | [Exploration and iteration](https://forms.gle/2NfM8nrq6BCKjRdx5){target="_blank"} |
 
 : {.hover .bordered}
 
