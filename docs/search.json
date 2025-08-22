@@ -424,21 +424,21 @@
     "href": "course-materials/interactive/interactive-day3pm.html#goals",
     "title": "Refactor a Function",
     "section": "Goals",
-    "text": "Goals\nIn this session, you’re going to pick a task in your spaghetti code and refactor it into a function."
+    "text": "Goals\nIn this session, you’re going to pick a task in your spaghetti code and refactor it into a function. As you do so, you’ll learn how to apply two GitHub project management tools we covered in lecture: Issues and Pull Requests."
   },
   {
     "objectID": "course-materials/interactive/interactive-day3pm.html#instructions",
     "href": "course-materials/interactive/interactive-day3pm.html#instructions",
     "title": "Refactor a Function",
     "section": "Instructions",
-    "text": "Instructions\n\nIdentify and describe the task\nIt’s probably hard to pick out a task directly from spaghetti code. That’s why it’s called spaghetti! It’s probably easier to refer to your flowchart. Pick a task in your workflow and answer the following questions. Picking the right scope for a task is subjective, and you may need to revise your answers a couple times to find the right level of complexity to refactor.\nQ1: What is the task? Plain language, 2-4 sentences.\nQ2: What are the task’s inputs? What data and parameters do you need to know to do the task?\nQ3: What is the task’s output? Be specific! If it’s a vector, what type (e.g., character or numeric) is it and how long is it? If it’s a data frame, what are the column names and what are their types? Are there constraints on what the output can be (e.g., sorted, range limits, etc)?\nQ4: Which lines of code in your spaghetti currently perform the task?\nAnswer these questions in a GitHub Issue in your repo. For Q4, make sure you link to the code snippet.\n\n\nWrite your function\nIn the FlukeAndFeather Workflow Organization System™️, functions go in scripts in the R/ directory. This is a common convention for organizing R projects.\nCreate a script in the R/ directory. Give it a name that describes your task.\nWrite a function to perform your task. Your answers from the previous section should guide you!\n\nYour answer to Q1 should help you pick the function’s name.\nYour answer to Q2 defines the function’s parameters.\nYour answer to Q3 defines the function’s return value.\nYour answer to Q4 is the starting point for the function body.\n\nHere’s a simple function to refresh your memory for R function syntax.\nadd_nums &lt;- function(num1, num2) {\n  result &lt;- num1 + num2\n  return(result)\n}\n\n\n\n\n\n\nTip\n\n\n\nSteps “Identify and describe the task” and “Write your function” probably will require some iteration. As you start writing your function, you may find it makes sense to redefine your task, add or remove a parameter, or reformat the output. That’s all part of the process!\n\n\n\n\nRefactor your spaghetti\nYou’ve defined your function, now it’s time to use it.\n\nAt the beginning of your analysis script (the spaghetti), use the source() function to load your function. If your function is in foo.R, you’d write source(\"R/foo.R\").\nReplace the code you identified in Q4 with a call to your function.\nRun your analysis script and verify the results remain the same. This will probably require some debugging!\n\n\n\nCommit and push your changes\n\nCommit your changes. In your commit message, say this commit fixes the Issue you created earlier. If you created Issue #1, your commit message should include “Fixes #1”.\nPush your commit.\nNavigate to your repo on GitHub and verify your Issue is now closed."
+    "text": "Instructions\n\nIdentify and describe the task\nIt’s probably hard to pick out a task directly from spaghetti code. That’s why it’s called spaghetti! It’s probably easier to refer to your flowchart. Pick a task in your workflow and answer the following questions. Picking the right scope for a task is subjective, and you may need to revise your answers a couple times to find the right level of complexity to refactor.\nQ1: What is the task? Plain language, 2-4 sentences.\nQ2: What are the task’s inputs? What data and parameters do you need to know to do the task?\nQ3: What is the task’s output? Be specific! If it’s a vector, what type (e.g., character or numeric) is it and how long is it? If it’s a data frame, what are the column names and what are their types? Are there constraints on what the output can be (e.g., sorted, range limits, etc)?\nQ4: Which lines of code in your spaghetti currently perform the task?\nAnswer these questions in a GitHub Issue in your repo (instructions here). For Q4, you should directly link to the code snippet.\n\n\nWrite your function\nIn the FlukeAndFeather Workflow Organization System™️, functions go in scripts in the R/ directory. This is a common convention for organizing R projects.\nBefore proceeding, create a branch and switch to it.\nCreate a script in the R/ directory. Give it a name that describes your task.\nWrite a function to perform your task. Your answers from the previous section should guide you!\n\nYour answer to Q1 should help you pick the function’s name.\nYour answer to Q2 defines the function’s parameters.\nYour answer to Q3 defines the function’s return value.\nYour answer to Q4 is the starting point for the function body.\n\nHere’s a simple function to refresh your memory for R function syntax.\nadd_nums &lt;- function(num1, num2) {\n  result &lt;- num1 + num2\n  return(result)\n}\n\n\n\n\n\n\nTip\n\n\n\nSteps “Identify and describe the task” and “Write your function” probably will require some iteration. As you start writing your function, you may find it makes sense to redefine your task, add or remove a parameter, or reformat the output. That’s all part of the process!\n\n\n\n\nRefactor your spaghetti\nYou’ve defined your function, now it’s time to use it.\n\nAt the beginning of your analysis script (the spaghetti), use the source() function to load your function. If your function is in foo.R, you’d write source(\"R/foo.R\").\nReplace the code you identified in Q4 with a call to your function.\nRun your analysis script and verify the results remain the same. This will probably require some debugging!\n\n\n\nCommit your changes and create a pull request\nTypically, pull requests occur between forked repos. But they can also be used between branches in the same remote repo. There are fewer moving parts when you stay in a single repo, so that’s what we’ll start with today. You’ll create a fork and pull request tomorrow during peer review.\n\nCommit your changes. In your commit message, say this commit addresses the Issue you created earlier. If you created Issue #1, your commit message should include “See #1”.\nPush your commit.\nNavigate to your repo on GitHub. Switch to the Pull requests tab. You should see a yellow notification that one of your branches had a recent push, and a green button saying Compare & pull request. Click on that green button (not New pull request).\n\n\n\n\nMake sure you click on “Compare & pull request”, not “New pull request”.\n\n\n\nYou have the option to add a title and description. By default, your title will be the latest commit message. If you wrote something descriptive and succinct, you can keep it. The description should say what your pull request does. The issue you opened earlier should have most of the details, but if you learned something along the way that’s not in the issue then this is the place to include it.\nClick on the green Create pull request button.\nGitHub will notify you if there are any merge conflicts. Unless you edited your main branch separately, there shouldn’t be any. Click on the green Merge pull request button, then the green Confirm merge button. You should see a purple merge icon and a message saying it’s now safe to delete the branch you made.\nSwitch back to the Issue you made earlier. You should now see 2 commits that reference the issue: the commit you made locally and the pull request itself. Close the issue by clicking the Close issue button with the purple check mark next to it.\n\n\n\n\nNotice the “#2” next to the pull request. Each pull request gets its own Issue! That’s useful for tracking sets of changes from collaborators."
   },
   {
     "objectID": "course-materials/interactive/interactive-day3pm.html#recap",
     "href": "course-materials/interactive/interactive-day3pm.html#recap",
     "title": "Refactor a Function",
     "section": "Recap",
-    "text": "Recap\nIn this session you used GitHub’s project management tools (Issues) to make improvements to your repo. Issues are important for collaboration because:\n\nThe Issue describes the problem (e.g., what needs to be refactored).\nCollaborators can discuss the solution in the Issue thread.\nClosing the Issue links the code changes to the discussion."
+    "text": "Recap\nIn this session you used GitHub’s project management tools (Issues and Pull requests) to make improvements to your repo.\nIssues are important for collaboration because:\n\nThe Issue describes the problem (e.g., what needs to be refactored).\nCollaborators can discuss the solution in the Issue thread.\nThe discussion can directly link to the relevant lines of code.\n\nYou made an internal pull request in your own repo today, which familiarized you with the process. Tomorrow you’ll fork a partner’s repo and create an external pull request."
   },
   {
     "objectID": "course-materials/interactive/interactive-day2pm.html",
@@ -1307,5 +1307,271 @@
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
     "text": "You can arrange content in columns\n\n\n\nLearn more about the MEDS program on the Bren website."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#title-slide",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#title-slide",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Collaboration with GitHub\nEDS 214: Analytical Workflows and Scientific Reproducibility\n\nDay 3 Afternoon | August 27th, 2025"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#learning-objectives",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#learning-objectives",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "This afternoon, you’ll learn how to…\n\nUse GitHub for project management and collaboration\n\nSpecific skills include:\n\nUse Issues to describe, discuss, and track code changes\nCompare and contrast branching/merging with forking/pull requests\nShare your outputs on GitHub Pages"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#recap",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#recap",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Recap\n\n\n\nThis morning you learned about branches. How to:\n\nCreate\nCommit\nMerge\n\nThese operations promote collaboration while working in the local git repository.\n\nGitHub also offers project management tools.\nThese tools integrate with features like branches and commits."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#code-evolves",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#code-evolves",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Code evolves\n\n\n\n\nWriting an analysis is an exploratory process.\nDiscussions and to-do items are easily lost.\nWe need project management tools to link problems, discussions, and code changes!"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-1",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Simple Issue"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-2",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Simple Issue"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-3",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-3",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Simple Issue"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-4",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-4",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Simple Issue"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-5",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-5",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Simple Issue"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#branch-merge-vs-fork-pr",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#branch-merge-vs-fork-pr",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Branch/Merge vs Fork/Pull Request\n\n\n\n\nBranching and merging are local operations that help you manage your own work.\n\nForking and pull requests are remote operations that help you manage work with others."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#fork-pull-1",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#fork-pull-1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Fork/Pull Request\n\n\n\n\n\nYou’re familiar with local and remote repos."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#fork-pull-2",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#fork-pull-2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Fork/Pull Request\n\n\n\n\n\nA fork copies the remote repo. Pull requests send changes back to the original remote repo."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#fork-pull-3",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#fork-pull-3",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Fork/Pull Request\n\n\n\n\n\nThe connection between local and remote fork mirrors the local and remote original.."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#fork-pull-4",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#fork-pull-4",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Fork/Pull Request\n\n\n\n\n\nFork/pull is conceptually identical to branch/merge.\nThe difference is that fork/pull is a remote operation, while branch/merge is a local operation."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#fork-pull-5",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#fork-pull-5",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Fork/Pull Request"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "GitHub Pages\n\n\nGitHub Pages provides a free web presence for your projects.\nGreat for sharing your work with others.\nSharing URLs makes updates easy! Hunting for email attachments is hard!\nYou will use GitHub Pages for class assignments, Capstone, and your portfolio."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-1",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Complex Issue\n\n\n\n\n\nHere’s a more complex issue"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-2",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Complex Issue\n\n\n\n\n\nThis title suggests a new feature"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-3",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-3",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Complex Issue\n\n\n\n\n\nThe initial description describes the use case"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-4",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-4",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Complex Issue\n\n\n\n\n\nThis commit includes a prototype for the feature, with a list of questions that came up in the process."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-5",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-5",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Complex Issue\n\n\n\n\n\nLatter commits include the finished code plus some tests to verify it works."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-6",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues2-6",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "A Complex Issue\n\n\n\n\n\nAfter verifying the code works, the author closed the issue."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-recap",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#issues-recap",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Issues Recap\n\n\nIssues are a project management tool GitHub provides to help you track:\n\nBugs\nNew features\nDiscussions\nSolutions\n\nThe alternatives (comments, emails, Slack messages…) will eventually get you lost!"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#forkpull-recap",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#forkpull-recap",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Fork/Pull Request Recap\n\n\nFork/Pull Request is a project management tool GitHub provides to help you manage code changes from multiple contributors.\n\nBugs\nNew features\nDiscussions\nSolutions\n\nThe alternatives (comments, emails, Slack messages…) will eventually get you lost!"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex1",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Meet Dr Eli Holmes\n\n\n\n\n\nMeet Dr Eli Holmes. Research scientist at NOAA. Expert in fisheries and open science."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex2",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Forecasting Sardines\n\n\n\n\n\nIn 2020, Dr Holmes led a paper about forecasting sardine landings."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex3",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex3",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "GitHub Repo\n\n\n\n\n\nHere’s the project’s GitHub repo - should look familiar.\nNote the URL under About. [username].github.io/[reponame]"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex4",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex4",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "GitHub Pages\n\n\n\n\n\nHere’s the project’s GitHub Pages site.\nPages sites can host documentation, results, and more."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex5",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex5",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Function Documentation\n\n\n\n\n\nDr Holmes used their Pages site for documentation on their functions and data."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex6",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#github-pages-ex6",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Back to GitHub\n\n\n\n\n\nThe function documentation links directly back to the source code on their GitHub repo."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#pages-recap",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#pages-recap",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "But what if I break it?\n\n\n\nBowie is an environmental data scientist working on an analysis of pollution in local watersheds.\nShe manages her project in a GitHub repository, using Issues to track tasks and Pages to share her results with collaborators.\nHer two collaborators are Iggy and Nomi.\n\nIggy found a bug in Bowie’s data pre-processing step and asked her to fix it.\nNomi is busy with other projects and hasn’t had a chance to look at the Pages site yet.\n\nBowie is worried that while she’s fixing the bug Iggy found she might temporarily break the Pages site, which would delay Nomi’s input on the project.\n\nWhat should Bowie do to address Iggy’s bug while keeping the Pages site working for Nomi?"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-notes.html",
+    "href": "course-materials/lecture-slides/lecture-day3pm-notes.html",
+    "title": "Collaboration with GitHub",
+    "section": "",
+    "text": "This morning you learned how to create, work in, and merge branches. These operations promote collaboration while working in the local git repository.\nGitHub offers project management tools that integrate with git features like branches and commits.\n\n\n\nBy the end of this lesson, you will be able to:\n\nUse Issues to describe, discuss, and track code changes\nCompare the shared and distinct concepts of branching/merging and forking/pull requests\nShare your outputs on GitHub Pages\n\n\n\n\n[column 1]\nWriting an analysis is an exploratory process, filled with dead ends.\nLists of bugs and discussions about to-do items easily get lost.\nWe need a project management tool to link issues, discussions, and code changes!\n[column 2]\n[confused gandalf meme]\n\n\n\nfive slides, progressing through images/day3/issues\nYou will open, discuss, and close issues in the interactive session.\n\n\n\nBranching and merging are local operations that help you manage your own work.\nForking and pull requests are remote operations that help you manage work with others.\nfive slides, progressing through images/day3/forkpull\nFork/Pull Request is a recommended system for your Capstone!\n\n\n\nGitHub Pages is a free service that easily gives your projects web presence.\nGreat for sharing your work with others.\nURL easy! Hunting for email attachments hard!\nLive demo: samanthacsik/OHI-quarto-websites\nYou will use GitHub Pages for class assignments, Capstone, and your portfolio."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-notes.html#recap",
+    "href": "course-materials/lecture-slides/lecture-day3pm-notes.html#recap",
+    "title": "Collaboration with GitHub",
+    "section": "",
+    "text": "This morning you learned how to create, work in, and merge branches. These operations promote collaboration while working in the local git repository.\nGitHub offers project management tools that integrate with git features like branches and commits."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-notes.html#learning-objectives",
+    "href": "course-materials/lecture-slides/lecture-day3pm-notes.html#learning-objectives",
+    "title": "Collaboration with GitHub",
+    "section": "",
+    "text": "By the end of this lesson, you will be able to:\n\nUse Issues to describe, discuss, and track code changes\nCompare the shared and distinct concepts of branching/merging and forking/pull requests\nShare your outputs on GitHub Pages"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-notes.html#code-evolves",
+    "href": "course-materials/lecture-slides/lecture-day3pm-notes.html#code-evolves",
+    "title": "Collaboration with GitHub",
+    "section": "",
+    "text": "[column 1]\nWriting an analysis is an exploratory process, filled with dead ends.\nLists of bugs and discussions about to-do items easily get lost.\nWe need a project management tool to link issues, discussions, and code changes!\n[column 2]\n[confused gandalf meme]"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-notes.html#issues",
+    "href": "course-materials/lecture-slides/lecture-day3pm-notes.html#issues",
+    "title": "Collaboration with GitHub",
+    "section": "",
+    "text": "five slides, progressing through images/day3/issues\nYou will open, discuss, and close issues in the interactive session."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-notes.html#branchmerge-vs-forkpull-request",
+    "href": "course-materials/lecture-slides/lecture-day3pm-notes.html#branchmerge-vs-forkpull-request",
+    "title": "Collaboration with GitHub",
+    "section": "",
+    "text": "Branching and merging are local operations that help you manage your own work.\nForking and pull requests are remote operations that help you manage work with others.\nfive slides, progressing through images/day3/forkpull\nFork/Pull Request is a recommended system for your Capstone!"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-notes.html#github-pages",
+    "href": "course-materials/lecture-slides/lecture-day3pm-notes.html#github-pages",
+    "title": "Collaboration with GitHub",
+    "section": "",
+    "text": "GitHub Pages is a free service that easily gives your projects web presence.\nGreat for sharing your work with others.\nURL easy! Hunting for email attachments hard!\nLive demo: samanthacsik/OHI-quarto-websites\nYou will use GitHub Pages for class assignments, Capstone, and your portfolio."
   }
 ]

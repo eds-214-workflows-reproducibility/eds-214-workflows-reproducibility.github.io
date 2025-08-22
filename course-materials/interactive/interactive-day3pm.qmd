@@ -22,7 +22,7 @@ One good way to refactor your code is to write a function to perform a task. Wri
 
 ## Goals
 
-In this session, you're going to pick a task in your spaghetti code and refactor it into a function.
+In this session, you're going to pick a task in your spaghetti code and refactor it into a function. As you do so, you'll learn how to apply two GitHub project management tools we covered in lecture: Issues and Pull Requests.
 
 ## Instructions
 
@@ -38,11 +38,13 @@ It's probably hard to pick out a task directly from spaghetti code. That's why i
 
 **Q4:** Which lines of code in your spaghetti currently perform the task?
 
-Answer these questions in a GitHub Issue in your repo. For **Q4**, make sure you [link to the code snippet](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet?apiVersion=2022-11-28).
+Answer these questions in a GitHub Issue in your repo ([instructions here](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue)). For **Q4**, you should directly [link to the code snippet](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-a-permanent-link-to-a-code-snippet?apiVersion=2022-11-28).
 
 ### Write your function
 
 In the FlukeAndFeather Workflow Organization System™️, functions go in scripts in the R/ directory. This is a common convention for organizing R projects.
+
+**Before proceeding, create a branch and switch to it.**
 
 Create a script in the R/ directory. Give it a name that describes your task.
 
@@ -77,18 +79,36 @@ You've defined your function, now it's time to use it.
 2.  Replace the code you identified in **Q4** with a call to your function.
 3.  Run your analysis script and verify the results remain the same. This will probably require some debugging!
 
-### Commit and push your changes
+### Commit your changes and create a pull request
 
-1.  Commit your changes. In your commit message, say this commit fixes the Issue you created earlier. If you created Issue #1, your commit message should include "Fixes #1".
+Typically, pull requests occur between forked repos. But they can also be used between branches in the same remote repo. There are fewer moving parts when you stay in a single repo, so that's what we'll start with today. You'll create a fork and pull request tomorrow during peer review.
+
+1.  Commit your changes. In your commit message, say this commit addresses the Issue you created earlier. If you created Issue #1, your commit message should include "See #1".
 2.  Push your commit.
-3.  Navigate to your repo on GitHub and verify your Issue is now closed.
+3.  Navigate to your repo on GitHub. Switch to the **Pull requests** tab. You should see a yellow notification that one of your branches had a recent push, and a green button saying **Compare & pull request**. Click on that green button (*not* **New pull request**).
+
+![Make sure you click on "Compare & pull request", not "New pull request".](images/day3/pr.png){width="400"}
+
+4.  You have the option to add a title and description. By default, your title will be the latest commit message. If you wrote something descriptive and succinct, you can keep it. The description should say what your pull request does. The issue you opened earlier should have most of the details, but if you learned something along the way that's not in the issue then this is the place to include it.
+
+5.  Click on the green **Create pull request** button.
+
+6.  GitHub will notify you if there are any merge conflicts. Unless you edited your main branch separately, there shouldn't be any. Click on the green **Merge pull request** button, then the green **Confirm merge** button. You should see a purple merge icon and a message saying it's now safe to delete the branch you made.
+
+7.  Switch back to the Issue you made earlier. You should now see 2 commits that reference the issue: the commit you made locally and the pull request itself. Close the issue by clicking the **Close issue** button with the purple check mark next to it.
+
+![Notice the "#2" next to the pull request. Each pull request gets its own Issue! That's useful for tracking sets of changes from collaborators.](images/day3/pr-issue.png){width="400"}
 
 ## Recap
 
-In this session you used GitHub's project management tools (Issues) to make improvements to your repo. Issues are important for collaboration because:
+In this session you used GitHub's project management tools (Issues and Pull requests) to make improvements to your repo.
+
+Issues are important for collaboration because:
 
 -   The Issue describes the problem (e.g., what needs to be refactored).
 
 -   Collaborators can discuss the solution in the Issue thread.
 
--   Closing the Issue links the code changes to the discussion.
+-   The discussion can directly link to the relevant lines of code.
+
+You made an internal pull request in your own repo today, which familiarized you with the process. Tomorrow you'll fork a partner's repo and create an external pull request.

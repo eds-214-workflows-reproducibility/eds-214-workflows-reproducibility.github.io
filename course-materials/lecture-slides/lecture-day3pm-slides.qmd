@@ -1,0 +1,608 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    highlight-style: a11y
+    chalkboard: true
+    theme: 
+      - ../../meds-slides-styles.scss
+    code-line-numbers: false
+bibliography: references.bib
+---
+
+## {#title-slide data-menu-title="Title Slide" background="#053660"} 
+
+[Collaboration with GitHub]{.custom-title}
+
+[*EDS 214: Analytical Workflows and Scientific Reproducibility*]{.custom-subtitle}
+
+<hr class="hr-teal">
+
+[Day 3 Afternoon | August 27^th^, 2025]{.custom-subtitle3}
+
+---
+
+## {#learning-objectives data-menu-title="Learning Objectives"} 
+
+[This afternoon, you'll learn how to...]{.slide-title}
+
+<hr>
+
+[Use GitHub for project management and collaboration]{.body-text-l}
+
+::: {.body-text-m}
+Specific skills include:
+
+* Use Issues to describe, discuss, and track code changes
+* Compare and contrast branching/merging with forking/pull requests
+* Share your outputs on GitHub Pages
+:::
+
+---
+
+## {#recap data-menu-title="Recap"} 
+
+[Recap]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="50%"}
+
+This morning you learned about branches. How to:
+
+* Create
+* Commit
+* Merge
+
+These operations promote collaboration while working in the local git repository.
+
+:::
+::: {.column width="50%"}
+
+GitHub also offers **project management tools**. 
+
+These tools integrate with features like branches and commits.
+
+:::
+::::
+
+---
+
+## {#code-evolves data-menu-title="Code evolves"} 
+
+[Code evolves]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {.body-text-l}
+
+Writing an analysis is an **exploratory process**.
+
+Discussions and to-do items are easily lost.
+
+We need **project management tools** to link problems, discussions, and code changes!
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+![](images/day3/confused-gandalf.jpg){height=500px}
+
+:::
+
+::::
+
+---
+
+## {#issues-1 data-menu-title="A Simple Issue"} 
+
+[A Simple Issue]{.slide-title}
+
+<hr>
+
+![](images/day3/issues/issues-1.png)
+
+---
+
+## {#issues-2 data-menu-title="A Simple Issue"} 
+
+[A Simple Issue]{.slide-title}
+
+<hr>
+
+![](images/day3/issues/issues-2.png)
+
+---
+
+## {#issues-3 data-menu-title="A Simple Issue"} 
+
+[A Simple Issue]{.slide-title}
+
+<hr>
+
+![](images/day3/issues/issues-3.png)
+
+---
+
+## {#issues-4 data-menu-title="A Simple Issue"} 
+
+[A Simple Issue]{.slide-title}
+
+<hr>
+
+![](images/day3/issues/issues-4.png)
+
+---
+
+## {#issues-5 data-menu-title="A Simple Issue"} 
+
+[A Simple Issue]{.slide-title}
+
+<hr>
+
+![](images/day3/issues/issues-5.png)
+
+---
+
+## {#issues2-1 data-menu-title="A Complex Issue"} 
+
+[A Complex Issue]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](images/day3/issues2/issues2-1.png)
+
+:::
+::: {.column width="70%"}
+
+[Here's a more complex issue]{.body-text-m}
+
+:::
+::::
+
+---
+
+## {#issues2-2 data-menu-title="A Complex Issue"} 
+
+[A Complex Issue]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](images/day3/issues2/issues2-2.png)
+
+:::
+::: {.column width="70%"}
+
+[This title suggests a new feature]{.body-text-m}
+
+:::
+::::
+
+---
+
+## {#issues2-3 data-menu-title="A Complex Issue"} 
+
+[A Complex Issue]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](images/day3/issues2/issues2-3.png)
+
+:::
+::: {.column width="70%"}
+
+[The initial description describes the use case]{.body-text-m}
+
+:::
+::::
+
+---
+
+## {#issues2-4 data-menu-title="A Complex Issue"} 
+
+[A Complex Issue]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](images/day3/issues2/issues2-4.png)
+
+:::
+::: {.column width="70%"}
+
+[This commit includes a prototype for the feature, with a list of questions that came up in the process.]{.body-text-m}
+
+:::
+::::
+
+---
+
+## {#issues2-5 data-menu-title="A Complex Issue"} 
+
+[A Complex Issue]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](images/day3/issues2/issues2-5.png)
+
+:::
+::: {.column width="70%"}
+
+[Latter commits include the finished code plus some tests to verify it works.]{.body-text-m}
+
+:::
+::::
+
+---
+
+## {#issues2-6 data-menu-title="A Complex Issue"} 
+
+[A Complex Issue]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](images/day3/issues2/issues2-6.png)
+
+:::
+::: {.column width="70%"}
+
+[After verifying the code works, the author closed the issue.]{.body-text-m}
+
+:::
+::::
+
+---
+
+## {#issues-recap data-menu-title="Issues Recap"}
+
+[Issues Recap]{.slide-title}
+
+<hr>
+
+:::{.body-text-m}
+
+Issues are a project management tool GitHub provides to help you track:
+
+* Bugs
+* New features
+* Discussions
+* Solutions
+
+The alternatives (comments, emails, Slack messages...) will eventually get you lost!
+
+:::
+
+---
+
+## {#branch-merge-vs-fork-pr data-menu-title="Branch/Merge vs Fork/Pull Request"} 
+
+[Branch/Merge vs Fork/Pull Request]{.slide-title}
+
+<hr>
+
+:::{.body-text-m}
+:::: {.columns}
+::: {.column width="50%"}
+
+Branching and merging are local operations that help you manage your own work.
+
+:::
+::: {.column width="50%"}
+
+Forking and pull requests are remote operations that help you manage work with others.
+
+:::
+::::
+:::
+
+---
+
+## {#fork-pull-1 data-menu-title="Fork/Pull Request"} 
+
+[Fork/Pull Request]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="60%"}
+![](images/day3/forkpull/fork1.png){height="400px"}
+:::
+:::::: {.column width="40%"}
+You're familiar with _local_ and _remote_ repos.
+:::
+::::
+
+---
+
+## {#fork-pull-2 data-menu-title="Fork/Pull Request"} 
+
+[Fork/Pull Request]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="60%"}
+![](images/day3/forkpull/fork2.png){height="400px"}
+:::
+:::::: {.column width="40%"}
+A **fork** copies the _remote_ repo. **Pull requests** send changes back to the original _remote_ repo.
+:::
+::::
+
+---
+
+## {#fork-pull-3 data-menu-title="Fork/Pull Request"} 
+
+[Fork/Pull Request]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="60%"}
+![](images/day3/forkpull/fork3.png){height="400px"}
+:::
+:::::: {.column width="40%"}
+The connection between local and remote fork mirrors the local and remote original..
+:::
+::::
+
+---
+
+## {#fork-pull-4 data-menu-title="Fork/Pull Request"} 
+
+[Fork/Pull Request]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="60%"}
+![](images/day3/forkpull/fork4.png){height="400px"}
+:::
+:::::: {.column width="40%"}
+Fork/pull is conceptually identical to branch/merge. 
+
+The difference is that fork/pull is a remote operation, while branch/merge is a local operation.
+:::
+::::
+
+---
+
+## {#forkpull-recap data-menu-title="Fork/Pull Request Recap"}
+
+[Fork/Pull Request Recap]{.slide-title}
+
+<hr>
+
+:::{.body-text-m}
+
+Fork/Pull Request is a project management tool GitHub provides to help you manage code changes from multiple contributors.
+
+* Bugs
+* New features
+* Discussions
+* Solutions
+
+The alternatives (comments, emails, Slack messages...) will eventually get you lost!
+
+:::
+
+---
+
+## {#github-pages data-menu-title="GitHub Pages"} 
+
+[GitHub Pages]{.slide-title}
+
+<hr>
+
+:::{.body-text-m}
+**GitHub Pages** provides a free web presence for your projects.
+
+Great for sharing your work with others.
+
+Sharing URLs makes updates easy! Hunting for email attachments is hard!
+
+You will use GitHub Pages for class assignments, Capstone, and your portfolio.
+:::
+
+---
+
+## {#github-pages-ex1 data-menu-title="Meet Dr Eli Holmes"} 
+
+[Meet Dr Eli Holmes]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="60%"}
+![](images/day3/sardines/eliholmes.png){width="600px"}
+:::
+:::{.column width="40%"}
+Meet Dr Eli Holmes. Research scientist at NOAA. Expert in fisheries and open science.
+:::
+::::
+
+---
+
+## {#github-pages-ex2 data-menu-title="Forecasting Sardines"} 
+
+[Forecasting Sardines]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="60%"}
+![](images/day3/sardines/paper.png){width="600px"}
+:::
+:::{.column width="40%"}
+In 2020, Dr Holmes led a paper about forecasting sardine landings.
+:::
+::::
+
+---
+
+## {#github-pages-ex3 data-menu-title="GitHub Repo"} 
+
+[GitHub Repo]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="60%"}
+![](images/day3/sardines/github.png){width="600px"}
+:::
+:::{.column width="40%"}
+Here's the project's GitHub repo - should look familiar.
+
+Note the URL under _About_. [username].github.io/[reponame]
+:::
+::::
+
+---
+
+## {#github-pages-ex4 data-menu-title="GitHub Pages"} 
+
+[GitHub Pages]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="60%"}
+![](images/day3/sardines/pages.png){width="600px"}
+:::
+:::{.column width="40%"}
+Here's the project's GitHub Pages site.
+
+Pages sites can host documentation, results, and more.
+:::
+::::
+
+---
+
+## {#github-pages-ex5 data-menu-title="Function Documentation"} 
+
+[Function Documentation]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="60%"}
+![](images/day3/sardines/functiondoc.png){width="600px"}
+:::
+:::{.column width="40%"}
+Dr Holmes used their Pages site for documentation on their functions and data.
+:::
+::::
+
+---
+
+## {#github-pages-ex6 data-menu-title="Back to GitHub"} 
+
+[Back to GitHub]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="60%"}
+![](images/day3/sardines/sourcecode.png){width="600px"}
+:::
+:::{.column width="40%"}
+The function documentation links directly back to the source code on their GitHub repo.
+:::
+::::
+
+---
+
+## {#pages-recap data-menu-title="GitHub Pages Recap"}
+
+[GitHub Pages Recap]{.slide-title}
+
+<hr>
+
+:::{.body-text-m}
+
+GitHub Pages give your projects a web presence.
+
+On your project's Pages site, you can host:
+
+* Documentation
+* Reports
+* Figures
+* Drafts
+
+All your collaborators need is a URL!
+
+:::
+
+---
+
+## {#pages-recap data-menu-title="But what if I break it?"}
+
+[But what if I break it?]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+Bowie is an environmental data scientist working on an analysis of pollution in local watersheds.
+
+She manages her project in a GitHub repository, using Issues to track tasks and Pages to share her results with collaborators.
+
+Her two collaborators are Iggy and Nomi.
+
+* Iggy found a bug in Bowie's data pre-processing step and asked her to fix it.
+* Nomi is busy with other projects and hasn't had a chance to look at the Pages site yet.
+
+Bowie is worried that while she's fixing the bug Iggy found she might temporarily break the Pages site, which would delay Nomi's input on the project.
+:::
+:::{.column width="50%"}
+[What should Bowie do to address Iggy's bug while keeping the Pages site working for Nomi?]{.body-text-xl}
+:::
+::::
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
