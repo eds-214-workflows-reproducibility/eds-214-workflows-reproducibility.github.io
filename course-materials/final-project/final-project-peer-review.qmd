@@ -1,0 +1,60 @@
+---
+title: "Final Project Peer Feedback and Contribution"
+editor: visual
+---
+
+## Goal
+
+In this session, you're going to review a peer's work, provide them with constructive feedback, and make a contribution to their project.
+
+Peer review is important to develop collaboration skills. It also lets you see how data scientists can come up with different solutions to the same problem. As you perform your peer review, keep two goals in mind: be *thorough* and be *constructive*.
+
+Being thorough means reviewing your peer's work with a fine-toothed comb. If they have an error or an omission in their repo, I want you to do your best to find it before I do!
+
+At the same time, be constructive. Good peer review is a gift - an opportunity to lift each other up. *Respectfully* draw your peer's attention to where and how they can improve their work.
+
+### Guidelines for respectful feedback
+
+-   Focus on the code, not the person. E.g., "I think this comment needs more explanation" instead of "You didn't explain this well enough".
+
+-   Try to explain why, not just what. E.g., "If you change this variable from `nutrientMgL` to `nutrient_mg_l` then your variable naming will be more consistent" instead of "Make this `nutrient_mg_l`".
+
+-   Acknowledge good work! Highlight parts of the code where your peer has successfully met specs.
+
+## Instructions
+
+### Peer feedback
+
+1.  Create a **peer review** conga line. Everyone should give and receive feedback from different students.
+2.  Fork the repo of the student you're giving feedback to. Clone it on your computer.
+3.  Create a markdown file in your forked repo called `peer-assessment.md`.
+4.  As with the self assessment, create one header for each category of specs (except Collaboration) and a subheader for each individual spec.
+5.  For each spec, assess your peer's work as *Not yet* or *Meets spec*. In one to two sentences, explain your assessment.
+    1.  For each spec you assess as *Not yet*, open an Issue on your peer's GitHub repo describing what you think they could do to meet the spec.
+    2.  If you think every spec has been met, open an Issue describing what you think they could do to *Exceed* an eligible spec.
+6.  Commit your changes and push to GitHub.
+7.  Open a pull request. Tag my username (\@FlukeAndFeather) in the description of the pull request so I get a notification about it.
+8.  When you receive your reviewer's pull request, read their feedback and merge it.
+
+### Peer contribution
+
+This will be very similar to the last part, but instead of opening issues you're going to be closing them by making contributions. Contributions can be code, but they can also be documentation or organization.
+
+1.  Create a **peer** **contribution** conga line. Everyone should give and receive contributions from different students.
+2.  Fork the repo of the student you're contributing to. Clone it on your computer.
+3.  Choose an Issue in their repo you can contribute to.\
+    *Let's say you chose an Issue about documenting a function.*
+4.  Respond to the Issue with a plan for how you'll contribute.\
+    *You could describe the function's parameters, return value, and internal logic.*
+5.  Make changes in your local repo. Commit and push.\
+    *Add comments to the function providing proper documentation*.
+6.  Open a Pull request on GitHub.
+7.  When you receive the Pull request from your contributor, review their changes. This can be a conversation! If appropriate, reply with revisions you'd like to see. Otherwise, merge the Pull request.
+
+## Recap
+
+In this session, you performed two important workflow collaboration tasks.
+
+First, you provided feedback to one of your peers on their work. Today, you had a rubric of specs to work from. In the future, it'll be up to you consider what the specs for the work should be!
+
+Second, you made a contribution to one of your peer's projects using Fork/Pull request. This is the preferred method for contributing to distributed projects on GitHub because it allows data scientists to work in parallel, and makes it easier to review and merge changes by multiple authors. We recommend you use Fork/Pull request for your Capstone projects.

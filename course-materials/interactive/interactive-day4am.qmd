@@ -1,0 +1,61 @@
+---
+title: "Draft Quarto Analysis"
+subtitle: "Day 4 Morning | EDS 214"
+description: "Thursday August 28^th^, 2025"
+editor: visual
+---
+
+## Background
+
+You started this week by looking at an analysis you needed to replicate. Since then, you wrote some spaghetti code and started refactoring your analysis. You took steps towards a collaborative, reproducible analysis by:
+
+-   Organizing your folders and files
+
+-   Tracking tasks using GitHub Issues
+
+-   Isolating changes in branches
+
+But most of your analysis is still in a spaghetti state...
+
+## Goals
+
+In this session, you're going to convert your spaghetti code into a reproducible Quarto document. Then you'll use GitHub Pages to share your results.
+
+## Instructions
+
+### Convert to Quarto
+
+The FlukeAndFeather Workflow Organization System™ puts the manuscript Quarto document in the `paper/` folder and renders it to the `docs/` folder. Why `docs/`? Because GitHub Pages looks for web pages in the `docs/` folder. You'll see exactly how in the next section..
+
+**Make sure you're on the `main` branch before proceeding.**
+
+1.  Create a Quarto document in `paper/` called "paper.qmd".
+2.  Add markdown headers for **Background**, **Data**, **Methods**, and **Results**.
+3.  Migrate your spaghetti code to code chunks under the appropriate headers.
+4.  Add markdown text as appropriate to explain your replication.
+
+Don't render just yet. First we need to set up GitHub Pages.
+
+### Set up GitHub Pages
+
+1.  Let's tell your Quarto document you want the outputs in your `docs/` folder. In your `paper/` folder, create a file called "\_quarto.yml"[^1]. Add the following lines:
+
+[^1]: Try doing it at the command line!
+
+``` yml
+project:
+  output-dir: ../docs
+```
+
+2.  Render paper.qmd. Verify it created paper.html in `docs/`.
+3.  Navigate to your repo on GitHub. Go to **Settings \> Code and automation \> Pages**.
+4.  Change your **Branch** settings to match the image below. Choose the main branch, /docs directory, and hit **Save**.
+
+![](images/day4/ghpages.png){width="500"}
+
+5.  Go back to RStudio. Commit and push your changes.
+6.  Pop *back* to your GitHub repo. Switch from **Settings** to **Actions**. You should see workflow run(s) deploying your Pages site, similar to the screenshot below.
+
+![](images/day4/ghactions.png){width="500"}
+
+7.  When the workflow(s) are all green, navigate your browser to \[your username\].github.io/\[reponame\]/paper.html. You should see your analysis rendered in all its glory.

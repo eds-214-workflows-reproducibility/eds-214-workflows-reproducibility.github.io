@@ -32,7 +32,7 @@ Spaghetti sounds pretty bad, doesn't it? While it's true that you don't want you
 
 ### Make spaghetti
 
-1.  Picking up where we left off this morning, create a new script in your RStudio project.
+1.  Picking up where we left off this morning, create a new script in your RStudio project. Put it in your `scratch/` directory.
 2.  Begin writing code to implement your flowchart.
 3.  Keep writing code until you can create a figure.
 

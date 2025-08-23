@@ -5,7 +5,7 @@ editor: visual
 
 ## Goal
 
-This self assessment is an opportunity to critically evaluate your workflow and begin refining your work. To be clear, "critical evaluation" doesn't mean you should be harsh or negative about your work! You've learned a lot this week. The self assessment is a chance for you to see how far you've come, reinforce the lessons you've learned, and begin preparations to wrap up this course.
+This self assessment is an opportunity to critically evaluate your workflow and refine your work. To be clear, "critical evaluation" doesn't mean you should be harsh or negative about your work! You've learned a lot this week. The self assessment is a chance for you to see how far you've come, reinforce the lessons you've learned, and begin preparations to wrap up this course.
 
 ## Instructions
 
@@ -15,5 +15,5 @@ The final project specs are listed on the [Final Project](final-project.qmd) pag
 2.  Create one header for each category of specs (except Collaborate) and a subheader for each individual spec.
 3.  For each spec, assess your work as *Not yet* or *Meets spec*. In one to two sentences, explain your assessment.
     1.  For each spec you assess as *Not yet*, open an Issue on GitHub describing what you think you would need to do to meet the spec.
-    2.  (Optional) Choose two specs that are eligible for *Exceeds spec*. Open an Issue for each one describing what you would do to exceed the spec. \[Exceeding two specs is a requirement for an A. You can accomplish that without doing this step, but this will help.\]
+    2.  (Optional) Choose two specs that are eligible for *Exceeds spec*. Open an Issue for each one describing what you would do to exceed the spec. \[Exceeding two specs is a requirement for an A. You can get an A without doing this step, but this will help!\]
 4.  Commit and push your changes to GitHub. Open an Issue and give it the title "Self Assessment". Tag my username (\@FlukeAndFeather) in the body of the Issue so I get a notification about it.

@@ -1,13 +1,17 @@
 ---
-title: "TODO: fixme"
+title: "Final project self-assessment and peer feedback"
 subtitle: "Day 4"
 description: "Thursday August 28^th^, 2025"
+bibliography: references.bib
 ---
 
 ## Class materials
 
-| {{< session >}} | {{< lecture >}}        | {{< interactive >}} | {{< reflection >}} |
-|-----------------|------------------------|---------------------|-------------------|
-| Morning         | TODO: fixme | TODO: fixme  | TODO: fixme |
-| Afternoon       | TODO: fixme  | TODO: fixme  | TODO: fixme |
-: {.hover .bordered .w-auto .mx-auto} 
+No lectures today! All interactive sessions.
+
+| {{< session >}} | {{< interactive >}} | {{< interactive >}} | {{< reflection >}} |
+|------------------|------------------|------------------|------------------|
+| Morning | [Draft Quarto analysis](interactive/interactive-day4am.qmd){target="_blank"} | [Self assessment](final-project/final-project-self-assessment.qmd) | [Go with the flow](https://forms.gle/GjKm3S9fef74jN8w5){target="_blank"} |
+| Afternoon | [Peer feedback and contribution](final-project/final-project-peer-review.qmd){target="_blank"} | Open working time | [Exploration and iteration](https://forms.gle/2NfM8nrq6BCKjRdx5){target="_blank"} |
+
+: {.hover .bordered}

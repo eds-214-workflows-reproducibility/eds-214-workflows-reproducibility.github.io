@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Tuesday August 26th, 2025">
+<meta name="description" content="Thursday August 27th, 2025">
 
-<title>EDS 214: Analytical Workflows and Scientific Reproducibility – READMEs, Style, and Comments</title>
+<title>EDS 214: Analytical Workflows and Scientific Reproducibility – Draft Quarto Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -173,11 +207,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">READMEs, Style, and Comments</h1>
-            <p class="subtitle lead">Day 2 Afternoon | EDS 214</p>
+      <h1 class="title">Draft Quarto Analysis</h1>
+            <p class="subtitle lead">Day 4 Morning (1) | EDS 214</p>
                   <div>
         <div class="description">
-          Tuesday August 26<sup>th</sup>, 2025
+          Thursday August 27<sup>th</sup>, 2025
         </div>
       </div>
                 </div>
@@ -204,11 +238,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
   <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a>
   <ul class="collapse">
-  <li><a href="#write-a-readme" id="toc-write-a-readme" class="nav-link" data-scroll-target="#write-a-readme">Write a README</a></li>
-  <li><a href="#adopt-the-tidyverse-style-guide" id="toc-adopt-the-tidyverse-style-guide" class="nav-link" data-scroll-target="#adopt-the-tidyverse-style-guide">Adopt the Tidyverse Style Guide</a></li>
-  <li><a href="#add-comments" id="toc-add-comments" class="nav-link" data-scroll-target="#add-comments">Add comments</a></li>
+  <li><a href="#convert-to-quarto" id="toc-convert-to-quarto" class="nav-link" data-scroll-target="#convert-to-quarto">Convert to Quarto</a></li>
+  <li><a href="#set-up-github-pages" id="toc-set-up-github-pages" class="nav-link" data-scroll-target="#set-up-github-pages">Set up GitHub Pages</a></li>
   </ul></li>
-  <li><a href="#recap" id="toc-recap" class="nav-link" data-scroll-target="#recap">Recap</a></li>
   </ul>
 </nav>
     </div>
@@ -221,81 +253,63 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>In the afternoon lecture, you learned about the importance of documentation for workflow reproducibility. Documentation is an essential part of communicating <em>how</em> your analysis works and <em>why</em> you made your design choices.</p>
-<p>Always keep the target audience for your documentation in mind as you write it! Typically, for a workflow, your target audience is someone interested in reproducing or building on your work. This could be:</p>
+<p>You started this week by looking at an analysis you needed to replicate. Since then, you wrote some spaghetti code and started refactoring your analysis. You took steps towards a collaborative, reproducible analysis by:</p>
 <ul>
-<li><p>A scientist you’ll never meet directly</p></li>
-<li><p>A collaborator who is also contributing to the code</p></li>
-<li><p><em>Future you</em> (you’d be surprised by what they can forget)</p></li>
+<li><p>Organizing your folders and files</p></li>
+<li><p>Tracking tasks using GitHub Issues</p></li>
+<li><p>Isolating changes in branches</p></li>
 </ul>
+<p>But most of your analysis is still in a spaghetti state…</p>
 </section>
 <section id="goals" class="level2">
 <h2 class="anchored" data-anchor-id="goals">Goals</h2>
-<p>During this interactive session, you will implement each of the following in your replication project:</p>
-<ul>
-<li><p>A repository README</p></li>
-<li><p>The Tidyverse Style Guide</p></li>
-<li><p>Comments (header and inline)</p></li>
-</ul>
+<p>In this session, you’re going to convert your spaghetti code into a reproducible Quarto document. Then you’ll use GitHub Pages to share your results.</p>
 </section>
 <section id="instructions" class="level2">
 <h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
-<section id="write-a-readme" class="level3">
-<h3 class="anchored" data-anchor-id="write-a-readme">Write a README</h3>
-<p>First, you will critique a README that your instructor wrote for an analysis.</p>
+<section id="convert-to-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="convert-to-quarto">Convert to Quarto</h3>
+<p>The FlukeAndFeather Workflow Organization System™ puts the manuscript Quarto document in the <code>paper/</code> folder and renders it to the <code>docs/</code> folder. Why <code>docs/</code>? Because GitHub Pages looks for web pages in the <code>docs/</code> folder. You’ll see exactly how in the next section..</p>
+<p><strong>Make sure you’re on the <code>main</code> branch before proceeding.</strong></p>
 <ol type="1">
-<li>Review the six requirements for READMEs from the lecture slides.</li>
-<li>Read the README for the GitHub repo found <a href="https://github.com/FlukeAndFeather/antwincomm">here</a>.</li>
-<li>Critique the README according to the requirements<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Write these down - I will call on a few students randomly to share.</li>
+<li>Create a Quarto document in <code>paper/</code> called “paper.qmd”.</li>
+<li>Add markdown headers for <strong>Background</strong>, <strong>Data</strong>, <strong>Methods</strong>, and <strong>Results</strong>.</li>
+<li>Migrate your spaghetti code to code chunks under the appropriate headers.</li>
+<li>Add markdown text as appropriate to explain your replication.</li>
 </ol>
-<p>Now, it’s your turn to implement a README in your replication project repo.</p>
+<p>Don’t render just yet. First we need to set up GitHub Pages.</p>
+</section>
+<section id="set-up-github-pages" class="level3">
+<h3 class="anchored" data-anchor-id="set-up-github-pages">Set up GitHub Pages</h3>
 <ol type="1">
-<li>Create a file in your project root called README.md.</li>
-<li>Fill out the README to describe your project.</li>
+<li>Let’s tell your Quarto document you want the outputs in your <code>docs/</code> folder. In your <code>paper/</code> folder, create a file called “_quarto.yml”<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Add the following lines:</li>
 </ol>
-</section>
-<section id="adopt-the-tidyverse-style-guide" class="level3">
-<h3 class="anchored" data-anchor-id="adopt-the-tidyverse-style-guide">Adopt the Tidyverse Style Guide</h3>
-<p>As with file organization, <em>how</em> you style your code is less important than applying a <em>consistent</em> style. A principal benefit of adopting the <a href="https://style.tidyverse.org">Tidyverse Style Guide</a> is you get to bypass the work of coming up with your own rules and devote that energy to your analysis, instead.</p>
-<ol type="1">
-<li>Quickly skim sections 2-5 of the style guide to familiarize yourself with the content and format.</li>
-<li>Choose three lines/chunks in your analysis code to revise according to a style guide rule. <strong>Two rules must be from chapter 2 Syntax, one rule must be from a different chapter.</strong> For example, you could:
-<ol type="1">
-<li>Wrap a long function call (rule 2.4.3)</li>
-<li>Replace single with double quotes (rule 2.9.1)</li>
-<li>Add whitespace to a pipe (rule 4.2)</li>
-</ol></li>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> ../docs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Render paper.qmd. Verify it created paper.html in <code>docs/</code>.</li>
+<li>Navigate to your repo on GitHub. Go to <strong>Settings &gt; Code and automation &gt; Pages</strong>.</li>
+<li>Change your <strong>Branch</strong> settings to match the image below. Choose the main branch, /docs directory, and hit <strong>Save</strong>.</li>
 </ol>
-</section>
-<section id="add-comments" class="level3">
-<h3 class="anchored" data-anchor-id="add-comments">Add comments</h3>
-<p>There are several different types of comments that are important for documenting an analysis. Today, you’ll add <em>header</em> and <em>inline</em> comments. You’ll add a third type, <em>function</em> comments, tomorrow.</p>
-<p>Remember, comments should always describe <em>why</em> not <em>what.</em> As you gain experience coding, the functionality of code (the <em>what</em>) should become self-evident. But the reason (the <em>why</em>) you chose to do something in a particular way may not be.</p>
-<p>There is a subjective balance between over- and under-commenting. Make your best attempt in this session. You’ll have opportunities for self-assessment and peer feedback later in the week.</p>
-<ol type="1">
-<li><p>Add header comments to your spaghetti script. The comments should include:</p>
-<p>Purpose of the script</p>
-<p>The authors</p>
-<p>A contact email</p></li>
-<li><p>Add 1-2 inline comments to your spaghetti script. Write your inline comments to describe a <em>why</em>, not a <em>what</em>. Examples of <em>why</em> include:</p>
-<p>The justification for a threshold value</p>
-<p>Explaining an edge case that needs special handling</p></li>
-<li><p>Separate from your spaghetti script, make a note of who the target audience is for your comments and how your comments would help them. I will randomly call on two students to share.</p></li>
+<p><img src="images/day4/ghpages.png" class="img-fluid" width="500"></p>
+<ol start="5" type="1">
+<li>Go back to RStudio. Commit and push your changes.</li>
+<li>Pop <em>back</em> to your GitHub repo. Switch from <strong>Settings</strong> to <strong>Actions</strong>. You should see workflow run(s) deploying your Pages site, similar to the screenshot below.</li>
 </ol>
-</section>
-</section>
-<section id="recap" class="level2">
-<h2 class="anchored" data-anchor-id="recap">Recap</h2>
-<p>In this interactive session you gained practical experience documenting your workflow. You created a repo for your analysis, formatted your code according to a style guide, and added comments to clarify your script. These changes make it easier for your target audience to comprehend your workflow - a key baseline for reproducibility.</p>
+<p><img src="images/day4/ghactions.png" class="img-fluid" width="500"></p>
+<ol start="7" type="1">
+<li>When the workflow(s) are all green, navigate your browser to [your username].github.io/[reponame]/paper.html. You should see your analysis rendered in all its glory.</li>
+</ol>
 
 
+</section>
 </section>
 
 
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Be nice<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Try doing it at the command line!<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

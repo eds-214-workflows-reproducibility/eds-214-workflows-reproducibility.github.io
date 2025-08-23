@@ -18,19 +18,21 @@ The final project for EDS 214 is to create an analytical workflow to reproduce f
 
 ### Tuesday August 26^th^
 
--   Create a script to automate workflow initialization
-
 -   Draft documentation for your data and code
+
+-   Cause a merge conflict
 
 ### Wednesday August 27^th^
 
--   Create GitHub issues to organize your development plan
+-   Resolve a merge conflict
 
--   Cause and resolve a merge conflict
+-   Create GitHub Issues to describe and organize tasks
+
+-   Merge changes using Pull requests
 
 ### Thursday August 28^th^
 
--   Use the concepts and skills of EDS 214 to draft a reproducible workflow
+-   Finish drafting your reproducible workflow
 
 -   Perform a [self-assessment](final-project-self-assessment.qmd) and [peer review](final-project-peer-review.qmd) to critique workflows
 
@@ -76,7 +78,7 @@ Your final project will be assessed according to specifications spread across th
 
 ### Document
 
-\[ \] The repo has a README that explains which folders contain (1) data, (2) analysis script, (3) supporting code, and (4) outputs
+\[ \] The repo has a README that explains where to find (1) data, (2) analysis script, (3) supporting code, and (4) outputs
 
 \[ \] **The README includes a flowchart and text explaining how the analysis works**
 
@@ -95,6 +97,8 @@ After cloning the repo on Workbench:
 ### Collaborate
 
 \[ \] **The student has provided attentive, constructive feedback in a peer review**
+
+\[ \] **The student has contributed to a peer's repo by opening an issue and creating a pull request**
 
 \[ \] The repo has at least three closed GitHub issues
 

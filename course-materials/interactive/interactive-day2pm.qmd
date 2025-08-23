@@ -62,7 +62,7 @@ Remember, comments should always describe *why* not *what.* As you gain experien
 
 There is a subjective balance between over- and under-commenting. Make your best attempt in this session. You'll have opportunities for self-assessment and peer feedback later in the week.
 
-1.  Add header comments to your analysis script. The comments should include:
+1.  Add header comments to your spaghetti script. The comments should include:
 
     Purpose of the script
 
@@ -70,13 +70,13 @@ There is a subjective balance between over- and under-commenting. Make your best
 
     A contact email
 
-2.  Add 1-2 inline comments to your analysis script. Write your inline comments to describe a *why*, not a *what*. Examples of *why* include:
+2.  Add 1-2 inline comments to your spaghetti script. Write your inline comments to describe a *why*, not a *what*. Examples of *why* include:
 
     The justification for a threshold value
 
     Explaining an edge case that needs special handling
 
-3.  Separate from your analysis file, make a note of who the target audience is for your comments and how your comments would help them. I will randomly call on two students to share.
+3.  Separate from your spaghetti script, make a note of who the target audience is for your comments and how your comments would help them. I will randomly call on two students to share.
 
 ## Recap
 

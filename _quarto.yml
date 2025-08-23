@@ -29,7 +29,7 @@ website:
           - text: day 5 (8/29)
             href: course-materials/day5.qmd
       - text: final project
-        href: final-project/final-project.qmd
+        href: course-materials/final-project/final-project.qmd
       - text: resources
         menu: 
           - text: recommended readings & resources
