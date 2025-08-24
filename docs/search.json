@@ -1615,5 +1615,26 @@
     "title": "Final Project Peer Feedback and Contribution",
     "section": "Recap",
     "text": "Recap\nIn this session, you performed two important workflow collaboration tasks.\nFirst, you provided feedback to one of your peers on their work. Today, you had a rubric of specs to work from. In the future, it’ll be up to you consider what the specs for the work should be!\nSecond, you made a contribution to one of your peer’s projects using Fork/Pull request. This is the preferred method for contributing to distributed projects on GitHub because it allows data scientists to work in parallel, and makes it easier to review and merge changes by multiple authors. We recommend you use Fork/Pull request for your Capstone projects."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Course schedule\n\n\n\n\n\n\n\n\n\n\n\nMonday\n\n\nTuesday\n\n\nWednesday\n\n\nThursday\n\n\nFriday\n\n\n\n\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\n\n\nAM\n\n\nReproducible workflows\n\n\nPlan an analysis\n\n\nCommand line and remote server\n\n\nNavigate the server\n\n\nVersion control with git\n\n\ngit branching\n\n\nDraft Quarto analysis\n\n\nSelf assessment\n\n\nMeet your next instructor\n\n\nFinal project submission\n\n\n\n\nPM\n\n\nWorkflow organization\n\n\nMake spaghetti\n\n\nDocumen-tation\n\n\nREADMEs, comments, and style\n\n\nCollaboration with GitHub\n\n\nRefactor a function\n\n\nPeer feedback and contributions\n\n\nOpen work time\n\n\nInstructor feedback\n\n\nProject wrap-up"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule1",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Course schedule\n\n\n\n\n\n\n\n\n\n\n\nMonday\n\n\nTuesday\n\n\nWednesday\n\n\nThursday\n\n\nFriday\n\n\n\n\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\n\n\nAM\n\n\nReproducible workflows\n\n\nPlan an analysis\n\n\nCommand line and remote server\n\n\nNavigate the server\n\n\nVersion control with git\n\n\ngit branching\n\n\nDraft Quarto analysis\n\n\nSelf assessment\n\n\nMeet your next instructor\n\n\nFinal project submission\n\n\n\n\nPM\n\n\nWorkflow organization\n\n\nMake spaghetti\n\n\nDocumen-tation\n\n\nREADMEs, comments, and style\n\n\nCollaboration with GitHub\n\n\nRefactor a function\n\n\nPeer feedback and contributions\n\n\nOpen work time\n\n\nInstructor feedback\n\n\nProject wrap-up"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule2",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Course schedule\n\n\n\n\n\n\n\n\n\n\n\nMonday\n\n\nTuesday\n\n\nWednesday\n\n\nThursday\n\n\nFriday\n\n\n\n\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\n\n\nAM\n\n\nReproducible workflows\n\n\nPlan an analysis\n\n\nCommand line and remote server\n\n\nNavigate the server\n\n\nVersion control with git\n\n\ngit branching\n\n\nDraft Quarto analysis\n\n\nSelf assessment\n\n\nMeet your next instructor\n\n\nFinal project submission\n\n\n\n\nPM\n\n\nWorkflow organization\n\n\nMake spaghetti\n\n\nDocumen-tation\n\n\nREADMEs, comments, and style\n\n\nCollaboration with GitHub\n\n\nRefactor a function\n\n\nPeer feedback and contributions\n\n\nOpen work time\n\n\nInstructor feedback\n\n\nProject wrap-up"
   }
 ]

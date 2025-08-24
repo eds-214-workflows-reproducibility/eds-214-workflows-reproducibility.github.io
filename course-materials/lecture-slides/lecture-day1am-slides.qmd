@@ -49,6 +49,65 @@ This is a class about workflows and reproducibility
 
 ---
 
+## {#testimonial1 data-menu-title="Reproducible workflows saved my life <3"} 
+
+["Reproducible workflows saved my life <3"]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](images/day1/bekahlane.jpg){width="100%" fig-alt="Bekah Lane headshot"}
+
+[Bekah Lane]{.body-text-m}
+
+[Research Associate, Center for Coastal Studies]{.body-text-s}
+
+:::
+::: {.column width="70%"}
+
+[**Question:** Where are humpbacks in SF Bay most susceptible to ship strikes?]{.fragment}
+
+[**Problem:** Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.]{.fragment}
+
+[**Solution:** Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R]{.fragment}
+
+:::
+::::
+
+---
+
+## {#testimonial2 data-menu-title="Reproducible workflows saved my life <3"} 
+
+["Reproducible workflows saved my life <3"]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](images/day1/bekahlane.jpg){width="100%" fig-alt="Bekah Lane headshot"}
+
+[Bekah Lane]{.body-text-m}
+
+[Research Associate, Center for Coastal Studies]{.body-text-s}
+
+:::
+::: {.column width="70%"}
+
+
+["It takes more activation energy to 'do it right', but you save yourself loads of time relative to doing it by brute force."]{.fragment}
+
+["In my current job I'm often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects."]{.fragment}
+
+["Collaboration and communication become *a lot* easier when you have your workflow laid out and organized instead of all jumbled in your brain."]{.fragment}
+
+:::
+::::
+
+---
+
 ## {#meet-max data-menu-title="Hi, I'm Max"}
 
 [Hi, I'm Max 👋]{.slide-title}
@@ -106,7 +165,6 @@ journey_map
 <hr>
 
 :::: {.columns}
-
 ::: {.column width="50%"}
 
 Workflows combine: data, code, modeling, and communication.
@@ -116,8 +174,6 @@ Workflows combine: data, code, modeling, and communication.
 [@r4ds]{.body-text-xs}
 
 :::
-
-<!-- Right-hand column -->
 ::: {.column width="50%"}
 
 The final workflow masks a trajectory of exploration and dead ends
@@ -127,7 +183,6 @@ The final workflow masks a trajectory of exploration and dead ends
 [@stoudt2021]{.body-text-xs}
 
 :::
-
 ::::
 
 ---
@@ -224,68 +279,33 @@ The final workflow masks a trajectory of exploration and dead ends
 
 ---
 
-## {#testimonial1 data-menu-title="Reproducible workflows saved my life <3"} 
+## {#course-schedule1 data-menu-title="Course schedule"}
 
-["Reproducible workflows saved my life <3"]{.slide-title}
+[Course schedule]{.slide-title}
 
 <hr>
 
-:::: {.columns}
 
-::: {.column width="30%"}
-
-![](images/day1/bekahlane.jpg){width="100%" fig-alt="Bekah Lane headshot"}
-
-[Bekah Lane]{.body-text-m}
-
-[Research Associate, Center for Coastal Studies]{.body-text-s}
-
-:::
-
-::: {.column width="70%"}
-
-[**Question:** Where are humpbacks in SF Bay most susceptible to ship strikes?]{.fragment}
-
-[**Problem:** Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.]{.fragment}
-
-[**Solution:** Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R]{.fragment}
-
-:::
-
-::::
+```{r}
+#| results: asis
+source("schedule.R")
+cat(create_schedule_table())
+```
 
 ---
 
-## {#testimonial2 data-menu-title="Reproducible workflows saved my life <3"} 
+## {#course-schedule2 data-menu-title="Course schedule"}
 
-["Reproducible workflows saved my life <3"]{.slide-title}
+[Course schedule]{.slide-title}
 
 <hr>
 
-:::: {.columns}
 
-::: {.column width="30%"}
-
-![](images/day1/bekahlane.jpg){width="100%" fig-alt="Bekah Lane headshot"}
-
-[Bekah Lane]{.body-text-m}
-
-[Research Associate, Center for Coastal Studies]{.body-text-s}
-
-:::
-
-::: {.column width="70%"}
-
-
-["It takes more activation energy to 'do it right', but you save yourself loads of time relative to doing it by brute force."]{.fragment}
-
-["In my current job I'm often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects."]{.fragment}
-
-["Collaboration and communication become *a lot* easier when you have your workflow laid out and organized instead of all jumbled in your brain."]{.fragment}
-
-:::
-
-::::
+```{r}
+#| results: asis
+source("schedule.R")
+cat(create_schedule_table(1))
+```
 
 ---
 

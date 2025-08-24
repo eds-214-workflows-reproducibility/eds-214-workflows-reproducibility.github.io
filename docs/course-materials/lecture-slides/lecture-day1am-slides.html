@@ -383,13 +383,45 @@
 <p><span class="body-text-m">The concepts and skills in this class will keep coming up in future classes and for the rest of your career</span></p>
 </div>
 </section>
+<section id="testimonial1" class="slide level2" data-menu-title="Reproducible workflows saved my life <3">
+<h2></h2>
+<p><span class="slide-title">“Reproducible workflows saved my life &lt;3”</span></p>
+<hr>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img data-src="images/day1/bekahlane.jpg" style="width:100.0%" alt="Bekah Lane headshot"></p>
+<p><span class="body-text-m">Bekah Lane</span></p>
+<p><span class="body-text-s">Research Associate, Center for Coastal Studies</span></p>
+</div><div class="column" style="width:70%;">
+<p><span class="fragment"><strong>Question:</strong> Where are humpbacks in SF Bay most susceptible to ship strikes?</span></p>
+<p><span class="fragment"><strong>Problem:</strong> Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.</span></p>
+<p><span class="fragment"><strong>Solution:</strong> Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R</span></p>
+</div>
+</div>
+</section>
+<section id="testimonial2" class="slide level2" data-menu-title="Reproducible workflows saved my life <3">
+<h2></h2>
+<p><span class="slide-title">“Reproducible workflows saved my life &lt;3”</span></p>
+<hr>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img data-src="images/day1/bekahlane.jpg" style="width:100.0%" alt="Bekah Lane headshot"></p>
+<p><span class="body-text-m">Bekah Lane</span></p>
+<p><span class="body-text-s">Research Associate, Center for Coastal Studies</span></p>
+</div><div class="column" style="width:70%;">
+<p><span class="fragment">“It takes more activation energy to ‘do it right’, but you save yourself loads of time relative to doing it by brute force.”</span></p>
+<p><span class="fragment">“In my current job I’m often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects.”</span></p>
+<p><span class="fragment">“Collaboration and communication become <em>a lot</em> easier when you have your workflow laid out and organized instead of all jumbled in your brain.”</span></p>
+</div>
+</div>
+</section>
 <section id="meet-max" class="slide level2" data-menu-title="Hi, I'm Max">
 <h2></h2>
 <p><span class="slide-title">Hi, I’m Max 👋</span></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-56e6fdddd52947784924" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-56e6fdddd52947784924">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"fitBounds":[20.232,-161.402,73.2906,-72.006,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n  function(el, x) {\n    var map = this;\n    var points = [{\"lat\":40.7128,\"lng\":-74.006,\"name\":\"New York, NY\",\"description\":\"Undergrad in computer science\",\"order\":1},{\"lat\":47.6062,\"lng\":-122.3321,\"name\":\"Seattle, WA\",\"description\":\"Software developer at Microsoft\",\"order\":2},{\"lat\":71.2906,\"lng\":-156.7886,\"name\":\"Utgiagvik, AK\",\"description\":\"Seabirds in the Alaskan Arctic\",\"order\":3},{\"lat\":38.1041,\"lng\":-122.2566,\"name\":\"Vallejo, CA\",\"description\":\"Counting ducks for USGS\",\"order\":4},{\"lat\":22.232,\"lng\":-159.402,\"name\":\"Kilauea, HI\",\"description\":\"Tracking seabirds in Hawaii\",\"order\":5},{\"lat\":37.7749,\"lng\":-122.4194,\"name\":\"San Francisco, CA\",\"description\":\"MS in GIS\",\"order\":6},{\"lat\":36.6177,\"lng\":-121.8746,\"name\":\"Pacific Grove, CA\",\"description\":\"PhD in Marine Biology\",\"order\":7},{\"lat\":34.4208,\"lng\":-119.6982,\"name\":\"Santa Barbara, CA\",\"description\":\"Teaching MEDS and Marine Science\",\"order\":8}];\n    var currentIndex = 0;\n    var animatedLine = L.polyline([], {\n      color: \"#FF6B35\", \n      weight: 4, \n      opacity: 0.8,\n      dashArray: \"10, 10\"\n    }).addTo(map);\n    \n    var markers = [];\n    \n    // Add progress indicator\n    var progressControl = L.control({position: \"topright\"});\n    progressControl.onAdd = function(map) {\n      var div = L.DomUtil.create(\"div\", \"progress-control\");\n      div.innerHTML = `\n        <div id=\"journey-progress\" style=\"\n          background: rgba(255, 107, 53, 0.9); \n          color: white; \n          border: none; \n          padding: 8px 12px; \n          border-radius: 5px;\n          font-weight: bold;\n          box-shadow: 0 2px 4px rgba(0,0,0,0.2);\n          font-size: 14px;\n        \">Journey: 0 / ${points.length}<\/div>\n      `;\n      return div;\n    };\n    progressControl.addTo(map);\n    \n    // Create custom icon for markers\n    var customIcon = L.divIcon({\n      html: `<div style=\"\n        background: #FF6B35; \n        border: 3px solid white; \n        border-radius: 50%; \n        width: 20px; \n        height: 20px;\n        box-shadow: 0 2px 4px rgba(0,0,0,0.3);\n      \"><\/div>`,\n      className: \"custom-marker\",\n      iconSize: [20, 20],\n      iconAnchor: [10, 10]\n    });\n    \n    function addNextLocation() {\n      if (currentIndex >= points.length) return;\n      \n      var point = points[currentIndex];\n      var latLng = [point.lat, point.lng];\n      \n      // Add point to animated line\n      animatedLine.addLatLng(latLng);\n      \n      // Create popup content\n      var popupContent = `\n        <div style=\"text-align: center; font-family: Arial, sans-serif;\">\n          <h4 style=\"margin: 5px 0; color: #FF6B35;\">${point.name}<\/h4>\n          <p style=\"margin: 5px 0; font-size: 14px; color: #666;\">${point.description}<\/p>\n          <small style=\"color: #999;\">Stop ${point.order} of ${points.length}<\/small>\n        <\/div>\n      `;\n      \n      // Add marker\n      var marker = L.marker(latLng, {icon: customIcon}).addTo(map);\n      marker.bindPopup(popupContent, {\n        maxWidth: 300,\n        className: \"custom-popup\"\n      });\n      markers.push(marker);\n      \n      // Pan to point\n      map.flyTo(latLng, map.getZoom() > 6 ? map.getZoom() : 6, {\n        animate: true,\n        duration: 1.5\n      });\n      \n      // Show popup after pan\n      setTimeout(function() {\n        marker.openPopup();\n      }, 1000);\n      \n      currentIndex++;\n      \n      // Update progress\n      document.getElementById(\"journey-progress\").innerHTML = \n        `Journey: ${currentIndex} / ${points.length}`;\n    }\n    \n    // Global function to advance map animation\n    window.advanceJourney = function() {\n      addNextLocation();\n    };\n    \n    // Reveal.js integration - listen for fragment events\n    if (typeof Reveal !== \"undefined\") {\n      Reveal.on(\"fragmentshown\", function(event) {\n        if (event.fragment.classList.contains(\"journey-step\")) {\n          addNextLocation();\n        }\n      });\n      \n      Reveal.on(\"fragmenthidden\", function(event) {\n        if (event.fragment.classList.contains(\"journey-step\") && currentIndex > 0) {\n          // Remove last location when going backwards\n          currentIndex--;\n          var lastMarker = markers.pop();\n          if (lastMarker) map.removeLayer(lastMarker);\n          \n          var lineCoords = animatedLine.getLatLngs();\n          if (lineCoords.length > 0) {\n            lineCoords.pop();\n            animatedLine.setLatLngs(lineCoords);\n          }\n          \n          document.getElementById(\"journey-progress\").innerHTML = \n            `Journey: ${currentIndex} / ${points.length}`;\n            \n          // Pan to previous location\n          if (currentIndex > 0) {\n            var prevPoint = points[currentIndex - 1];\n            map.flyTo([prevPoint.lat, prevPoint.lng], map.getZoom());\n          }\n        }\n      });\n    }\n    \n    // Add custom CSS\n    var style = document.createElement(\"style\");\n    style.textContent = `\n      .custom-popup .leaflet-popup-content-wrapper {\n        border-radius: 8px;\n        box-shadow: 0 3px 6px rgba(0,0,0,0.16);\n      }\n      .custom-popup .leaflet-popup-tip {\n        background: white;\n      }\n      .animation-control {\n        background: transparent;\n        border: none;\n      }\n      #start-animation:hover {\n        transform: translateY(-1px);\n        box-shadow: 0 4px 8px rgba(0,0,0,0.2);\n      }\n      .journey-step {\n        opacity: 0;\n        transition: opacity 0.3s ease;\n      }\n      .journey-step.visible {\n        opacity: 1;\n      }\n    `;\n    document.head.appendChild(style);\n  }\n  ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-73e425f5db5c08fac09d" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-73e425f5db5c08fac09d">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]}],"fitBounds":[20.232,-161.402,73.2906,-72.006,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n  function(el, x) {\n    var map = this;\n    var points = [{\"lat\":40.7128,\"lng\":-74.006,\"name\":\"New York, NY\",\"description\":\"Undergrad in computer science\",\"order\":1},{\"lat\":47.6062,\"lng\":-122.3321,\"name\":\"Seattle, WA\",\"description\":\"Software developer at Microsoft\",\"order\":2},{\"lat\":71.2906,\"lng\":-156.7886,\"name\":\"Utgiagvik, AK\",\"description\":\"Seabirds in the Alaskan Arctic\",\"order\":3},{\"lat\":38.1041,\"lng\":-122.2566,\"name\":\"Vallejo, CA\",\"description\":\"Counting ducks for USGS\",\"order\":4},{\"lat\":22.232,\"lng\":-159.402,\"name\":\"Kilauea, HI\",\"description\":\"Tracking seabirds in Hawaii\",\"order\":5},{\"lat\":37.7749,\"lng\":-122.4194,\"name\":\"San Francisco, CA\",\"description\":\"MS in GIS\",\"order\":6},{\"lat\":36.6177,\"lng\":-121.8746,\"name\":\"Pacific Grove, CA\",\"description\":\"PhD in Marine Biology\",\"order\":7},{\"lat\":34.4208,\"lng\":-119.6982,\"name\":\"Santa Barbara, CA\",\"description\":\"Teaching MEDS and Marine Science\",\"order\":8}];\n    var currentIndex = 0;\n    var animatedLine = L.polyline([], {\n      color: \"#FF6B35\", \n      weight: 4, \n      opacity: 0.8,\n      dashArray: \"10, 10\"\n    }).addTo(map);\n    \n    var markers = [];\n    \n    // Add progress indicator\n    var progressControl = L.control({position: \"topright\"});\n    progressControl.onAdd = function(map) {\n      var div = L.DomUtil.create(\"div\", \"progress-control\");\n      div.innerHTML = `\n        <div id=\"journey-progress\" style=\"\n          background: rgba(255, 107, 53, 0.9); \n          color: white; \n          border: none; \n          padding: 8px 12px; \n          border-radius: 5px;\n          font-weight: bold;\n          box-shadow: 0 2px 4px rgba(0,0,0,0.2);\n          font-size: 14px;\n        \">Journey: 0 / ${points.length}<\/div>\n      `;\n      return div;\n    };\n    progressControl.addTo(map);\n    \n    // Create custom icon for markers\n    var customIcon = L.divIcon({\n      html: `<div style=\"\n        background: #FF6B35; \n        border: 3px solid white; \n        border-radius: 50%; \n        width: 20px; \n        height: 20px;\n        box-shadow: 0 2px 4px rgba(0,0,0,0.3);\n      \"><\/div>`,\n      className: \"custom-marker\",\n      iconSize: [20, 20],\n      iconAnchor: [10, 10]\n    });\n    \n    function addNextLocation() {\n      if (currentIndex >= points.length) return;\n      \n      var point = points[currentIndex];\n      var latLng = [point.lat, point.lng];\n      \n      // Add point to animated line\n      animatedLine.addLatLng(latLng);\n      \n      // Create popup content\n      var popupContent = `\n        <div style=\"text-align: center; font-family: Arial, sans-serif;\">\n          <h4 style=\"margin: 5px 0; color: #FF6B35;\">${point.name}<\/h4>\n          <p style=\"margin: 5px 0; font-size: 14px; color: #666;\">${point.description}<\/p>\n          <small style=\"color: #999;\">Stop ${point.order} of ${points.length}<\/small>\n        <\/div>\n      `;\n      \n      // Add marker\n      var marker = L.marker(latLng, {icon: customIcon}).addTo(map);\n      marker.bindPopup(popupContent, {\n        maxWidth: 300,\n        className: \"custom-popup\"\n      });\n      markers.push(marker);\n      \n      // Pan to point\n      map.flyTo(latLng, map.getZoom() > 6 ? map.getZoom() : 6, {\n        animate: true,\n        duration: 1.5\n      });\n      \n      // Show popup after pan\n      setTimeout(function() {\n        marker.openPopup();\n      }, 1000);\n      \n      currentIndex++;\n      \n      // Update progress\n      document.getElementById(\"journey-progress\").innerHTML = \n        `Journey: ${currentIndex} / ${points.length}`;\n    }\n    \n    // Global function to advance map animation\n    window.advanceJourney = function() {\n      addNextLocation();\n    };\n    \n    // Reveal.js integration - listen for fragment events\n    if (typeof Reveal !== \"undefined\") {\n      Reveal.on(\"fragmentshown\", function(event) {\n        if (event.fragment.classList.contains(\"journey-step\")) {\n          addNextLocation();\n        }\n      });\n      \n      Reveal.on(\"fragmenthidden\", function(event) {\n        if (event.fragment.classList.contains(\"journey-step\") && currentIndex > 0) {\n          // Remove last location when going backwards\n          currentIndex--;\n          var lastMarker = markers.pop();\n          if (lastMarker) map.removeLayer(lastMarker);\n          \n          var lineCoords = animatedLine.getLatLngs();\n          if (lineCoords.length > 0) {\n            lineCoords.pop();\n            animatedLine.setLatLngs(lineCoords);\n          }\n          \n          document.getElementById(\"journey-progress\").innerHTML = \n            `Journey: ${currentIndex} / ${points.length}`;\n            \n          // Pan to previous location\n          if (currentIndex > 0) {\n            var prevPoint = points[currentIndex - 1];\n            map.flyTo([prevPoint.lat, prevPoint.lng], map.getZoom());\n          }\n        }\n      });\n    }\n    \n    // Add custom CSS\n    var style = document.createElement(\"style\");\n    style.textContent = `\n      .custom-popup .leaflet-popup-content-wrapper {\n        border-radius: 8px;\n        box-shadow: 0 3px 6px rgba(0,0,0,0.16);\n      }\n      .custom-popup .leaflet-popup-tip {\n        background: white;\n      }\n      .animation-control {\n        background: transparent;\n        border: none;\n      }\n      #start-animation:hover {\n        transform: translateY(-1px);\n        box-shadow: 0 4px 8px rgba(0,0,0,0.2);\n      }\n      .journey-step {\n        opacity: 0;\n        transition: opacity 0.3s ease;\n      }\n      .journey-step.visible {\n        opacity: 1;\n      }\n    `;\n    document.head.appendChild(style);\n  }\n  ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
 </div>
 </div>
 <div class="fragment journey-step">
@@ -445,7 +477,7 @@
 <p>Workflows combine: data, code, modeling, and communication.</p>
 <p><img data-src="images/day1/r4ds-workflow.png" style="width:80.0%" alt="Components of a workflow"></p>
 <p><span class="body-text-xs"><span class="citation" data-cites="r4ds">Wickham, Çetinkaya-Rundel, and Grolemund (<a href="#/works-cited" role="doc-biblioref" onclick="">2023</a>)</span></span></p>
-</div><!-- Right-hand column --><div class="column" style="width:50%;">
+</div><div class="column" style="width:50%;">
 <p>The final workflow masks a trajectory of exploration and dead ends</p>
 <p><img data-src="images/day1/stoudtetal2021fig1a.PNG" style="width:80.0%" alt="The evolution of a workflow"></p>
 <p><span class="body-text-xs"><span class="citation" data-cites="stoudt2021">Stoudt, Vásquez, and Martinez (<a href="#/works-cited" role="doc-biblioref" onclick="">2021</a>)</span></span></p>
@@ -519,37 +551,403 @@
 <p><span class="body-text-m">You’ll see more spec-based grading in other MEDS classes</span></p>
 </div>
 </section>
-<section id="testimonial1" class="slide level2" data-menu-title="Reproducible workflows saved my life <3">
+<section id="course-schedule1" class="slide level2" data-menu-title="Course schedule">
 <h2></h2>
-<p><span class="slide-title">“Reproducible workflows saved my life &lt;3”</span></p>
+<p><span class="slide-title">Course schedule</span></p>
 <hr>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="images/day1/bekahlane.jpg" style="width:100.0%" alt="Bekah Lane headshot"></p>
-<p><span class="body-text-m">Bekah Lane</span></p>
-<p><span class="body-text-s">Research Associate, Center for Coastal Studies</span></p>
-</div><div class="column" style="width:70%;">
-<p><span class="fragment"><strong>Question:</strong> Where are humpbacks in SF Bay most susceptible to ship strikes?</span></p>
-<p><span class="fragment"><strong>Problem:</strong> Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.</span></p>
-<p><span class="fragment"><strong>Solution:</strong> Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R</span></p>
-</div>
-</div>
+<style>
+  .reveal .schedule-table {
+    font-family: "Nunito", sans-serif;
+    border-collapse: collapse;
+    width: 100% !important;
+    max-width: 100% !important;
+    table-layout: fixed;
+    font-size: 14px !important;
+  }
+  
+  .reveal .schedule-table td, .reveal .schedule-table th {
+    padding: 6px 4px !important;
+    text-align: left !important;
+    vertical-align: middle;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 14px !important;
+  }
+  
+  .day-header {
+    font-weight: bold;
+    text-align: center !important;
+  }
+  
+  .lecture-interactive-row {
+    text-align: center !important;
+  }
+  
+  .no-border {
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  
+  .no-border td {
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  
+  .time-label {
+    font-weight: bold;
+    width: 30px;
+  }
+  
+  .lecture-cell {
+    background-color: #d2e3f3;
+  }
+  
+  .row-border-thick {
+    border-bottom: 3px solid #047C90;
+  }
+  
+  .row-border-thin {
+    border-bottom: 1px solid #047C90;
+  }
+  
+  .highlight-day {
+    border: 6px solid #78A540;
+  }
+</style>
+<table class="schedule-table">
+<colgroup>
+<col style="width: 40px;">
+<col span="10">
+</colgroup>
+<tbody><tr class="no-border">
+<td>
+</td>
+<td colspan="2" class="day-header">
+Monday
+</td>
+<td colspan="2" class="day-header">
+Tuesday
+</td>
+<td colspan="2" class="day-header">
+Wednesday
+</td>
+<td colspan="2" class="day-header">
+Thursday
+</td>
+<td colspan="2" class="day-header">
+Friday
+</td>
+</tr>
+<tr class="row-border-thick">
+<td>
+</td>
+<td class="lecture-interactive-row">
+Lecture
+</td>
+<td class="lecture-interactive-row">
+Interactive
+</td>
+<td class="lecture-interactive-row">
+Lecture
+</td>
+<td class="lecture-interactive-row">
+Interactive
+</td>
+<td class="lecture-interactive-row">
+Lecture
+</td>
+<td class="lecture-interactive-row">
+Interactive
+</td>
+<td class="lecture-interactive-row">
+Lecture
+</td>
+<td class="lecture-interactive-row">
+Interactive
+</td>
+<td class="lecture-interactive-row">
+Lecture
+</td>
+<td class="lecture-interactive-row">
+Interactive
+</td>
+</tr>
+<tr class="row-border-thin">
+<td class="time-label">
+AM
+</td>
+<td class="lecture-cell">
+Reproducible workflows
+</td>
+<td class="">
+Plan an analysis
+</td>
+<td class="lecture-cell">
+Command line and remote server
+</td>
+<td class="">
+Navigate the server
+</td>
+<td class="lecture-cell">
+Version control with git
+</td>
+<td class="">
+git branching
+</td>
+<td class="lecture-cell">
+Draft Quarto analysis
+</td>
+<td class="">
+Self assessment
+</td>
+<td class="lecture-cell">
+Meet your next instructor
+</td>
+<td class="">
+Final project submission
+</td>
+</tr>
+<tr>
+<td class="time-label">
+PM
+</td>
+<td class="lecture-cell">
+Workflow organization
+</td>
+<td class="">
+Make spaghetti
+</td>
+<td class="lecture-cell">
+Documen-tation
+</td>
+<td class="">
+READMEs, comments, and style
+</td>
+<td class="lecture-cell">
+Collaboration with GitHub
+</td>
+<td class="">
+Refactor a function
+</td>
+<td class="lecture-cell">
+Peer feedback and contributions
+</td>
+<td class="">
+Open work time
+</td>
+<td class="lecture-cell">
+Instructor feedback
+</td>
+<td class="">
+Project wrap-up
+</td>
+</tr>
+</tbody></table>
 </section>
-<section id="testimonial2" class="slide level2" data-menu-title="Reproducible workflows saved my life <3">
+<section id="course-schedule2" class="slide level2" data-menu-title="Course schedule">
 <h2></h2>
-<p><span class="slide-title">“Reproducible workflows saved my life &lt;3”</span></p>
+<p><span class="slide-title">Course schedule</span></p>
 <hr>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="images/day1/bekahlane.jpg" style="width:100.0%" alt="Bekah Lane headshot"></p>
-<p><span class="body-text-m">Bekah Lane</span></p>
-<p><span class="body-text-s">Research Associate, Center for Coastal Studies</span></p>
-</div><div class="column" style="width:70%;">
-<p><span class="fragment">“It takes more activation energy to ‘do it right’, but you save yourself loads of time relative to doing it by brute force.”</span></p>
-<p><span class="fragment">“In my current job I’m often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects.”</span></p>
-<p><span class="fragment">“Collaboration and communication become <em>a lot</em> easier when you have your workflow laid out and organized instead of all jumbled in your brain.”</span></p>
-</div>
-</div>
+<style>
+  .reveal .schedule-table {
+    font-family: "Nunito", sans-serif;
+    border-collapse: collapse;
+    width: 100% !important;
+    max-width: 100% !important;
+    table-layout: fixed;
+    font-size: 14px !important;
+  }
+  
+  .reveal .schedule-table td, .reveal .schedule-table th {
+    padding: 6px 4px !important;
+    text-align: left !important;
+    vertical-align: middle;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 14px !important;
+  }
+  
+  .day-header {
+    font-weight: bold;
+    text-align: center !important;
+  }
+  
+  .lecture-interactive-row {
+    text-align: center !important;
+  }
+  
+  .no-border {
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  
+  .no-border td {
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
+  
+  .time-label {
+    font-weight: bold;
+    width: 30px;
+  }
+  
+  .lecture-cell {
+    background-color: #d2e3f3;
+  }
+  
+  .row-border-thick {
+    border-bottom: 3px solid #047C90;
+  }
+  
+  .row-border-thin {
+    border-bottom: 1px solid #047C90;
+  }
+  
+  .highlight-day {
+    border: 6px solid #78A540;
+  }
+</style>
+<table class="schedule-table">
+<colgroup>
+<col style="width: 40px;">
+<col span="10">
+</colgroup>
+<tbody><tr class="no-border">
+<td>
+</td>
+<td colspan="2" class="day-header highlight-day">
+Monday
+</td>
+<td colspan="2" class="day-header">
+Tuesday
+</td>
+<td colspan="2" class="day-header">
+Wednesday
+</td>
+<td colspan="2" class="day-header">
+Thursday
+</td>
+<td colspan="2" class="day-header">
+Friday
+</td>
+</tr>
+<tr class="row-border-thick">
+<td>
+</td>
+<td class="lecture-interactive-row">
+Lecture
+</td>
+<td class="lecture-interactive-row">
+Interactive
+</td>
+<td class="lecture-interactive-row">
+Lecture
+</td>
+<td class="lecture-interactive-row">
+Interactive
+</td>
+<td class="lecture-interactive-row">
+Lecture
+</td>
+<td class="lecture-interactive-row">
+Interactive
+</td>
+<td class="lecture-interactive-row">
+Lecture
+</td>
+<td class="lecture-interactive-row">
+Interactive
+</td>
+<td class="lecture-interactive-row">
+Lecture
+</td>
+<td class="lecture-interactive-row">
+Interactive
+</td>
+</tr>
+<tr class="row-border-thin">
+<td class="time-label">
+AM
+</td>
+<td class="lecture-cell highlight-day">
+Reproducible workflows
+</td>
+<td class="highlight-day">
+Plan an analysis
+</td>
+<td class="lecture-cell">
+Command line and remote server
+</td>
+<td class="">
+Navigate the server
+</td>
+<td class="lecture-cell">
+Version control with git
+</td>
+<td class="">
+git branching
+</td>
+<td class="lecture-cell">
+Draft Quarto analysis
+</td>
+<td class="">
+Self assessment
+</td>
+<td class="lecture-cell">
+Meet your next instructor
+</td>
+<td class="">
+Final project submission
+</td>
+</tr>
+<tr>
+<td class="time-label">
+PM
+</td>
+<td class="lecture-cell highlight-day">
+Workflow organization
+</td>
+<td class="highlight-day">
+Make spaghetti
+</td>
+<td class="lecture-cell">
+Documen-tation
+</td>
+<td class="">
+READMEs, comments, and style
+</td>
+<td class="lecture-cell">
+Collaboration with GitHub
+</td>
+<td class="">
+Refactor a function
+</td>
+<td class="lecture-cell">
+Peer feedback and contributions
+</td>
+<td class="">
+Open work time
+</td>
+<td class="lecture-cell">
+Instructor feedback
+</td>
+<td class="">
+Project wrap-up
+</td>
+</tr>
+</tbody></table>
 </section>
 <section id="works-cited" class="slide level2 smaller scrollable" data-menu-title="Works cited">
 <h2></h2>
