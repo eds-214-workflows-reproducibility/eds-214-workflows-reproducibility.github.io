@@ -66,7 +66,7 @@ Your final project will be assessed according to specifications spread across th
 
 \[ \] **The analysis produces the expected output**
 
-\[ \] Data import/cleaning is handled in its own script(s)
+\[ \] **Data import/cleaning is handled in its own script(s)**
 
 ### Organize
 

@@ -279,18 +279,23 @@ The final workflow masks a trajectory of exploration and dead ends
 
 ---
 
+## {#course-schedule data-menu-title="Course schedule"}
+
+[Course schedule]{.slide-title}
+
+<hr>
+
+![Course schedule for EDS 214](images/schedule.png){width="100%"}
+
+---
+
 ## {#course-schedule1 data-menu-title="Course schedule"}
 
 [Course schedule]{.slide-title}
 
 <hr>
 
-
-```{r}
-#| results: asis
-source("schedule.R")
-cat(create_schedule_table())
-```
+![Course schedule for EDS 214 (emphasizing day 1)](images/schedule1.png){width="100%"}
 
 ---
 
@@ -300,12 +305,37 @@ cat(create_schedule_table())
 
 <hr>
 
+![Course schedule for EDS 214 (emphasizing day 2)](images/schedule2.png){width="100%"}
 
-```{r}
-#| results: asis
-source("schedule.R")
-cat(create_schedule_table(1))
-```
+---
+
+## {#course-schedule3 data-menu-title="Course schedule"}
+
+[Course schedule]{.slide-title}
+
+<hr>
+
+![Course schedule for EDS 214 (emphasizing day 3)](images/schedule3.png){width="100%"}
+
+---
+
+## {#course-schedule4 data-menu-title="Course schedule"}
+
+[Course schedule]{.slide-title}
+
+<hr>
+
+![Course schedule for EDS 214 (emphasizing day 4)](images/schedule4.png){width="100%"}
+
+---
+
+## {#course-schedule5 data-menu-title="Course schedule"}
+
+[Course schedule]{.slide-title}
+
+<hr>
+
+![Course schedule for EDS 214 (emphasizing day 5)](images/schedule5.png){width="100%"}
 
 ---
 

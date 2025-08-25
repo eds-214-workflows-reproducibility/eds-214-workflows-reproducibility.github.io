@@ -154,7 +154,7 @@ You will often see Terminal and Shell used interchangeably. This can get confusi
 
 * `pwd` - know where you are
 * `ls` (with `-l`, `-a` flags) - see what's there
-* `cd` - move around (including `cd ~`, `cd ..`, `cd -`)
+* `cd` - move around (including `cd ~`, `cd ..`)
 * `mkdir` - create directories
 * `rmdir` - remove directories (only if empty)
 
@@ -199,7 +199,6 @@ You will often see Terminal and Shell used interchangeably. This can get confusi
 Do the following in your terminal. Make a note of your answers in a text file.
 
 :::: {.columns}
-
 ::: {.column width="50%"}
 
 Create the following directory structure on your computer *using the command line only*.
@@ -217,7 +216,6 @@ renewable-energy
 ```
 
 :::
-
 ::: {.column width="50%"}
 
 Now, delete the `capacity/` folder and rename `usage/` to `data/`.
@@ -229,7 +227,6 @@ Use `ls -l data` to check the contents of your directory. Answer the following q
 * In `ls -l data`, what parts correspond to the argument, option, and command?
 
 :::
-
 ::::
 
 ---
@@ -241,7 +238,6 @@ Use `ls -l data` to check the contents of your directory. Answer the following q
 <hr>
 
 :::: {.columns}
-
 ::: {.column width="50%"}
 
 From the `renewable-energy` directory, run the following commands:
@@ -255,7 +251,6 @@ mv scripts/1_import.R R/import.R
 ```
 
 :::
-
 ::: {.column width="50%"}
 
 Answer the following questions.
@@ -265,7 +260,6 @@ Answer the following questions.
 * How could you fix it?
 
 :::
-
 ::::
 
 ---

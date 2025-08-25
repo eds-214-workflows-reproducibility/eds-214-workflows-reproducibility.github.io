@@ -1,13 +1,17 @@
 ---
-title: "TODO: fixme"
-subtitle: "Day 5"
-description: "Friday August 29^th^, 2025"
+title: "Final project self-assessment and peer feedback"
+subtitle: "Day 4"
+description: "Thursday August 28^th^, 2025"
+bibliography: references.bib
 ---
 
 ## Class materials
 
-| {{< session >}} | {{< lecture >}}        | {{< interactive >}} | {{< reflection >}} |
-|-----------------|------------------------|---------------------|-------------------|
-| Morning         | TODO: fixme | TODO: fixme  | TODO: fixme |
-| Afternoon       | TODO: fixme  | TODO: fixme  | TODO: fixme |
-: {.hover .bordered .w-auto .mx-auto} 
+No lectures today! All interactive sessions.
+
+| {{< session >}} | {{< interactive >}} | {{< interactive >}} | {{< reflection >}} |
+|------------------|------------------|------------------|------------------|
+| Morning | Meet your next instructor | [Final project submission](final-project/final-project-submission.qmd) | Morning reflection |
+| Afternoon | Instructor feedback | Open working time | Afternoon reflection |
+
+: {.hover .bordered}

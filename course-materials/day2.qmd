@@ -9,13 +9,13 @@ bibliography: references.bib
 
 | {{< session >}} | {{< lecture >}} | {{< interactive >}} | {{< reflection >}} |
 |------------------|------------------|------------------|------------------|
-| Morning | [Command line and remote server](lecture-slides/lecture-day2am-slides.qmd){target="_blank"} | [Navigate the server](interactive/interactive-day2am.qmd) | [Go with the flow](https://forms.gle/GjKm3S9fef74jN8w5){target="_blank"} |
-| Afternoon | [Documentation](lecture-slides/lecture-day2pm-slides.qmd){target="_blank"} | [READMEs, style, and comments](interactive/interactive-day2pm.qmd) | [Exploration and iteration](https://forms.gle/2NfM8nrq6BCKjRdx5){target="_blank"} |
+| Morning | [Command line and remote server](lecture-slides/lecture-day2am-slides.qmd){target="_blank"} | [Navigate the server](interactive/interactive-day2am.qmd) | [Server vs local](https://forms.gle/bv8b1fjxFCjTZu9n8) |
+| Afternoon | [Documentation](lecture-slides/lecture-day2pm-slides.qmd){target="_blank"} | [READMEs, style, and comments](interactive/interactive-day2pm.qmd) | [Course support](https://forms.gle/RTaLYEutqcyzmg5G6) |
 
 : {.hover .bordered}
 
 ## Further reading
 
--   @stoudt2021 describe how analytical workflows evolve, what they look like in the end, and how they're necessary for data-intensive science.
+-   @marwick2018 describe a system for creating a *research compendium* (a single archive of data, code, results, and manuscript) using R. They provide multiple examples of how to document code and data.
 
--   @lowndes2017 present a case study on their own team-based research. They show how an emphasis on reproducibility improves *efficiency* as well as transparency.
+-   @salmon2023 digs deeper into what does (and doesn't) make for a good comment.

@@ -51,10 +51,6 @@ It may be helpful to read a CSV file into R and explore it using numeric or visu
     3.  Are any processing or modeling steps required?
     4.  What are your outputs?
 
-::: callout-note
-The **Plan** section sneakily asks you to do *two* things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a [system]{.underline} for representing the components of your analysis and their connections. That's the second thing: come up with your own flowchart system off the cuff. Tomorrow I'll introduce you to the system I use. For now, give it your best shot!
-:::
-
 ### Share
 
 1.  Find a partner.

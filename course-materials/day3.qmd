@@ -9,8 +9,8 @@ bibliography: references.bib
 
 | {{< session >}} | {{< lecture >}} | {{< interactive >}} | {{< reflection >}} |
 |------------------|------------------|------------------|------------------|
-| Morning | [Version control with git](lecture-slides/lecture-day3am-slides.qmd){target="_blank"} | [Git branching](interactive/interactive-day3am.qmd) | [Go with the flow](https://forms.gle/GjKm3S9fef74jN8w5){target="_blank"} |
-| Afternoon | [Collaboration with GitHub](lecture-slides/lecture-day3pm-slides.qmd){target="_blank"} | [Refactor a function](interactive/interactive-day3pm.qmd) | [Exploration and iteration](https://forms.gle/2NfM8nrq6BCKjRdx5){target="_blank"} |
+| Morning | [Version control with git](lecture-slides/lecture-day3am-slides.qmd){target="_blank"} | [Git branching](interactive/interactive-day3am.qmd) | Morning reflection |
+| Afternoon | [Collaboration with GitHub](lecture-slides/lecture-day3pm-slides.qmd){target="_blank"} | [Refactor a function](interactive/interactive-day3pm.qmd) | Afternoon reflection |
 
 : {.hover .bordered}
 

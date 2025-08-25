@@ -63,6 +63,20 @@
     "text": "Welcome to EDS 214!\n\nThis is a class about workflows and reproducibility\n\n\nThe workflow is the fundamental unit of data science\n\n\n\nReproducibility ensures workflows don’t become dead ends\n\n\n\nThe concepts and skills in this class will keep coming up in future classes and for the rest of your career"
   },
   {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial1",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\nQuestion: Where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.\nSolution: Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial2",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\n“It takes more activation energy to ‘do it right’, but you save yourself loads of time relative to doing it by brute force.”\n“In my current job I’m often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects.”\n“Collaboration and communication become a lot easier when you have your workflow laid out and organized instead of all jumbled in your brain.”"
+  },
+  {
     "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#meet-max",
     "href": "course-materials/lecture-slides/lecture-day1am-slides.html#meet-max",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
@@ -112,18 +126,46 @@
     "text": "Specification-based grading\n\n\nNo points out of 100\nA rubric of specifications (specs) for your final project\nMeet (or exceed) specs and participate in class - get an A\n\n\n\nFeedback loops are critical (no one-and-done)\n\n\n\nYou’ll see more spec-based grading in other MEDS classes"
   },
   {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial1",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial1",
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\nQuestion: Where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.\nSolution: Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R"
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214"
   },
   {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial2",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial2",
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule1",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule1",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\n“It takes more activation energy to ‘do it right’, but you save yourself loads of time relative to doing it by brute force.”\n“In my current job I’m often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects.”\n“Collaboration and communication become a lot easier when you have your workflow laid out and organized instead of all jumbled in your brain.”"
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214 (emphasizing day 1)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule2",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214 (emphasizing day 2)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule3",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule3",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214 (emphasizing day 3)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule4",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule4",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214 (emphasizing day 4)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule5",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule5",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214 (emphasizing day 5)"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#works-cited",
@@ -343,6 +385,13 @@
     "text": "GitHub Pages Recap\n\n\nGitHub Pages give your projects a web presence.\nOn your project’s Pages site, you can host:\n\nDocumentation\nReports\nFigures\nDrafts\n\nAll your collaborators need is a URL!"
   },
   {
+    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#break-it",
+    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#break-it",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "But what if I break it?\n\n\n\nBowie is an environmental data scientist working on an analysis of pollution in local watersheds.\nShe manages her project in a GitHub repository, using Issues to track tasks and Pages to share her results with collaborators.\nHer two collaborators are Iggy and Nomi.\n\nIggy found a bug in Bowie’s data pre-processing step and asked her to fix it.\nNomi is busy with other projects and hasn’t had a chance to look at the Pages site yet.\n\nBowie is worried that while she’s fixing the bug Iggy found she might temporarily break the Pages site, which would delay Nomi’s input on the project.\n\nWhat should Bowie do to address Iggy’s bug while keeping the Pages site working for Nomi?"
+  },
+  {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#title-slide",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#title-slide",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
@@ -354,77 +403,91 @@
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#learning-objectives",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "This afternoon, you’ll learn:\n\n\nThe importance of documentation for reproducibility\nThe target audiences for different types of documentation\nHow to use READMEs, code comments, and code style to document your workflow"
+    "text": "This afternoon, you’ll learn:\n\n\n\nThe importance of documentation for reproducibility\nThe target audiences for different types of documentation\nHow to use READMEs, code comments, and code style to document your workflow"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-activity",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-activity",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "LEGO Blueprints Activity\n\nStep 1: Build (in pairs)\n\nForm pairs and receive LEGOs\nEach pair builds a LEGO structure. Get weird with it!\nTake a picture of the finished product\nDestroy the LEGO structure"
+    "text": "LEGO Blueprints Activity\n\nStep 1: Build (in pairs)\n\n\nForm pairs and receive LEGOs\nEach pair builds a LEGO structure. Get weird with it!\nTake a picture of the finished product\nDestroy the LEGO structure"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-copy",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-copy",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "LEGO Blueprints Activity\n\nStep 2: Copy (in pairs)\n\nSwitch LEGOs and pictures with another pair\nTry to replicate the structure using only the picture\nTake notes about challenges encountered"
+    "text": "LEGO Blueprints Activity\n\nStep 2: Copy (in pairs)\n\n\nSwitch LEGOs and pictures with another pair\nTry to replicate the structure using only the picture\nTake notes about challenges encountered"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-share",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-share",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "LEGO Blueprints Activity\n\nStep 3: Share (in quads)\n\nPairs compare original and finished structures\nTake notes about what was different\nDescribe 2-3 pieces of documentation that would have helped"
+    "text": "LEGO Blueprints Activity\n\nStep 3: Share (in quads)\n\n\nPairs compare original and finished structures\nTake notes about what was different\nDescribe 2-3 pieces of documentation that would have helped"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-debrief",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-debrief",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "LEGO Blueprints Activity\n\nStep 4: Debrief (as a class)\n\nDraw two axes:\n\nLeft-to-right: Acquisition to Application\nTop-to-bottom: Action to Cognition\n\nPlace the documentation pieces on the axes"
+    "text": "LEGO Blueprints Activity\n\nStep 4: Debrief (as a class)"
   },
   {
-    "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#diataxis-map",
-    "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#diataxis-map",
+    "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#documentation-types",
+    "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#documentation-types",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "The Diátaxis Map\n\nA framework for structuring documentation into four distinct areas:\n\n\nTutorials * Learning-oriented * Practical steps * Getting started\nHow-to guides * Problem-oriented * Series of steps * Achieving goals\n\nReference * Information-oriented * Structured information * Describing machinery\nExplanation * Understanding-oriented * Theoretical knowledge * Background and context"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#diataxis-application",
-    "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#diataxis-application",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "When do you need all four areas?\n\n\n\nA tool needs all four areas\n\nComprehensive documentation\nMultiple user types\nDifferent levels of expertise\nLong-term maintenance\n\n\nAn analysis probably needs a subset\n\nSpecific audience\nLimited scope\nFocused purpose\nTime constraints\n\n\n\n\nThink-pair-share: Why might this be the case?"
+    "text": "Types of Documentation\n\n\nREADME\n\nA file that (succintly) describes the project and how it works.\n\nComments\n\nAnnotations within the code to explain why.\n\nCode style\n\nA consistent format for writing code, including naming conventions and structure."
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#readme-documentation",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#readme-documentation",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "README Documentation\n\nCore elements required for all MEDS-related homework assignments and projects:\n\nA short, but descriptive title\nA brief explanation of the repository’s purpose\nA concise description of what’s housed in the repository\nDetails regarding data access\nA list of authors or current contributors (for collaborative work)\nReferences"
+    "text": "README Documentation\n\nTypical README contents\n\nA short, but descriptive, title\nA brief explanation of the repository’s purpose\nA concise description of what’s housed in the repository\nDetails regarding data access\nA list of authors or current contributors (for collaborative work)\nReferences"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#code-comments",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#code-comments",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Code Comments\n\nTypes of comments:\n\n\nHeaders * File purpose * Author information * Date created/modified\nInline * Explaining complex logic * Clarifying assumptions * Warning about edge cases\n\nFunctions * Parameters and their types * Return values * Example usage * Side effects"
+    "text": "Code Comments\n\nFlavors of code comments\nHeaders\n\nDescribe file’s purpose, author, and date created/modified\n\nInline\n\nExplain complex logic, clarify assumptions, warn about edge cases\n\nFunction\n\nPurpose, parameters, and return values of functions"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#code-style",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#code-style",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Code Style\n\nReadability → Comprehension → Reproducibility\n\nConsistency is key! (Just like workflow folder organization)\n\nKey considerations:\n\nObject naming conventions\nSpacing and layout\nWriting and calling functions\nComments!"
+    "text": "Code Style\n\nReadability → Comprehension → Reproducibility\nConsistency is key! (Just like workflow folder organization)\nKey considerations:\n\nObject naming conventions\nSpacing and layout\nWriting and calling functions\nComments!"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#documentation-scavenger-hunt",
+    "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#documentation-scavenger-hunt",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Documentation Scavenger Hunt\n\nInstructions\n\nForm groups of 3\nPick a published repository from yesterday\n\n\nhttps://github.com/kelpecosystems/global_kelp_time_series\nhttps://github.com/bencecc/ReefFishStability/tree/v1\nhttps://github.com/NCEAS/ca-mpa\n\n\nFind examples of READMEs, comments (header, inline, and function), and coding style in each repo\n\nNote: not every repo will have all of these!\n\nI will call on three groups to share"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#roxygen1",
+    "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#roxygen1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Roxygen\n\nRoxygen is a special commenting system for R functions.\n#' Norm of the jerk vector\n#'\n#' Uses Savitzky-Golay filtering to de-noise before differentiating acceleration\n#'\n#' @param A Tri-axial acceleration (n x 3 matrix)\n#' @param fs Sampling rate (Hz)\n#' @param p Order of Savitzky-Golay filter (3 by default)\n#' @param n Window size of Savitzky-Golay filter (11 by default)\n#'\n#' @return Norm of the jerk vector of A\n#' @export\njerk &lt;- function(A, fs, p = 3, n = 11) {\n  n &lt;- n + 1 - n %% 2\n  apply(A, 2, function(axis) signal::sgolayfilt(axis, p, n, m = 1))\n}"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#roxygen2",
+    "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#roxygen2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Roxygen\n\nRoxygen is a special commenting system for R functions."
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#documentation-recap",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#documentation-recap",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Documentation Recap\n\n\n\nWhy document?\n\nEnables reproduction\nFacilitates collaboration\nReduces future confusion\nSupports knowledge transfer\n\n\nKey documentation types:\n\nREADME files\nCode comments\nConsistent style\nStructured frameworks"
+    "text": "Documentation Recap\n\n\n\nWhy document?\n\nFacilitates collaboration\nSupports knowledge transfer\nPrevents nasty, horrible, awful headaches\n\n\nKey documentation types:\n\nREADMEs\nCode comments\nConsistent style"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#title-slide",
@@ -501,7 +564,7 @@
     "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#flukeandfeather-workflow1",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Introducing: The FlukeAndFeather Workflow Organization System™\n\n\nYou have before you a shuffled collection of folders and files\nYou have no context other than their names\nWith a partner, try to:\n\nOrganize the folders and files hierarchically\nBriefly describe what you think the purpose of each folder/file is\nUse the two blank cards to add two files to the project\n\nWe will discuss your results in groups"
+    "text": "Introducing: The FlukeAndFeather Workflow Organization System™\n\n\nYou have before you a shuffled collection of folders and files\nYou have no context other than their names\nIn trios, try to:\n\nOrganize the folders and files hierarchically\nBriefly describe what you think the purpose of each folder/file is\nUse the two blank cards to add two files to the project\n\nWe will discuss your results in groups"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#flukeandfeather-workflow2",
@@ -681,30 +744,30 @@
   {
     "objectID": "course-materials/day5.html",
     "href": "course-materials/day5.html",
-    "title": "TODO: fixme",
+    "title": "Final project self-assessment and peer feedback",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
+    "text": "No lectures today! All interactive sessions.\n\n\n\n Session\n Interactive session\n Interactive session\n Reflection\n\n\n\n\nMorning\nMeet your next instructor\nFinal project submission\nMorning reflection\n\n\nAfternoon\nInstructor feedback\nOpen working time\nAfternoon reflection"
   },
   {
     "objectID": "course-materials/day5.html#class-materials",
     "href": "course-materials/day5.html#class-materials",
-    "title": "TODO: fixme",
+    "title": "Final project self-assessment and peer feedback",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nTODO: fixme\nTODO: fixme\nTODO: fixme\n\n\nAfternoon\nTODO: fixme\nTODO: fixme\nTODO: fixme"
+    "text": "No lectures today! All interactive sessions.\n\n\n\n Session\n Interactive session\n Interactive session\n Reflection\n\n\n\n\nMorning\nMeet your next instructor\nFinal project submission\nMorning reflection\n\n\nAfternoon\nInstructor feedback\nOpen working time\nAfternoon reflection"
   },
   {
     "objectID": "course-materials/day3.html",
     "href": "course-materials/day3.html",
     "title": "Git and GitHub for Workflows",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nVersion control with git\nGit branching\nGo with the flow\n\n\nAfternoon\nCollaboration with GitHub\nRefactor a function\nExploration and iteration"
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nVersion control with git\nGit branching\nMorning reflection\n\n\nAfternoon\nCollaboration with GitHub\nRefactor a function\nAfternoon reflection"
   },
   {
     "objectID": "course-materials/day3.html#class-materials",
     "href": "course-materials/day3.html#class-materials",
     "title": "Git and GitHub for Workflows",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nVersion control with git\nGit branching\nGo with the flow\n\n\nAfternoon\nCollaboration with GitHub\nRefactor a function\nExploration and iteration"
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nVersion control with git\nGit branching\nMorning reflection\n\n\nAfternoon\nCollaboration with GitHub\nRefactor a function\nAfternoon reflection"
   },
   {
     "objectID": "course-materials/day3.html#further-reading",
@@ -718,14 +781,14 @@
     "href": "course-materials/day1.html",
     "title": "Workflows and reproducibility",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nPlan an analysis\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nMake spaghetti\nExploration and iteration"
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nPlan an analysis\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nMake spaghetti\nCourse goals"
   },
   {
     "objectID": "course-materials/day1.html#class-materials",
     "href": "course-materials/day1.html#class-materials",
     "title": "Workflows and reproducibility",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nPlan an analysis\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nMake spaghetti\nExploration and iteration"
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nReproducible workflows\nPlan an analysis\nGo with the flow\n\n\nAfternoon\nWorkflow organization\nMake spaghetti\nCourse goals"
   },
   {
     "objectID": "course-materials/day1.html#further-reading",
@@ -1082,35 +1145,35 @@
     "href": "course-materials/day2.html",
     "title": "Command Line and Documentation",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nCommand line and remote server\nNavigate the server\nGo with the flow\n\n\nAfternoon\nDocumentation\nREADMEs, style, and comments\nExploration and iteration"
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nCommand line and remote server\nNavigate the server\nServer vs local\n\n\nAfternoon\nDocumentation\nREADMEs, style, and comments\nCourse support"
   },
   {
     "objectID": "course-materials/day2.html#class-materials",
     "href": "course-materials/day2.html#class-materials",
     "title": "Command Line and Documentation",
     "section": "",
-    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nCommand line and remote server\nNavigate the server\nGo with the flow\n\n\nAfternoon\nDocumentation\nREADMEs, style, and comments\nExploration and iteration"
+    "text": "Session\n Lecture slides\n Interactive session\n Reflection\n\n\n\n\nMorning\nCommand line and remote server\nNavigate the server\nServer vs local\n\n\nAfternoon\nDocumentation\nREADMEs, style, and comments\nCourse support"
   },
   {
     "objectID": "course-materials/day2.html#further-reading",
     "href": "course-materials/day2.html#further-reading",
     "title": "Command Line and Documentation",
     "section": "Further reading",
-    "text": "Further reading\n\nStoudt, Vásquez, and Martinez (2021) describe how analytical workflows evolve, what they look like in the end, and how they’re necessary for data-intensive science.\nLowndes et al. (2017) present a case study on their own team-based research. They show how an emphasis on reproducibility improves efficiency as well as transparency."
+    "text": "Further reading\n\nMarwick, Boettiger, and Mullen (2018) describe a system for creating a research compendium (a single archive of data, code, results, and manuscript) using R. They provide multiple examples of how to document code and data.\nSalmon (2023) digs deeper into what does (and doesn’t) make for a good comment."
   },
   {
     "objectID": "course-materials/day4.html",
     "href": "course-materials/day4.html",
     "title": "Final project self-assessment and peer feedback",
     "section": "",
-    "text": "No lectures today! All interactive sessions.\n\n\n\n Session\n Interactive session\n Interactive session\n Reflection\n\n\n\n\nMorning\nDraft Quarto analysis\nSelf assessment\nGo with the flow\n\n\nAfternoon\nPeer feedback and contribution\nOpen working time\nExploration and iteration"
+    "text": "No lectures today! All interactive sessions.\n\n\n\n Session\n Interactive session\n Interactive session\n Reflection\n\n\n\n\nMorning\nDraft Quarto analysis\nSelf assessment\nMorning reflection\n\n\nAfternoon\nPeer feedback and contribution\nOpen working time\nAfternoon reflection"
   },
   {
     "objectID": "course-materials/day4.html#class-materials",
     "href": "course-materials/day4.html#class-materials",
     "title": "Final project self-assessment and peer feedback",
     "section": "",
-    "text": "No lectures today! All interactive sessions.\n\n\n\n Session\n Interactive session\n Interactive session\n Reflection\n\n\n\n\nMorning\nDraft Quarto analysis\nSelf assessment\nGo with the flow\n\n\nAfternoon\nPeer feedback and contribution\nOpen working time\nExploration and iteration"
+    "text": "No lectures today! All interactive sessions.\n\n\n\n Session\n Interactive session\n Interactive session\n Reflection\n\n\n\n\nMorning\nDraft Quarto analysis\nSelf assessment\nMorning reflection\n\n\nAfternoon\nPeer feedback and contribution\nOpen working time\nAfternoon reflection"
   },
   {
     "objectID": "course-materials/final-project/final-project-peer-review.html",
@@ -1132,6 +1195,13 @@
     "title": "Final Project Peer Feedback and Contribution",
     "section": "Instructions",
     "text": "Instructions\n\nPeer feedback\n\nCreate a peer review conga line. Everyone should give and receive feedback from different students.\nFork the repo of the student you’re giving feedback to. Clone it on your computer.\nCreate a markdown file in your forked repo called peer-assessment.md.\nAs with the self assessment, create one header for each category of specs (except Collaboration) and a subheader for each individual spec.\nFor each spec, assess your peer’s work as Not yet or Meets spec. In one to two sentences, explain your assessment.\n\nFor each spec you assess as Not yet, open an Issue on your peer’s GitHub repo describing what you think they could do to meet the spec.\nIf you think every spec has been met, open an Issue describing what you think they could do to Exceed an eligible spec.\n\nCommit your changes and push to GitHub.\nOpen a pull request. Tag my username (@FlukeAndFeather) in the description of the pull request so I get a notification about it.\nWhen you receive your reviewer’s pull request, read their feedback and merge it.\n\n\n\nPeer contribution\nThis will be very similar to the last part, but instead of opening issues you’re going to be closing them by making contributions. Contributions can be code, but they can also be documentation or organization.\n\nCreate a peer contribution conga line. Everyone should give and receive contributions from different students.\nFork the repo of the student you’re contributing to. Clone it on your computer.\nChoose an Issue in their repo you can contribute to.\nLet’s say you chose an Issue about documenting a function.\nRespond to the Issue with a plan for how you’ll contribute.\nYou could describe the function’s parameters, return value, and internal logic.\nMake changes in your local repo. Commit and push.\nAdd comments to the function providing proper documentation.\nOpen a Pull request on GitHub.\nWhen you receive the Pull request from your contributor, review their changes. This can be a conversation! If appropriate, reply with revisions you’d like to see. Otherwise, merge the Pull request."
+  },
+  {
+    "objectID": "course-materials/final-project/final-project-peer-review.html#recap",
+    "href": "course-materials/final-project/final-project-peer-review.html#recap",
+    "title": "Final Project Peer Feedback and Contribution",
+    "section": "Recap",
+    "text": "Recap\nIn this session, you performed two important workflow collaboration tasks.\nFirst, you provided feedback to one of your peers on their work. Today, you had a rubric of specs to work from. In the future, it’ll be up to you consider what the specs for the work should be!\nSecond, you made a contribution to one of your peer’s projects using Fork/Pull request. This is the preferred method for contributing to distributed projects on GitHub because it allows data scientists to work in parallel, and makes it easier to review and merge changes by multiple authors. We recommend you use Fork/Pull request for your Capstone projects."
   },
   {
     "objectID": "course-materials/final-project/final-project-submission.html",
@@ -1187,7 +1257,7 @@
     "href": "course-materials/interactive/interactive-day1am.html#instructions",
     "title": "Plan an Analysis",
     "section": "Instructions",
-    "text": "Instructions\n\nSetup\n\nCreate a new RStudio project.\nCreate a GitHub repo.\nDownload the data from McDowell and International Institute Of Tropical Forestry (IITF) (2024) and put it in your project folder.\nMake an initial commit and push to GitHub.\n\n\n\nExplore\n\nExamine figure 3 of Schaefer et al. (2000) and the data available at McDowell and International Institute Of Tropical Forestry (IITF) (2024).\nMake a list of the data files and the columns within them that you think you’ll need to reproduce figure 3.\n\n\n\n\n\n\n\nTip\n\n\n\nCheck the metadata in McDowell and International Institute Of Tropical Forestry (IITF) (2024) carefully. Are the names and units what you expect? It’s been 25 years since Schaefer et al. (2000) was published - a lot can change in that time!\n\n\n\n\n\n\n\n\nTip\n\n\n\nIt may be helpful to read a CSV file into R and explore it using numeric or visual summaries.\n\n\n\n\nPlan\n\nBased on the caption of figure 3, write down the steps you think will be necessary to reproduce figure 3.\nCreate a flow chart of how the steps fit together. Things to consider include:\n\nHow will you get the data into R?\nHow will you clean up the data?\nAre any processing or modeling steps required?\nWhat are your outputs?\n\n\n\n\n\n\n\n\nNote\n\n\n\nThe Plan section sneakily asks you to do two things. The first is obvious: make a flowchart. But to make a flowchart, you need to have a system for representing the components of your analysis and their connections. That’s the second thing: come up with your own flowchart system off the cuff. Tomorrow I’ll introduce you to the system I use. For now, give it your best shot!\n\n\n\n\nShare\n\nFind a partner.\nCompare your flowcharts.\nFind two similarities and two differences between your flowcharts and make note of them. To get you started, try considering:\n\nWhere did you include more or less detail?\nHow did you visually represent components and connections?\n\n\nI will call on two pairs to share."
+    "text": "Instructions\n\nSetup\n\nCreate a new RStudio project.\nCreate a GitHub repo.\nDownload the data from McDowell and International Institute Of Tropical Forestry (IITF) (2024) and put it in your project folder.\nMake an initial commit and push to GitHub.\n\n\n\nExplore\n\nExamine figure 3 of Schaefer et al. (2000) and the data available at McDowell and International Institute Of Tropical Forestry (IITF) (2024).\nMake a list of the data files and the columns within them that you think you’ll need to reproduce figure 3.\n\n\n\n\n\n\n\nTip\n\n\n\nCheck the metadata in McDowell and International Institute Of Tropical Forestry (IITF) (2024) carefully. Are the names and units what you expect? It’s been 25 years since Schaefer et al. (2000) was published - a lot can change in that time!\n\n\n\n\n\n\n\n\nTip\n\n\n\nIt may be helpful to read a CSV file into R and explore it using numeric or visual summaries.\n\n\n\n\nPlan\n\nBased on the caption of figure 3, write down the steps you think will be necessary to reproduce figure 3.\nCreate a flow chart of how the steps fit together. Things to consider include:\n\nHow will you get the data into R?\nHow will you clean up the data?\nAre any processing or modeling steps required?\nWhat are your outputs?\n\n\n\n\nShare\n\nFind a partner.\nCompare your flowcharts.\nFind two similarities and two differences between your flowcharts and make note of them. To get you started, try considering:\n\nWhere did you include more or less detail?\nHow did you visually represent components and connections?\n\n\nI will call on two pairs to share."
   },
   {
     "objectID": "course-materials/interactive/interactive-day2am.html",
@@ -1355,7 +1425,7 @@
     "href": "course-materials/lecture-slides/lecture-day2am-slides.html#key-shell-commands",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Key shell commands\n\n\n\nNavigation & File System\n\npwd - know where you are\nls (with -l, -a flags) - see what’s there\ncd - move around (including cd ~, cd .., cd -)\nmkdir - create directories\nrmdir - remove directories (only if empty)\n\n\nFile Operations\n\ntouch - create files\ncp - copy files/directories\nmv - move/rename files\nrm - delete files (no recycle bin!)\ncat - view file contents"
+    "text": "Key shell commands\n\n\n\nNavigation & File System\n\npwd - know where you are\nls (with -l, -a flags) - see what’s there\ncd - move around (including cd ~, cd ..)\nmkdir - create directories\nrmdir - remove directories (only if empty)\n\n\nFile Operations\n\ntouch - create files\ncp - copy files/directories\nmv - move/rename files\nrm - delete files (no recycle bin!)\ncat - view file contents"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#customizing-commands",
@@ -1601,40 +1671,5 @@
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
     "text": "You can arrange content in columns\n\n\n\nLearn more about the MEDS program on the Bren website."
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day3pm-slides.html#break-it",
-    "href": "course-materials/lecture-slides/lecture-day3pm-slides.html#break-it",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "But what if I break it?\n\n\n\nBowie is an environmental data scientist working on an analysis of pollution in local watersheds.\nShe manages her project in a GitHub repository, using Issues to track tasks and Pages to share her results with collaborators.\nHer two collaborators are Iggy and Nomi.\n\nIggy found a bug in Bowie’s data pre-processing step and asked her to fix it.\nNomi is busy with other projects and hasn’t had a chance to look at the Pages site yet.\n\nBowie is worried that while she’s fixing the bug Iggy found she might temporarily break the Pages site, which would delay Nomi’s input on the project.\n\nWhat should Bowie do to address Iggy’s bug while keeping the Pages site working for Nomi?"
-  },
-  {
-    "objectID": "course-materials/final-project/final-project-peer-review.html#recap",
-    "href": "course-materials/final-project/final-project-peer-review.html#recap",
-    "title": "Final Project Peer Feedback and Contribution",
-    "section": "Recap",
-    "text": "Recap\nIn this session, you performed two important workflow collaboration tasks.\nFirst, you provided feedback to one of your peers on their work. Today, you had a rubric of specs to work from. In the future, it’ll be up to you consider what the specs for the work should be!\nSecond, you made a contribution to one of your peer’s projects using Fork/Pull request. This is the preferred method for contributing to distributed projects on GitHub because it allows data scientists to work in parallel, and makes it easier to review and merge changes by multiple authors. We recommend you use Fork/Pull request for your Capstone projects."
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Course schedule\n\n\n\n\n\n\n\n\n\n\n\nMonday\n\n\nTuesday\n\n\nWednesday\n\n\nThursday\n\n\nFriday\n\n\n\n\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\n\n\nAM\n\n\nReproducible workflows\n\n\nPlan an analysis\n\n\nCommand line and remote server\n\n\nNavigate the server\n\n\nVersion control with git\n\n\ngit branching\n\n\nDraft Quarto analysis\n\n\nSelf assessment\n\n\nMeet your next instructor\n\n\nFinal project submission\n\n\n\n\nPM\n\n\nWorkflow organization\n\n\nMake spaghetti\n\n\nDocumen-tation\n\n\nREADMEs, comments, and style\n\n\nCollaboration with GitHub\n\n\nRefactor a function\n\n\nPeer feedback and contributions\n\n\nOpen work time\n\n\nInstructor feedback\n\n\nProject wrap-up"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule1",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule1",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Course schedule\n\n\n\n\n\n\n\n\n\n\n\nMonday\n\n\nTuesday\n\n\nWednesday\n\n\nThursday\n\n\nFriday\n\n\n\n\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\n\n\nAM\n\n\nReproducible workflows\n\n\nPlan an analysis\n\n\nCommand line and remote server\n\n\nNavigate the server\n\n\nVersion control with git\n\n\ngit branching\n\n\nDraft Quarto analysis\n\n\nSelf assessment\n\n\nMeet your next instructor\n\n\nFinal project submission\n\n\n\n\nPM\n\n\nWorkflow organization\n\n\nMake spaghetti\n\n\nDocumen-tation\n\n\nREADMEs, comments, and style\n\n\nCollaboration with GitHub\n\n\nRefactor a function\n\n\nPeer feedback and contributions\n\n\nOpen work time\n\n\nInstructor feedback\n\n\nProject wrap-up"
-  },
-  {
-    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule2",
-    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule2",
-    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
-    "section": "",
-    "text": "Course schedule\n\n\n\n\n\n\n\n\n\n\n\nMonday\n\n\nTuesday\n\n\nWednesday\n\n\nThursday\n\n\nFriday\n\n\n\n\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\nLecture\n\n\nInteractive\n\n\n\n\nAM\n\n\nReproducible workflows\n\n\nPlan an analysis\n\n\nCommand line and remote server\n\n\nNavigate the server\n\n\nVersion control with git\n\n\ngit branching\n\n\nDraft Quarto analysis\n\n\nSelf assessment\n\n\nMeet your next instructor\n\n\nFinal project submission\n\n\n\n\nPM\n\n\nWorkflow organization\n\n\nMake spaghetti\n\n\nDocumen-tation\n\n\nREADMEs, comments, and style\n\n\nCollaboration with GitHub\n\n\nRefactor a function\n\n\nPeer feedback and contributions\n\n\nOpen work time\n\n\nInstructor feedback\n\n\nProject wrap-up"
   }
 ]

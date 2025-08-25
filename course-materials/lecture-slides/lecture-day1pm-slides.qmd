@@ -207,7 +207,7 @@ You should be able to share your analysis methods and results with others
 
 -   You have before you a shuffled collection of folders and files
 -   You have *no context* other than their names
--   With a partner, try to:
+-   In trios, try to:
     -   Organize the folders and files hierarchically
     -   Briefly describe what you think the purpose of each folder/file is
     -   Use the two blank cards to add two files to the project

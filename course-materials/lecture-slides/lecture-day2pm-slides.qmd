@@ -27,9 +27,13 @@ bibliography: references.bib
 
 <hr>
 
+:::{.body-text-m}
+
 * The importance of documentation for reproducibility
 * The target _audiences_ for different types of documentation
 * How to use **READMEs**, **code comments**, and **code style** to document your workflow
+
+:::
 
 ---
 
@@ -39,12 +43,16 @@ bibliography: references.bib
 
 <hr>
 
-**Step 1: Build (in pairs)**
+[Step 1: Build (in pairs)]{.body-text-l}
+
+:::{.body-text-m}
 
 * Form pairs and receive LEGOs
 * Each pair builds a LEGO structure. Get weird with it!
 * Take a picture of the _finished product_
 * Destroy the LEGO structure
+
+:::
 
 ---
 
@@ -54,11 +62,15 @@ bibliography: references.bib
 
 <hr>
 
-**Step 2: Copy (in pairs)**
+[Step 2: Copy (in pairs)]{.body-text-l}
+
+:::{.body-text-m}
 
 * Switch LEGOs and pictures with another pair
 * Try to replicate the structure using only the picture
 * Take notes about challenges encountered
+
+:::
 
 ---
 
@@ -68,11 +80,15 @@ bibliography: references.bib
 
 <hr>
 
-**Step 3: Share (in quads)**
+[Step 3: Share (in quads)]{.body-text-l}
+
+:::{.body-text-m}
 
 * Pairs compare original and finished structures
 * Take notes about what was different
 * Describe 2-3 pieces of documentation that would have helped
+
+:::
 
 ---
 
@@ -82,92 +98,37 @@ bibliography: references.bib
 
 <hr>
 
-**Step 4: Debrief (as a class)**
+[Step 4: Debrief (as a class)]{.body-text-l}
 
-* Draw two axes:
-  * Left-to-right: **Acquisition** to **Application**
-  * Top-to-bottom: **Action** to **Cognition**
-* Place the documentation pieces on the axes
+:::{.body-text-m}
+
+![](images/day2/documentation-audiences.png){height="500"}
+
+:::
 
 ---
 
-## {#diataxis-map data-menu-title="The Diátaxis Map"} 
+## {#documentation-types data-menu-title="Types of Documentation"} 
 
-[The Diátaxis Map]{.slide-title}
-
-<hr>
-
-A framework for structuring documentation into four distinct areas:
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-**Tutorials**
-* Learning-oriented
-* Practical steps
-* Getting started
-
-**How-to guides**
-* Problem-oriented
-* Series of steps
-* Achieving goals
-
-:::
-
-::: {.column width="50%"}
-
-**Reference**
-* Information-oriented
-* Structured information
-* Describing machinery
-
-**Explanation**
-* Understanding-oriented
-* Theoretical knowledge
-* Background and context
-
-:::
-
-::::
-
----
-
-## {#diataxis-application data-menu-title="Applying Diátaxis"} 
-
-[When do you need all four areas?]{.slide-title}
+[Types of Documentation]{.slide-title}
 
 <hr>
 
-:::: {.columns}
+:::{.body-text-m}
 
-::: {.column width="50%"}
+**README**
 
-**A _tool_ needs all four areas**
+> A file that (succintly) describes the project and how it works.
 
-* Comprehensive documentation
-* Multiple user types
-* Different levels of expertise
-* Long-term maintenance
+**Comments**
 
-:::
+> Annotations within the code to explain _why_.
 
-::: {.column width="50%"}
+**Code style**
 
-**An _analysis_ probably needs a subset**
-
-* Specific audience
-* Limited scope
-* Focused purpose
-* Time constraints
+> A consistent format for writing code, including naming conventions and structure.
 
 :::
-
-::::
-
-<br>
-
-**Think-pair-share:** Why might this be the case?
 
 ---
 
@@ -177,9 +138,9 @@ A framework for structuring documentation into four distinct areas:
 
 <hr>
 
-**Core elements required for all MEDS-related homework assignments and projects:**
+[Typical README contents]{.body-text-l}
 
-1. A short, but descriptive title 
+1. A short, but descriptive, title 
 2. A brief explanation of the repository's purpose
 3. A concise description of what's housed in the repository
 4. Details regarding data access
@@ -194,35 +155,19 @@ A framework for structuring documentation into four distinct areas:
 
 <hr>
 
-**Types of comments:**
-
-:::: {.columns}
-
-::: {.column width="50%"}
+[Flavors of code comments]{.body-text-l}
 
 **Headers**
-* File purpose
-* Author information
-* Date created/modified
+
+> Describe file's purpose, author, and date created/modified
 
 **Inline**
-* Explaining complex logic
-* Clarifying assumptions
-* Warning about edge cases
 
-:::
+> Explain complex logic, clarify assumptions, warn about edge cases
 
-::: {.column width="50%"}
+**Function**
 
-**Functions**
-* Parameters and their types
-* Return values
-* Example usage
-* Side effects
-
-:::
-
-::::
+> Purpose, parameters, and return values of functions
 
 ---
 
@@ -232,13 +177,9 @@ A framework for structuring documentation into four distinct areas:
 
 <hr>
 
-**Readability → Comprehension → Reproducibility**
-
-<br>
+[Readability → Comprehension → Reproducibility]{.body-text-l}
 
 **Consistency is key!** (Just like workflow folder organization)
-
-<br>
 
 **Key considerations:**
 
@@ -246,6 +187,70 @@ A framework for structuring documentation into four distinct areas:
 * Spacing and layout
 * Writing and calling functions
 * Comments!
+
+---
+
+## {#documentation-scavenger-hunt data-menu-title="Documentation Scavenger Hunt"} 
+
+[Documentation Scavenger Hunt]{.slide-title}
+
+<hr>
+
+[Instructions]{.body-text-l}
+
+1. Form groups of 3
+
+2. Pick a published repository from yesterday
+
+-   <https://github.com/kelpecosystems/global_kelp_time_series>
+-   <https://github.com/bencecc/ReefFishStability/tree/v1>
+-   <https://github.com/NCEAS/ca-mpa>
+
+3. Find examples of READMEs, comments (header, inline, and function), and coding style in each repo
+
+**Note: not every repo will have all of these!**
+
+4. I will call on three groups to share
+
+---
+
+## {#roxygen1 data-menu-title="Roxygen"} 
+
+[Roxygen]{.slide-title}
+
+<hr>
+
+Roxygen is a special commenting system for R functions.
+
+```r
+#' Norm of the jerk vector
+#'
+#' Uses Savitzky-Golay filtering to de-noise before differentiating acceleration
+#'
+#' @param A Tri-axial acceleration (n x 3 matrix)
+#' @param fs Sampling rate (Hz)
+#' @param p Order of Savitzky-Golay filter (3 by default)
+#' @param n Window size of Savitzky-Golay filter (11 by default)
+#'
+#' @return Norm of the jerk vector of A
+#' @export
+jerk <- function(A, fs, p = 3, n = 11) {
+  n <- n + 1 - n %% 2
+  apply(A, 2, function(axis) signal::sgolayfilt(axis, p, n, m = 1))
+}
+```
+
+---
+
+## {#roxygen2 data-menu-title="Roxygen"} 
+
+[Roxygen]{.slide-title}
+
+<hr>
+
+Roxygen is a special commenting system for R functions.
+
+![](images/day2/function-doc.png){height="500"}
 
 ---
 
@@ -261,10 +266,9 @@ A framework for structuring documentation into four distinct areas:
 
 **Why document?**
 
-* Enables reproduction
 * Facilitates collaboration
-* Reduces future confusion
 * Supports knowledge transfer
+* Prevents nasty, horrible, awful headaches
 
 :::
 
@@ -272,10 +276,9 @@ A framework for structuring documentation into four distinct areas:
 
 **Key documentation types:**
 
-* README files
+* READMEs
 * Code comments
 * Consistent style
-* Structured frameworks
 
 :::
 

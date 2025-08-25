@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #767676;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #767676;  padding-left: 4px; }
+    div.sourceCode
+      { color: #545454; background-color: #fefefe; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #545454; } /* Normal */
+    code span.al { color: #7928a1; } /* Alert */
+    code span.an { color: #696969; } /* Annotation */
+    code span.at { color: #a55a00; } /* Attribute */
+    code span.bn { color: #7928a1; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #d91e18; } /* ControlFlow */
+    code span.ch { color: #008000; } /* Char */
+    code span.cn { color: #d91e18; } /* Constant */
+    code span.co { color: #696969; } /* Comment */
+    code span.cv { color: #696969; font-style: italic; } /* CommentVar */
+    code span.do { color: #696969; font-style: italic; } /* Documentation */
+    code span.dt { color: #7928a1; } /* DataType */
+    code span.dv { color: #7928a1; } /* DecVal */
+    code span.er { color: #7928a1; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #a55a00; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #696969; } /* Information */
+    code span.kw { color: #d91e18; } /* Keyword */
+    code span.op { color: #00769e; } /* Operator */
+    code span.ot { color: #d91e18; } /* Other */
+    code span.pp { color: #7928a1; } /* Preprocessor */
+    code span.sc { color: #00769e; } /* SpecialChar */
+    code span.ss { color: #008000; } /* SpecialString */
+    code span.st { color: #008000; } /* String */
+    code span.va { color: #a55a00; } /* Variable */
+    code span.vs { color: #008000; } /* VerbatimString */
+    code span.wa { color: #696969; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -339,108 +404,89 @@
 <h2></h2>
 <p><span class="slide-title">This afternoon, you’ll learn:</span></p>
 <hr>
+<div class="body-text-m">
 <ul>
 <li>The importance of documentation for reproducibility</li>
 <li>The target <em>audiences</em> for different types of documentation</li>
 <li>How to use <strong>READMEs</strong>, <strong>code comments</strong>, and <strong>code style</strong> to document your workflow</li>
 </ul>
+</div>
 </section>
 <section id="lego-activity" class="slide level2" data-menu-title="LEGO Blueprints Activity">
 <h2></h2>
 <p><span class="slide-title">LEGO Blueprints Activity</span></p>
 <hr>
-<p><strong>Step 1: Build (in pairs)</strong></p>
+<p><span class="body-text-l">Step 1: Build (in pairs)</span></p>
+<div class="body-text-m">
 <ul>
 <li>Form pairs and receive LEGOs</li>
 <li>Each pair builds a LEGO structure. Get weird with it!</li>
 <li>Take a picture of the <em>finished product</em></li>
 <li>Destroy the LEGO structure</li>
 </ul>
+</div>
 </section>
 <section id="lego-copy" class="slide level2" data-menu-title="LEGO Copy">
 <h2></h2>
 <p><span class="slide-title">LEGO Blueprints Activity</span></p>
 <hr>
-<p><strong>Step 2: Copy (in pairs)</strong></p>
+<p><span class="body-text-l">Step 2: Copy (in pairs)</span></p>
+<div class="body-text-m">
 <ul>
 <li>Switch LEGOs and pictures with another pair</li>
 <li>Try to replicate the structure using only the picture</li>
 <li>Take notes about challenges encountered</li>
 </ul>
+</div>
 </section>
 <section id="lego-share" class="slide level2" data-menu-title="LEGO Share">
 <h2></h2>
 <p><span class="slide-title">LEGO Blueprints Activity</span></p>
 <hr>
-<p><strong>Step 3: Share (in quads)</strong></p>
+<p><span class="body-text-l">Step 3: Share (in quads)</span></p>
+<div class="body-text-m">
 <ul>
 <li>Pairs compare original and finished structures</li>
 <li>Take notes about what was different</li>
 <li>Describe 2-3 pieces of documentation that would have helped</li>
 </ul>
+</div>
 </section>
 <section id="lego-debrief" class="slide level2" data-menu-title="LEGO Debrief">
 <h2></h2>
 <p><span class="slide-title">LEGO Blueprints Activity</span></p>
 <hr>
-<p><strong>Step 4: Debrief (as a class)</strong></p>
-<ul>
-<li>Draw two axes:
-<ul>
-<li>Left-to-right: <strong>Acquisition</strong> to <strong>Application</strong></li>
-<li>Top-to-bottom: <strong>Action</strong> to <strong>Cognition</strong></li>
-</ul></li>
-<li>Place the documentation pieces on the axes</li>
-</ul>
-</section>
-<section id="diataxis-map" class="slide level2" data-menu-title="The Diátaxis Map">
-<h2></h2>
-<p><span class="slide-title">The Diátaxis Map</span></p>
-<hr>
-<p>A framework for structuring documentation into four distinct areas:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Tutorials</strong> * Learning-oriented * Practical steps * Getting started</p>
-<p><strong>How-to guides</strong> * Problem-oriented * Series of steps * Achieving goals</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Reference</strong> * Information-oriented * Structured information * Describing machinery</p>
-<p><strong>Explanation</strong> * Understanding-oriented * Theoretical knowledge * Background and context</p>
-</div>
+<p><span class="body-text-l">Step 4: Debrief (as a class)</span></p>
+<div class="body-text-m">
+<p><img data-src="images/day2/documentation-audiences.png" height="500"></p>
 </div>
 </section>
-<section id="diataxis-application" class="slide level2" data-menu-title="Applying Diátaxis">
+<section id="documentation-types" class="slide level2" data-menu-title="Types of Documentation">
 <h2></h2>
-<p><span class="slide-title">When do you need all four areas?</span></p>
+<p><span class="slide-title">Types of Documentation</span></p>
 <hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>A <em>tool</em> needs all four areas</strong></p>
-<ul>
-<li>Comprehensive documentation</li>
-<li>Multiple user types</li>
-<li>Different levels of expertise</li>
-<li>Long-term maintenance</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>An <em>analysis</em> probably needs a subset</strong></p>
-<ul>
-<li>Specific audience</li>
-<li>Limited scope</li>
-<li>Focused purpose</li>
-<li>Time constraints</li>
-</ul>
+<div class="body-text-m">
+<p><strong>README</strong></p>
+<blockquote>
+<p>A file that (succintly) describes the project and how it works.</p>
+</blockquote>
+<p><strong>Comments</strong></p>
+<blockquote>
+<p>Annotations within the code to explain <em>why</em>.</p>
+</blockquote>
+<p><strong>Code style</strong></p>
+<blockquote>
+<p>A consistent format for writing code, including naming conventions and structure.</p>
+</blockquote>
 </div>
-</div>
-<p><br></p>
-<p><strong>Think-pair-share:</strong> Why might this be the case?</p>
 </section>
 <section id="readme-documentation" class="slide level2" data-menu-title="README Documentation">
 <h2></h2>
 <p><span class="slide-title">README Documentation</span></p>
 <hr>
-<p><strong>Core elements required for all MEDS-related homework assignments and projects:</strong></p>
+<p><span class="body-text-l">Typical README contents</span></p>
 <ol type="1">
-<li>A short, but descriptive title</li>
+<li>A short, but descriptive, title</li>
 <li>A brief explanation of the repository’s purpose</li>
 <li>A concise description of what’s housed in the repository</li>
 <li>Details regarding data access</li>
@@ -452,24 +498,26 @@
 <h2></h2>
 <p><span class="slide-title">Code Comments</span></p>
 <hr>
-<p><strong>Types of comments:</strong></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Headers</strong> * File purpose * Author information * Date created/modified</p>
-<p><strong>Inline</strong> * Explaining complex logic * Clarifying assumptions * Warning about edge cases</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Functions</strong> * Parameters and their types * Return values * Example usage * Side effects</p>
-</div>
-</div>
+<p><span class="body-text-l">Flavors of code comments</span></p>
+<p><strong>Headers</strong></p>
+<blockquote>
+<p>Describe file’s purpose, author, and date created/modified</p>
+</blockquote>
+<p><strong>Inline</strong></p>
+<blockquote>
+<p>Explain complex logic, clarify assumptions, warn about edge cases</p>
+</blockquote>
+<p><strong>Function</strong></p>
+<blockquote>
+<p>Purpose, parameters, and return values of functions</p>
+</blockquote>
 </section>
 <section id="code-style" class="slide level2" data-menu-title="Code Style">
 <h2></h2>
 <p><span class="slide-title">Code Style</span></p>
 <hr>
-<p><strong>Readability → Comprehension → Reproducibility</strong></p>
-<p><br></p>
+<p><span class="body-text-l">Readability → Comprehension → Reproducibility</span></p>
 <p><strong>Consistency is key!</strong> (Just like workflow folder organization)</p>
-<p><br></p>
 <p><strong>Key considerations:</strong></p>
 <ul>
 <li>Object naming conventions</li>
@@ -477,6 +525,56 @@
 <li>Writing and calling functions</li>
 <li>Comments!</li>
 </ul>
+</section>
+<section id="documentation-scavenger-hunt" class="slide level2" data-menu-title="Documentation Scavenger Hunt">
+<h2></h2>
+<p><span class="slide-title">Documentation Scavenger Hunt</span></p>
+<hr>
+<p><span class="body-text-l">Instructions</span></p>
+<ol type="1">
+<li><p>Form groups of 3</p></li>
+<li><p>Pick a published repository from yesterday</p></li>
+</ol>
+<ul>
+<li><a href="https://github.com/kelpecosystems/global_kelp_time_series" class="uri">https://github.com/kelpecosystems/global_kelp_time_series</a></li>
+<li><a href="https://github.com/bencecc/ReefFishStability/tree/v1" class="uri">https://github.com/bencecc/ReefFishStability/tree/v1</a></li>
+<li><a href="https://github.com/NCEAS/ca-mpa" class="uri">https://github.com/NCEAS/ca-mpa</a></li>
+</ul>
+<ol start="3" type="1">
+<li>Find examples of READMEs, comments (header, inline, and function), and coding style in each repo</li>
+</ol>
+<p><strong>Note: not every repo will have all of these!</strong></p>
+<ol start="4" type="1">
+<li>I will call on three groups to share</li>
+</ol>
+</section>
+<section id="roxygen1" class="slide level2" data-menu-title="Roxygen">
+<h2></h2>
+<p><span class="slide-title">Roxygen</span></p>
+<hr>
+<p>Roxygen is a special commenting system for R functions.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co">#' Norm of the jerk vector</span></span>
+<span id="cb1-2"><a></a><span class="co">#'</span></span>
+<span id="cb1-3"><a></a><span class="co">#' Uses Savitzky-Golay filtering to de-noise before differentiating acceleration</span></span>
+<span id="cb1-4"><a></a><span class="co">#'</span></span>
+<span id="cb1-5"><a></a><span class="co">#' @param A Tri-axial acceleration (n x 3 matrix)</span></span>
+<span id="cb1-6"><a></a><span class="co">#' @param fs Sampling rate (Hz)</span></span>
+<span id="cb1-7"><a></a><span class="co">#' @param p Order of Savitzky-Golay filter (3 by default)</span></span>
+<span id="cb1-8"><a></a><span class="co">#' @param n Window size of Savitzky-Golay filter (11 by default)</span></span>
+<span id="cb1-9"><a></a><span class="co">#'</span></span>
+<span id="cb1-10"><a></a><span class="co">#' @return Norm of the jerk vector of A</span></span>
+<span id="cb1-11"><a></a><span class="co">#' @export</span></span>
+<span id="cb1-12"><a></a>jerk <span class="ot">&lt;-</span> <span class="cf">function</span>(A, fs, <span class="at">p =</span> <span class="dv">3</span>, <span class="at">n =</span> <span class="dv">11</span>) {</span>
+<span id="cb1-13"><a></a>  n <span class="ot">&lt;-</span> n <span class="sc">+</span> <span class="dv">1</span> <span class="sc">-</span> n <span class="sc">%%</span> <span class="dv">2</span></span>
+<span id="cb1-14"><a></a>  <span class="fu">apply</span>(A, <span class="dv">2</span>, <span class="cf">function</span>(axis) signal<span class="sc">::</span><span class="fu">sgolayfilt</span>(axis, p, n, <span class="at">m =</span> <span class="dv">1</span>))</span>
+<span id="cb1-15"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="roxygen2" class="slide level2" data-menu-title="Roxygen">
+<h2></h2>
+<p><span class="slide-title">Roxygen</span></p>
+<hr>
+<p>Roxygen is a special commenting system for R functions.</p>
+<p><img data-src="images/day2/function-doc.png" height="500"></p>
 </section>
 <section id="documentation-recap" class="slide level2" data-menu-title="Documentation Recap">
 <h2></h2>
@@ -486,18 +584,16 @@
 <div class="column" style="width:50%;">
 <p><strong>Why document?</strong></p>
 <ul>
-<li>Enables reproduction</li>
 <li>Facilitates collaboration</li>
-<li>Reduces future confusion</li>
 <li>Supports knowledge transfer</li>
+<li>Prevents nasty, horrible, awful headaches</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><strong>Key documentation types:</strong></p>
 <ul>
-<li>README files</li>
+<li>READMEs</li>
 <li>Code comments</li>
 <li>Consistent style</li>
-<li>Structured frameworks</li>
 </ul>
 </div>
 </div>
