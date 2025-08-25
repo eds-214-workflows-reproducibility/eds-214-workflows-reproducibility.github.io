@@ -76,23 +76,26 @@ Keep your eyes peeled for these four components:
 
 ------------------------------------------------------------------------
 
-##  {#workflow-jigsaw-pt1 data-menu-title="Workflow organization jigsaw pt 1"}
+##  {#workflow-jigsaw-1 data-menu-title="Workflow organization jigsaw"}
 
-[Workflow organization jigsaw pt 1]{.slide-title}
+[Workflow organization jigsaw]{.slide-title}
 
 <hr>
 
 ::::: columns
 ::: {.column width="50%"}
+
 -   Count off 1-3
 -   Find 2-3 other students with your same number (i.e., a group with 3 1s, a group with 4 2s, etc.)
--   Each group will look at one of the three workflows above
-    -   <https://github.com/kelpecosystems/global_kelp_time_series>
-    -   <https://github.com/bencecc/ReefFishStability/tree/v1>
-    -   <https://github.com/NCEAS/ca-mpa>
+-   Each group will look at their corresponding workflow
+    1.   <https://github.com/kelpecosystems/global_kelp_time_series>
+    2.   <https://github.com/bencecc/ReefFishStability/tree/v1>
+    3.   <https://github.com/NCEAS/ca-mpa>
+    
 :::
 
 ::: {.column width="50%"}
+
 Try to find the following four components in the workflow:
 
 -   Raw data
@@ -104,18 +107,19 @@ For each component, make a note of:
 
 -   The name of the folder(s) containing it
 -   How you found that component (intuition? documentation? parsing code?)
+
 :::
 :::::
 
 ------------------------------------------------------------------------
 
-##  {#workflow-jigsaw-pt2 data-menu-title="Workflow organization jigsaw pt 2"}
+##  {#workflow-jigsaw-2 data-menu-title="Workflow organization jigsaw"}
 
-[Workflow organization jigsaw pt 2]{.slide-title}
+[Workflow organization jigsaw]{.slide-title}
 
 <hr>
 
--   Now, form groups with one student from each workflow
+-   Form groups with one student _from each workflow_
 -   Each person shares what they found in their workflow
 -   As a group, write down 2 traits of a workflow that make it *easy* and *challenging* to find things (4 traits total)
 -   Provide examples for each

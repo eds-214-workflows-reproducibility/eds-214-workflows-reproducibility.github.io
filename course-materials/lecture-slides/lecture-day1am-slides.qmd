@@ -71,37 +71,7 @@ This is a class about workflows and reproducibility
 
 [**Problem:** Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.]{.fragment}
 
-[**Solution:** Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R]{.fragment}
-
-:::
-::::
-
----
-
-## {#testimonial2 data-menu-title="Reproducible workflows saved my life <3"} 
-
-["Reproducible workflows saved my life <3"]{.slide-title}
-
-<hr>
-
-:::: {.columns}
-::: {.column width="30%"}
-
-![](images/day1/bekahlane.jpg){width="100%" fig-alt="Bekah Lane headshot"}
-
-[Bekah Lane]{.body-text-m}
-
-[Research Associate, Center for Coastal Studies]{.body-text-s}
-
-:::
-::: {.column width="70%"}
-
-
-["It takes more activation energy to 'do it right', but you save yourself loads of time relative to doing it by brute force."]{.fragment}
-
-["In my current job I'm often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects."]{.fragment}
-
-["Collaboration and communication become *a lot* easier when you have your workflow laid out and organized instead of all jumbled in your brain."]{.fragment}
+[**What would you do?**]{.fragment}
 
 :::
 ::::
@@ -295,7 +265,10 @@ The final workflow masks a trajectory of exploration and dead ends
 
 <hr>
 
-![Course schedule for EDS 214 (emphasizing day 1)](images/schedule1.png){width="100%"}
+![Course schedule for EDS 214](images/schedule1.png){width="100%"}
+
+* Introduction to workflows and reproducibility
+* Begin working on your final project!
 
 ---
 
@@ -305,7 +278,10 @@ The final workflow masks a trajectory of exploration and dead ends
 
 <hr>
 
-![Course schedule for EDS 214 (emphasizing day 2)](images/schedule2.png){width="100%"}
+![Course schedule for EDS 214](images/schedule2.png){width="100%"}
+
+* Command line interfaces, remote server (Workbench)
+* Documentation - purpose, audience, flavors
 
 ---
 
@@ -315,7 +291,10 @@ The final workflow masks a trajectory of exploration and dead ends
 
 <hr>
 
-![Course schedule for EDS 214 (emphasizing day 3)](images/schedule3.png){width="100%"}
+![Course schedule for EDS 214](images/schedule3.png){width="100%"}
+
+* Advanced git and GitHub functionality for collaboration
+* Apply what you've learned to your final project
 
 ---
 
@@ -325,7 +304,10 @@ The final workflow masks a trajectory of exploration and dead ends
 
 <hr>
 
-![Course schedule for EDS 214 (emphasizing day 4)](images/schedule4.png){width="100%"}
+![Course schedule for EDS 214](images/schedule4.png){width="100%"}
+
+* Final project drafts completed
+* Self assessment and peer feedback
 
 ---
 
@@ -335,7 +317,69 @@ The final workflow masks a trajectory of exploration and dead ends
 
 <hr>
 
-![Course schedule for EDS 214 (emphasizing day 5)](images/schedule5.png){width="100%"}
+![Course schedule for EDS 214](images/schedule5.png){width="100%"}
+
+* Final project submission and instructor feedback
+* Course wrap up
+
+---
+
+## {#testimonial2 data-menu-title="Reproducible workflows saved my life <3"} 
+
+["Reproducible workflows saved my life <3"]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](images/day1/bekahlane.jpg){width="100%" fig-alt="Bekah Lane headshot"}
+
+[Bekah Lane]{.body-text-m}
+
+[Research Associate, Center for Coastal Studies]{.body-text-s}
+
+:::
+::: {.column width="70%"}
+
+[**Question:** Where are humpbacks in SF Bay most susceptible to ship strikes?]{.fragment}
+
+[**Problem:** Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.]{.fragment}
+
+[**Any new ideas?**]{.fragment}
+
+:::
+::::
+
+---
+
+## {#testimonial3 data-menu-title="Reproducible workflows saved my life <3"} 
+
+["Reproducible workflows saved my life <3"]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="30%"}
+
+![](images/day1/bekahlane.jpg){width="100%" fig-alt="Bekah Lane headshot"}
+
+[Bekah Lane]{.body-text-m}
+
+[Research Associate, Center for Coastal Studies]{.body-text-s}
+
+:::
+::: {.column width="70%"}
+
+
+["It takes more activation energy to 'do it right', but you save yourself loads of time relative to doing it by brute force."]{.fragment}
+
+["In my current job I'm often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects."]{.fragment}
+
+["Collaboration and communication become *a lot* easier when you have your workflow laid out and organized instead of all jumbled in your brain."]{.fragment}
+
+:::
+::::
 
 ---
 

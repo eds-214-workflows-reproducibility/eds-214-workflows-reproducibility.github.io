@@ -67,14 +67,14 @@
     "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial1",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\nQuestion: Where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.\nSolution: Use automation, documentation, and modular design to create a well-organized, reproducible workflow in R"
+    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\nQuestion: Where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.\nWhat would you do?"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial2",
     "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial2",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\n“It takes more activation energy to ‘do it right’, but you save yourself loads of time relative to doing it by brute force.”\n“In my current job I’m often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects.”\n“Collaboration and communication become a lot easier when you have your workflow laid out and organized instead of all jumbled in your brain.”"
+    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\nQuestion: Where are humpbacks in SF Bay most susceptible to ship strikes?\nProblem: Manual, point-and-click solution in ArcGIS is error-prone, slow, and a nightmare to edit with collaborator feedback.\nAny new ideas?"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#meet-max",
@@ -137,35 +137,35 @@
     "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule1",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Course schedule\n\n\nCourse schedule for EDS 214 (emphasizing day 1)"
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214\nIntroduction to workflows and reproducibility\nBegin working on your final project!"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule2",
     "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule2",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Course schedule\n\n\nCourse schedule for EDS 214 (emphasizing day 2)"
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214\nCommand line interfaces, remote server (Workbench)\nDocumentation - purpose, audience, flavors"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule3",
     "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule3",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Course schedule\n\n\nCourse schedule for EDS 214 (emphasizing day 3)"
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214\nAdvanced git and GitHub functionality for collaboration\nApply what you’ve learned to your final project"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule4",
     "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule4",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Course schedule\n\n\nCourse schedule for EDS 214 (emphasizing day 4)"
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214\nFinal project drafts completed\nSelf assessment and peer feedback"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule5",
     "href": "course-materials/lecture-slides/lecture-day1am-slides.html#course-schedule5",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Course schedule\n\n\nCourse schedule for EDS 214 (emphasizing day 5)"
+    "text": "Course schedule\n\n\nCourse schedule for EDS 214\nFinal project submission and instructor feedback\nCourse wrap up"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#works-cited",
@@ -1671,5 +1671,26 @@
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
     "text": "You can arrange content in columns\n\n\n\nLearn more about the MEDS program on the Bren website."
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial3",
+    "href": "course-materials/lecture-slides/lecture-day1am-slides.html#testimonial3",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "“Reproducible workflows saved my life &lt;3”\n\n\n\n\nBekah Lane\nResearch Associate, Center for Coastal Studies\n\n“It takes more activation energy to ‘do it right’, but you save yourself loads of time relative to doing it by brute force.”\n“In my current job I’m often asked to do similar analyses for multiple projects. I can save a lot of time by recycling code between projects.”\n“Collaboration and communication become a lot easier when you have your workflow laid out and organized instead of all jumbled in your brain.”"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-jigsaw-1",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-jigsaw-1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Workflow organization jigsaw\n\n\n\n\nCount off 1-3\nFind 2-3 other students with your same number (i.e., a group with 3 1s, a group with 4 2s, etc.)\nEach group will look at their corresponding workflow\n\nhttps://github.com/kelpecosystems/global_kelp_time_series\nhttps://github.com/bencecc/ReefFishStability/tree/v1\nhttps://github.com/NCEAS/ca-mpa\n\n\n\nTry to find the following four components in the workflow:\n\nRaw data\nCode\nOutputs\nDocumentation\n\nFor each component, make a note of:\n\nThe name of the folder(s) containing it\nHow you found that component (intuition? documentation? parsing code?)"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-jigsaw-2",
+    "href": "course-materials/lecture-slides/lecture-day1pm-slides.html#workflow-jigsaw-2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Workflow organization jigsaw\n\n\nForm groups with one student from each workflow\nEach person shares what they found in their workflow\nAs a group, write down 2 traits of a workflow that make it easy and challenging to find things (4 traits total)\nProvide examples for each\nI will randomly call on a group to share"
   }
 ]
