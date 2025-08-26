@@ -293,6 +293,99 @@ Answer the following questions.
 
 ---
 
+## {#flowcharts1 data-menu-title="Flowchart best practices"} 
+
+[Flowchart best practices]{.slide-title}
+
+<hr>
+
+[Which is quicker to understand?]{.body-text-l .center-text}
+
+:::: {.columns}
+::: {.column width="50%"}
+
+```
+1. Read in the data
+  - There are three CSV files in the data/ folder
+  
+2. Clean the data
+  - Convert date to YYYY-MM-DD using as.Date()
+  
+3. Process the measurements
+  - The units are all consistent, but the temporal sampling isn't
+  
+4. Visualize the results
+  - I think the data frame needs to be pivoted from wide to long
+```
+
+:::
+::: {.column width="50%"}
+
+![](images/day2/flowchart.png)
+
+:::
+::::
+
+---
+
+## {#flowcharts2 data-menu-title="Flowchart best practices"} 
+
+[Flowchart best practices]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="50%"}
+
+[Do:]{.body-text-l}
+
+* Use visuals
+* Keep it simple
+* Use consistent shapes
+
+:::
+::: {.column width="50%"}
+
+[Why?]{.body-text-l}
+
+* Visual processing is fast
+* Visual memory is strong
+* Identify structures and errors
+
+:::
+::::
+
+---
+
+## {#flowcharts3 data-menu-title="Flowchart best practices"} 
+
+[Flowchart best practices]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="50%"}
+
+[My system:]{.body-text-l}
+
+![](images/day2/flowchart-legend.png)
+
+:::
+::: {.column width="50%"}
+
+::: {.body-text-l}
+
+Use your own!
+
+_Consistency_ is what matters
+
+:::
+
+:::
+::::
+
+---
+
 ## {#up-next data-menu-title="Up next"} 
 
 [Up next]{.slide-title}
