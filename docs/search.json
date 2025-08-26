@@ -417,21 +417,21 @@
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-activity",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "LEGO Blueprints Activity\n\nStep 1: Build (in pairs)\n\n\nForm pairs and receive LEGOs\nEach pair builds a LEGO structure. Get weird with it!\nTake a picture of the finished product\nDestroy the LEGO structure"
+    "text": "LEGO Blueprints Activity\n\nStep 1: Build (in trios)\n\n\nForm trios and receive LEGOs\nEach trio builds a LEGO structure. Get weird with it!\nTake a picture of the finished product\nDestroy the LEGO structure"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-copy",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-copy",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "LEGO Blueprints Activity\n\nStep 2: Copy (in pairs)\n\n\nSwitch LEGOs and pictures with another pair\nTry to replicate the structure using only the picture\nTake notes about challenges encountered"
+    "text": "LEGO Blueprints Activity\n\nStep 2: Copy (in pairs)\n\n\nSwitch LEGOs and pictures with another trio\nTry to replicate the structure using only the picture\nTake notes about challenges encountered"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-share",
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-share",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "LEGO Blueprints Activity\n\nStep 3: Share (in quads)\n\n\nPairs compare original and finished structures\nTake notes about what was different\nDescribe 2-3 pieces of documentation that would have helped"
+    "text": "LEGO Blueprints Activity\n\nStep 3: Share (in groups)\n\n\nTrios compare original and finished structures\nTake notes about what was different\nDescribe 2-3 pieces of documentation that would have helped"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#lego-debrief",
@@ -466,7 +466,7 @@
     "href": "course-materials/lecture-slides/lecture-day2pm-slides.html#code-style",
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
-    "text": "Code Style\n\nReadability → Comprehension → Reproducibility\nConsistency is key! (Just like workflow folder organization)\nKey considerations:\n\nObject naming conventions\nSpacing and layout\nWriting and calling functions\nComments!"
+    "text": "Code Style\n\nReadability → Comprehension → Reproducibility\nConsistency is key! (Just like workflow folder organization)\nKey considerations:\n\nObject naming conventions\nSpacing and layout\nWriting and calling functions\nComments!\n\n\nTidyverse Style Guide"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2pm-slides.html#documentation-scavenger-hunt",
@@ -1461,6 +1461,27 @@
     "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
     "section": "",
     "text": "CLI review\n\nWhy is the command line useful?\n\nCustomizable\nAutomatable\n\nWhat’s the difference between the terminal and the shell?\nTerminal The program you type commands into\nShell The program that runs the commands\nWhat does a CLI command look like?\ncommand [options] [arguments]\npwd\nmv foo.R bar.R\nls -la data/"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#flowcharts1",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#flowcharts1",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Flowchart best practices\n\nWhich is quicker to understand?\n\n\n1. Read in the data\n  - There are three CSV files in the data/ folder\n  \n2. Clean the data\n  - Convert date to YYYY-MM-DD using as.Date()\n  \n3. Process the measurements\n  - The units are all consistent, but the temporal sampling isn't\n  \n4. Visualize the results\n  - I think the data frame needs to be pivoted from wide to long"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#flowcharts2",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#flowcharts2",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Flowchart best practices\n\n\n\nDo:\n\nUse visuals\nKeep it simple\nUse consistent shapes\n\n\nWhy?\n\nVisual processing is fast\nVisual memory is strong\nIdentify structures and errors"
+  },
+  {
+    "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#flowcharts3",
+    "href": "course-materials/lecture-slides/lecture-day2am-slides.html#flowcharts3",
+    "title": "EDS 214: Analytical Workflows and Scientific Reproducibility",
+    "section": "",
+    "text": "Flowchart best practices\n\n\n\nMy system:\n\n\n\nUse your own!\nConsistency is what matters"
   },
   {
     "objectID": "course-materials/lecture-slides/lecture-day2am-slides.html#up-next",
