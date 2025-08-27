@@ -8,9 +8,9 @@ bibliography: references.bib
 ## Class materials
 
 | {{< session >}} | {{< lecture >}} | {{< interactive >}} | {{< reflection >}} |
-|------------------|------------------|------------------|------------------|
-| Morning | [Version control with git](lecture-slides/lecture-day3am-slides.qmd){target="_blank"} | [Git branching](interactive/interactive-day3am.qmd) | Morning reflection |
-| Afternoon | [Collaboration with GitHub](lecture-slides/lecture-day3pm-slides.qmd){target="_blank"} | [Refactor a function](interactive/interactive-day3pm.qmd) | Afternoon reflection |
+|---------------|------------------------|----------------|----------------|
+| Morning | [NEW: Problem solving](lecture-slides/lecture-day3am-problemsolving-slides.qmd) \| [Version control with git](lecture-slides/lecture-day3am-slides.qmd){target="_blank"} | [Git branching](interactive/interactive-day3am.qmd) | [Problem solving](https://forms.gle/7pP2UVLTV3S1ipo8A) |
+| Afternoon | [Collaboration with GitHub](lecture-slides/lecture-day3pm-slides.qmd){target="_blank"} | [Refactor a function](interactive/interactive-day3pm.qmd) | [Final project specs](https://forms.gle/hBKrjsiF9y4tcWU88) |
 
 : {.hover .bordered}
 

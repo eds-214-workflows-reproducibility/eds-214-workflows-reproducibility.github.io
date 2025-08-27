@@ -1,0 +1,292 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    highlight-style: a11y
+    chalkboard: true
+    theme: 
+      - ../../meds-slides-styles.scss
+    code-line-numbers: false
+bibliography: references.bib
+---
+
+## {#title-slide data-menu-title="Title Slide" background="#053660"} 
+
+[Problem Solving]{.custom-title}
+
+[*EDS 214: Analytical Workflows and Scientific Reproducibility*]{.custom-subtitle}
+
+<hr class="hr-teal">
+
+[Day 3 Morning | August 27^th^, 2025]{.custom-subtitle3}
+
+---
+
+## {#learning-objectives data-menu-title="Learning Objectives"} 
+
+[This morning, you'll learn how to...]{.slide-title}
+
+<hr>
+
+::: {.body-text-l}
+
+* Solve complex problems by creating **tiny** problems
+* Apply **unit testing** principles to verify your solution
+
+:::
+
+---
+
+## {#so-far data-menu-title="So Far..."} 
+
+[So Far...]{.slide-title}
+
+<hr>
+
+::: {.body-text-l}
+
+Schaefer et al. (2000) use a *moving average* 
+
+The data have *non-uniform intervals*
+
+There are thousands of rows
+
+:::
+
+---
+
+## {#approach data-menu-title="Problem Solving Approach"} 
+
+[Problem Solving Approach]{.slide-title}
+
+<hr>
+
+1. Create a **tiny** example
+2. Solve the tiny example **by hand**
+3. Identify the **minimum information** to solve
+4. Put the solution in a **function** 
+5. **Verify** your solution with the tiny example
+6. **Apply** the function to the full problem
+
+---
+
+## {#instructions data-menu-title="Instructions"} 
+
+[Instructions]{.slide-title}
+
+<hr>
+
+1. Form groups of 3-4
+2. Choose 1 (and only 1) member to use RStudio
+3. Everyone else close your laptops
+4. **Fork** `eds-214-workflows-reproducibility/problem-solving` (I'll show you how)
+5. Clone the repo
+
+---
+
+## {#tiny data-menu-title="Tiny Example"}
+
+[Tiny Example]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Small enough to see all at once
+* Simple enough to solve by hand
+* _Just enough_ detail to represent the problem
+
+:::
+:::{.column width="50%"}
+
+1. Create a tiny example in the workbook (link in script)
+
+2. Shape your example like a data frame
+
+3. Ask yourselves: 
+  - Is it small enough to see all at once?
+  - Is it simple enough to solve by hand?
+  - Does it represent the problem?
+
+:::
+::::
+
+---
+
+## {#solve-hand data-menu-title="Solve by Hand"}
+
+[Solve by Hand]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Use an independent solution (e.g., spreadsheet)
+* Solving by hand forces you to understand the problem
+* Now you have a rubric!
+
+:::
+:::{.column width="50%"}
+
+In your same groups:
+
+1. Add a column to your tiny example
+
+2. Solve the problem by hand in the new column
+
+3. Double-check your work
+
+:::
+::::
+
+---
+
+## {#min-info data-menu-title="Minimum Information"}
+
+[Minimum Information]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Identify the **minimum information** you need to solve the problem _once_
+* List the variables you need to know
+* Remove any information you _don't_ need
+
+:::
+:::{.column width="50%"}
+
+As a group, make a list of the variables you need to solve the problem _once_
+
+:::
+::::
+
+---
+
+## {#function data-menu-title="Put the Solution in a Function"}
+
+[Put the Solution in a Function]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Your _minimum information_ becomes parameters
+* Convert your hand solution into code
+* **REMEMBER** - this is the solution for _one_ case
+* This is the hard part!
+
+:::
+:::{.column width="50%"}
+
+1. One (and only one) member of your group opens RStudio
+
+2. Create a new script
+
+3. Write the function
+  - What's its name?
+  - What are the parameters?
+  - What does the body look like?
+
+:::
+::::
+
+---
+
+## {#verify data-menu-title="Verify Your Solution"}
+
+[Verify Your Solution]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Run your solution on _one case_ in the tiny example
+* Check your function's output against the hand solution
+* Debug as needed
+
+:::
+:::{.column width="50%"}
+
+(If necessary) Install `googlesheets4` package
+
+```
+sheet_url <- "https://docs.google.com/spreadsheets/d/1X-SltNKUaZH0zVWSUkC8sUrrlhPEPAd-6tBmbcihCSw"
+tiny_problem <- googlesheets4::read_sheet(sheet_url, sheet = "Example")
+```
+
+Call your function on one case in the tiny example
+
+**Do not debug yet!**
+
+:::
+::::
+
+---
+
+## {#apply data-menu-title="Apply Your Function"}
+
+[Apply Your Function]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+* Choose *how* to **apply** your function
+  * `apply()`, `sapply()`, `mutate()`, `for()`...
+* Apply your function to the tiny example and verify
+* Apply your function to the full dataset
+
+**REPEAT UNTIL SOLVED**
+
+:::
+:::{.column width="50%"}
+
+* How will you **apply** your function?
+* Write the solution for the entire tiny example
+* Check your results
+
+:::
+::::
+
+---
+
+## {#recap data-menu-title="Problem Solving Recap"} 
+
+[Problem Solving Recap]{.slide-title}
+
+<hr>
+
+1. Create a **tiny** example
+2. Solve the tiny example **by hand**
+3. Identify the **minimum information** to solve
+4. Put the solution in a **function** 
+5. **Verify** your solution with the tiny example
+6. **Apply** the function to the full problem
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
