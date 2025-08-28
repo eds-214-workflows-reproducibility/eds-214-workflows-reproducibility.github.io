@@ -11,7 +11,7 @@ No lectures today! All interactive sessions.
 
 | {{< session >}} | {{< interactive >}} | {{< interactive >}} | {{< reflection >}} |
 |------------------|------------------|------------------|------------------|
-| Morning | [Draft Quarto analysis](interactive/interactive-day4am.qmd){target="_blank"} | [Self assessment](final-project/final-project-self-assessment.qmd) | Morning reflection |
-| Afternoon | [Peer feedback and contribution](final-project/final-project-peer-review.qmd){target="_blank"} | Open working time | Afternoon reflection |
+| Morning | [Draft Quarto analysis](interactive/interactive-day4am.qmd){target="_blank"} | [Self assessment](final-project/final-project-self-assessment.qmd) | [GitHub project management tools](https://forms.gle/aNxZ5AX4PFfcGiyE9) |
+| Afternoon | [Peer feedback and contribution](final-project/final-project-peer-review.qmd){target="_blank"} | Open working time | [Peer feedback](https://forms.gle/M9bdVdAZY9uXk5oJ9) |
 
 : {.hover .bordered}
