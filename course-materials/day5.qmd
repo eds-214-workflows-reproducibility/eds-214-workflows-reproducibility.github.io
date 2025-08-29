@@ -1,8 +1,7 @@
 ---
 title: "Final project self-assessment and peer feedback"
-subtitle: "Day 4"
-description: "Thursday August 28^th^, 2025"
-bibliography: references.bib
+subtitle: "Day 5"
+description: "Friday August 29^th^, 2025"
 ---
 
 ## Class materials
@@ -11,7 +10,7 @@ No lectures today! All interactive sessions.
 
 | {{< session >}} | {{< interactive >}} | {{< interactive >}} | {{< reflection >}} |
 |------------------|------------------|------------------|------------------|
-| Morning | Meet your next instructor | [Final project submission](final-project/final-project-submission.qmd) | Morning reflection |
-| Afternoon | Instructor feedback | Open working time | Afternoon reflection |
+| Morning | Meet your next instructor | [Final project submission](final-project/final-project-submission.qmd) | [Course goals (revisited)](https://forms.gle/YvHmdkA5TpVKddxT7) |
+| Afternoon | Instructor feedback | Open working time | [Course evaluation](https://forms.gle/pjsKRMYVnCJqATYr9) |
 
 : {.hover .bordered}
